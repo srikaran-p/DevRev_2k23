@@ -315,4 +315,4 @@ and the generated answer for any given question should have following format
 To reference the value of the ith tool in the chain, use $$PREV[i] as argument value. i = 0, 1, .. j-1; j = current tool’s index in the array
 If the query could not be answered with the given set of tools, output an empty list instead.
 
-make sure that generated example should be utilizing multiple API tools
+generate query and answer pairs that utilize single tool, do it for all tools and all possible argumnents required

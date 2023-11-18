@@ -315,4 +315,4 @@ and the generated answer for any given question should have following format
 To reference the value of the ith tool in the chain, use $$PREV[i] as argument value. i = 0, 1, .. j-1; j = current tool’s index in the array
 If the query could not be answered with the given set of tools, output an empty list instead.
 
-generate query and answer pairs that utilize single tool, do it for all tools and all possible argumnents required
+generate query and answer pairs that utilize single tool, do it for all tools and all possible argumnents required. Each query should be utilizing only one of the tool, and it need not to be utilizing all arguments. Keep query human like, and if you wan to pass like just pass comma seprated value not inside squre bracket. Dont generate any additional text just return json list containing question answer pairs like mentioned in example above. Keep the example diverse and generated total 18 examples 2 for each tool.

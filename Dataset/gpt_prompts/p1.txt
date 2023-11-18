@@ -177,7 +177,6 @@
 
 use the followning tool and argument description and try to genrate query and responces like the following example, make sure that generated example should be utilizing multiple API tools
 
-User
 [
     {
         "tool_name":"works_list",

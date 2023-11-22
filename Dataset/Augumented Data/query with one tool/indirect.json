@@ -229,70 +229,70 @@
         ]
     },
     {
-    "question": "Can we get a quick overview of work with P0 priority?",
-    "answer": [
-        {
-            "tool_name": "works_list",
-            "arguments": [
-                {
-                    "argument_name": "issue.priority",
-                    "argument_value": ["P0"]
-                }
-            ]
-        },
-        {
-            "tool_name": "summarize_objects",
-            "arguments": [
-                {
-                    "argument_name": "objects",
-                    "argument_value": "$$PREV[0]"
-                }
+        "question": "Can we get a quick overview of work with P0 priority?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": ["P0"]
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[0]"
+                    }
                 ]
             }
         ]
     },
 
     {
-    "question": "Prioritize these tasks for me: [TaskA, TaskB, TaskC]",
-    "answer": [
-        {
-            "tool_name": "prioritize_objects",
-            "arguments": [
-                {
-                    "argument_name": "objects",
-                    "argument_value": ["TaskA", "TaskB", "TaskC"]
-                }
+        "question": "Prioritize these tasks for me: [TaskA, TaskB, TaskC]",
+        "answer": [
+            {
+                "tool_name": "prioritize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": ["TaskA", "TaskB", "TaskC"]
+                    }
                 ]
             }
         ]
     },
-    {
-    "question": "Prioritize my tasks and add them to the current sprint",
-    "answer": [
         {
-            "tool_name": "get_sprint_id",
-            "arguments": []
-        },
-        {
-            "tool_name": "works_list",
-            "arguments": [
-                {
-                    "argument_name": "type",
-                    "argument_value": ["task"]
-                }
-            ]
-        },
-        {
-            "tool_name": "add_work_items_to_sprint",
-            "arguments": [
-                {
-                    "argument_name": "work_ids",
-                    "argument_value": "$$PREV[1]"
-                },
-                {
-                    "argument_name": "sprint_id",
-                    "argument_value": "$$PREV[0]"
-                }
+        "question": "Prioritize my tasks and add them to the current sprint",
+        "answer": [
+            {
+                "tool_name": "get_sprint_id",
+                "arguments": []
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "type",
+                        "argument_value": ["task"]
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_work_items_to_sprint",
+                "arguments": [
+                    {
+                        "argument_name": "work_ids",
+                        "argument_value": "$$PREV[1]"
+                    },
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "$$PREV[0]"
+                    }
                 ]
             }
         ]

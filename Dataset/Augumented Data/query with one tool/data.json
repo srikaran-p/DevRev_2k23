@@ -532,6 +532,25 @@
                 ]
             }
         ]
+    },
+    {
+        "question": "What's the situation with tickets requiring immediate attention?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.needs_response",
+                        "argument_value": true
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": ["ticket"]
+                    }
+                ]
+            }
+        ]
     }
+
 ]
 

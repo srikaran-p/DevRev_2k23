@@ -1,0 +1,172 @@
+[
+    {
+        "question": "What is the meaning of life?",
+        "answer": [],
+        "question_id": "2"
+    },
+    {
+        "question": "Prioritize my P0 issues and add them to the current sprint",
+        "answer": {
+            "type": "array",
+            "items": [
+                {
+                    "tool_name": "works_list",
+                    "arguments": [
+                        {
+                            "argument_name": "issue.priority",
+                            "argument_value": [
+                                "p0"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tool_name": "prioritize_objects",
+                    "arguments": [
+                        {
+                            "argument_name": "objects",
+                            "argument_value": "$$PREV[0].response.objects"
+                        }
+                    ]
+                },
+                {
+                    "tool_name": "get_sprint_id",
+                    "arguments": []
+                },
+                {
+                    "tool_name": "add_work_items_to_sprint",
+                    "arguments": [
+                        {
+                            "argument_name": "work_ids",
+                            "argument_value": "$$PREV[1].response.objects[*].id"
+                        },
+                        {
+                            "argument_name": "sprint_id",
+                            "argument_value": "$$PREV[2].response.id"
+                        }
+                    ]
+                }
+            ]
+        },
+        "question_id": "3"
+    },
+    {
+        "question": "List all high severity tickets coming in from slack from customer Cust123 and generate a summary of them.",
+        "answer": {
+            "type": "array",
+            "items": [
+                {
+                    "tool_name": "works_list",
+                    "arguments": [
+                        {
+                            "argument_name": "ticket.severity",
+                            "argument_value": [
+                                "high"
+                            ]
+                        },
+                        {
+                            "argument_name": "ticket.source_channel",
+                            "argument_value": [
+                                "slack"
+                            ]
+                        },
+                        {
+                            "argument_name": "search_object_by_name",
+                            "argument_value": "Cust123"
+                        }
+                    ]
+                },
+                {
+                    "tool_name": "summarize_objects",
+                    "arguments": [
+                        {
+                            "argument_name": "objects",
+                            "argument_value": "$$PREV[0]"
+                        }
+                    ]
+                }
+            ]
+        },
+        "question_id": "6"
+    },
+    {
+        "question": "Given a customer meeting transcript T, create action items and add them to my current sprint",
+        "answer": {
+            "type": "array",
+            "items": [
+                {
+                    "tool_name": "create_actionable_tasks_from_text",
+                    "arguments": [
+                        {
+                            "argument_name": "text",
+                            "argument_value": "T"
+                        }
+                    ]
+                },
+                {
+                    "tool_name": "get_sprint_id",
+                    "arguments": []
+                },
+                {
+                    "tool_name": "add_work_items_to_sprint",
+                    "arguments": [
+                        {
+                            "argument_name": "work_ids",
+                            "argument_value": "$$PREV[0]"
+                        },
+                        {
+                            "argument_name": "sprint_id",
+                            "argument_value": "$$PREV[1]"
+                        }
+                    ]
+                }
+            ]
+        },
+        "question_id": "7"
+    },
+    {
+        "question": "Get all work items similar to TKT-123, summarize them, create issues from that summary, and prioritize them",
+        "answer": {
+            "type": "array",
+            "items": [
+                {
+                    "tool_name": "get_similar_work_items",
+                    "arguments": [
+                        {
+                            "argument_name": "work_id",
+                            "argument_value": "TKT-123"
+                        }
+                    ]
+                },
+                {
+                    "tool_name": "summarize_objects",
+                    "arguments": [
+                        {
+                            "argument_name": "objects",
+                            "argument_value": "$$PREV[0].result"
+                        }
+                    ]
+                },
+                {
+                    "tool_name": "create_actionable_tasks_from_text",
+                    "arguments": [
+                        {
+                            "argument_name": "text",
+                            "argument_value": "$$PREV[1].summary"
+                        }
+                    ]
+                },
+                {
+                    "tool_name": "prioritize_objects",
+                    "arguments": [
+                        {
+                            "argument_name": "objects",
+                            "argument_value": "$$PREV[2].tasks"
+                        }
+                    ]
+                }
+            ]
+        },
+        "question_id": "8"
+    }
+]

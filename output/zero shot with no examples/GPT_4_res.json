@@ -1,0 +1,275 @@
+[
+    {
+        "question": "What is the meaning of life?",
+        "answer": [],
+        "question_id": "2"
+    },
+    {
+        "question": "Prioritize my P0 issues and add them to the current sprint",
+        "answer": [
+            {
+                "tool_name": "who_am_i",
+                "arguments": []
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "created_by",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": "p0"
+                    }
+                ]
+            },
+            {
+                "tool_name": "prioritize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_sprint_id",
+                "arguments": []
+            },
+            {
+                "tool_name": "add_work_items_to_sprint",
+                "arguments": [
+                    {
+                        "argument_name": "work_ids",
+                        "argument_value": "$$PREV[2]"
+                    },
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "$$PREV[3]"
+                    }
+                ]
+            }
+        ],
+        "question_id": "3"
+    },
+    {
+        "question": "List all high severity tickets coming in from slack from customer Cust123 and generate a summary of them.",
+        "answer": [
+            {
+                "tool_name": "search_object_by_name",
+                "arguments": [
+                    {
+                        "argument_name": "query",
+                        "argument_value": "Cust123"
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.severity",
+                        "argument_value": "high"
+                    },
+                    {
+                        "argument_name": "ticket.source_channel",
+                        "argument_value": "slack"
+                    },
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            }
+        ],
+        "question_id": "6"
+    },
+    {
+        "question": "Given a customer meeting transcript T, create action items and add them to my current sprint",
+        "answer": [
+            {
+                "tool_name": "create_actionable_tasks_from_text",
+                "arguments": [
+                    {
+                        "argument_name": "text",
+                        "argument_value": "T"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_sprint_id",
+                "arguments": []
+            },
+            {
+                "tool_name": "add_work_items_to_sprint",
+                "arguments": [
+                    {
+                        "argument_name": "work_ids",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            }
+        ],
+        "question_id": "7"
+    },
+    {
+        "type": "array",
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "tool_name": {
+                        "type": "string",
+                        "const": "get_similar_work_items"
+                    },
+                    "arguments": {
+                        "type": "array",
+                        "items": [
+                            {
+                                "type": "object",
+                                "properties": {
+                                    "argument_name": {
+                                        "type": "string",
+                                        "const": "work_id"
+                                    },
+                                    "argument_value": {
+                                        "type": "string",
+                                        "const": "TKT-123"
+                                    }
+                                },
+                                "required": [
+                                    "argument_name",
+                                    "argument_value"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "tool_name",
+                    "arguments"
+                ]
+            },
+            {
+                "type": "object",
+                "properties": {
+                    "tool_name": {
+                        "type": "string",
+                        "const": "summarize_objects"
+                    },
+                    "arguments": {
+                        "type": "array",
+                        "items": [
+                            {
+                                "type": "object",
+                                "properties": {
+                                    "argument_name": {
+                                        "type": "string",
+                                        "const": "objects"
+                                    },
+                                    "argument_value": {
+                                        "type": "string",
+                                        "const": "$$PREV[0]"
+                                    }
+                                },
+                                "required": [
+                                    "argument_name",
+                                    "argument_value"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "tool_name",
+                    "arguments"
+                ]
+            },
+            {
+                "type": "object",
+                "properties": {
+                    "tool_name": {
+                        "type": "string",
+                        "const": "create_actionable_tasks_from_text"
+                    },
+                    "arguments": {
+                        "type": "array",
+                        "items": [
+                            {
+                                "type": "object",
+                                "properties": {
+                                    "argument_name": {
+                                        "type": "string",
+                                        "const": "text"
+                                    },
+                                    "argument_value": {
+                                        "type": "string",
+                                        "const": "$$PREV[1]"
+                                    }
+                                },
+                                "required": [
+                                    "argument_name",
+                                    "argument_value"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "tool_name",
+                    "arguments"
+                ]
+            },
+            {
+                "type": "object",
+                "properties": {
+                    "tool_name": {
+                        "type": "string",
+                        "const": "prioritize_objects"
+                    },
+                    "arguments": {
+                        "type": "array",
+                        "items": [
+                            {
+                                "type": "object",
+                                "properties": {
+                                    "argument_name": {
+                                        "type": "string",
+                                        "const": "objects"
+                                    },
+                                    "argument_value": {
+                                        "type": "string",
+                                        "const": "$$PREV[2]"
+                                    }
+                                },
+                                "required": [
+                                    "argument_name",
+                                    "argument_value"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "tool_name",
+                    "arguments"
+                ]
+            }
+        ],
+        "question_id": "8"
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "question_id":"1",
+        "question":"Summarize issues similar to don:core:dvrv-us-1:devo/0:issue/1",
+        "answer":[
+            {
+            "tool_name": "get_similar_work_items",
+            "arguments": [
+            {
+            "argument_name": "work_id",
+            "argument_value": "don:core:dvrv-us-1:devo/0:issue/1"
+            }
+            ]
+            },
+            {
+            "tool_name": "summarize_objects",
+            "arguments": [
+            {
+            "argument_name": "objects",
+            "argument_value": "$$PREV[0]"
+            }
+            ]
+            }
+            ]
+    },
+    {
+        "question_id":"4",
+        "question":"Summarize high severity tickets from the customer UltimateCustomer",
+        "answer":[
+            {
+                "tool_name": "search_object_by_name",
+                "arguments": [
+                    {
+                    "argument_name": "query",
+                    "argument_value": "UltimateCustomer"
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": ["$$PREV[0]"]
+                    },
+                    {
+                        "argument_name": "ticket.severity",
+                        "argument_value": ["high"]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": ["ticket"]
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question_id":"5",
+        "question":"What are my all issues in the triage stage under part FEAT-123? Summarize them. ",
+        "answer":[
+            {
+                "tool_name": "who_am_i",
+                "arguments": []
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": ["triage"]
+                    },
+                    {
+                        "argument_name": "applies_to_part",
+                        "argument_value": ["FEAT-123"]
+                    },
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": ["$$PREV[0]"]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": ["issue"]
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            }
+        ] 
+    }
+]

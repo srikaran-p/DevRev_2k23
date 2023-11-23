@@ -1,0 +1,64 @@
+[
+    {
+        "tool_name": "create_work_item",
+        "tool_description": "Creates a new work item, such as a task, issue, or enhancement, and adds it to the project.",
+        "arguments": [
+            {
+                "name": "work_item_type",
+                "description": "The type of work item to create (e.g., task, issue, enhancement)",
+                "type": "string",
+                "example": "task"
+            },
+            {
+                "name": "title",
+                "description": "The title or name of the work item",
+                "type": "string",
+                "example": "Implement Feature X"
+            },
+            {
+                "name": "description",
+                "description": "A detailed description of the work item",
+                "type": "string",
+                "example": "This task involves implementing Feature X with specific requirements."
+            },
+            {
+                "name": "assignee",
+                "description": "The team member to whom the work item is assigned",
+                "type": "string",
+                "example": "DEVU-456"
+            },
+            {
+                "name": "priority",
+                "description": "Specifies the priority level of the work item",
+                "type": "string",
+                "example": "high"
+            },
+            {
+                "name": "due_date",
+                "description": "Sets a due date for the work item",
+                "type": "string",
+                "example": "2023-12-31"
+            },
+            {
+                "name": "tags",
+                "description": "Allows adding tags or labels for categorization",
+                "type": "array of strings",
+                "example": ["feature", "bug", "urgent"]
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+

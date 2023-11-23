@@ -1,1 +1,45 @@
+{
+  "question":"Based on priority, add work items ENH-123, PROD-123 and FEAT-123 to different sprints. High priority work should be in Sprint A and low priority work should be in sprint B",
+  "answer": [
+    {
+      "tool_name": "prioritize_objects",
+      "arguments": [
+        {
+          "argument_name": "objects",
+          "argument_value": ["ENH-123", "PROD-123", "FEAT-123"]
+        }
+      ]
+    },
+    {
+      "tool_name": "get_sprint_id",
+      "arguments": []
+    },
+    {
+      "tool_name": "add_work_items_to_sprint",
+      "arguments": [
+        {
+          "argument_name": "work_ids",
+          "argument_value": "$$PREV[0].high"
+        },
+        {
+          "argument_name": "sprint_id",
+          "argument_value": "Sprint A"
+        }
+      ]
+    },
+    {
+      "tool_name": "add_work_items_to_sprint",
+      "arguments": [
+        {
+          "argument_name": "work_ids",
+          "argument_value": "$$PREV[0].low"
+        },
+        {
+          "argument_name": "sprint_id",
+          "argument_value": "Sprint B"
+        }
+      ]
+    }
+  ]
+}
 

@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Which tickets have been raised by ClientCo-123 in our system?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": [
+                            "ClientCo-123"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you identify the tickets associated with the organization OrgName-456?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": [
+                            "OrgName-456"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are the tickets linked to the partner PartnerCo-789?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": [
+                            "PartnerCo-789"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'd like to see the tickets that are tied to the entity EntityName-012.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": [
+                            "EntityName-012"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What tickets have been logged under the account AccountName-345?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": [
+                            "AccountName-345"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

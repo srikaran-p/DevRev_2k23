@@ -1,0 +1,82 @@
+[
+    {
+        "question": "How many customer requests have we received through our hotline channel?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.source_channel",
+                        "argument_value": [
+                            "hotline"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What's the volume of tickets coming through the social media platforms?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.source_channel",
+                        "argument_value": [
+                            "social media"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can we identify the tickets that have been submitted via the mobile app?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.source_channel",
+                        "argument_value": [
+                            "mobile app"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'd like to know the number of issues reported through the customer service portal.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.source_channel",
+                        "argument_value": [
+                            "customer service portal"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are the tickets that have been logged through our in-house system?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.source_channel",
+                        "argument_value": [
+                            "in-house system"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

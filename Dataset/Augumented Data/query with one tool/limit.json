@@ -1,0 +1,72 @@
+[
+    {
+        "question": "Could you show me a brief overview of the first 10 work items in our system?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "limit",
+                        "argument_value": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'd like to have a glance at the top 5 issues we have at the moment.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "limit",
+                        "argument_value": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can we limit our view to the 15 most recent tickets?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "limit",
+                        "argument_value": 15
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are the 25 latest tasks that have been logged into our system?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "limit",
+                        "argument_value": 25
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Please provide a quick list of the first 20 work items for a quick review.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "limit",
+                        "argument_value": 20
+                    }
+                ]
+            }
+        ]
+    }
+]

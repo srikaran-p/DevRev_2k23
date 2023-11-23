@@ -1,0 +1,82 @@
+[
+    {
+        "question": "What are the items that are currently waiting in the 'Review' stage?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": [
+                            "Review"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can we take a look at all tasks that are in the 'Planning' phase?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": [
+                            "Planning"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What work items are presently in the 'Design' stage of development?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": [
+                            "Design"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm interested in the items that have reached the 'Deployment' stage.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": [
+                            "Deployment"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Which tasks are we currently refining in the 'Refinement' stage?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": [
+                            "Refinement"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

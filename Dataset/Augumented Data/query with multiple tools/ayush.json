@@ -1,0 +1,545 @@
+[
+	{
+    	"question": "What are the high severity tickets associated with REV-123 and owned by DEVU-123? Summarize them.",
+    	"answer": [
+        	{
+            	"tool_name": "works_list",
+            	"arguments": [
+                	{
+                    	"argument_name": "ticket.rev_org",
+                    	"argument_value": ["REV-123"]
+                	},
+                	{
+                    	"argument_name": "ticket.severity",
+                    	"argument_value": ["high"]
+                	},
+                	{
+                    	"argument_name": "owned_by",
+                    	"argument_value": ["DEVU-123"]
+                	},
+                	{
+                    	"argument_name": "type",
+                    	"argument_value": ["ticket"]
+                	}
+            	]
+        	},
+        	{
+            	"tool_name": "summarize_objects",
+            	"arguments": [
+                	{
+                    	"argument_name": "objects",
+                    	"argument_value": "$$PREV[0]"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Retrieve the ID of the current sprint and add work items PROD-123 and FEAT-123 to it.",
+    	"answer": [
+        	{
+            	"tool_name": "get_sprint_id",
+            	"arguments": []
+        	},
+        	{
+            	"tool_name": "add_work_items_to_sprint",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_ids",
+                    	"argument_value": ["PROD-123", "FEAT-123"]
+                	},
+                	{
+                    	"argument_name": "sprint_id",
+                    	"argument_value": "$$PREV[0]"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Find issues similar to ENH-123 and prioritize them.",
+    	"answer": [
+        	{
+            	"tool_name": "get_similar_work_items",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_id",
+                    	"argument_value": "ENH-123"
+                	}
+            	]
+        	},
+        	{
+            	"tool_name": "prioritize_objects",
+            	"arguments": [
+                	{
+                    	"argument_name": "objects",
+                    	"argument_value": "$$PREV[0]"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Search for objects related to 'CustomerX' and create actionable tasks from the insights found.",
+    	"answer": [
+        	{
+            	"tool_name": "search_object_by_name",
+            	"arguments": [
+                	{
+                    	"argument_name": "query",
+                    	"argument_value": "CustomerX"
+                	}
+            	]
+        	},
+        	{
+            	"tool_name": "create_actionable_tasks_from_text",
+            	"arguments": [
+                	{
+                    	"argument_name": "text",
+                    	"argument_value": "Actionable tasks from 'CustomerX'"
+                	}
+            	]
+        	}
+    	]
+	},
+
+    
+
+	{
+    	"question": "Retrieve my current user ID and search for objects related to 'ProjectX'.",
+    	"answer": [
+        	{
+            	"tool_name": "who_am_i",
+            	"arguments": []
+        	},
+        	{
+            	"tool_name": "search_object_by_name",
+            	"arguments": [
+                	{
+                    	"argument_name": "query",
+                    	"argument_value": "ProjectX"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Get the ID of the current sprint and find similar work items to PROD-123.",
+    	"answer": [
+        	{
+            	"tool_name": "get_sprint_id",
+            	"arguments": []
+        	},
+        	{
+            	"tool_name": "get_similar_work_items",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_id",
+                    	"argument_value": "PROD-123"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Create actionable tasks from insights found in the text 'Analyzing customer feedback for improvement'.",
+    	"answer": [
+        	{
+            	"tool_name": "create_actionable_tasks_from_text",
+            	"arguments": [
+                	{
+                    	"argument_name": "text",
+                    	"argument_value": "Analyzing customer feedback for improvement"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Add work items ENH-123, FEAT-123, and PROD-123 to the current sprint.",
+    	"answer": [
+        	{
+            	"tool_name": "get_sprint_id",
+            	"arguments": []
+        	},
+        	{
+            	"tool_name": "add_work_items_to_sprint",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_ids",
+                    	"argument_value": ["ENH-123", "FEAT-123", "PROD-123"]
+                	},
+                	{
+                    	"argument_name": "sprint_id",
+                    	"argument_value": "$$PREV[0]"
+                	}
+            	]
+        	}
+    	]
+	},
+    
+{
+    	"question": "Retrieve my current user ID and summarize the objects from a list.",
+    	"answer": [
+        	{
+            	"tool_name": "who_am_i",
+            	"arguments": []
+        	},
+        	{
+            	"tool_name": "summarize_objects",
+            	"arguments": [
+                	{
+                    	"argument_name": "objects",
+                    	"argument_value": "[{ 'id': 'obj1' }, { 'id': 'obj2' }, { 'id': 'obj3' }]"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Search for objects related to 'CustomerABC' and find similar work items to ENH-123.",
+    	"answer": [
+        	{
+            	"tool_name": "search_object_by_name",
+            	"arguments": [
+                	{
+                    	"argument_name": "query",
+                    	"argument_value": "CustomerABC"
+                	}
+            	]
+        	},
+        	{
+            	"tool_name": "get_similar_work_items",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_id",
+                    	"argument_value": "ENH-123"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Add work items CAPL-123 and PROD-123 to the sprint with ID 'SPRINT-456'.",
+    	"answer": [
+        	{
+            	"tool_name": "add_work_items_to_sprint",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_ids",
+                    	"argument_value": ["CAPL-123", "PROD-123"]
+                	},
+                	{
+                    	"argument_name": "sprint_id",
+                    	"argument_value": "SPRINT-456"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Summarize tasks that need a response and are associated with REV-123.",
+    	"answer": [
+        	{
+            	"tool_name": "works_list",
+            	"arguments": [
+                	{
+                    	"argument_name": "ticket.needs_response",
+                    	"argument_value": true
+                	},
+                	{
+                    	"argument_name": "ticket.rev_org",
+                    	"argument_value": ["REV-123"]
+                	},
+                	{
+                    	"argument_name": "type",
+                    	"argument_value": ["task"]
+                	}
+            	]
+        	},
+        	{
+            	"tool_name": "summarize_objects",
+            	"arguments": [
+                	{
+                    	"argument_name": "objects",
+                    	"argument_value": "$$PREV[0]"
+                	}
+            	]
+        	}
+    	]
+	},
+    
+
+	{
+    	"question": "Find issues similar to PROD-123 and prioritize them.",
+    	"answer": [
+        	{
+            	"tool_name": "get_similar_work_items",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_id",
+                    	"argument_value": "PROD-123"
+                	}
+            	]
+        	},
+        	{
+            	"tool_name": "prioritize_objects",
+            	"arguments": [
+                	{
+                    	"argument_name": "objects",
+                    	"argument_value": "$$PREV[0]"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Retrieve the ID of the current sprint and add work items ENH-123 and PROD-123 to it.",
+    	"answer": [
+        	{
+            	"tool_name": "get_sprint_id",
+            	"arguments": []
+        	},
+        	{
+            	"tool_name": "add_work_items_to_sprint",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_ids",
+                    	"argument_value": ["ENH-123", "PROD-123"]
+                	},
+                	{
+                    	"argument_name": "sprint_id",
+                    	"argument_value": "$$PREV[0]"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Create actionable tasks from the text 'Analyzing customer feedback for improvement'.",
+    	"answer": [
+        	{
+            	"tool_name": "create_actionable_tasks_from_text",
+            	"arguments": [
+                	{
+                    	"argument_name": "text",
+                    	"argument_value": "Analyzing customer feedback for improvement"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Add work items FEAT-123, ENH-123, and PROD-123 to the current sprint.",
+    	"answer": [
+        	{
+            	"tool_name": "get_sprint_id",
+            	"arguments": []
+        	},
+        	{
+            	"tool_name": "add_work_items_to_sprint",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_ids",
+                    	"argument_value": ["FEAT-123", "ENH-123", "PROD-123"]
+                	},
+                	{
+                    	"argument_name": "sprint_id",
+                    	"argument_value": "$$PREV[0]"
+                	}
+            	]
+        	}
+    	]
+	},
+    
+
+	{
+    	"question": "Retrieve my current user ID and summarize the objects from a list.",
+    	"answer": [
+        	{
+            	"tool_name": "who_am_i",
+            	"arguments": []
+        	},
+        	{
+            	"tool_name": "summarize_objects",
+            	"arguments": [
+                	{
+                    	"argument_name": "objects",
+                    	"argument_value": "[{ 'id': 'obj1' }, { 'id': 'obj2' }, { 'id': 'obj3' }]"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Search for objects related to 'CustomerABC' and find similar work items to ENH-123.",
+    	"answer": [
+        	{
+            	"tool_name": "search_object_by_name",
+            	"arguments": [
+                	{
+                    	"argument_name": "query",
+                    	"argument_value": "CustomerABC"
+                	}
+            	]
+        	},
+        	{
+            	"tool_name": "get_similar_work_items",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_id",
+                    	"argument_value": "ENH-123"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Add work items CAPL-123 and PROD-123 to the sprint with ID 'SPRINT-456'.",
+    	"answer": [
+        	{
+            	"tool_name": "add_work_items_to_sprint",
+            	"arguments": [
+                	{
+                    	"argument_name": "work_ids",
+                    	"argument_value": ["CAPL-123", "PROD-123"]
+                	},
+                	{
+                    	"argument_name": "sprint_id",
+                    	"argument_value": "SPRINT-456"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+    	"question": "Summarize tasks that need a response and are associated with REV-123.",
+    	"answer": [
+        	{
+            	"tool_name": "works_list",
+            	"arguments": [
+                	{
+                    	"argument_name": "ticket.needs_response",
+                    	"argument_value": true
+                	},
+                	{
+                    	"argument_name": "ticket.rev_org",
+                    	"argument_value": ["REV-123"]
+                	},
+                	{
+                    	"argument_name": "type",
+                    	"argument_value": ["task"]
+                	}
+            	]
+        	},
+        	{
+            	"tool_name": "summarize_objects",
+            	"arguments": [
+                	{
+                    	"argument_name": "objects",
+                    	"argument_value": "$$PREV[0]"
+                	}
+            	]
+        	}
+    	]
+	},
+	{
+	"question": "List all tasks in the 'To Do' stage owned by the current user and summarize them.",
+	"answer": [
+    	{
+        	"tool_name": "who_am_i",
+        	"arguments": []
+    	},
+    	{
+        	"tool_name": "works_list",
+        	"arguments": [
+            	{
+                	"argument_name": "stage.name",
+                	"argument_value": ["To Do"]
+            	},
+            	{
+                	"argument_name": "owned_by",
+                	"argument_value": ["$$PREV[0]"]
+            	},
+            	{
+                	"argument_name": "type",
+                	"argument_value": ["task"]
+            	}
+        	]
+    	},
+    	{
+        	"tool_name": "summarize_objects",
+        	"arguments": [
+            	{
+                	"argument_name": "objects",
+                	"argument_value": "$$PREV[1]"
+            	}
+        	]
+    	}
+	]
+}
+{
+	"question": "Find all issues with severity 'blocker' and Rev organization 'ORG-XYZ'. Summarize them.",
+	"answer": [
+    	{
+        	"tool_name": "works_list",
+        	"arguments": [
+            	{
+                	"argument_name": "ticket.severity",
+                	"argument_value": ["blocker"]
+            	},
+            	{
+                	"argument_name": "ticket.rev_org",
+                	"argument_value": ["ORG-XYZ"]
+            	},
+            	{
+                	"argument_name": "type",
+                	"argument_value": ["issue"]
+            	}
+        	]
+    	},
+    	{
+        	"tool_name": "summarize_objects",
+        	"arguments": [
+            	{
+                	"argument_name": "objects",
+                	"argument_value": "$$PREV[0]"
+            	}
+        	]
+    	}
+	]
+}
+{
+	"question": "Find tasks created by users DEVU-789 or DEVU-456 and summarize them.",
+	"answer": [
+    	{
+        	"tool_name": "works_list",
+        	"arguments": [
+            	{
+                	"argument_name": "created_by",
+                	"argument_value": ["DEVU-789", "DEVU-456"]
+            	},
+            	{
+                	"argument_name": "type",
+                	"argument_value": ["task"]
+            	}
+        	]
+    	},
+    	{
+        	"tool_name": "summarize_objects",
+        	"arguments": [
+            	{
+                	"argument_name": "objects",
+                	"argument_value": "$$PREV[0]"
+            	}
+        	]
+    	}
+	]
+}
+
+]
+
+
+
+
+

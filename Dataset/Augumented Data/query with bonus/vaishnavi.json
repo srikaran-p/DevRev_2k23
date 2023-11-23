@@ -43,3 +43,67 @@
   ]
 }
 
+{
+    "question": "Find all open issues in the 'In Progress' stage that are not assigned to any user.",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "name": "stage.name",
+                    "description": "Filters for records in the provided stage(s) by name",
+                    "type": "array of strings",
+                    "example": ["In Progress"]
+                },
+                {
+                    "name": "owned_by",
+                    "description": "Filters for work owned by any of these users",
+                    "type": "array of strings",
+                    "example": [""]
+                },
+                {
+                    "name": "type",
+                    "description": "Filters for work of the provided types. Allowed values: issue, ticket, task",
+                    "type": "array of strings",
+                    "example": ["issue"]
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Summarize tasks assigned to John. If they are more than 10, prioritize them.",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": ["John"]
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": ["task"]
+                }
+            ]
+        },
+        {
+            "tool_name": "summarize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "$$PREV[0]"
+                }
+            ]
+        },
+        {
+            "tool_name": "prioritize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "$$PREV[1].length > 10 ? $$PREV[1] : []"
+                }
+            ]
+        }
+    ]
+}

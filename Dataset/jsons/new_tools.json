@@ -203,9 +203,9 @@
             },
             {
                 "name": "sprint_duration",
-                "description": "The duration of the sprint (e.g., 2 weeks)",
-                "type": "string",
-                "example": "2 weeks"
+                "description": "The duration of the sprint in weeks",
+                "type": "integer",
+                "example": 2
             },
             {
                 "name": "sprint_goals",

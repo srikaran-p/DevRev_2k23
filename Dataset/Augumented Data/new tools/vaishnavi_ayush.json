@@ -1,0 +1,728 @@
+{
+    "question": "Create a new project named 'Project XYZ' with a start date of 2023-01-15, led by DEVU-789, and then create a new sprint named 'Sprint 1' within that project.",
+    "answer": [
+        {
+            "tool_name": "create_project",
+            "arguments": [
+                {
+                    "argument_name": "project_name",
+                    "argument_value": "Project XYZ"
+                },
+                {
+                    "argument_name": "project_lead",
+                    "argument_value": "DEVU-789"
+                },
+                {
+                    "argument_name": "start_date",
+                    "argument_value": "2023-01-15"
+                }
+            ]
+        },
+        {
+            "tool_name": "create_sprint",
+            "arguments": [
+                {
+                    "argument_name": "project_id",
+                    "argument_value": "$$PREV[0].project_id"
+                },
+                {
+                    "argument_name": "sprint_name",
+                    "argument_value": "Sprint 1"
+                },
+                {
+                    "argument_name": "sprint_duration",
+                    "argument_value": 2
+                },
+                {
+                    "argument_name": "sprint_goals",
+                    "argument_value": "Complete user story implementations"
+                },
+                {
+                    "argument_name": "sprint_capacity",
+                    "argument_value": 50
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Create a new task named 'Documentation Update' and add it to the current sprint, then generate a report summarizing test case execution for test suite TS-789.",
+    "answer": [
+        {
+            "tool_name": "create_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_type",
+                    "argument_value": "task"
+                },
+                {
+                    "argument_name": "title",
+                    "argument_value": "Documentation Update"
+                }
+            ]
+        },
+        {
+            "tool_name": "get_sprint_id",
+            "arguments": []
+        },
+        {
+            "tool_name": "add_work_items_to_sprint",
+            "arguments": [
+                {
+                    "argument_name": "work_ids",
+                    "argument_value": ["$$PREV[0].work_item_id"]
+                },
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "$$PREV[1]"
+                }
+            ]
+        },
+        {
+            "tool_name": "test_execution_report",
+            "arguments": [
+                {
+                    "argument_name": "test_suite_id",
+                    "argument_value": "TS-789"
+                },
+                {
+                    "argument_name": "test_environment",
+                    "argument_value": "Production"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Create a new issue named 'Security Vulnerability' under part PROD-456, set severity to 'high', and provide feedback on the code review with ID CR-789.",
+    "answer": [
+        {
+            "tool_name": "create_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_type",
+                    "argument_value": "issue"
+                },
+                {
+                    "argument_name": "title",
+                    "argument_value": "Security Vulnerability"
+                },
+                {
+                    "argument_name": "issue.rev_orgs",
+                    "argument_value": ["PROD-456"]
+                },
+                {
+                    "argument_name": "ticket.severity",
+                    "argument_value": ["high"]
+                }
+            ]
+        },
+        {
+            "tool_name": "code_review_feedback",
+            "arguments": [
+                {
+                    "argument_name": "review_id",
+                    "argument_value": "CR-789"
+                },
+                {
+                    "argument_name": "feedback",
+                    "argument_value": "Security review passed, no vulnerabilities found."
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Create a new task named 'Backend Refactoring', then create a new sprint named 'Sprint 2' within project PROJ-456, and add the task to 'Sprint 2'.",
+    "answer": [
+        {
+            "tool_name": "create_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_type",
+                    "argument_value": "task"
+                },
+                {
+                    "argument_name": "title",
+                    "argument_value": "Backend Refactoring"
+                }
+            ]
+        },
+        {
+            "tool_name": "create_sprint",
+            "arguments": [
+                {
+                    "argument_name": "project_id",
+                    "argument_value": "PROJ-456"
+                },
+                {
+                    "argument_name": "sprint_name",
+                    "argument_value": "Sprint 2"
+                },
+                {
+                    "argument_name": "sprint_duration",
+                    "argument_value": 2
+                },
+                {
+                    "argument_name": "sprint_goals",
+                    "argument_value": "Refactor backend code for improved performance"
+                },
+                {
+                    "argument_name": "sprint_capacity",
+                    "argument_value": 40
+                }
+            ]
+        },
+        {
+            "tool_name": "add_work_items_to_sprint",
+            "arguments": [
+                {
+                    "argument_name": "work_ids",
+                    "argument_value": ["$$PREV[0].work_item_id"]
+                },
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "$$PREV[1]"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Create a new enhancement named 'Feature XYZ', add it to the current sprint, and update its status to 'In Progress'.",
+    "answer": [
+        {
+            "tool_name": "create_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_type",
+                    "argument_value": "enhancement"
+                },
+                {
+                    "argument_name": "title",
+                    "argument_value": "Feature XYZ"
+                }
+            ]
+        },
+        {
+            "tool_name": "get_sprint_id",
+            "arguments": []
+        },
+        {
+            "tool_name": "add_work_items_to_sprint",
+            "arguments": [
+                {
+                    "argument_name": "work_ids",
+                    "argument_value": ["$$PREV[0].work_item_id"]
+                },
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "$$PREV[1]"
+                }
+            ]
+        },
+        {
+            "tool_name": "update_work_item_status",
+            "arguments": [
+                {
+                    "argument_name": "work_item_id",
+                    "argument_value": "$$PREV[0].work_item_id"
+                },
+                {
+                    "argument_name": "new_status",
+                    "argument_value": "In Progress"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Assign all my pending works to John.",
+    "answer": [
+        {
+            "tool_name": "who_am_i",
+            "arguments": []
+        },
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": ["$$PREV[0]"]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": ["pending"]
+                }
+            ]
+        },
+        {
+            "tool_name": "assign_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_id",
+                    "argument_value": "$$PREV[1].work_item_id"
+                },
+                {
+                    "argument_name": "assignee",
+                    "argument_value": "John"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Generate a test execution report for test suite TS-123 and automate a workflow triggering on 'New issue created' with notifications to DEVU-123.",
+    "answer": [
+        {
+            "tool_name": "test_execution_report",
+            "arguments": [
+                {
+                    "argument_name": "test_suite_id",
+                    "argument_value": "TS-123"
+                },
+                {
+                    "argument_name": "test_environment",
+                    "argument_value": "Integration"
+                }
+            ]
+        },
+        {
+            "tool_name": "automate_workflow",
+            "arguments": [
+                {
+                    "argument_name": "trigger_event",
+                    "argument_value": "New issue created"
+                },
+                {
+                    "argument_name": "workflow_actions",
+                    "argument_value": []
+                },
+                {
+                    "argument_name": "notifications",
+                    "argument_value": ["DEVU-123"]
+                },
+                {
+                    "argument_name": "actions_log",
+                    "argument_value": true
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Create a new sprint named 'Sprint 3' within project PROJ-789, add tasks from the current work list to 'Sprint 3', and prioritize them.",
+    "answer": [
+        {
+            "tool_name": "create_sprint",
+            "arguments": [
+                {
+                    "argument_name": "project_id",
+                    "argument_value": "PROJ-789"
+                },
+                {
+                    "argument_name": "sprint_name",
+                    "argument_value": "Sprint 3"
+                },
+                {
+                    "argument_name": "sprint_duration",
+                    "argument_value": 2
+                },
+                {
+                    "argument_name": "sprint_goals",
+                    "argument_value": "Implement new features"
+                },
+                {
+                    "argument_name": "sprint_capacity",
+                    "argument_value": 40
+                }
+            ]
+        },
+        {
+            "tool_name": "get_sprint_id",
+            "arguments": []
+        },
+        {
+            "tool_name": "add_work_items_to_sprint",
+            "arguments": [
+                {
+                    "argument_name": "work_ids",
+                    "argument_value": ["$$PREV[1].work_item_id", "$$PREV[1].work_item_id"]
+                },
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "$$PREV[0]"
+                }
+            ]
+        },
+        {
+            "tool_name": "prioritize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": ["$$PREV[2].work_item_id"]
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Create a new project named 'Project XYZ' led by DEVU-456, add tasks from the current work list to the project, and assign them to DEVU-789.",
+    "answer": [
+        {
+            "tool_name": "create_project",
+            "arguments": [
+                {
+                    "argument_name": "project_name",
+                    "argument_value": "Project XYZ"
+                },
+                {
+                    "argument_name": "project_lead",
+                    "argument_value": "DEVU-456"
+                }
+            ]
+        },
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "type",
+                    "argument_value": ["task"]
+                }
+            ]
+        },
+        {
+            "tool_name": "create_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_type",
+                    "argument_value": "task"
+                },
+                {
+                    "argument_name": "title",
+                    "argument_value": "$$PREV[1].title"
+                },
+                {
+                    "argument_name": "assignee",
+                    "argument_value": "DEVU-789"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Update the status of work item TASK-123 to 'Done', assign it to DEVU-789, and provide code review feedback.",
+    "answer": [
+        {
+            "tool_name": "update_work_item_status",
+            "arguments": [
+                {
+                    "argument_name": "work_item_id",
+                    "argument_value": "TASK-123"
+                },
+                {
+                    "argument_name": "new_status",
+                    "argument_value": "Done"
+                },
+                {
+                    "argument_name": "new_assignee",
+                    "argument_value": "DEVU-789"
+                }
+            ]
+        },
+        {
+            "tool_name": "code_review_feedback",
+            "arguments": [
+                {
+                    "argument_name": "review_id",
+                    "argument_value": "CR-789"
+                },
+                {
+                    "argument_name": "feedback",
+                    "argument_value": "Code looks good, ready for merge."
+                },
+                {
+                    "argument_name": "code_version",
+                    "argument_value": "v1.2"
+                },
+                {
+                    "argument_name": "severity",
+                    "argument_value": "minor"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Create a new issue titled 'Bug Fix' with a description, assign it to DEVU-456, and provide code review feedback on it.",
+    "answer": [
+        {
+            "tool_name": "create_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_type",
+                    "argument_value": "issue"
+                },
+                {
+                    "argument_name": "title",
+                    "argument_value": "Bug Fix"
+                },
+                {
+                    "argument_name": "description",
+                    "argument_value": "Fixing a critical bug in the system."
+                },
+                {
+                    "argument_name": "assignee",
+                    "argument_value": "DEVU-456"
+                }
+            ]
+        },
+        {
+            "tool_name": "code_review_feedback",
+            "arguments": [
+                {
+                    "argument_name": "review_id",
+                    "argument_value": "CR-789"
+                },
+                {
+                    "argument_name": "feedback",
+                    "argument_value": "Code looks good, ensure thorough testing before merging."
+                },
+                {
+                    "argument_name": "code_version",
+                    "argument_value": "v1.2"
+                },
+                {
+                    "argument_name": "severity",
+                    "argument_value": "major"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Generate a test execution report for test suite 'TS-456', automate a workflow triggered on 'Task Completed' with notifications to DEVU-123 and DEVU-789, and assign a task to DEVU-456 with a due date.",
+    "answer": [
+        {
+            "tool_name": "test_execution_report",
+            "arguments": [
+                {
+                    "argument_name": "test_suite_id",
+                    "argument_value": "TS-456"
+                },
+                {
+                    "argument_name": "pass_fail_status",
+                    "argument_value": ["pass", "fail", "pass"]
+                }
+            ]
+        },
+        {
+            "tool_name": "automate_workflow",
+            "arguments": [
+                {
+                    "argument_name": "trigger_event",
+                    "argument_value": "Task Completed"
+                },
+                {
+                    "argument_name": "workflow_actions",
+                    "argument_value": [
+                        {"action": "Send notification", "recipient": "DEVU-123"},
+                        {"action": "Send notification", "recipient": "DEVU-789"}
+                    ]
+                },
+                {
+                    "argument_name": "notifications",
+                    "argument_value": ["DEVU-123", "DEVU-789"]
+                },
+                {
+                    "argument_name": "actions_log",
+                    "argument_value": true
+                }
+            ]
+        },
+        {
+            "tool_name": "create_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_type",
+                    "argument_value": "task"
+                },
+                {
+                    "argument_name": "title",
+                    "argument_value": "Review Task"
+                },
+                {
+                    "argument_name": "assignee",
+                    "argument_value": "DEVU-456"
+                },
+                {
+                    "argument_name": "due_date",
+                    "argument_value": "2023-06-15"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Search for an object with the name 'Customer ABC' and create a new project named 'Customer Project' for that customer, create a sprint named 'Customer Sprint' with a duration of 4 weeks, and assign a task to DEVU-789 within that sprint.",
+    "answer": [
+        {
+            "tool_name": "search_object_by_name",
+            "arguments": [
+                {
+                    "argument_name": "query",
+                    "argument_value": "Customer ABC"
+                }
+            ]
+        },
+        {
+            "tool_name": "create_project",
+            "arguments": [
+                {
+                    "argument_name": "project_name",
+                    "argument_value": "Customer Project"
+                },
+                {
+                    "argument_name": "project_description",
+                    "argument_value": "Development project for Customer ABC"
+                },
+                {
+                    "argument_name": "project_lead",
+                    "argument_value": "DEVU-123"
+                },
+                {
+                    "argument_name": "start_date",
+                    "argument_value": "2023-04-01"
+                },
+                {
+                    "argument_name": "project_team",
+                    "argument_value": ["DEVU-789", "DEVU-456"]
+                },
+                {
+                    "argument_name": "target_date",
+                    "argument_value": "2023-05-31"
+                }
+            ]
+        },
+        {
+            "tool_name": "create_sprint",
+            "arguments": [
+                {
+                    "argument_name": "project_id",
+                    "argument_value": "$$PREV[1].project_id"
+                },
+                {
+                    "argument_name": "sprint_name",
+                    "argument_value": "Customer Sprint"
+                },
+                {
+                    "argument_name": "sprint_duration",
+                    "argument_value": 4
+                },
+                {
+                    "argument_name": "sprint_goals",
+                    "argument_value": "Deliver customer-specific features"
+                },
+                {
+                    "argument_name": "sprint_capacity",
+                    "argument_value": 60
+                }
+            ]
+        },
+        {
+            "tool_name": "create_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_type",
+                    "argument_value": "task"
+                },
+                {
+                    "argument_name": "title",
+                    "argument_value": "Implement Customer Feature"
+                },
+                {
+                    "argument_name": "assignee",
+                    "argument_value": "DEVU-789"
+                }
+            ]
+        },
+        {
+            "tool_name": "add_work_items_to_sprint",
+            "arguments": [
+                {
+                    "argument_name": "work_ids",
+                    "argument_value": ["$$PREV[3].work_item_id"]
+                },
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "$$PREV[2]"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Assign the task 'TASK-789' to DEVU-456 with a due date, get the ID of the current sprint, and find work items similar to 'TASK-789'.",
+    "answer": [
+        {
+            "tool_name": "assign_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_id",
+                    "argument_value": "TASK-789"
+                },
+                {
+                    "argument_name": "assignee",
+                    "argument_value": "DEVU-456"
+                },
+                {
+                    "argument_name": "due_date",
+                    "argument_value": "2023-08-15"
+                },
+                {
+                    "argument_name": "work_item_type",
+                    "argument_value": "task"
+                }
+            ]
+        },
+        {
+   
+{
+    "question": "Assign the issue 'ISSUE-456' to DEVU-789 with a due date, get the ID of the current sprint, and find work items similar to 'ISSUE-456'.",
+    "answer": [
+        {
+            "tool_name": "assign_work_item",
+            "arguments": [
+                {
+                    "argument_name": "work_item_id",
+                    "argument_value": "ISSUE-456"
+                },
+                {
+                    "argument_name": "assignee",
+                    "argument_value": "DEVU-789"
+                },
+                {
+                    "argument_name": "due_date",
+                    "argument_value": "2023-08-20"
+                },
+                {
+                    "argument_name": "work_item_type",
+                    "argument_value": "issue"
+                }
+            ]
+        },
+        {
+            "tool_name": "get_sprint_id",
+            "arguments": []
+        },
+        {
+            "tool_name": "get_similar_work_items",
+            "arguments": [
+                {
+                    "argument_name": "work_id",
+                    "argument_value": "ISSUE-456"
+                }
+            ]
+        }
+    ]
+}

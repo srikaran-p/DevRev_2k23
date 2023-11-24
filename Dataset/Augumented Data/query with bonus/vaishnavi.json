@@ -107,3 +107,270 @@
         }
     ]
 }
+{
+    "question": "Find all tasks owned by DEVU-789 or DEVU-456. If there are more than 5 tasks, get the current sprint ID and add them to the sprint. Summarize the tasks in the sprint.",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": ["DEVU-789", "DEVU-456"]
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": ["task"]
+                }
+            ]
+        },
+        {
+            "tool_name": "prioritize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "$$PREV[0].length > 5 ? $$PREV[0] : []"
+                }
+            ]
+        },
+        {
+            "tool_name": "get_sprint_id",
+            "arguments": []
+        },
+        {
+            "tool_name": "add_work_items_to_sprint",
+            "arguments": [
+                {
+                    "argument_name": "work_ids",
+                    "argument_value": "$$PREV[1].map(task => task.id)"
+                },
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "$$PREV[2]"
+                }
+            ]
+        },
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "$$PREV[2]"
+                }
+            ]
+        },
+        {
+            "tool_name": "summarize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "$$PREV[4]"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Find all tasks owned by DEVU-789 or DEVU-456. If there are any tasks needing a response, add the first 5 of them to Sprint A. Summarize the tasks in Sprint A.",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": ["DEVU-789", "DEVU-456"]
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": ["task"]
+                }
+            ]
+        },
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": ["DEVU-789", "DEVU-456"]
+                },
+                {
+                    "argument_name": "ticket.needs_response",
+                    "argument_value": true
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": ["task"]
+                },
+                {
+                    "argument_name": "imit",
+                    "argument_value": 5
+                }
+            ]
+        },
+        {
+            "tool_name": "add_work_items_to_sprint",
+            "arguments": [
+                {
+                    "argument_name": "work_ids",
+                    "argument_value": "$$PREV[1].map(task => task.id)"
+                },
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "Sprint A"
+                }
+            ]
+        },
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "Sprint A"
+                }
+            ]
+        },
+        {
+            "tool_name": "summarize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "$$PREV[3]"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Find all tasks owned by DEVU-789 or DEVU-456. If there are tasks with priority 'high' or 'medium', prioritize them. Summarize the prioritized tasks.",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": ["DEVU-789", "DEVU-456"]
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": ["task"]
+                }
+            ]
+        },
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": ["DEVU-789", "DEVU-456"]
+                },
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": ["high", "medium"]
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": ["task"]
+                }
+            ]
+        },
+        {
+            "tool_name": "prioritize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "$$PREV[1]"
+                }
+            ]
+        },
+        {
+            "tool_name": "summarize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "$$PREV[2]"
+                }
+            ]
+        }
+    ]
+}
+{
+    "question": "Find all tasks under part CAPL-123 that are either owned by DEVU-456 or created by DEVU-789. If there are tasks in the 'In Progress' stage, add them to Sprint C. Summarize the tasks in Sprint C.",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": ["CAPL-123"]
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": ["task"]
+                },
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": ["DEVU-456"]
+                },
+                {
+                    "argument_name": "created_by",
+                    "argument_value": ["DEVU-789"]
+                }
+            ]
+        },
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": ["CAPL-123"]
+                },
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": ["DEVU-456"]
+                },
+                {
+                    "argument_name": "created_by",
+                    "argument_value": ["DEVU-789"]
+                }
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": ["In Progress"]
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": ["task"]
+                }
+            ]
+        },
+        {
+            "tool_name": "add_work_items_to_sprint",
+            "arguments": [
+                {
+                    "argument_name": "work_ids",
+                    "argument_value": "$$PREV[1].map(task => task.id)"
+                },
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "Sprint C"
+                }
+            ]
+        },
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "sprint_id",
+                    "argument_value": "Sprint C"
+                }
+            ]
+        },
+        {
+            "tool_name": "summarize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "$$PREV[3]"
+                }
+            ]
+        }
+    ]
+}

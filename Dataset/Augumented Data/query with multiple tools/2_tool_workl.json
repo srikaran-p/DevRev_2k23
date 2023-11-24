@@ -1,0 +1,186 @@
+[
+    {
+        "question": "How can I find issues created by \"UserX\" and currently in the \"Review\" stage?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "created_by",
+                        "argument_value": ["UserX"]
+                    },
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": ["Review"]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can I see all high severity tickets from the \"Finance\" department?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.severity",
+                        "argument_value": ["high"]
+                    },
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": ["Finance"]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Show me all tasks related to part \"PART-456\" that need a response.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "applies_to_part",
+                        "argument_value": ["PART-456"]
+                    },
+                    {
+                        "argument_name": "ticket.needs_response",
+                        "argument_value": [true]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need to view P1 issues that are owned by \"UserY\".",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": ["p1"]
+                    },
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": ["UserY"]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are the latest 20 issues reported through the \"Email\" channel?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.source_channel",
+                        "argument_value": ["Email"]
+                    },
+                    {
+                        "argument_name": "limit",
+                        "argument_value": [20]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you find tickets of medium severity raised by \"OrganizationZ\"?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.severity",
+                        "argument_value": ["medium"]
+                    },
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": ["OrganizationZ"]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "List all the 'feature request' tasks that are currently unassigned.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "type",
+                        "argument_value": ["task"]
+                    },
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": [""]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Show me all issues in \"Development\" stage created by \"DeveloperA\".",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": ["Development"]
+                    },
+                    {
+                        "argument_name": "created_by",
+                        "argument_value": ["DeveloperA"]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to see all P2 tickets that are related to part \"PART-789\".",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": ["p2"]
+                    },
+                    {
+                        "argument_name": "applies_to_part",
+                        "argument_value": ["PART-789"]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Are there any low priority issues from \"Sales\" team in \"Triage\" stage?",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": ["low"]
+                    },
+                    {
+                        "argument_name": "issue.rev_orgs",
+                        "argument_value": ["Sales"]
+                    },
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": ["Triage"]
+                    }
+                ]
+            }
+        ]
+    }
+]

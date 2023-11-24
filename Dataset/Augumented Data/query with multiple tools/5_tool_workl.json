@@ -1,0 +1,394 @@
+[
+    {
+        "question": "Find all P1 issues in the 'Development' stage, created by 'UserA', related to part 'PART-101', and owned by 'TeamX'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p1"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Development"
+                    ]
+                },
+                {
+                    "argument_name": "created_by",
+                    "argument_value": [
+                        "UserA"
+                    ]
+                },
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-101"
+                    ]
+                },
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": [
+                        "TeamX"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Show me high severity tickets from the 'Finance' department, in 'Review' stage, created by 'UserB', and of type 'bug'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "ticket.severity",
+                    "argument_value": [
+                        "high"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.rev_org",
+                    "argument_value": [
+                        "Finance"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Review"
+                    ]
+                },
+                {
+                    "argument_name": "created_by",
+                    "argument_value": [
+                        "UserB"
+                    ]
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": [
+                        "issue"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "List all tasks related to part 'PART-202' that are unassigned, in 'Triage' stage, need a response, and reported through 'Email'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-202"
+                    ]
+                },
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": [
+                        ""
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Triage"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.needs_response",
+                    "argument_value": [
+                        true
+                    ]
+                },
+                {
+                    "argument_name": "ticket.source_channel",
+                    "argument_value": [
+                        "Email"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "View all P2 issues owned by 'UserC', in 'Testing' stage, related to part 'PART-303', and created by 'TeamY'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p2"
+                    ]
+                },
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": [
+                        "UserC"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Testing"
+                    ]
+                },
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-303"
+                    ]
+                },
+                {
+                    "argument_name": "created_by",
+                    "argument_value": [
+                        "TeamY"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Find all blocker severity tickets from 'Sales' department, reported via 'Slack', in 'Development' stage, and need a response.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "ticket.severity",
+                    "argument_value": [
+                        "blocker"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.source_channel",
+                    "argument_value": [
+                        "Slack"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.rev_org",
+                    "argument_value": [
+                        "Sales"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Development"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.needs_response",
+                    "argument_value": [
+                        true
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Show issues in 'Review' stage, of type 'bug', created by 'UserD', with high priority, and related to part 'PART-404'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Review"
+                    ]
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": [
+                        "issue"
+                    ]
+                },
+                {
+                    "argument_name": "created_by",
+                    "argument_value": [
+                        "UserD"
+                    ]
+                },
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "high"
+                    ]
+                },
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-404"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "List all P0 tickets needing a response, from 'HR' department, related to 'PART-505', reported through 'Email', and in 'Triage' stage.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p0"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.needs_response",
+                    "argument_value": [
+                        true
+                    ]
+                },
+                {
+                    "argument_name": "ticket.rev_org",
+                    "argument_value": [
+                        "HR"
+                    ]
+                },
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-505"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.source_channel",
+                    "argument_value": [
+                        "Email"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Triage"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Display tasks created by 'UserE', under 'PART-606', of low severity, in 'Triage' stage, and owned by 'TeamZ'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "created_by",
+                    "argument_value": [
+                        "UserE"
+                    ]
+                },
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-606"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.severity",
+                    "argument_value": [
+                        "low"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Triage"
+                    ]
+                },
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": [
+                        "TeamZ"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Find all medium severity tickets in 'Testing' stage, reported via 'Slack', created by 'UserF', and related to part 'PART-707'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "ticket.severity",
+                    "argument_value": [
+                        "medium"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Testing"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.source_channel",
+                    "argument_value": [
+                        "Slack"
+                    ]
+                },
+                {
+                    "argument_name": "created_by",
+                    "argument_value": [
+                        "UserF"
+                    ]
+                },
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-707"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Show all unassigned 'feature request' tasks in 'Review' stage, related to part 'PART-808', reported through 'Email', and owned by 'UserG'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "type",
+                    "argument_value": [
+                        "task"
+                    ]
+                },
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": [
+                        ""
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Review"
+                    ]
+                },
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-808"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.source_channel",
+                    "argument_value": [
+                        "Email"
+                    ]
+                },
+                {
+                    "argument_name": "created_by",
+                    "argument_value": [
+                        "UserG"
+                    ]
+                }
+            ]
+        }
+    }
+]

@@ -13,7 +13,8 @@ def main():
         "--model",
         choices=["gpt-4","gpt-3.5-turbo","llama-7b-chat","llama-13b-chat","codellama-7b","codellama-13b","codellama-7b-instruct","codellama-13b-instruct"],
         help="Choose the model to use for testing",
-        required=True
+        nargs="?",
+        default="gpt-4"
     )
     parser.add_argument(
         '-k',
@@ -28,7 +29,8 @@ def main():
         choices=[0,1,2,3],
         help="Number of Examples to pass in the prompt (Examples are predefined)",
         type=int,
-        required=True
+        nargs="?",
+        default=2
     )
     parser.add_argument(
         '-i',

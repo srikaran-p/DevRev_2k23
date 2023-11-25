@@ -24,7 +24,7 @@
     EXAMPLE_PATH      = "../data/example.json"
     FORMAT_PATH       = "../data/format.json"
     TOOLS_PATH        = "../data/tools.json"
-    TOKEN_USAGE_PATH  = "../token_usage.txt"
+    TOKEN_PATH  = "../token_usage.txt"
     ~~~
 
 ## **Usage**
@@ -49,7 +49,7 @@ options:
 
 ### **Example**
 ~~~
-python main.py -m gpt-4 -n 1 -i ../data/test_data.csv -o ../output/prediction.json
+python main.py -m gpt-4 -n 1 -i ../data/test_data.csv -o ../output/prediction.json -t
 ~~~
 
 ## **Instructions**

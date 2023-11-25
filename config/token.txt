@@ -1,0 +1,278 @@
+USE: gpt-3.5-turbo 0 examples
+Tokens Used: 1491
+	Prompt Tokens: 1490
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.002237
+
+Tokens Used: 1687
+	Prompt Tokens: 1497
+	Completion Tokens: 190
+Successful Requests: 1
+Total Cost (USD): $0.0026255000000000002
+
+Tokens Used: 1687
+	Prompt Tokens: 1503
+	Completion Tokens: 184
+Successful Requests: 1
+Total Cost (USD): $0.0026225
+
+Tokens Used: 1628
+	Prompt Tokens: 1501
+	Completion Tokens: 127
+Successful Requests: 1
+Total Cost (USD): $0.0025055
+
+Tokens Used: 1701
+	Prompt Tokens: 1507
+	Completion Tokens: 194
+Successful Requests: 1
+Total Cost (USD): $0.0026485
+
+USE:gpt-3.5-turbo 1 examples
+Tokens Used: 1630
+	Prompt Tokens: 1629
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.0024454999999999998
+
+Tokens Used: 1820
+	Prompt Tokens: 1636
+	Completion Tokens: 184
+Successful Requests: 1
+Total Cost (USD): $0.002822
+
+Tokens Used: 1826
+	Prompt Tokens: 1642
+	Completion Tokens: 184
+Successful Requests: 1
+Total Cost (USD): $0.0028309999999999997
+
+Tokens Used: 1800
+	Prompt Tokens: 1640
+	Completion Tokens: 160
+Successful Requests: 1
+Total Cost (USD): $0.00278
+
+Tokens Used: 1834
+	Prompt Tokens: 1646
+	Completion Tokens: 188
+Successful Requests: 1
+Total Cost (USD): $0.002845
+
+USE:gpt-3.5-turbo 2 examples
+Tokens Used: 1791
+	Prompt Tokens: 1790
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.002687
+
+Tokens Used: 2001
+	Prompt Tokens: 1797
+	Completion Tokens: 204
+Successful Requests: 1
+Total Cost (USD): $0.0031035
+
+Tokens Used: 1930
+	Prompt Tokens: 1803
+	Completion Tokens: 127
+Successful Requests: 1
+Total Cost (USD): $0.0029584999999999998
+
+Tokens Used: 1956
+	Prompt Tokens: 1801
+	Completion Tokens: 155
+Successful Requests: 1
+Total Cost (USD): $0.0030115
+
+Tokens Used: 1934
+	Prompt Tokens: 1807
+	Completion Tokens: 127
+Successful Requests: 1
+Total Cost (USD): $0.0029644999999999997
+
+
+USE:gpt-3.5-turbo 3 examples
+Tokens Used: 1988
+	Prompt Tokens: 1987
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.0029825
+
+Tokens Used: 2217
+	Prompt Tokens: 1994
+	Completion Tokens: 223
+Successful Requests: 1
+Total Cost (USD): $0.003437
+
+Tokens Used: 2203
+	Prompt Tokens: 2000
+	Completion Tokens: 203
+Successful Requests: 1
+Total Cost (USD): $0.003406
+
+Tokens Used: 2139
+	Prompt Tokens: 1998
+	Completion Tokens: 141
+Successful Requests: 1
+Total Cost (USD): $0.0032790000000000002
+
+Tokens Used: 2131
+	Prompt Tokens: 2004
+	Completion Tokens: 127
+Successful Requests: 1
+Total Cost (USD): $0.00326
+
+
+USE:gpt-4 3 examples
+Tokens Used: 1988
+	Prompt Tokens: 1987
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.05967
+
+Tokens Used: 2243
+	Prompt Tokens: 1994
+	Completion Tokens: 249
+Successful Requests: 1
+Total Cost (USD): $0.07476
+
+Tokens Used: 2203
+	Prompt Tokens: 2000
+	Completion Tokens: 203
+Successful Requests: 1
+Total Cost (USD): $0.07218
+
+Tokens Used: 2139
+	Prompt Tokens: 1998
+	Completion Tokens: 141
+Successful Requests: 1
+Total Cost (USD): $0.0684
+
+Tokens Used: 2192
+	Prompt Tokens: 2004
+	Completion Tokens: 188
+Successful Requests: 1
+Total Cost (USD): $0.0714
+
+
+USE:gpt-4 2 examples
+Tokens Used: 1791
+	Prompt Tokens: 1790
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.053759999999999995
+
+Tokens Used: 2046
+	Prompt Tokens: 1797
+	Completion Tokens: 249
+Successful Requests: 1
+Total Cost (USD): $0.06885
+
+Tokens Used: 2019
+	Prompt Tokens: 1803
+	Completion Tokens: 216
+Successful Requests: 1
+Total Cost (USD): $0.06705
+
+Tokens Used: 1942
+	Prompt Tokens: 1801
+	Completion Tokens: 141
+Successful Requests: 1
+Total Cost (USD): $0.06248999999999999
+
+Tokens Used: 1995
+	Prompt Tokens: 1807
+	Completion Tokens: 188
+Successful Requests: 1
+Total Cost (USD): $0.06548999999999999
+
+
+USE:gpt-4 1 examples
+Tokens Used: 1630
+	Prompt Tokens: 1629
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.048929999999999994
+
+Tokens Used: 1864
+	Prompt Tokens: 1636
+	Completion Tokens: 228
+Successful Requests: 1
+Total Cost (USD): $0.06276
+
+Tokens Used: 1824
+	Prompt Tokens: 1642
+	Completion Tokens: 182
+Successful Requests: 1
+Total Cost (USD): $0.06018
+
+Tokens Used: 1781
+	Prompt Tokens: 1640
+	Completion Tokens: 141
+Successful Requests: 1
+Total Cost (USD): $0.05765999999999999
+
+Tokens Used: 1834
+	Prompt Tokens: 1646
+	Completion Tokens: 188
+Successful Requests: 1
+Total Cost (USD): $0.06065999999999999
+
+
+USE:gpt-4 0 examples
+Tokens Used: 1491
+	Prompt Tokens: 1490
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.044759999999999994
+
+Tokens Used: 1725
+	Prompt Tokens: 1497
+	Completion Tokens: 228
+Successful Requests: 1
+Total Cost (USD): $0.058589999999999996
+
+Tokens Used: 1686
+	Prompt Tokens: 1503
+	Completion Tokens: 183
+Successful Requests: 1
+Total Cost (USD): $0.056069999999999995
+
+Tokens Used: 1642
+	Prompt Tokens: 1501
+	Completion Tokens: 141
+Successful Requests: 1
+Total Cost (USD): $0.053489999999999996
+
+Tokens Used: 1695
+	Prompt Tokens: 1507
+	Completion Tokens: 188
+Successful Requests: 1
+Total Cost (USD): $0.05648999999999999
+
+
+USE:gpt-4 1 examples
+Tokens Used: 1864
+	Prompt Tokens: 1636
+	Completion Tokens: 228
+Successful Requests: 1
+Total Cost (USD): $0.06276
+
+
+USE:gpt-4 1 examples
+Tokens Used: 1864
+	Prompt Tokens: 1636
+	Completion Tokens: 228
+Successful Requests: 1
+Total Cost (USD): $0.06276
+
+
+USE:gpt-4 1 examples
+Tokens Used: 1864
+	Prompt Tokens: 1636
+	Completion Tokens: 228
+Successful Requests: 1
+Total Cost (USD): $0.06276
+
+

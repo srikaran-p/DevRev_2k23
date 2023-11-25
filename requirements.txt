@@ -1,0 +1,5 @@
+transformers
+langchain
+openai
+cohere 
+tiktoken

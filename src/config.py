@@ -3,6 +3,7 @@ EXAMPLE_PATH = "../json/example.json"
 FORMAT_PATH = "../json/format.json"
 TOOLS_PATH = "../json/tools.json"
 TOKEN_PATH = "../config/token.txt"
+MODEL_PATH = "../models/"
 
 # key check (else error)
 def get_key(key_path):

@@ -1,0 +1,5 @@
+What is the meaning of life?
+Prioritize my P0 issues and add them to the current sprint
+List all high severity tickets coming in from slack from customer Cust123 and generate a summary of them.
+Given a customer meeting transcript T, create action items and add them to my current sprint
+Get all work items similar to TKT-123, summarize them, create issues from that summary, and prioritize them

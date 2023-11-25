@@ -24,7 +24,7 @@
             ]
     },
     {
-        "question_id":"4",
+        "question_id":"2",
         "question":"Summarize high severity tickets from the customer UltimateCustomer",
         "answer":[
             {
@@ -65,7 +65,7 @@
         ]
     },
     {
-        "question_id":"5",
+        "question_id":"3",
         "question":"What are my all issues in the triage stage under part FEAT-123? Summarize them. ",
         "answer":[
             {

@@ -219,7 +219,7 @@ If the query could not be answered with the given set of tools, output an empty 
 Empty list should look like []. Whenever you want to access information about current user to pass it further, you need to make a call to whoami api tool.
 
 Answer the following question based on instructions provided above.
-question: 
+question: Prioritize my P0 issues and add them to the current sprint
 answer:{
 "question":
 "answer":

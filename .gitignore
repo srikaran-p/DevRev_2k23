@@ -1,2 +1,6 @@
-src/config.txt
 models/*
+build/*
+src/notebook/*
+src/__pycache__/*
+src/llama.py
+output/testing/*

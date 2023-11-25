@@ -64,20 +64,21 @@ def main():
     if len(query) == 0 or not query[0]:
         print("No query Provided")
         return False
-    if (args.key_path == sys.stdin):
-        key = input("Enter key: ")
-    else:
-        key = config.get_key(args.key_path)
-    if not key:
-        print("Error: No Key Provided")
-        return False
+    
         
     if ("gpt" in args.model):
+        if (args.key_path == sys.stdin):
+            key = input("Enter key: ")
+        else:
+            key = config.get_key(args.key_path)
+        if not key:
+            print("Error: No Key Provided")
+            return False
         response = gpt.get_response(query,args.model,key,args.num_examples)
         
     elif ("llama" in args.model):
         response = llama2.get_response(query,args.model,args.num_examples)
-    
+
     if (args.output_file == sys.stdout):
         output = args.output_file
     elif not (os.path.isdir(args.output_file)):

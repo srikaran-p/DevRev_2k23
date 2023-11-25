@@ -9,7 +9,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 
 # if key is wrong report error
-def get_response(queries,model_name,key,num_examples):
+def get_response(queries,model_name,num_examples):
     
     prompt = generate_promt(num_examples)
     if (num_examples > 0):
@@ -18,7 +18,7 @@ def get_response(queries,model_name,key,num_examples):
     format = open(config.FORMAT_PATH,"r").read()
     tools = open(config.TOOLS_PATH,"r").read()
     
-    os.environ["OPENAI_API_KEY"] = key
+    
     chain = LLMChain(llm = ChatOpenAI(model=model_name), prompt=prompt)
     
     responses = []

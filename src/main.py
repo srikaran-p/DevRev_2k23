@@ -5,6 +5,7 @@ import llama2
 import gpt
 import config
 import sys
+import dotenv
 
 def main():
     parser = argparse.ArgumentParser()
@@ -15,13 +16,6 @@ def main():
         help="Choose the model to use for testing",
         nargs="?",
         default="gpt-4"
-    )
-    parser.add_argument(
-        '-k',
-        "--key_path",
-        nargs="?",
-        help="Location of key (if using GPTs)",
-        default=sys.stdin
     )
     parser.add_argument(
         '-n',
@@ -67,14 +61,14 @@ def main():
     
         
     if ("gpt" in args.model):
-        if (args.key_path == sys.stdin):
-            key = input("Enter key: ")
-        else:
-            key = config.get_key(args.key_path)
-        if not key:
-            print("Error: No Key Provided")
-            return False
-        response = gpt.get_response(query,args.model,key,args.num_examples)
+        dotenv.load_dotenv()
+        if not (os.getenv('OPENAI_API_KEY')):
+            key = input("Enter key:")
+            if not key:
+                print("Error: No Key Provided")
+                return False
+        
+        response = gpt.get_response(query,args.model,args.num_examples)
         
     elif ("llama" in args.model):
         response = llama2.get_response(query,args.model,args.num_examples)

@@ -1,5 +1,8 @@
 transformers
 langchain
 openai
-cohere 
+cohere
 tiktoken
+huggingface
+python-dotenv
+chardet

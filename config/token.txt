@@ -276,3 +276,46 @@ Successful Requests: 1
 Total Cost (USD): $0.06276
 
 
+
+
+
+
+USE:gpt-4 0 examples
+Tokens Used: 1667
+	Prompt Tokens: 1484
+	Completion Tokens: 183
+Successful Requests: 1
+Total Cost (USD): $0.055499999999999994
+
+
+USE:gpt-4 1 examples
+Tokens Used: 1767
+	Prompt Tokens: 1623
+	Completion Tokens: 144
+Successful Requests: 1
+Total Cost (USD): $0.05732999999999999
+
+
+USE:gpt-4 2 examples
+Tokens Used: 1930
+	Prompt Tokens: 1784
+	Completion Tokens: 146
+Successful Requests: 1
+Total Cost (USD): $0.062279999999999995
+
+
+USE:gpt-4 3 examples
+Tokens Used: 2118
+	Prompt Tokens: 1981
+	Completion Tokens: 137
+Successful Requests: 1
+Total Cost (USD): $0.06765
+
+
+USE:gpt-3.5-turbo 3 examples
+Tokens Used: 2108
+	Prompt Tokens: 1981
+	Completion Tokens: 127
+Successful Requests: 1
+Total Cost (USD): $0.0032255
+

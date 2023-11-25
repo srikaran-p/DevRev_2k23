@@ -1,63 +1,65 @@
 [
     {
-    "question": "We have a new task at hand. Let's create a work item for it. The details are as follows:\n\nType of Work: Task\nTitle: Implement Feature X\nDescription: This task involves implementing Feature X with specific requirements.\nAssignee: DEVU-456\nPriority: High\nDue Date: 2023-12-31\nTags: ['urgent']\n\nCan you proceed with creating this work item?",
-    "answer": [
-        {
-            "tool_name": "create_work_item",
-            "arguments": [
-                {
-                    "name": "work_item_type",
-                    "value": "task"
-                },
-                {
-                    "name": "title",
-                    "value": "Implement Feature X"
-                },
-                {
-                    "name": "description",
-                    "value": "This task involves implementing Feature X with specific requirements."
-                },
-                {
-                    "name": "assignee",
-                    "value": "DEVU-456"
-                },
-                {
-                    "name": "priority",
-                    "value": "high"
-                },
-                {
-                    "name": "due_date",
-                    "value": "2023-12-31"
-                },
-                {
-                    "name": "tags",
-                    "value": ["urgent"]
-                }
-            ]
-        }
-    ]
-},
-
-    {"question": "We need to create a new enhancement in our project. Provide the necessary details for the work item:\n\nType of Work: Enhancement\nTitle: Improve User Interface\nDescription: Enhance the user interface to provide a more user-friendly experience.\nAssignee: DEVU-789\nPriority: Medium\nDue Date: 2023-11-30\nTags: ['ui', 'enhancement']\n\nCould you create this enhancement?",
-    "answer": [
-                {
-                    "tool_name": "create_work_item",
-                    "arguments": [
-                        {
-                            "name": "work_item_type",
-                            "value": "enhancement"
-                        },
-                        {
-                            "name": "title",
-                            "value": "Improve User Interface"
-                        },
-                        {
-                            "name": "description",
-                            "value": "Enhance the user interface to provide a more user-friendly experience."
-                        },
-                        {
-                            "name": "assignee",
-                            "value": "DEVU-789"
+        "question": "We have a new task at hand. Let's create a work item for it. The details are as follows:\n\nType of Work: Task\nTitle: Implement Feature X\nDescription: This task involves implementing Feature X with specific requirements.\nAssignee: DEVU-456\nPriority: High\nDue Date: 2023-12-31\nTags: ['urgent']\n\nCan you proceed with creating this work item?",
+        "answer": [
+            {
+                "tool_name": "create_work_item",
+                "arguments": [
+                    {
+                        "name": "work_item_type",
+                        "value": "task"
+                    },
+                    {
+                        "name": "title",
+                        "value": "Implement Feature X"
+                    },
+                    {
+                        "name": "description",
+                        "value": "This task involves implementing Feature X with specific requirements."
+                    },
+                    {
+                        "name": "assignee",
+                        "value": "DEVU-456"
+                    },
+                    {
+                        "name": "priority",
+                        "value": "high"
+                    },
+                    {
+                        "name": "due_date",
+                        "value": "2023-12-31"
+                    },
+                    {
+                        "name": "tags",
+                        "value": [
+                            "urgent"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "We need to create a new enhancement in our project. Provide the necessary details for the work item:\n\nType of Work: Enhancement\nTitle: Improve User Interface\nDescription: Enhance the user interface to provide a more user-friendly experience.\nAssignee: DEVU-789\nPriority: Medium\nDue Date: 2023-11-30\nTags: ['ui', 'enhancement']\n\nCould you create this enhancement?",
+        "answer": [
+            {
+                "tool_name": "create_work_item",
+                "arguments": [
+                    {
+                        "name": "work_item_type",
+                        "value": "enhancement"
+                    },
+                    {
+                        "name": "title",
+                        "value": "Improve User Interface"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Enhance the user interface to provide a more user-friendly experience."
+                    },
+                    {
+                        "name": "assignee",
+                        "value": "DEVU-789"
                     },
                     {
                         "name": "priority",
@@ -69,7 +71,10 @@
                     },
                     {
                         "name": "tags",
-                        "value": ["ui", "enhancement"]
+                        "value": [
+                            "ui",
+                            "enhancement"
+                        ]
                     }
                 ]
             }
@@ -107,7 +112,10 @@
                     },
                     {
                         "name": "tags",
-                        "value": ["bug", "urgent"]
+                        "value": [
+                            "bug",
+                            "urgent"
+                        ]
                     }
                 ]
             }
@@ -179,7 +187,10 @@
                     },
                     {
                         "name": "dependencies",
-                        "value": ["TASK-456", "TASK-789"]
+                        "value": [
+                            "TASK-456",
+                            "TASK-789"
+                        ]
                     }
                 ]
             }
@@ -251,7 +262,10 @@
                     },
                     {
                         "name": "dependencies",
-                        "value": ["TASK-789", "TASK-876"]
+                        "value": [
+                            "TASK-789",
+                            "TASK-876"
+                        ]
                     }
                 ]
             }
@@ -281,7 +295,11 @@
                     },
                     {
                         "name": "project_team",
-                        "value": ["DEVU-789", "DEVU-456", "DEVU-123"]
+                        "value": [
+                            "DEVU-789",
+                            "DEVU-456",
+                            "DEVU-123"
+                        ]
                     },
                     {
                         "name": "target_date",
@@ -315,7 +333,10 @@
                     },
                     {
                         "name": "project_team",
-                        "value": ["DEVU-456", "DEVU-789"]
+                        "value": [
+                            "DEVU-456",
+                            "DEVU-789"
+                        ]
                     },
                     {
                         "name": "target_date",
@@ -431,7 +452,10 @@
                     },
                     {
                         "name": "backlog_items",
-                        "value": ["STORY-789", "STORY-123"]
+                        "value": [
+                            "STORY-789",
+                            "STORY-123"
+                        ]
                     }
                 ]
             }
@@ -516,7 +540,9 @@
                     },
                     {
                         "name": "notifications",
-                        "value": ["DEVU-789"]
+                        "value": [
+                            "DEVU-789"
+                        ]
                     },
                     {
                         "name": "actions_log",
@@ -549,7 +575,10 @@
                     },
                     {
                         "name": "notifications",
-                        "value": ["DEVU-456", "DEVU-123"]
+                        "value": [
+                            "DEVU-456",
+                            "DEVU-123"
+                        ]
                     },
                     {
                         "name": "actions_log",
@@ -559,7 +588,4 @@
             }
         ]
     }
-    
-    
-
 ]

@@ -1,6 +1,8 @@
 models/*
 build/*
 src/notebook/*
+src/llama2.py
 src/__pycache__
-output/testing/*
+output/*
 .env
+

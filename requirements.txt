@@ -6,3 +6,4 @@ tiktoken
 huggingface
 python-dotenv
 chardet
+pandas

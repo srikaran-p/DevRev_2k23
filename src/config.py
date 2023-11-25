@@ -1,12 +1,4 @@
-
-EXAMPLE_PATH = "../json/example.json"
-FORMAT_PATH = "../json/format.json"
-TOOLS_PATH = "../json/tools.json"
-TOKEN_PATH = "../config/token.txt"
-MODEL_PATH = "../models/"
-
-# key check (else error)
-def get_key(key_path):
-    
-    key = open(key_path,"r").read().splitlines()[0]
-    return key
+EXAMPLE_PATH = "../data/example.json"
+FORMAT_PATH = "../data/format.json"
+TOOLS_PATH = "../data/tools.json"
+TOKEN_PATH = "../token_usage.txt"

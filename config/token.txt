@@ -319,3 +319,2209 @@ Tokens Used: 2108
 Successful Requests: 1
 Total Cost (USD): $0.0032255
 
+
+USE:gpt-4 0 examples
+
+USE:gpt-4 0 examples
+
+USE:gpt-4 0 examples
+
+USE:gpt-4 0 examples
+
+USE:gpt-4 0 examples
+Tokens Used: 0
+	Prompt Tokens: 0
+	Completion Tokens: 0
+Successful Requests: 0
+Total Cost (USD): $0.0
+
+
+USE:gpt-4 0 examples
+Tokens Used: 1565
+	Prompt Tokens: 1495
+	Completion Tokens: 70
+Successful Requests: 1
+Total Cost (USD): $0.04905
+
+
+USE:gpt-4 0 examples
+Tokens Used: 1587
+	Prompt Tokens: 1495
+	Completion Tokens: 92
+Successful Requests: 1
+Total Cost (USD): $0.05037
+
+Tokens Used: 1545
+	Prompt Tokens: 1497
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.04779
+
+Tokens Used: 1673
+	Prompt Tokens: 1500
+	Completion Tokens: 173
+Successful Requests: 1
+Total Cost (USD): $0.05538
+
+Tokens Used: 1540
+	Prompt Tokens: 1494
+	Completion Tokens: 46
+Successful Requests: 1
+Total Cost (USD): $0.04758
+
+Tokens Used: 1604
+	Prompt Tokens: 1493
+	Completion Tokens: 111
+Successful Requests: 1
+Total Cost (USD): $0.05145
+
+Tokens Used: 1541
+	Prompt Tokens: 1498
+	Completion Tokens: 43
+Successful Requests: 1
+Total Cost (USD): $0.04752
+
+Tokens Used: 1548
+	Prompt Tokens: 1500
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.04788
+
+
+USE:gpt-4 0 examples
+Tokens Used: 1548
+	Prompt Tokens: 1500
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.04788
+
+Tokens Used: 1609
+	Prompt Tokens: 1497
+	Completion Tokens: 112
+Successful Requests: 1
+Total Cost (USD): $0.051629999999999995
+
+Tokens Used: 1576
+	Prompt Tokens: 1490
+	Completion Tokens: 86
+Successful Requests: 1
+Total Cost (USD): $0.049859999999999995
+
+Tokens Used: 1611
+	Prompt Tokens: 1499
+	Completion Tokens: 112
+Successful Requests: 1
+Total Cost (USD): $0.05169
+
+Tokens Used: 1493
+	Prompt Tokens: 1492
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.04482
+
+Tokens Used: 1613
+	Prompt Tokens: 1499
+	Completion Tokens: 114
+Successful Requests: 1
+Total Cost (USD): $0.05181
+
+Tokens Used: 1573
+	Prompt Tokens: 1500
+	Completion Tokens: 73
+Successful Requests: 1
+Total Cost (USD): $0.04938
+
+
+USE:gpt-4 0 examples
+
+USE:gpt-4 0 examples
+Tokens Used: 1603
+	Prompt Tokens: 1492
+	Completion Tokens: 111
+Successful Requests: 1
+Total Cost (USD): $0.05142
+
+Tokens Used: 1613
+	Prompt Tokens: 1499
+	Completion Tokens: 114
+Successful Requests: 1
+Total Cost (USD): $0.05181
+
+Tokens Used: 1568
+	Prompt Tokens: 1500
+	Completion Tokens: 68
+Successful Requests: 1
+Total Cost (USD): $0.04908
+
+Tokens Used: 1699
+	Prompt Tokens: 1502
+	Completion Tokens: 197
+Successful Requests: 1
+Total Cost (USD): $0.05688
+
+Tokens Used: 1544
+	Prompt Tokens: 1495
+	Completion Tokens: 49
+Successful Requests: 1
+Total Cost (USD): $0.04779
+
+Tokens Used: 1551
+	Prompt Tokens: 1503
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.04797
+
+Tokens Used: 1543
+	Prompt Tokens: 1495
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.04773
+
+Tokens Used: 1538
+	Prompt Tokens: 1496
+	Completion Tokens: 42
+Successful Requests: 1
+Total Cost (USD): $0.0474
+
+Tokens Used: 1542
+	Prompt Tokens: 1494
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.0477
+
+Tokens Used: 1564
+	Prompt Tokens: 1497
+	Completion Tokens: 67
+Successful Requests: 1
+Total Cost (USD): $0.04893
+
+Tokens Used: 1702
+	Prompt Tokens: 1522
+	Completion Tokens: 180
+Successful Requests: 1
+Total Cost (USD): $0.056459999999999996
+
+Tokens Used: 1611
+	Prompt Tokens: 1503
+	Completion Tokens: 108
+Successful Requests: 1
+Total Cost (USD): $0.05157
+
+Tokens Used: 1568
+	Prompt Tokens: 1567
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.047069999999999994
+
+Tokens Used: 1621
+	Prompt Tokens: 1506
+	Completion Tokens: 115
+Successful Requests: 1
+Total Cost (USD): $0.05208
+
+Tokens Used: 1565
+	Prompt Tokens: 1497
+	Completion Tokens: 68
+Successful Requests: 1
+Total Cost (USD): $0.04899
+
+Tokens Used: 1603
+	Prompt Tokens: 1493
+	Completion Tokens: 110
+Successful Requests: 1
+Total Cost (USD): $0.051390000000000005
+
+Tokens Used: 1615
+	Prompt Tokens: 1509
+	Completion Tokens: 106
+Successful Requests: 1
+Total Cost (USD): $0.051629999999999995
+
+Tokens Used: 1580
+	Prompt Tokens: 1498
+	Completion Tokens: 82
+Successful Requests: 1
+Total Cost (USD): $0.04986
+
+Tokens Used: 1632
+	Prompt Tokens: 1512
+	Completion Tokens: 120
+Successful Requests: 1
+Total Cost (USD): $0.052559999999999996
+
+Tokens Used: 1688
+	Prompt Tokens: 1523
+	Completion Tokens: 165
+Successful Requests: 1
+Total Cost (USD): $0.055589999999999994
+
+Tokens Used: 1660
+	Prompt Tokens: 1518
+	Completion Tokens: 142
+Successful Requests: 1
+Total Cost (USD): $0.05406
+
+Tokens Used: 1583
+	Prompt Tokens: 1498
+	Completion Tokens: 85
+Successful Requests: 1
+Total Cost (USD): $0.05004
+
+Tokens Used: 1656
+	Prompt Tokens: 1501
+	Completion Tokens: 155
+Successful Requests: 1
+Total Cost (USD): $0.05432999999999999
+
+Tokens Used: 1665
+	Prompt Tokens: 1567
+	Completion Tokens: 98
+Successful Requests: 1
+Total Cost (USD): $0.05288999999999999
+
+Tokens Used: 1750
+	Prompt Tokens: 1531
+	Completion Tokens: 219
+Successful Requests: 1
+Total Cost (USD): $0.05907
+
+Tokens Used: 1600
+	Prompt Tokens: 1500
+	Completion Tokens: 100
+Successful Requests: 1
+Total Cost (USD): $0.051
+
+Tokens Used: 1701
+	Prompt Tokens: 1495
+	Completion Tokens: 206
+Successful Requests: 1
+Total Cost (USD): $0.05721
+
+Tokens Used: 1674
+	Prompt Tokens: 1491
+	Completion Tokens: 183
+Successful Requests: 1
+Total Cost (USD): $0.055709999999999996
+
+Tokens Used: 1563
+	Prompt Tokens: 1496
+	Completion Tokens: 67
+Successful Requests: 1
+Total Cost (USD): $0.0489
+
+Tokens Used: 1741
+	Prompt Tokens: 1528
+	Completion Tokens: 213
+Successful Requests: 1
+Total Cost (USD): $0.05862
+
+Tokens Used: 1530
+	Prompt Tokens: 1529
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.04592999999999999
+
+Tokens Used: 1663
+	Prompt Tokens: 1508
+	Completion Tokens: 155
+Successful Requests: 1
+Total Cost (USD): $0.05453999999999999
+
+Tokens Used: 1631
+	Prompt Tokens: 1495
+	Completion Tokens: 136
+Successful Requests: 1
+Total Cost (USD): $0.05301
+
+Tokens Used: 1661
+	Prompt Tokens: 1522
+	Completion Tokens: 139
+Successful Requests: 1
+Total Cost (USD): $0.054
+
+Tokens Used: 1641
+	Prompt Tokens: 1505
+	Completion Tokens: 136
+Successful Requests: 1
+Total Cost (USD): $0.053309999999999996
+
+Tokens Used: 1652
+	Prompt Tokens: 1507
+	Completion Tokens: 145
+Successful Requests: 1
+Total Cost (USD): $0.05390999999999999
+
+Tokens Used: 1562
+	Prompt Tokens: 1498
+	Completion Tokens: 64
+Successful Requests: 1
+Total Cost (USD): $0.048780000000000004
+
+Tokens Used: 1589
+	Prompt Tokens: 1495
+	Completion Tokens: 94
+Successful Requests: 1
+Total Cost (USD): $0.05049
+
+Tokens Used: 1655
+	Prompt Tokens: 1495
+	Completion Tokens: 160
+Successful Requests: 1
+Total Cost (USD): $0.05445
+
+Tokens Used: 1616
+	Prompt Tokens: 1506
+	Completion Tokens: 110
+Successful Requests: 1
+Total Cost (USD): $0.05178
+
+Tokens Used: 1599
+	Prompt Tokens: 1519
+	Completion Tokens: 80
+Successful Requests: 1
+Total Cost (USD): $0.05036999999999999
+
+Tokens Used: 1666
+	Prompt Tokens: 1523
+	Completion Tokens: 143
+Successful Requests: 1
+Total Cost (USD): $0.05426999999999999
+
+Tokens Used: 1634
+	Prompt Tokens: 1499
+	Completion Tokens: 135
+Successful Requests: 1
+Total Cost (USD): $0.053070000000000006
+
+Tokens Used: 1925
+	Prompt Tokens: 1527
+	Completion Tokens: 398
+Successful Requests: 1
+Total Cost (USD): $0.06969
+
+Tokens Used: 1511
+	Prompt Tokens: 1510
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.04536
+
+Tokens Used: 1491
+	Prompt Tokens: 1490
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.044759999999999994
+
+Tokens Used: 1514
+	Prompt Tokens: 1492
+	Completion Tokens: 22
+Successful Requests: 1
+Total Cost (USD): $0.04608
+
+Tokens Used: 1514
+	Prompt Tokens: 1492
+	Completion Tokens: 22
+Successful Requests: 1
+Total Cost (USD): $0.04608
+
+Tokens Used: 1541
+	Prompt Tokens: 1494
+	Completion Tokens: 47
+Successful Requests: 1
+Total Cost (USD): $0.04764
+
+Tokens Used: 1542
+	Prompt Tokens: 1495
+	Completion Tokens: 47
+Successful Requests: 1
+Total Cost (USD): $0.047670000000000004
+
+Tokens Used: 1533
+	Prompt Tokens: 1532
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.04602
+
+Tokens Used: 1594
+	Prompt Tokens: 1501
+	Completion Tokens: 93
+Successful Requests: 1
+Total Cost (USD): $0.050609999999999995
+
+Tokens Used: 1539
+	Prompt Tokens: 1491
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.04761
+
+Tokens Used: 1695
+	Prompt Tokens: 1507
+	Completion Tokens: 188
+Successful Requests: 1
+Total Cost (USD): $0.05648999999999999
+
+Tokens Used: 1534
+	Prompt Tokens: 1533
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.046049999999999994
+
+Tokens Used: 1548
+	Prompt Tokens: 1497
+	Completion Tokens: 51
+Successful Requests: 1
+Total Cost (USD): $0.04797
+
+Tokens Used: 1552
+	Prompt Tokens: 1500
+	Completion Tokens: 52
+Successful Requests: 1
+Total Cost (USD): $0.048119999999999996
+
+Tokens Used: 1642
+	Prompt Tokens: 1501
+	Completion Tokens: 141
+Successful Requests: 1
+Total Cost (USD): $0.053489999999999996
+
+Tokens Used: 1528
+	Prompt Tokens: 1527
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.045869999999999994
+
+Tokens Used: 1514
+	Prompt Tokens: 1513
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.04544999999999999
+
+Tokens Used: 1551
+	Prompt Tokens: 1500
+	Completion Tokens: 51
+Successful Requests: 1
+Total Cost (USD): $0.04806
+
+Tokens Used: 1562
+	Prompt Tokens: 1493
+	Completion Tokens: 69
+Successful Requests: 1
+Total Cost (USD): $0.04893
+
+
+USE:gpt-4 1 examples
+Tokens Used: 1728
+	Prompt Tokens: 1634
+	Completion Tokens: 94
+Successful Requests: 1
+Total Cost (USD): $0.05465999999999999
+
+Tokens Used: 1730
+	Prompt Tokens: 1636
+	Completion Tokens: 94
+Successful Requests: 1
+Total Cost (USD): $0.05471999999999999
+
+Tokens Used: 1794
+	Prompt Tokens: 1639
+	Completion Tokens: 155
+Successful Requests: 1
+Total Cost (USD): $0.058469999999999994
+
+Tokens Used: 1679
+	Prompt Tokens: 1633
+	Completion Tokens: 46
+Successful Requests: 1
+Total Cost (USD): $0.05175
+
+Tokens Used: 1743
+	Prompt Tokens: 1632
+	Completion Tokens: 111
+Successful Requests: 1
+Total Cost (USD): $0.055619999999999996
+
+Tokens Used: 1680
+	Prompt Tokens: 1637
+	Completion Tokens: 43
+Successful Requests: 1
+Total Cost (USD): $0.05169
+
+Tokens Used: 1735
+	Prompt Tokens: 1639
+	Completion Tokens: 96
+Successful Requests: 1
+Total Cost (USD): $0.05493
+
+Tokens Used: 1702
+	Prompt Tokens: 1636
+	Completion Tokens: 66
+Successful Requests: 1
+Total Cost (USD): $0.05303999999999999
+
+Tokens Used: 1695
+	Prompt Tokens: 1629
+	Completion Tokens: 66
+Successful Requests: 1
+Total Cost (USD): $0.052829999999999995
+
+Tokens Used: 1704
+	Prompt Tokens: 1638
+	Completion Tokens: 66
+Successful Requests: 1
+Total Cost (USD): $0.053099999999999994
+
+Tokens Used: 1723
+	Prompt Tokens: 1631
+	Completion Tokens: 92
+Successful Requests: 1
+Total Cost (USD): $0.05445
+
+Tokens Used: 1752
+	Prompt Tokens: 1638
+	Completion Tokens: 114
+Successful Requests: 1
+Total Cost (USD): $0.055979999999999995
+
+Tokens Used: 1707
+	Prompt Tokens: 1639
+	Completion Tokens: 68
+Successful Requests: 1
+Total Cost (USD): $0.05325
+
+Tokens Used: 1794
+	Prompt Tokens: 1641
+	Completion Tokens: 153
+Successful Requests: 1
+Total Cost (USD): $0.05841
+
+Tokens Used: 1683
+	Prompt Tokens: 1634
+	Completion Tokens: 49
+Successful Requests: 1
+Total Cost (USD): $0.05195999999999999
+
+Tokens Used: 1690
+	Prompt Tokens: 1642
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.05214
+
+Tokens Used: 1682
+	Prompt Tokens: 1634
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.051899999999999995
+
+Tokens Used: 1762
+	Prompt Tokens: 1635
+	Completion Tokens: 127
+Successful Requests: 1
+Total Cost (USD): $0.05667
+
+Tokens Used: 1679
+	Prompt Tokens: 1633
+	Completion Tokens: 46
+Successful Requests: 1
+Total Cost (USD): $0.05175
+
+Tokens Used: 1688
+	Prompt Tokens: 1636
+	Completion Tokens: 52
+Successful Requests: 1
+Total Cost (USD): $0.05219999999999999
+
+Tokens Used: 1841
+	Prompt Tokens: 1661
+	Completion Tokens: 180
+Successful Requests: 1
+Total Cost (USD): $0.060629999999999996
+
+Tokens Used: 1750
+	Prompt Tokens: 1642
+	Completion Tokens: 108
+Successful Requests: 1
+Total Cost (USD): $0.05574
+
+Tokens Used: 1707
+	Prompt Tokens: 1706
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.051239999999999994
+
+Tokens Used: 1752
+	Prompt Tokens: 1645
+	Completion Tokens: 107
+Successful Requests: 1
+Total Cost (USD): $0.05577
+
+Tokens Used: 1708
+	Prompt Tokens: 1636
+	Completion Tokens: 72
+Successful Requests: 1
+Total Cost (USD): $0.05339999999999999
+
+Tokens Used: 1723
+	Prompt Tokens: 1632
+	Completion Tokens: 91
+Successful Requests: 1
+Total Cost (USD): $0.054419999999999996
+
+Tokens Used: 1754
+	Prompt Tokens: 1648
+	Completion Tokens: 106
+Successful Requests: 1
+Total Cost (USD): $0.055799999999999995
+
+Tokens Used: 1719
+	Prompt Tokens: 1637
+	Completion Tokens: 82
+Successful Requests: 1
+Total Cost (USD): $0.05403
+
+Tokens Used: 1763
+	Prompt Tokens: 1651
+	Completion Tokens: 112
+Successful Requests: 1
+Total Cost (USD): $0.056249999999999994
+
+Tokens Used: 1815
+	Prompt Tokens: 1662
+	Completion Tokens: 153
+Successful Requests: 1
+Total Cost (USD): $0.059039999999999995
+
+Tokens Used: 1811
+	Prompt Tokens: 1657
+	Completion Tokens: 154
+Successful Requests: 1
+Total Cost (USD): $0.058949999999999995
+
+Tokens Used: 1702
+	Prompt Tokens: 1637
+	Completion Tokens: 65
+Successful Requests: 1
+Total Cost (USD): $0.05301
+
+Tokens Used: 1795
+	Prompt Tokens: 1640
+	Completion Tokens: 155
+Successful Requests: 1
+Total Cost (USD): $0.058499999999999996
+
+Tokens Used: 1734
+	Prompt Tokens: 1706
+	Completion Tokens: 28
+Successful Requests: 1
+Total Cost (USD): $0.05286
+
+Tokens Used: 1892
+	Prompt Tokens: 1670
+	Completion Tokens: 222
+Successful Requests: 1
+Total Cost (USD): $0.06342
+
+Tokens Used: 1736
+	Prompt Tokens: 1639
+	Completion Tokens: 97
+Successful Requests: 1
+Total Cost (USD): $0.05499
+
+Tokens Used: 1840
+	Prompt Tokens: 1634
+	Completion Tokens: 206
+Successful Requests: 1
+Total Cost (USD): $0.06137999999999999
+
+Tokens Used: 1813
+	Prompt Tokens: 1630
+	Completion Tokens: 183
+Successful Requests: 1
+Total Cost (USD): $0.05987999999999999
+
+Tokens Used: 1702
+	Prompt Tokens: 1635
+	Completion Tokens: 67
+Successful Requests: 1
+Total Cost (USD): $0.05307
+
+Tokens Used: 1884
+	Prompt Tokens: 1667
+	Completion Tokens: 217
+Successful Requests: 1
+Total Cost (USD): $0.06303
+
+Tokens Used: 1669
+	Prompt Tokens: 1668
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.05009999999999999
+
+Tokens Used: 1966
+	Prompt Tokens: 1647
+	Completion Tokens: 319
+Successful Requests: 1
+Total Cost (USD): $0.06855
+
+Tokens Used: 1770
+	Prompt Tokens: 1634
+	Completion Tokens: 136
+Successful Requests: 1
+Total Cost (USD): $0.057179999999999995
+
+Tokens Used: 1800
+	Prompt Tokens: 1661
+	Completion Tokens: 139
+Successful Requests: 1
+Total Cost (USD): $0.05817
+
+Tokens Used: 1760
+	Prompt Tokens: 1644
+	Completion Tokens: 116
+Successful Requests: 1
+Total Cost (USD): $0.05628
+
+Tokens Used: 1785
+	Prompt Tokens: 1646
+	Completion Tokens: 139
+Successful Requests: 1
+Total Cost (USD): $0.057719999999999994
+
+Tokens Used: 1701
+	Prompt Tokens: 1637
+	Completion Tokens: 64
+Successful Requests: 1
+Total Cost (USD): $0.052950000000000004
+
+Tokens Used: 1728
+	Prompt Tokens: 1634
+	Completion Tokens: 94
+Successful Requests: 1
+Total Cost (USD): $0.05465999999999999
+
+Tokens Used: 1794
+	Prompt Tokens: 1634
+	Completion Tokens: 160
+Successful Requests: 1
+Total Cost (USD): $0.05861999999999999
+
+Tokens Used: 1755
+	Prompt Tokens: 1645
+	Completion Tokens: 110
+Successful Requests: 1
+Total Cost (USD): $0.05595
+
+Tokens Used: 1893
+	Prompt Tokens: 1658
+	Completion Tokens: 235
+Successful Requests: 1
+Total Cost (USD): $0.06384
+
+Tokens Used: 1830
+	Prompt Tokens: 1662
+	Completion Tokens: 168
+Successful Requests: 1
+Total Cost (USD): $0.05993999999999999
+
+Tokens Used: 1773
+	Prompt Tokens: 1638
+	Completion Tokens: 135
+Successful Requests: 1
+Total Cost (USD): $0.05724
+
+Tokens Used: 1965
+	Prompt Tokens: 1666
+	Completion Tokens: 299
+Successful Requests: 1
+Total Cost (USD): $0.06792
+
+Tokens Used: 1650
+	Prompt Tokens: 1649
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.04953
+
+Tokens Used: 1630
+	Prompt Tokens: 1629
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.048929999999999994
+
+Tokens Used: 1653
+	Prompt Tokens: 1631
+	Completion Tokens: 22
+Successful Requests: 1
+Total Cost (USD): $0.05025
+
+Tokens Used: 1653
+	Prompt Tokens: 1631
+	Completion Tokens: 22
+Successful Requests: 1
+Total Cost (USD): $0.05025
+
+Tokens Used: 1680
+	Prompt Tokens: 1633
+	Completion Tokens: 47
+Successful Requests: 1
+Total Cost (USD): $0.05181
+
+Tokens Used: 1681
+	Prompt Tokens: 1634
+	Completion Tokens: 47
+Successful Requests: 1
+Total Cost (USD): $0.05184
+
+Tokens Used: 1672
+	Prompt Tokens: 1671
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.05019
+
+Tokens Used: 1733
+	Prompt Tokens: 1640
+	Completion Tokens: 93
+Successful Requests: 1
+Total Cost (USD): $0.054779999999999995
+
+Tokens Used: 1757
+	Prompt Tokens: 1630
+	Completion Tokens: 127
+Successful Requests: 1
+Total Cost (USD): $0.056519999999999994
+
+Tokens Used: 1834
+	Prompt Tokens: 1646
+	Completion Tokens: 188
+Successful Requests: 1
+Total Cost (USD): $0.06065999999999999
+
+Tokens Used: 1673
+	Prompt Tokens: 1672
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.050219999999999994
+
+Tokens Used: 1687
+	Prompt Tokens: 1636
+	Completion Tokens: 51
+Successful Requests: 1
+Total Cost (USD): $0.05213999999999999
+
+Tokens Used: 1691
+	Prompt Tokens: 1639
+	Completion Tokens: 52
+Successful Requests: 1
+Total Cost (USD): $0.052289999999999996
+
+Tokens Used: 1800
+	Prompt Tokens: 1640
+	Completion Tokens: 160
+Successful Requests: 1
+Total Cost (USD): $0.05879999999999999
+
+Tokens Used: 1667
+	Prompt Tokens: 1666
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.050039999999999994
+
+Tokens Used: 1835
+	Prompt Tokens: 1652
+	Completion Tokens: 183
+Successful Requests: 1
+Total Cost (USD): $0.06054
+
+Tokens Used: 1690
+	Prompt Tokens: 1639
+	Completion Tokens: 51
+Successful Requests: 1
+Total Cost (USD): $0.05223
+
+Tokens Used: 1701
+	Prompt Tokens: 1632
+	Completion Tokens: 69
+Successful Requests: 1
+Total Cost (USD): $0.053099999999999994
+
+
+USE:gpt-4 2 examples
+Tokens Used: 3876
+	Prompt Tokens: 3784
+	Completion Tokens: 92
+Successful Requests: 1
+Total Cost (USD): $0.11903999999999999
+
+Tokens Used: 3880
+	Prompt Tokens: 3786
+	Completion Tokens: 94
+Successful Requests: 1
+Total Cost (USD): $0.11922
+
+
+USE:gpt-4 2 examples
+Tokens Used: 4190
+	Prompt Tokens: 4098
+	Completion Tokens: 92
+Successful Requests: 1
+Total Cost (USD): $0.12846
+
+Tokens Used: 4194
+	Prompt Tokens: 4100
+	Completion Tokens: 94
+Successful Requests: 1
+Total Cost (USD): $0.12863999999999998
+
+Tokens Used: 4259
+	Prompt Tokens: 4103
+	Completion Tokens: 156
+Successful Requests: 1
+Total Cost (USD): $0.13244999999999998
+
+Tokens Used: 4163
+	Prompt Tokens: 4097
+	Completion Tokens: 66
+Successful Requests: 1
+Total Cost (USD): $0.12687
+
+Tokens Used: 4207
+	Prompt Tokens: 4096
+	Completion Tokens: 111
+Successful Requests: 1
+Total Cost (USD): $0.12954000000000002
+
+Tokens Used: 4144
+	Prompt Tokens: 4101
+	Completion Tokens: 43
+Successful Requests: 1
+Total Cost (USD): $0.12561
+
+Tokens Used: 4171
+	Prompt Tokens: 4103
+	Completion Tokens: 68
+Successful Requests: 1
+Total Cost (USD): $0.12717
+
+Tokens Used: 4166
+	Prompt Tokens: 4100
+	Completion Tokens: 66
+Successful Requests: 1
+Total Cost (USD): $0.12696
+
+Tokens Used: 4180
+	Prompt Tokens: 4093
+	Completion Tokens: 87
+Successful Requests: 1
+Total Cost (USD): $0.12800999999999998
+
+Tokens Used: 4214
+	Prompt Tokens: 4102
+	Completion Tokens: 112
+Successful Requests: 1
+Total Cost (USD): $0.12978
+
+Tokens Used: 4096
+	Prompt Tokens: 4095
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.12290999999999999
+
+Tokens Used: 4216
+	Prompt Tokens: 4102
+	Completion Tokens: 114
+Successful Requests: 1
+Total Cost (USD): $0.12990000000000002
+
+Tokens Used: 4219
+	Prompt Tokens: 4103
+	Completion Tokens: 116
+Successful Requests: 1
+Total Cost (USD): $0.13005
+
+Tokens Used: 4213
+	Prompt Tokens: 4105
+	Completion Tokens: 108
+Successful Requests: 1
+Total Cost (USD): $0.12963000000000002
+
+Tokens Used: 4147
+	Prompt Tokens: 4098
+	Completion Tokens: 49
+Successful Requests: 1
+Total Cost (USD): $0.12588
+
+Tokens Used: 4157
+	Prompt Tokens: 4106
+	Completion Tokens: 51
+Successful Requests: 1
+Total Cost (USD): $0.12624
+
+Tokens Used: 4144
+	Prompt Tokens: 4098
+	Completion Tokens: 46
+Successful Requests: 1
+Total Cost (USD): $0.1257
+
+Tokens Used: 4141
+	Prompt Tokens: 4099
+	Completion Tokens: 42
+Successful Requests: 1
+Total Cost (USD): $0.12549
+
+Tokens Used: 4190
+	Prompt Tokens: 4097
+	Completion Tokens: 93
+Successful Requests: 1
+Total Cost (USD): $0.12849
+
+Tokens Used: 4165
+	Prompt Tokens: 4100
+	Completion Tokens: 65
+Successful Requests: 1
+Total Cost (USD): $0.12689999999999999
+
+Tokens Used: 4306
+	Prompt Tokens: 4125
+	Completion Tokens: 181
+Successful Requests: 1
+Total Cost (USD): $0.13461
+
+Tokens Used: 4215
+	Prompt Tokens: 4106
+	Completion Tokens: 109
+Successful Requests: 1
+Total Cost (USD): $0.12972
+
+Tokens Used: 4364
+	Prompt Tokens: 4170
+	Completion Tokens: 194
+Successful Requests: 1
+Total Cost (USD): $0.13674
+
+Tokens Used: 4218
+	Prompt Tokens: 4109
+	Completion Tokens: 109
+Successful Requests: 1
+Total Cost (USD): $0.12980999999999998
+
+Tokens Used: 4168
+	Prompt Tokens: 4100
+	Completion Tokens: 68
+Successful Requests: 1
+Total Cost (USD): $0.12707999999999997
+
+Tokens Used: 4207
+	Prompt Tokens: 4096
+	Completion Tokens: 111
+Successful Requests: 1
+Total Cost (USD): $0.12954000000000002
+
+Tokens Used: 4218
+	Prompt Tokens: 4112
+	Completion Tokens: 106
+Successful Requests: 1
+Total Cost (USD): $0.12972
+
+Tokens Used: 4181
+	Prompt Tokens: 4101
+	Completion Tokens: 80
+Successful Requests: 1
+Total Cost (USD): $0.12783
+
+Tokens Used: 4227
+	Prompt Tokens: 4115
+	Completion Tokens: 112
+Successful Requests: 1
+Total Cost (USD): $0.13017
+
+Tokens Used: 4301
+	Prompt Tokens: 4126
+	Completion Tokens: 175
+Successful Requests: 1
+Total Cost (USD): $0.13428
+
+Tokens Used: 4272
+	Prompt Tokens: 4121
+	Completion Tokens: 151
+Successful Requests: 1
+Total Cost (USD): $0.13269
+
+Tokens Used: 4186
+	Prompt Tokens: 4101
+	Completion Tokens: 85
+Successful Requests: 1
+Total Cost (USD): $0.12813
+
+Tokens Used: 4260
+	Prompt Tokens: 4104
+	Completion Tokens: 156
+Successful Requests: 1
+Total Cost (USD): $0.13248
+
+Tokens Used: 4355
+	Prompt Tokens: 4170
+	Completion Tokens: 185
+Successful Requests: 1
+Total Cost (USD): $0.1362
+
+Tokens Used: 4355
+	Prompt Tokens: 4134
+	Completion Tokens: 221
+Successful Requests: 1
+Total Cost (USD): $0.13728
+
+Tokens Used: 4201
+	Prompt Tokens: 4103
+	Completion Tokens: 98
+Successful Requests: 1
+Total Cost (USD): $0.12897
+
+Tokens Used: 4325
+	Prompt Tokens: 4098
+	Completion Tokens: 227
+Successful Requests: 1
+Total Cost (USD): $0.13656
+
+Tokens Used: 4275
+	Prompt Tokens: 4094
+	Completion Tokens: 181
+Successful Requests: 1
+Total Cost (USD): $0.13368
+
+Tokens Used: 4166
+	Prompt Tokens: 4099
+	Completion Tokens: 67
+Successful Requests: 1
+Total Cost (USD): $0.12699
+
+Tokens Used: 4410
+	Prompt Tokens: 4131
+	Completion Tokens: 279
+Successful Requests: 1
+Total Cost (USD): $0.14067
+
+Tokens Used: 4297
+	Prompt Tokens: 4132
+	Completion Tokens: 165
+Successful Requests: 1
+Total Cost (USD): $0.13385999999999998
+
+Tokens Used: 4220
+	Prompt Tokens: 4111
+	Completion Tokens: 109
+Successful Requests: 1
+Total Cost (USD): $0.12986999999999999
+
+Tokens Used: 4256
+	Prompt Tokens: 4098
+	Completion Tokens: 158
+Successful Requests: 1
+Total Cost (USD): $0.13241999999999998
+
+Tokens Used: 4312
+	Prompt Tokens: 4125
+	Completion Tokens: 187
+Successful Requests: 1
+Total Cost (USD): $0.13497
+
+Tokens Used: 4243
+	Prompt Tokens: 4108
+	Completion Tokens: 135
+Successful Requests: 1
+Total Cost (USD): $0.13133999999999998
+
+Tokens Used: 4268
+	Prompt Tokens: 4110
+	Completion Tokens: 158
+Successful Requests: 1
+Total Cost (USD): $0.13278
+
+
+USE:gpt-3.5-turbo 2 examples
+Tokens Used: 4165
+	Prompt Tokens: 4101
+	Completion Tokens: 64
+Successful Requests: 1
+Total Cost (USD): $0.12687
+
+Tokens Used: 4192
+	Prompt Tokens: 4098
+	Completion Tokens: 94
+Successful Requests: 1
+Total Cost (USD): $0.12858
+
+Tokens Used: 4279
+	Prompt Tokens: 4098
+	Completion Tokens: 181
+Successful Requests: 1
+Total Cost (USD): $0.1338
+
+Tokens Used: 4217
+	Prompt Tokens: 4109
+	Completion Tokens: 108
+Successful Requests: 1
+Total Cost (USD): $0.12974999999999998
+
+Tokens Used: 4369
+	Prompt Tokens: 4122
+	Completion Tokens: 247
+Successful Requests: 1
+Total Cost (USD): $0.13848
+
+Tokens Used: 4585
+	Prompt Tokens: 4126
+	Completion Tokens: 459
+Successful Requests: 1
+Total Cost (USD): $0.15132
+
+Tokens Used: 4237
+	Prompt Tokens: 4102
+	Completion Tokens: 135
+Successful Requests: 1
+Total Cost (USD): $0.13116
+
+Tokens Used: 4449
+	Prompt Tokens: 4130
+	Completion Tokens: 319
+Successful Requests: 1
+Total Cost (USD): $0.14304
+
+Tokens Used: 4330
+	Prompt Tokens: 4113
+	Completion Tokens: 217
+Successful Requests: 1
+Total Cost (USD): $0.13641
+
+Tokens Used: 4094
+	Prompt Tokens: 4093
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.12285
+
+Tokens Used: 4117
+	Prompt Tokens: 4095
+	Completion Tokens: 22
+Successful Requests: 1
+Total Cost (USD): $0.12416999999999999
+
+Tokens Used: 4117
+	Prompt Tokens: 4095
+	Completion Tokens: 22
+Successful Requests: 1
+Total Cost (USD): $0.12416999999999999
+
+Tokens Used: 4144
+	Prompt Tokens: 4097
+	Completion Tokens: 47
+Successful Requests: 1
+Total Cost (USD): $0.12573
+
+Tokens Used: 4145
+	Prompt Tokens: 4098
+	Completion Tokens: 47
+Successful Requests: 1
+Total Cost (USD): $0.12575999999999998
+
+
+USE:gpt-3.5-turbo 2 examples
+Tokens Used: 3620
+	Prompt Tokens: 3484
+	Completion Tokens: 136
+Successful Requests: 1
+Total Cost (USD): $0.005497999999999999
+
+Tokens Used: 3487
+	Prompt Tokens: 3486
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.005231
+
+Tokens Used: 4478
+	Prompt Tokens: 4135
+	Completion Tokens: 343
+Successful Requests: 1
+Total Cost (USD): $0.14462999999999998
+
+Tokens Used: 4197
+	Prompt Tokens: 4104
+	Completion Tokens: 93
+Successful Requests: 1
+Total Cost (USD): $0.12869999999999998
+
+Tokens Used: 3644
+	Prompt Tokens: 3489
+	Completion Tokens: 155
+Successful Requests: 1
+Total Cost (USD): $0.005543500000000001
+
+Tokens Used: 3595
+	Prompt Tokens: 3483
+	Completion Tokens: 112
+Successful Requests: 1
+Total Cost (USD): $0.0054485
+
+Tokens Used: 3595
+	Prompt Tokens: 3482
+	Completion Tokens: 113
+Successful Requests: 1
+Total Cost (USD): $0.005449
+
+Tokens Used: 3530
+	Prompt Tokens: 3487
+	Completion Tokens: 43
+Successful Requests: 1
+Total Cost (USD): $0.0053165
+
+Tokens Used: 3664
+	Prompt Tokens: 3489
+	Completion Tokens: 175
+Successful Requests: 1
+Total Cost (USD): $0.0055835
+
+Tokens Used: 4142
+	Prompt Tokens: 4094
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.1257
+
+Tokens Used: 3639
+	Prompt Tokens: 3486
+	Completion Tokens: 153
+Successful Requests: 1
+Total Cost (USD): $0.005535
+
+Tokens Used: 3514
+	Prompt Tokens: 3479
+	Completion Tokens: 35
+Successful Requests: 1
+Total Cost (USD): $0.0052885
+
+Tokens Used: 3489
+	Prompt Tokens: 3488
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.005234
+
+Tokens Used: 4341
+	Prompt Tokens: 4110
+	Completion Tokens: 231
+Successful Requests: 1
+Total Cost (USD): $0.13716
+
+Tokens Used: 4260
+	Prompt Tokens: 4136
+	Completion Tokens: 124
+Successful Requests: 1
+Total Cost (USD): $0.13152
+
+Tokens Used: 4151
+	Prompt Tokens: 4100
+	Completion Tokens: 51
+Successful Requests: 1
+Total Cost (USD): $0.12605999999999998
+
+Tokens Used: 4155
+	Prompt Tokens: 4103
+	Completion Tokens: 52
+Successful Requests: 1
+Total Cost (USD): $0.12621
+
+Tokens Used: 4264
+	Prompt Tokens: 4104
+	Completion Tokens: 160
+Successful Requests: 1
+Total Cost (USD): $0.13272
+
+Tokens Used: 4243
+	Prompt Tokens: 4130
+	Completion Tokens: 113
+Successful Requests: 1
+Total Cost (USD): $0.13068
+
+Tokens Used: 4341
+	Prompt Tokens: 4116
+	Completion Tokens: 225
+Successful Requests: 1
+Total Cost (USD): $0.13698
+
+Tokens Used: 4154
+	Prompt Tokens: 4103
+	Completion Tokens: 51
+Successful Requests: 1
+Total Cost (USD): $0.12614999999999998
+
+Tokens Used: 4144
+	Prompt Tokens: 4096
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.12576
+
+
+USE:gpt-4 1 examples
+Tokens Used: 3415
+	Prompt Tokens: 3323
+	Completion Tokens: 92
+Successful Requests: 1
+Total Cost (USD): $0.10521
+
+Tokens Used: 3419
+	Prompt Tokens: 3325
+	Completion Tokens: 94
+Successful Requests: 1
+Total Cost (USD): $0.10539000000000001
+
+
+USE:gpt-4 1 examples
+Tokens Used: 3415
+	Prompt Tokens: 3323
+	Completion Tokens: 92
+Successful Requests: 1
+Total Cost (USD): $0.10521
+
+Tokens Used: 3419
+	Prompt Tokens: 3325
+	Completion Tokens: 94
+Successful Requests: 1
+Total Cost (USD): $0.10539000000000001
+
+Tokens Used: 3457
+	Prompt Tokens: 3328
+	Completion Tokens: 129
+Successful Requests: 1
+Total Cost (USD): $0.10758
+
+Tokens Used: 3368
+	Prompt Tokens: 3322
+	Completion Tokens: 46
+Successful Requests: 1
+Total Cost (USD): $0.10242
+
+Tokens Used: 3432
+	Prompt Tokens: 3321
+	Completion Tokens: 111
+Successful Requests: 1
+Total Cost (USD): $0.10629
+
+Tokens Used: 3369
+	Prompt Tokens: 3326
+	Completion Tokens: 43
+Successful Requests: 1
+Total Cost (USD): $0.10235999999999999
+
+Tokens Used: 3442
+	Prompt Tokens: 3328
+	Completion Tokens: 114
+Successful Requests: 1
+Total Cost (USD): $0.10668
+
+Tokens Used: 3391
+	Prompt Tokens: 3325
+	Completion Tokens: 66
+Successful Requests: 1
+Total Cost (USD): $0.10371000000000001
+
+Tokens Used: 3404
+	Prompt Tokens: 3318
+	Completion Tokens: 86
+Successful Requests: 1
+Total Cost (USD): $0.1047
+
+Tokens Used: 3393
+	Prompt Tokens: 3327
+	Completion Tokens: 66
+Successful Requests: 1
+Total Cost (USD): $0.10377
+
+Tokens Used: 3409
+	Prompt Tokens: 3320
+	Completion Tokens: 89
+Successful Requests: 1
+Total Cost (USD): $0.10493999999999999
+
+Tokens Used: 3441
+	Prompt Tokens: 3327
+	Completion Tokens: 114
+Successful Requests: 1
+Total Cost (USD): $0.10665
+
+Tokens Used: 3416
+	Prompt Tokens: 3328
+	Completion Tokens: 88
+Successful Requests: 1
+Total Cost (USD): $0.10511999999999999
+
+Tokens Used: 3485
+	Prompt Tokens: 3330
+	Completion Tokens: 155
+Successful Requests: 1
+Total Cost (USD): $0.1092
+
+Tokens Used: 3372
+	Prompt Tokens: 3323
+	Completion Tokens: 49
+Successful Requests: 1
+Total Cost (USD): $0.10263
+
+Tokens Used: 3379
+	Prompt Tokens: 3331
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.10280999999999998
+
+Tokens Used: 3371
+	Prompt Tokens: 3323
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.10257
+
+Tokens Used: 3366
+	Prompt Tokens: 3324
+	Completion Tokens: 42
+Successful Requests: 1
+Total Cost (USD): $0.10223999999999998
+
+Tokens Used: 3368
+	Prompt Tokens: 3322
+	Completion Tokens: 46
+Successful Requests: 1
+Total Cost (USD): $0.10242
+
+Tokens Used: 3370
+	Prompt Tokens: 3325
+	Completion Tokens: 45
+Successful Requests: 1
+Total Cost (USD): $0.10245
+
+Tokens Used: 3573
+	Prompt Tokens: 3350
+	Completion Tokens: 223
+Successful Requests: 1
+Total Cost (USD): $0.11388
+
+Tokens Used: 3424
+	Prompt Tokens: 3331
+	Completion Tokens: 93
+Successful Requests: 1
+Total Cost (USD): $0.10550999999999999
+
+Tokens Used: 3591
+	Prompt Tokens: 3395
+	Completion Tokens: 196
+Successful Requests: 1
+Total Cost (USD): $0.11360999999999999
+
+Tokens Used: 3441
+	Prompt Tokens: 3334
+	Completion Tokens: 107
+Successful Requests: 1
+Total Cost (USD): $0.10643999999999999
+
+Tokens Used: 3393
+	Prompt Tokens: 3325
+	Completion Tokens: 68
+Successful Requests: 1
+Total Cost (USD): $0.10383
+
+Tokens Used: 3412
+	Prompt Tokens: 3321
+	Completion Tokens: 91
+Successful Requests: 1
+Total Cost (USD): $0.10508999999999999
+
+Tokens Used: 3443
+	Prompt Tokens: 3337
+	Completion Tokens: 106
+Successful Requests: 1
+Total Cost (USD): $0.10647000000000001
+
+Tokens Used: 3426
+	Prompt Tokens: 3326
+	Completion Tokens: 100
+Successful Requests: 1
+Total Cost (USD): $0.10578
+
+Tokens Used: 3452
+	Prompt Tokens: 3340
+	Completion Tokens: 112
+Successful Requests: 1
+Total Cost (USD): $0.10692
+
+Tokens Used: 3548
+	Prompt Tokens: 3351
+	Completion Tokens: 197
+Successful Requests: 1
+Total Cost (USD): $0.11234999999999999
+
+Tokens Used: 3478
+	Prompt Tokens: 3346
+	Completion Tokens: 132
+Successful Requests: 1
+Total Cost (USD): $0.1083
+
+Tokens Used: 3411
+	Prompt Tokens: 3326
+	Completion Tokens: 85
+Successful Requests: 1
+Total Cost (USD): $0.10488
+
+Tokens Used: 3438
+	Prompt Tokens: 3329
+	Completion Tokens: 109
+Successful Requests: 1
+Total Cost (USD): $0.10641
+
+Tokens Used: 3582
+	Prompt Tokens: 3395
+	Completion Tokens: 187
+Successful Requests: 1
+Total Cost (USD): $0.11306999999999999
+
+Tokens Used: 3579
+	Prompt Tokens: 3359
+	Completion Tokens: 220
+Successful Requests: 1
+Total Cost (USD): $0.11397
+
+Tokens Used: 3425
+	Prompt Tokens: 3328
+	Completion Tokens: 97
+Successful Requests: 1
+Total Cost (USD): $0.10566
+
+Tokens Used: 3549
+	Prompt Tokens: 3323
+	Completion Tokens: 226
+Successful Requests: 1
+Total Cost (USD): $0.11325
+
+Tokens Used: 3453
+	Prompt Tokens: 3319
+	Completion Tokens: 134
+Successful Requests: 1
+Total Cost (USD): $0.10761
+
+Tokens Used: 3391
+	Prompt Tokens: 3324
+	Completion Tokens: 67
+Successful Requests: 1
+Total Cost (USD): $0.10373999999999999
+
+Tokens Used: 3568
+	Prompt Tokens: 3356
+	Completion Tokens: 212
+Successful Requests: 1
+Total Cost (USD): $0.11339999999999999
+
+Tokens Used: 3522
+	Prompt Tokens: 3357
+	Completion Tokens: 165
+Successful Requests: 1
+Total Cost (USD): $0.11061000000000001
+
+Tokens Used: 3445
+	Prompt Tokens: 3336
+	Completion Tokens: 109
+Successful Requests: 1
+Total Cost (USD): $0.10661999999999999
+
+Tokens Used: 3459
+	Prompt Tokens: 3323
+	Completion Tokens: 136
+Successful Requests: 1
+Total Cost (USD): $0.10785
+
+Tokens Used: 3537
+	Prompt Tokens: 3350
+	Completion Tokens: 187
+Successful Requests: 1
+Total Cost (USD): $0.11171999999999999
+
+
+USE:gpt-4 0 examples
+Tokens Used: 3232
+	Prompt Tokens: 3184
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.0984
+
+Tokens Used: 3234
+	Prompt Tokens: 3186
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.09845999999999999
+
+
+USE:gpt-4 0 examples
+Tokens Used: 3232
+	Prompt Tokens: 3184
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.0984
+
+Tokens Used: 3469
+	Prompt Tokens: 3333
+	Completion Tokens: 136
+Successful Requests: 1
+Total Cost (USD): $0.10815
+
+Tokens Used: 3474
+	Prompt Tokens: 3335
+	Completion Tokens: 139
+Successful Requests: 1
+Total Cost (USD): $0.10839
+
+Tokens Used: 3390
+	Prompt Tokens: 3326
+	Completion Tokens: 64
+Successful Requests: 1
+Total Cost (USD): $0.10361999999999999
+
+Tokens Used: 3422
+	Prompt Tokens: 3323
+	Completion Tokens: 99
+Successful Requests: 1
+Total Cost (USD): $0.10563
+
+
+USE:gpt-4 0 examples
+Tokens Used: 3232
+	Prompt Tokens: 3184
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.0984
+
+Tokens Used: 3300
+	Prompt Tokens: 3186
+	Completion Tokens: 114
+Successful Requests: 1
+Total Cost (USD): $0.10242
+
+Tokens Used: 3437
+	Prompt Tokens: 3323
+	Completion Tokens: 114
+Successful Requests: 1
+Total Cost (USD): $0.10653
+
+Tokens Used: 3440
+	Prompt Tokens: 3334
+	Completion Tokens: 106
+Successful Requests: 1
+Total Cost (USD): $0.10638
+
+Tokens Used: 3297
+	Prompt Tokens: 3189
+	Completion Tokens: 108
+Successful Requests: 1
+Total Cost (USD): $0.10215
+
+Tokens Used: 3229
+	Prompt Tokens: 3183
+	Completion Tokens: 46
+Successful Requests: 1
+Total Cost (USD): $0.09824999999999999
+
+Tokens Used: 3652
+	Prompt Tokens: 3347
+	Completion Tokens: 305
+Successful Requests: 1
+Total Cost (USD): $0.11871
+
+Tokens Used: 3313
+	Prompt Tokens: 3182
+	Completion Tokens: 131
+Successful Requests: 1
+Total Cost (USD): $0.10332
+
+Tokens Used: 3774
+	Prompt Tokens: 3351
+	Completion Tokens: 423
+Successful Requests: 1
+Total Cost (USD): $0.12591
+
+Tokens Used: 3230
+	Prompt Tokens: 3187
+	Completion Tokens: 43
+Successful Requests: 1
+Total Cost (USD): $0.09818999999999999
+
+Tokens Used: 3257
+	Prompt Tokens: 3189
+	Completion Tokens: 68
+Successful Requests: 1
+Total Cost (USD): $0.09975
+
+Tokens Used: 3462
+	Prompt Tokens: 3327
+	Completion Tokens: 135
+Successful Requests: 1
+Total Cost (USD): $0.10790999999999999
+
+Tokens Used: 3252
+	Prompt Tokens: 3186
+	Completion Tokens: 66
+Successful Requests: 1
+Total Cost (USD): $0.09954
+
+Tokens Used: 3656
+	Prompt Tokens: 3355
+	Completion Tokens: 301
+Successful Requests: 1
+Total Cost (USD): $0.11870999999999998
+
+Tokens Used: 3245
+	Prompt Tokens: 3179
+	Completion Tokens: 66
+Successful Requests: 1
+Total Cost (USD): $0.09933
+
+Tokens Used: 3300
+	Prompt Tokens: 3188
+	Completion Tokens: 112
+Successful Requests: 1
+Total Cost (USD): $0.10236
+
+Tokens Used: 3499
+	Prompt Tokens: 3338
+	Completion Tokens: 161
+Successful Requests: 1
+Total Cost (USD): $0.1098
+
+Tokens Used: 3319
+	Prompt Tokens: 3318
+	Completion Tokens: 1
+Successful Requests: 1
+Total Cost (USD): $0.09960000000000001
+
+Tokens Used: 3290
+	Prompt Tokens: 3181
+	Completion Tokens: 109
+Successful Requests: 1
+Total Cost (USD): $0.10197
+
+Tokens Used: 3302
+	Prompt Tokens: 3188
+	Completion Tokens: 114
+Successful Requests: 1
+Total Cost (USD): $0.10248
+
+Tokens Used: 3342
+	Prompt Tokens: 3320
+	Completion Tokens: 22
+Successful Requests: 1
+Total Cost (USD): $0.10092
+
+Tokens Used: 3342
+	Prompt Tokens: 3320
+	Completion Tokens: 22
+Successful Requests: 1
+Total Cost (USD): $0.10092
+
+Tokens Used: 3277
+	Prompt Tokens: 3189
+	Completion Tokens: 88
+Successful Requests: 1
+Total Cost (USD): $0.10095
+
+Tokens Used: 3369
+	Prompt Tokens: 3322
+	Completion Tokens: 47
+Successful Requests: 1
+Total Cost (USD): $0.10248
+
+Tokens Used: 3370
+	Prompt Tokens: 3323
+	Completion Tokens: 47
+Successful Requests: 1
+Total Cost (USD): $0.10251
+
+Tokens Used: 3299
+	Prompt Tokens: 3191
+	Completion Tokens: 108
+Successful Requests: 1
+Total Cost (USD): $0.10221
+
+Tokens Used: 3233
+	Prompt Tokens: 3184
+	Completion Tokens: 49
+Successful Requests: 1
+Total Cost (USD): $0.09846
+
+Tokens Used: 3240
+	Prompt Tokens: 3192
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.09863999999999999
+
+Tokens Used: 3704
+	Prompt Tokens: 3360
+	Completion Tokens: 344
+Successful Requests: 1
+Total Cost (USD): $0.12143999999999999
+
+Tokens Used: 3422
+	Prompt Tokens: 3329
+	Completion Tokens: 93
+Successful Requests: 1
+Total Cost (USD): $0.10545
+
+Tokens Used: 3229
+	Prompt Tokens: 3184
+	Completion Tokens: 45
+Successful Requests: 1
+Total Cost (USD): $0.09822
+
+Tokens Used: 3227
+	Prompt Tokens: 3185
+	Completion Tokens: 42
+Successful Requests: 1
+Total Cost (USD): $0.09806999999999999
+
+Tokens Used: 3367
+	Prompt Tokens: 3319
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.10244999999999999
+
+Tokens Used: 3542
+	Prompt Tokens: 3335
+	Completion Tokens: 207
+Successful Requests: 1
+Total Cost (USD): $0.11247
+
+Tokens Used: 3229
+	Prompt Tokens: 3183
+	Completion Tokens: 46
+Successful Requests: 1
+Total Cost (USD): $0.09824999999999999
+
+Tokens Used: 3253
+	Prompt Tokens: 3186
+	Completion Tokens: 67
+Successful Requests: 1
+Total Cost (USD): $0.0996
+
+Tokens Used: 3478
+	Prompt Tokens: 3361
+	Completion Tokens: 117
+Successful Requests: 1
+Total Cost (USD): $0.10785
+
+Tokens Used: 3376
+	Prompt Tokens: 3325
+	Completion Tokens: 51
+Successful Requests: 1
+Total Cost (USD): $0.10281
+
+Tokens Used: 3391
+	Prompt Tokens: 3211
+	Completion Tokens: 180
+Successful Requests: 1
+Total Cost (USD): $0.10713
+
+Tokens Used: 3278
+	Prompt Tokens: 3192
+	Completion Tokens: 86
+Successful Requests: 1
+Total Cost (USD): $0.10092
+
+Tokens Used: 3380
+	Prompt Tokens: 3328
+	Completion Tokens: 52
+Successful Requests: 1
+Total Cost (USD): $0.10296
+
+Tokens Used: 3463
+	Prompt Tokens: 3329
+	Completion Tokens: 134
+Successful Requests: 1
+Total Cost (USD): $0.10791
+
+Tokens Used: 3452
+	Prompt Tokens: 3256
+	Completion Tokens: 196
+Successful Requests: 1
+Total Cost (USD): $0.10943999999999998
+
+Tokens Used: 3304
+	Prompt Tokens: 3195
+	Completion Tokens: 109
+Successful Requests: 1
+Total Cost (USD): $0.10239
+
+Tokens Used: 3467
+	Prompt Tokens: 3355
+	Completion Tokens: 112
+Successful Requests: 1
+Total Cost (USD): $0.10737
+
+Tokens Used: 3552
+	Prompt Tokens: 3341
+	Completion Tokens: 211
+Successful Requests: 1
+Total Cost (USD): $0.11289
+
+Tokens Used: 3254
+	Prompt Tokens: 3186
+	Completion Tokens: 68
+Successful Requests: 1
+Total Cost (USD): $0.09966
+
+Tokens Used: 3292
+	Prompt Tokens: 3182
+	Completion Tokens: 110
+Successful Requests: 1
+Total Cost (USD): $0.10205999999999998
+
+Tokens Used: 3379
+	Prompt Tokens: 3328
+	Completion Tokens: 51
+Successful Requests: 1
+Total Cost (USD): $0.10289999999999999
+
+Tokens Used: 3369
+	Prompt Tokens: 3321
+	Completion Tokens: 48
+Successful Requests: 1
+Total Cost (USD): $0.10250999999999999
+
+Tokens Used: 3304
+	Prompt Tokens: 3198
+	Completion Tokens: 106
+Successful Requests: 1
+Total Cost (USD): $0.1023
+
+Tokens Used: 3315
+	Prompt Tokens: 3187
+	Completion Tokens: 128
+Successful Requests: 1
+Total Cost (USD): $0.10328999999999999
+
+Tokens Used: 3321
+	Prompt Tokens: 3201
+	Completion Tokens: 120
+Successful Requests: 1
+Total Cost (USD): $0.10323
+
+Tokens Used: 3402
+	Prompt Tokens: 3212
+	Completion Tokens: 190
+Successful Requests: 1
+Total Cost (USD): $0.10776
+
+Tokens Used: 3362
+	Prompt Tokens: 3207
+	Completion Tokens: 155
+Successful Requests: 1
+Total Cost (USD): $0.10550999999999999
+
+Tokens Used: 3272
+	Prompt Tokens: 3187
+	Completion Tokens: 85
+Successful Requests: 1
+Total Cost (USD): $0.10071
+
+Tokens Used: 3279
+	Prompt Tokens: 3190
+	Completion Tokens: 89
+Successful Requests: 1
+Total Cost (USD): $0.10103999999999999
+
+Tokens Used: 3443
+	Prompt Tokens: 3256
+	Completion Tokens: 187
+Successful Requests: 1
+Total Cost (USD): $0.10889999999999998
+
+Tokens Used: 3439
+	Prompt Tokens: 3220
+	Completion Tokens: 219
+Successful Requests: 1
+Total Cost (USD): $0.10974
+
+Tokens Used: 3286
+	Prompt Tokens: 3189
+	Completion Tokens: 97
+Successful Requests: 1
+Total Cost (USD): $0.10149000000000001
+
+Tokens Used: 3410
+	Prompt Tokens: 3184
+	Completion Tokens: 226
+Successful Requests: 1
+Total Cost (USD): $0.10908000000000001
+
+Tokens Used: 3335
+	Prompt Tokens: 3180
+	Completion Tokens: 155
+Successful Requests: 1
+Total Cost (USD): $0.1047
+
+Tokens Used: 3252
+	Prompt Tokens: 3185
+	Completion Tokens: 67
+Successful Requests: 1
+Total Cost (USD): $0.09956999999999999
+
+Tokens Used: 3454
+	Prompt Tokens: 3217
+	Completion Tokens: 237
+Successful Requests: 1
+Total Cost (USD): $0.11073
+
+Tokens Used: 3524
+	Prompt Tokens: 3218
+	Completion Tokens: 306
+Successful Requests: 1
+Total Cost (USD): $0.1149
+
+Tokens Used: 3306
+	Prompt Tokens: 3197
+	Completion Tokens: 109
+Successful Requests: 1
+Total Cost (USD): $0.10245
+
+Tokens Used: 3320
+	Prompt Tokens: 3184
+	Completion Tokens: 136
+Successful Requests: 1
+Total Cost (USD): $0.10368000000000001
+
+Tokens Used: 3417
+	Prompt Tokens: 3211
+	Completion Tokens: 206
+Successful Requests: 1
+Total Cost (USD): $0.10869
+
+Tokens Used: 3330
+	Prompt Tokens: 3194
+	Completion Tokens: 136
+Successful Requests: 1
+Total Cost (USD): $0.10397999999999999
+
+Tokens Used: 3355
+	Prompt Tokens: 3196
+	Completion Tokens: 159
+Successful Requests: 1
+Total Cost (USD): $0.10542000000000001
+
+Tokens Used: 3251
+	Prompt Tokens: 3187
+	Completion Tokens: 64
+Successful Requests: 1
+Total Cost (USD): $0.09944999999999998
+
+Tokens Used: 3278
+	Prompt Tokens: 3184
+	Completion Tokens: 94
+Successful Requests: 1
+Total Cost (USD): $0.10116000000000001
+
+Tokens Used: 3344
+	Prompt Tokens: 3184
+	Completion Tokens: 160
+Successful Requests: 1
+Total Cost (USD): $0.10512
+
+Tokens Used: 3301
+	Prompt Tokens: 3195
+	Completion Tokens: 106
+Successful Requests: 1
+Total Cost (USD): $0.10221
+

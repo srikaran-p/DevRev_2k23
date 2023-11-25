@@ -1,0 +1,441 @@
+
+
+Use the following tools and answer the given question using given answer format, 
+[
+    {
+        "tool_name": "works_list",
+        "tool_description": "Returns a list of work items matching the request",
+        "arguments": [
+            {
+                "name": "applies_to_part",
+                "description": "Filters for work belonging to any of the provided parts",
+                "type": "array of strings"
+                
+            },
+            {
+                "name": "created_by",
+                "description": "Filters for work created by any of these users",
+                "type": "array of strings"
+            },
+            {
+                "name": "issue.priority",
+                "description": "Filters for issues with any of the provided priorities. Allowed values: p0, p1, p2, p3",
+                "type": "array of strings"
+            },
+            {
+                "name": "issue.rev_orgs",
+                "description": "Filters for issues with any of the provided Rev organizations",
+                "type": "array of strings"
+            },
+            {
+                "name": "imit",
+                "description": "The maximum number of works to return. The default is '50'",
+                "type": "Integer (int32)"
+            },
+            {
+                "name": "owned_by",
+                "description": "Filters for work owned by any of these users",
+                "type": "array of strings"
+            },
+            {
+                "name": "stage.name",
+                "description": "Filters for records in the provided stage(s) by name",
+                "type": "array of strings"
+            },
+            {
+                "name": "ticket.needs_response",
+                "description": "Filters for tickets that need a response",
+                "type": "boolean"
+            },
+            {
+                "name": "ticket.rev_org",
+                "description": "Filters for tickets associated with any of the provided Rev organizations",
+                "type": "array of strings"
+            },
+            {
+                "name": "ticket.severity",
+                "description": "Filters for tickets with any of the provided severities. Allowed values: blocker, high, low, medium",
+                "type": "array of strings"
+            },
+            {
+                "name": "ticket.source_channel",
+                "description": "Filters for tickets with any of the provided source channels",
+                "type": "array of strings"
+            },
+            {
+                "name": "type",
+                "description": "Filters for work of the provided types. Allowed values: issue, ticket, task",
+                "type": "array of strings"
+            }
+        ]
+    },
+    {
+        "tool_name": "summarize_objects",
+        "tool_description": "Summarizes a list of objects. The logic of how to summarize a particular object type is an internal implementation detail.",
+        "arguments": [
+            {
+                "name": "objects",
+                "description": "List of objects to summarize",
+                "type": "array of objects"
+            }
+        ]
+    },
+    {
+        "tool_name": "prioritize_objects",
+        "tool_description": "Returns a list of objects sorted by priority. The logic of what constitutes priority for a given object is an internal implementation detail",
+        "arguments": [
+            {
+                "name": "objects",
+                "description": "A list of objects to be prioritized",
+                "type": "array of objects"
+            }
+        ]
+    },
+    {
+        "tool_name": "add_work_items_to_sprint",
+        "tool_description": "Adds the given work items to the sprint",
+        "arguments": [
+            {
+                "name": "work_ids",
+                "description": "A list of work item IDs to be added to the sprint",
+                "type": "array of strings"
+            },
+            {
+                "name": "sprint_id",
+                "description": "The ID of the sprint to which the work items should be added",
+                "type": "str"
+            }
+        ]
+    },
+    {
+        "tool_name": "get_sprint_id",
+        "tool_description": "Returns the ID of the current sprint",
+        "arguments": []
+    },
+    {
+        "tool_name": "get_similar_work_items",
+        "tool_description": "Returns a list of work items that are similar to the given work item",
+        "arguments": [
+            {
+                "name": "work_id",
+                "description": "The ID of the work item for which you want to find similar items",
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "tool_name": "search_object_by_name",
+        "tool_description": "Given a search string, returns the id of a matching object in the system of record. If multiple matches are found, it returns the one where the confidence is highest.",
+        "arguments": [
+            {
+                "name": "query",
+                "description": "The search string, could be for example customer's name, part name, user name.",
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "tool_name": "who_am_i",
+        "tool_description": "Returns the ID of the current user",
+        "arguments": []
+    },
+    {
+        "tool_name": "create_work_item",
+        "tool_description": "Creates a new work item, such as a task, issue, or enhancement, and adds it to the project.",
+        "arguments": [
+            {
+                "name": "work_item_type",
+                "description": "The type of work item to create (e.g., task, issue, enhancement)",
+                "type": "string"
+            },
+            {
+                "name": "title",
+                "description": "The title or name of the work item",
+                "type": "string"
+            },
+            {
+                "name": "description",
+                "description": "A detailed description of the work item",
+                "type": "string"
+            },
+            {
+                "name": "assignee",
+                "description": "The team member to whom the work item is assigned",
+                "type": "string"
+            },
+            {
+                "name": "priority",
+                "description": "Specifies the priority level of the work item",
+                "type": "string"
+            },
+            {
+                "name": "due_date",
+                "description": "Sets a due date for the work item",
+                "type": "string"
+            },
+            {
+                "name": "tags",
+                "description": "Allows adding tags or labels for categorization",
+                "type": "array of strings"
+            }
+        ]
+    },
+    {
+        "tool_name": "update_work_item_status",
+        "tool_description": "Updates the status of a work item to reflect its progress in the development lifecycle.",
+        "arguments": [
+            {
+                "name": "work_item_id",
+                "description": "The ID of the work item to update",
+                "type": "string"
+            },
+            {
+                "name": "new_status",
+                "description": "The new status to assign to the work item (e.g., In Progress, Done)",
+                "type": "string"
+            },
+            {
+                "name": "new_assignee",
+                "description": "Specifies a new assignee for the work item",
+                "type": "string"
+            },
+            {
+                "name": "estimated_effort",
+                "description": "Indicates the estimated effort required to complete the work item (Story points)",
+                "type": "integer"
+            },
+            {
+                "name": "dependencies",
+                "description": "Lists any dependencies or related work items",
+                "type": "array of strings"
+            }
+        ]
+    },
+    {
+        "tool_name": "code_review_feedback",
+        "tool_description": "Provides feedback and comments on code reviews, highlighting areas for improvement.",
+        "arguments": [
+            {
+                "name": "review_id",
+                "description": "The ID of the code review to provide feedback on",
+                "type": "string"
+            },
+            {
+                "name": "feedback",
+                "description": "Detailed feedback and comments for the code review",
+                "type": "string"
+            },
+            {
+                "name": "code_version",
+                "description": "Identifies the specific version of the code under review",
+                "type": "string"
+            },
+            {
+                "name": "severity",
+                "description": "Assigns a severity level to the feedback (e.g., critical, major, minor)",
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "tool_name": "test_execution_report",
+        "tool_description": "Generates a report summarizing test case execution results, including pass/fail status and issues found.",
+        "arguments": [
+            {
+                "name": "test_suite_id",
+                "description": "The ID of the test suite for which to generate the execution report",
+                "type": "string"
+            },
+            {
+                "name": "test_environment",
+                "description": "Specifies the testing environment used for the test cases",
+                "type": "string"
+            },
+            {
+                "name": "pass_fail_status",
+                "description": "Indicates whether each test case passed or failed",
+                "type": "list"
+            },
+            {
+                "name": "test_case_types",
+                "description": "Specifies the type of test cases included in the report",
+                "type": "list"
+            }
+        ]
+    },
+    {
+        "tool_name": "create_project",
+        "tool_description": "Creates a new project and sets up the initial project configuration.",
+        "arguments": [
+            {
+                "name": "project_name",
+                "description": "The name or title of the new project",
+                "type": "string"
+            },
+            {
+                "name": "project_description",
+                "description": "A brief description of the project's objectives and scope",
+                "type": "string"
+            },
+            {
+                "name": "project_lead",
+                "description": "The team member who will lead the project",
+                "type": "string"
+            },
+            {
+                "name": "start_date",
+                "description": "Sets a start date for the project",
+                "type": "date"
+                
+            },
+            {
+                "name": "project_team",
+                "description": "Lists the initial team members involved in the project",
+                "type": "array of strings"
+            },
+            {
+                "name": "target_date",
+                "description": "Sets a target date for project completion",
+                "type": "date"
+            }
+        ]
+    },
+    {
+        "tool_name": "create_sprint",
+        "tool_description": "Creates a new sprint within a project and defines its duration and goals.",
+        "arguments": [
+            {
+                "name": "project_id",
+                "description": "The ID of the project in which to create the sprint",
+                "type": "string"
+            },
+            {
+                "name": "sprint_name",
+                "description": "The name or title of the new sprint",
+                "type": "string"
+            },
+            {
+                "name": "sprint_duration",
+                "description": "The duration of the sprint in weeks",
+                "type": "integer"
+            },
+            {
+                "name": "sprint_goals",
+                "description": "Defines specific goals and objectives for the sprint (e.g., deliverables)",
+                "type": "string"
+            },
+            {
+                "name": "sprint_capacity",
+                "description": "Sets the maximum capacity or workload for the sprint(Story Points)",
+                "type": "integer"
+            },
+            {
+                "name": "backlog_items",
+                "description": "Specifies the backlog items to be included in the sprint",
+                "type": "array of strings"
+            }
+        ]
+    },
+    {
+        "tool_name": "assign_work_item",
+        "tool_description": "Assigns a work item to a specific team member or group.",
+        "arguments": [
+            {
+                "name": "work_item_id",
+                "description": "The ID of the work item to be assigned",
+                "type": "string"
+            },
+            {
+                "name": "assignee",
+                "description": "The team member or group to whom the work item is assigned",
+                "type": "string"
+            },
+            {
+                "name": "due_date",
+                "description": "Sets a due date for the assigned work item",
+                "type": "string"
+            },
+            {
+                "name": "work_item_type",
+                "description": "Indicates the type of work item being assigned",
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "tool_name": "create_actionable_tasks_from_text",
+        "tool_description": "Given a text, extracts actionable insights, and creates tasks for them, which are kind of a work item.",
+        "arguments": [
+            {
+                "name": "text",
+                "description": "The text from which the actionable insights need to be created.",
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "tool_name": "automate_workflow",
+        "tool_description": "Automates repetitive workflow tasks by defining triggers and actions.",
+        "arguments": [
+            {
+                "name": "trigger_event",
+                "description": "The event or condition that triggers the workflow",
+                "type": "string"
+            },
+            {
+                "name": "workflow_actions",
+                "description": "The actions to be executed when the trigger event occurs",
+                "type": "array of objects"
+            },
+            {
+                "name": "notifications",
+                "description": "Specifies who should receive notifications when the workflow is triggered",
+                "type": "array of strings"
+            },
+            {
+                "name": "actions_log",
+                "description": "Keeps a log of actions performed by the workflow for auditing",
+                "type": "boolean"
+            }
+        ]
+    }
+]
+
+
+
+Generated answer for any given question should have following format
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "tool_name": { "type": "string" },
+            "arguments": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "argument_name": { "type": "string" },
+                        "argument_value": { "type": "string" }
+                    },
+                    "required": ["argument_name", "argument_value"]
+                }
+            }
+        },
+        "required": ["tool_name", "arguments"]
+    }
+}
+
+
+
+
+
+
+To reference the value of the ith tool in the chain, use $$PREV[i] as argument value. i = 0, 1, .. j-1; j = current tool’s index in the array
+If the query could not be answered with the given set of tools, output an empty list instead.
+
+Empty list should look like []. Whenever you want to access information about current user to pass it further, you need to make a call to whoami api tool.
+
+Answer the following question based on instructions provided above.
+question:  
+answer:

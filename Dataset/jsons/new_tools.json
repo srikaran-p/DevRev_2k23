@@ -1,0 +1,291 @@
+[
+    {
+        "tool_name": "create_work_item",
+        "tool_description": "Creates a new work item, such as a task, issue, or enhancement, and adds it to the project.",
+        "arguments": [
+            {
+                "name": "work_item_type",
+                "description": "The type of work item to create (e.g., task, issue, enhancement)",
+                "type": "string",
+                "example": "task"
+            },
+            {
+                "name": "title",
+                "description": "The title or name of the work item",
+                "type": "string",
+                "example": "Implement Feature X"
+            },
+            {
+                "name": "description",
+                "description": "A detailed description of the work item",
+                "type": "string",
+                "example": "This task involves implementing Feature X with specific requirements."
+            },
+            {
+                "name": "assignee",
+                "description": "The team member to whom the work item is assigned",
+                "type": "string",
+                "example": "DEVU-456"
+            },
+            {
+                "name": "priority",
+                "description": "Specifies the priority level of the work item",
+                "type": "string",
+                "example": "high"
+            },
+            {
+                "name": "due_date",
+                "description": "Sets a due date for the work item",
+                "type": "string",
+                "example": "2023-12-31"
+            },
+            {
+                "name": "tags",
+                "description": "Allows adding tags or labels for categorization",
+                "type": "array of strings",
+                "example": ["feature", "bug", "urgent"]
+            }
+        ]
+    },
+    {
+        "tool_name": "update_work_item_status",
+        "tool_description": "Updates the status of a work item to reflect its progress in the development lifecycle.",
+        "arguments": [
+            {
+                "name": "work_item_id",
+                "description": "The ID of the work item to update",
+                "type": "string",
+                "example": "TASK-789"
+            },
+            {
+                "name": "new_status",
+                "description": "The new status to assign to the work item (e.g., In Progress, Done)",
+                "type": "string",
+                "example": "In Progress"
+            },
+            {
+                "name": "new_assignee",
+                "description": "Specifies a new assignee for the work item",
+                "type": "string",
+                "example": "DEVU-123"
+            },
+            {
+                "name": "estimated_effort",
+                "description": "Indicates the estimated effort required to complete the work item (Story points)",
+                "type": "integer",
+                "example": 5
+            },
+            {
+                "name": "dependencies",
+                "description": "Lists any dependencies or related work items",
+                "type": "array of strings",
+                "example": ["TASK-456", "ENH-789"]
+            }
+        ]
+    },
+    {
+        "tool_name": "code_review_feedback",
+        "tool_description": "Provides feedback and comments on code reviews, highlighting areas for improvement.",
+        "arguments": [
+            {
+                "name": "review_id",
+                "description": "The ID of the code review to provide feedback on",
+                "type": "string",
+                "example": "CR-123"
+            },
+            {
+                "name": "feedback",
+                "description": "Detailed feedback and comments for the code review",
+                "type": "string",
+                "example": "Consider optimizing this function for better performance."
+            },
+            {
+                "name": "code_version",
+                "description": "Identifies the specific version of the code under review",
+                "type": "string",
+                "example": "v2.1"
+            },
+            {
+                "name": "severity",
+                "description": "Assigns a severity level to the feedback (e.g., critical, major, minor)",
+                "type": "string",
+                "example": "major"
+            }
+        ]
+    },
+    {
+        "tool_name": "test_execution_report",
+        "tool_description": "Generates a report summarizing test case execution results, including pass/fail status and issues found.",
+        "arguments": [
+            {
+                "name": "test_suite_id",
+                "description": "The ID of the test suite for which to generate the execution report",
+                "type": "string",
+                "example": "TS-456"
+            },
+            {
+                "name": "test_environment",
+                "description": "Specifies the testing environment used for the test cases",
+                "type": "string",
+                "example": "Production"
+            },
+            {
+                "name": "pass_fail_status",
+                "description": "Indicates whether each test case passed or failed",
+                "type": "list",
+                "example": ["pass", "fail", "pass", "fail"]
+            },
+            {
+                "name": "test_case_types",
+                "description": "Specifies the type of test cases included in the report",
+                "type": "list",
+                "example": ["unit", "integration", "performance"]
+            }
+        ]
+    },
+    {
+        "tool_name": "create_project",
+        "tool_description": "Creates a new project and sets up the initial project configuration.",
+        "arguments": [
+            {
+                "name": "project_name",
+                "description": "The name or title of the new project",
+                "type": "string",
+                "example": "Project ABC"
+            },
+            {
+                "name": "project_description",
+                "description": "A brief description of the project's objectives and scope",
+                "type": "string",
+                "example": "Development of a new e-commerce platform."
+            },
+            {
+                "name": "project_lead",
+                "description": "The team member who will lead the project",
+                "type": "string",
+                "example": "DEVU-789"
+            },
+            {
+                "name": "start_date",
+                "description": "Sets a start date for the project",
+                "type": "date",
+                "example": "2023-01-15"
+            },
+            {
+                "name": "project_team",
+                "description": "Lists the initial team members involved in the project",
+                "type": "array of strings",
+                "example": ["DEVU-789", "DEVU-456", "DEVU-123"]
+            },
+            {
+                "name": "target_date",
+                "description": "Sets a target date for project completion",
+                "type": "date",
+                "example": "2023-06-30"
+            }
+        ]
+    },
+    {
+        "tool_name": "create_sprint",
+        "tool_description": "Creates a new sprint within a project and defines its duration and goals.",
+        "arguments": [
+            {
+                "name": "project_id",
+                "description": "The ID of the project in which to create the sprint",
+                "type": "string",
+                "example": "PROJ-123"
+            },
+            {
+                "name": "sprint_name",
+                "description": "The name or title of the new sprint",
+                "type": "string",
+                "example": "Sprint 1"
+            },
+            {
+                "name": "sprint_duration",
+                "description": "The duration of the sprint in weeks",
+                "type": "integer",
+                "example": 2
+            },
+            {
+                "name": "sprint_goals",
+                "description": "Defines specific goals and objectives for the sprint (e.g., deliverables)",
+                "type": "string",
+                "example": "Complete user story implementations"
+            },
+            {
+                "name": "sprint_capacity",
+                "description": "Sets the maximum capacity or workload for the sprint(Story Points)",
+                "type": "integer",
+                "example": 50
+            },
+            {
+                "name": "backlog_items",
+                "description": "Specifies the backlog items to be included in the sprint",
+                "type": "array of strings",
+                "example": ["STORY-123", "STORY-456"]
+            }
+        ]
+    },
+    {
+        "tool_name": "automate_workflow",
+        "tool_description": "Automates repetitive workflow tasks by defining triggers and actions.",
+        "arguments": [
+            {
+                "name": "trigger_event",
+                "description": "The event or condition that triggers the workflow",
+                "type": "string",
+                "example": "New issue created"
+            },
+            {
+                "name": "workflow_actions",
+                "description": "The actions to be executed when the trigger event occurs",
+                "type": "array of objects",
+                "example": []
+            },
+            {
+                "name": "notifications",
+                "description": "Specifies who should receive notifications when the workflow is triggered",
+                "type": "array of strings",
+                "example": ["DEVU-123", "DEVU-456"]
+            },
+            {
+                "name": "actions_log",
+                "description": "Keeps a log of actions performed by the workflow for auditing",
+                "type": "boolean",
+                "example": true
+            }
+        ]
+    },
+    {
+        "tool_name": "assign_work_item",
+        "tool_description": "Assigns a work item to a specific team member or group.",
+        "arguments": [
+            {
+                "name": "work_item_id",
+                "description": "The ID of the work item to be assigned",
+                "type": "string",
+                "example": "TASK-567"
+            },
+            {
+                "name": "assignee",
+                "description": "The team member or group to whom the work item is assigned",
+                "type": "string",
+                "example": "DEVU-123"
+            },
+            {
+                "name": "due_date",
+                "description": "Sets a due date for the assigned work item",
+                "type": "string",
+                "example": "2023-12-31"
+            },
+            {
+                "name": "work_item_type",
+                "description": "Indicates the type of work item being assigned",
+                "type": "string",
+                "example": "task"
+            }
+        ]
+    }
+]
+

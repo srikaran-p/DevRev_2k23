@@ -1,0 +1,324 @@
+use the followning tool and argument description and try to genrate question and answer like the examples given.
+
+[
+    {
+        "tool_name":"works_list",
+        "tool_description":"Returns a list of work items matching the request",
+        "arguments":[
+            {
+                "name":"applies_to_part",
+                "description":"Filters for work belonging to any of the provided parts",
+                "type":"array of strings",
+                "example":["FEAT-123",
+                "ENH-123",
+                "PROD-123",
+                "CAPL-123"]
+            },
+            {
+                "name":"created_by",
+                "description":"Filters for work created by any of these users",
+                "type":"array of strings",
+                "example":["DEVU-123"]
+            },
+            {
+                "name":"issue.priority",
+                "description":"Filters for issues with any of the provided priorities. Allowed values: p0, p1, p2, p3",
+                "type":"array of strings",
+                "example":""
+            },
+            {
+                "name":"issue.rev_orgs",
+                "description":"Filters for issues with any of the provided Rev organizations",
+                "type":"array of strings",
+                "example":["REV-123"]
+            },
+            {
+                "name":"imit",
+                "description":"The maximum number of works to return. The default is '50'",
+                "type":"Integer (int32)",
+                "example":""
+            },
+            {
+                "name":"owned_by",
+                "description":"Filters for work owned by any of these users",
+                "type":"array of strings",
+                "example":["DEVU-123"]
+            },
+            {
+                "name":"stage.name",
+                "description":"Filters for records in the provided stage(s) by name",
+                "type":"array of strings",
+                "example":""
+            },
+            {
+                "name":"ticket.needs_response",
+                "description":"Filters for tickets that need a response",
+                "type":"boolean",
+                "example":""
+            },
+            {
+                "name":"ticket.rev_org",
+                "description":"Filters for tickets associated with any of the provided Rev organizations",
+                "type":"array of strings",
+                "example":["REV-123"]
+            },
+            {
+                "name":"ticket.severity",
+                "description":"Filters for tickets with any of the provided severities. Allowed values: blocker, high, low, medium",
+                "type":"array of strings",
+                "example":""
+            },
+            {
+                "name":"ticket.source_channel",
+                "description":"Filters for tickets with any of the provided source channels",
+                "type":"array of strings",
+                "example":""
+            },
+            {
+                "name":"type",
+                "description":"Filters for work of the provided types. Allowed values: issue, ticket, task",
+                "type":"array of strings",
+                "example":""
+            }
+        ]
+    },
+    {
+        "tool_name":"summarize_objects",
+        "tool_description":"Summarizes a list of objects. The logic of how to summarize a particular object type is an internal implementation detail.",
+        "arguments":[
+            {
+                "name":"objects",
+                "description":"List of objects to summarize",
+                "type":"array of objects",
+                "example":""
+            }
+        ]
+    },
+    {
+        "tool_name":"prioritize_objects",
+        "tool_description":"Returns a list of objects sorted by priority. The logic of what constitutes priority for a given object is an internal implementation detail",
+        "arguments":[
+            {
+                "name":"objects",
+                "description":"A list of objects to be prioritized",
+                "type":"array of objects",
+                "example":""
+            }
+        ]
+    },
+    {
+        "tool_name":"add_work_items_to_sprint",
+        "tool_description":"Adds the given work items to the sprint",
+        "arguments":[
+            {
+                "name":"work_ids",
+                "description":"A list of work item IDs to be added to the sprint",
+                "type":"array of strings",
+                "example":""
+            },
+            {
+                "name":"sprint_id",
+                "description":"The ID of the sprint to which the work items should be added",
+                "type":"str",
+                "example":""
+            }
+        ]
+    },
+    {
+        "tool_name":"get_sprint_id",
+        "tool_description":"Returns the ID of the current sprint",
+        "arguments":[
+            
+        ]
+    },
+    {
+        "tool_name":"get_similar_work_items",
+        "tool_description":"Returns a list of work items that are similar to the given work item",
+        "arguments":[
+            {
+                "name":"work_id",
+                "description":"The ID of the work item for which you want to find similar items",
+                "type":"string",
+                "example":""
+            }
+        ]
+    },
+    {
+        "tool_name":"search_object_by_name",
+        "tool_description":"Given a search string, returns the id of a matching object in the system of record. If multiple matches are found, it returns the one where the confidence is highest.",
+        "arguments":[
+            {
+                "name":"query",
+                "description":"The search string, could be for example customer's name, part name, user name.",
+                "type":"string",
+                "example":""
+            }
+        ]
+    },
+    {
+        "tool_name":"create_actionable_tasks_from_text",
+        "tool_description":"Given a text, extracts actionable insights, and creates tasks for them, which are kind of a work item.",
+        "arguments":[
+            {
+                "name":"text",
+                "description":"The text from which the actionable insights need to be created.",
+                "type":"string",
+                "example":""
+            }
+        ]
+    },
+    {
+        "tool_name":"who_am_i",
+        "tool_description":"Returns the ID of the current user",
+        "arguments":[
+            
+        ]
+    }
+]
+
+Following are the example of question-answer pairs for the abovementioned tools
+
+Example 1
+{
+        "question":"Summarize issues similar to don:core:dvrv-us-1:devo/0:issue/1",
+        "answer":[
+            {
+            "tool_name": "get_similar_work_items",
+            "arguments": [
+            {
+            "argument_name": "work_id",
+            "argument_value": "don:core:dvrv-us-1:devo/0:issue/1"
+            }
+            ]
+            },
+            {
+            "tool_name": "summarize_objects",
+            "arguments": [
+            {
+            "argument_name": "objects",
+            "argument_value": "$$PREV[0]"
+            }
+            ]
+            }
+            ]
+},
+
+Example 2
+{
+        "question":"Summarize high severity tickets from the customer UltimateCustomer",
+        "answer":[
+            {
+                "tool_name": "search_object_by_name",
+                "arguments": [
+                    {
+                    "argument_name": "query",
+                    "argument_value": "UltimateCustomer"
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": ["$$PREV[0]"]
+                    },
+                    {
+                        "argument_name": "ticket.severity",
+                        "argument_value": ["high"]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": ["ticket"]
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            }
+        ]
+    }
+
+Whenver there is a need of finding current User api call to who_am_i is mandetory like following example
+
+Example 3
+{
+        "question":"What are my all issues in the triage stage under part FEAT-123? Summarize them. ",
+        "answer":[
+            {
+                "tool_name": "whoami",
+                "arguments": []
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": ["triage"]
+                    },
+                    {
+                        "argument_name": "applies_to_part",
+                        "argument_value": ["FEAT-123"]
+                    },
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": ["$$PREV[0]"]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": ["issue"]
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            }
+        ] 
+    }
+
+and the generated answer for any given question should have following format
+
+{
+"type": "array",
+"items": {
+"type": "object",
+"properties": {
+"tool_name": { "type": "string" },
+"arguments": {
+"type": "array",
+"items": {
+"type": "object",
+"properties": {
+"argument_name": { "type": "string" },
+"argument_value": { "type": "string" }
+},
+"required": ["argument_name", "argument_value"]
+}
+}
+},
+"required": ["tool_name", "arguments"]
+}
+}
+
+To reference the value of the ith tool in the chain, use $$PREV[i] as argument value. i = 0, 1, .. j-1; j = current tool’s index in the array
+If the query could not be answered with the given set of tools, output an empty list instead.
+
+answer the following question based on instructions provided above.
+
+qeestion: {}
+....
+
+
+generate query and answer pairs that utilize single tool, do it for all tools and all possible argumnents required. Each query should be utilizing only one of the tool, and it need not to be utilizing all arguments. Keep query human like, and if you wan to pass like just pass comma seprated value not inside squre bracket. Dont generate any additional text just return json list containing question answer pairs like mentioned in example above. Keep the example diverse and generated total 18 examples 2 for each tool.

@@ -1,0 +1,122 @@
+[
+    {
+        "question": "Can you find P1 issues in the 'Development' stage, created by 'UserA', and related to part 'PART-101'?",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {"argument_name": "issue.priority", "argument_value": ["p1"]},
+                {"argument_name": "stage.name", "argument_value": ["Development"]},
+                {"argument_name": "created_by", "argument_value": ["UserA"]},
+                {"argument_name": "applies_to_part", "argument_value": ["PART-101"]}
+            ]
+        }
+    },
+    {
+        "question": "Show me all high severity tickets from the 'Finance' department, in 'Review' stage, created by 'UserB'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {"argument_name": "ticket.severity", "argument_value": ["high"]},
+                {"argument_name": "ticket.rev_org", "argument_value": ["Finance"]},
+                {"argument_name": "stage.name", "argument_value": ["Review"]},
+                {"argument_name": "created_by", "argument_value": ["UserB"]}
+            ]
+        }
+    },
+    {
+        "question": "List all tasks related to part 'PART-202' that are unassigned, in 'Triage' stage, and need a response.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {"argument_name": "applies_to_part", "argument_value": ["PART-202"]},
+                {"argument_name": "owned_by", "argument_value": [""]},
+                {"argument_name": "stage.name", "argument_value": ["Triage"]},
+                {"argument_name": "ticket.needs_response", "argument_value": [true]}
+            ]
+        }
+    },
+    {
+        "question": "I need to view all P2 issues owned by 'UserC', in 'Testing' stage, related to part 'PART-303'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {"argument_name": "issue.priority", "argument_value": ["p2"]},
+                {"argument_name": "owned_by", "argument_value": ["UserC"]},
+                {"argument_name": "stage.name", "argument_value": ["Testing"]},
+                {"argument_name": "applies_to_part", "argument_value": ["PART-303"]}
+            ]
+        }
+    },
+    {
+        "question": "Find all blocker severity tickets reported through 'Email' channel, from 'Sales' department, in 'Development' stage.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {"argument_name": "ticket.severity", "argument_value": ["blocker"]},
+                {"argument_name": "ticket.source_channel", "argument_value": ["Email"]},
+                {"argument_name": "ticket.rev_org", "argument_value": ["Sales"]},
+                {"argument_name": "stage.name", "argument_value": ["Development"]}
+            ]
+        }
+    },
+    {
+        "question": "Show me all issues in 'Review' stage, of type 'bug', created by 'UserD', and have high priority.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {"argument_name": "stage.name", "argument_value": ["Review"]},
+                {"argument_name": "type", "argument_value": ["issue"]},
+                {"argument_name": "created_by", "argument_value": ["UserD"]},
+                {"argument_name": "issue.priority", "argument_value": ["high"]}
+            ]
+        }
+    },
+    {
+        "question": "List all P0 tickets related to 'PART-404', needing a response, from 'HR' department.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {"argument_name": "issue.priority", "argument_value": ["p0"]},
+                {"argument_name": "applies_to_part", "argument_value": ["PART-404"]},
+                {"argument_name": "ticket.needs_response", "argument_value": [true]},
+                {"argument_name": "ticket.rev_org", "argument_value": ["HR"]}
+            ]
+        }
+    },
+    {
+        "question": "Display tasks created by 'UserE', under 'PART-505', of low severity, in 'Triage' stage.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {"argument_name": "created_by", "argument_value": ["UserE"]},
+                {"argument_name": "applies_to_part", "argument_value": ["PART-505"]},
+                {"argument_name": "ticket.severity", "argument_value": ["low"]},
+                {"argument_name": "stage.name", "argument_value": ["Triage"]}
+            ]
+        }
+    },
+    {
+        "question": "Can you find all medium severity tickets in 'Testing' stage, reported via 'Slack', created by 'UserF'?",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {"argument_name": "ticket.severity", "argument_value": ["medium"]},
+                {"argument_name": "stage.name", "argument_value": ["Testing"]},
+                {"argument_name": "ticket.source_channel", "argument_value": ["Slack"]},
+                {"argument_name": "created_by", "argument_value": ["UserF"]}
+            ]
+        }
+    },
+    {
+        "question": "Show all unassigned 'feature request' tasks in 'Review' stage, related to part 'PART-606'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {"argument_name": "type", "argument_value": ["task"]},
+                {"argument_name": "owned_by", "argument_value": [""]},
+                {"argument_name": "stage.name", "argument_value": ["Review"]},
+                {"argument_name": "applies_to_part", "argument_value": ["PART-606"]}
+            ]
+        }
+    }
+]

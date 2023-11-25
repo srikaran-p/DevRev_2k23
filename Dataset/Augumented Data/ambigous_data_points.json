@@ -1,0 +1,302 @@
+[
+    {
+        "question": "I'm curious about the current status of tasks related to part FEAT-456.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "applies_to_part",
+                                "argument_value": [
+                                    "FEAT-456"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I wonder which projects have been initiated by DEVU-789 recently.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "created_by",
+                                "argument_value": [
+                                    "DEVU-789"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "It would be interesting to see which issues are deemed P2 priority.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "issue.priority",
+                                "argument_value": [
+                                    "p2"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm curious about issues linked to the REV-456 organization.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "issue.rev_orgs",
+                                "argument_value": [
+                                    "REV-456"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'd like to get an overview of the top 30 work items.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "limit",
+                                "argument_value": 30
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm interested in the workload of DEVU-456.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "owned_by",
+                                "argument_value": [
+                                    "DEVU-456"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'd love to see which items are in the 'Testing' phase.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "stage.name",
+                                "argument_value": [
+                                    "Testing"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Which tickets are tied to the REV-123 organization?",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "ticket.rev_org",
+                                "argument_value": [
+                                    "REV-123"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm curious about our high severity tickets.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "ticket.severity",
+                                "argument_value": [
+                                    "high"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I wonder how many tickets have come through the email channel.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "ticket.source_channel",
+                                "argument_value": [
+                                    "email"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "It would be helpful to see all items classified as 'issue'.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "works_list",
+                        "arguments": [
+                            {
+                                "argument_name": "type",
+                                "argument_value": [
+                                    "issue"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What's the identifier for our current sprint?",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "get_sprint_id",
+                        "arguments": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm interested in finding items similar to WI-123.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "get_similar_work_items",
+                        "arguments": [
+                            {
+                                "argument_name": "work_id",
+                                "argument_value": "WI-123"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm looking for something named 'Project X'.",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "search_object_by_name",
+                        "arguments": [
+                            {
+                                "argument_name": "query",
+                                "argument_value": "Project X"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Could we extract tasks from 'Meeting A' notes?",
+        "answer": [
+            {
+                "type": "array",
+                "items": [
+                    {
+                        "tool_name": "create_actionable_tasks_from_text",
+                        "arguments": [
+                            {
+                                "argument_name": "text",
+                                "argument_value": "Meeting A notes"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

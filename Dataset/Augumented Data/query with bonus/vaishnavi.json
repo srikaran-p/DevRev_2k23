@@ -1,0 +1,437 @@
+[
+    {
+        "question": "Based on priority, add work items ENH-123, PROD-123 and FEAT-123 to different sprints. High priority work should be in Sprint A and low priority work should be in sprint B",
+        "answer": [
+            {
+                "tool_name": "prioritize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": [
+                            "ENH-123",
+                            "PROD-123",
+                            "FEAT-123"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_sprint_id",
+                "arguments": []
+            },
+            {
+                "tool_name": "add_work_items_to_sprint",
+                "arguments": [
+                    {
+                        "argument_name": "work_ids",
+                        "argument_value": "$$PREV[0].high"
+                    },
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "Sprint A"
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_work_items_to_sprint",
+                "arguments": [
+                    {
+                        "argument_name": "work_ids",
+                        "argument_value": "$$PREV[0].low"
+                    },
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "Sprint B"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find all open issues in the 'In Progress' stage that are not assigned to any user.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "name": "stage.name",
+                        "description": "Filters for records in the provided stage(s) by name",
+                        "type": "array of strings",
+                        "example": [
+                            "In Progress"
+                        ]
+                    },
+                    {
+                        "name": "owned_by",
+                        "description": "Filters for work owned by any of these users",
+                        "type": "array of strings",
+                        "example": [
+                            ""
+                        ]
+                    },
+                    {
+                        "name": "type",
+                        "description": "Filters for work of the provided types. Allowed values: issue, ticket, task",
+                        "type": "array of strings",
+                        "example": [
+                            "issue"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Summarize tasks assigned to John. If they are more than 10, prioritize them.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": [
+                            "John"
+                        ]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "task"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "prioritize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1].length > 10 ? $$PREV[1] : []"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find all tasks owned by DEVU-789 or DEVU-456. If there are more than 5 tasks, get the current sprint ID and add them to the sprint. Summarize the tasks in the sprint.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": [
+                            "DEVU-789",
+                            "DEVU-456"
+                        ]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "task"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "prioritize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[0].length > 5 ? $$PREV[0] : []"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_sprint_id",
+                "arguments": []
+            },
+            {
+                "tool_name": "add_work_items_to_sprint",
+                "arguments": [
+                    {
+                        "argument_name": "work_ids",
+                        "argument_value": "$$PREV[1].map(task => task.id)"
+                    },
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "$$PREV[2]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "$$PREV[2]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[4]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find all tasks owned by DEVU-789 or DEVU-456. If there are any tasks needing a response, add the first 5 of them to Sprint A. Summarize the tasks in Sprint A.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": [
+                            "DEVU-789",
+                            "DEVU-456"
+                        ]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "task"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": [
+                            "DEVU-789",
+                            "DEVU-456"
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.needs_response",
+                        "argument_value": true
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "task"
+                        ]
+                    },
+                    {
+                        "argument_name": "imit",
+                        "argument_value": 5
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_work_items_to_sprint",
+                "arguments": [
+                    {
+                        "argument_name": "work_ids",
+                        "argument_value": "$$PREV[1].map(task => task.id)"
+                    },
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "Sprint A"
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "Sprint A"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[3]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find all tasks owned by DEVU-789 or DEVU-456. If there are tasks with priority 'high' or 'medium', prioritize them. Summarize the prioritized tasks.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": [
+                            "DEVU-789",
+                            "DEVU-456"
+                        ]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "task"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": [
+                            "DEVU-789",
+                            "DEVU-456"
+                        ]
+                    },
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": [
+                            "high",
+                            "medium"
+                        ]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "task"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "prioritize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[2]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find all tasks under part CAPL-123 that are either owned by DEVU-456 or created by DEVU-789. If there are tasks in the 'In Progress' stage, add them to Sprint C. Summarize the tasks in Sprint C.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "applies_to_part",
+                        "argument_value": [
+                            "CAPL-123"
+                        ]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "task"
+                        ]
+                    },
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": [
+                            "DEVU-456"
+                        ]
+                    },
+                    {
+                        "argument_name": "created_by",
+                        "argument_value": [
+                            "DEVU-789"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "applies_to_part",
+                        "argument_value": [
+                            "CAPL-123"
+                        ]
+                    },
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": [
+                            "DEVU-456"
+                        ]
+                    },
+                    {
+                        "argument_name": "created_by",
+                        "argument_value": [
+                            "DEVU-789"
+                        ]
+                    },
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": [
+                            "In Progress"
+                        ]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "task"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_work_items_to_sprint",
+                "arguments": [
+                    {
+                        "argument_name": "work_ids",
+                        "argument_value": "$$PREV[1].map(task => task.id)"
+                    },
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "Sprint C"
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "Sprint C"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[3]"
+                    }
+                ]
+            }
+        ]
+    }
+]

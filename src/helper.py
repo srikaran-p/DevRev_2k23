@@ -18,4 +18,9 @@ def write_output(output_file,responses):
 # Need to update this for general
 def filter(output):
     # return json
-    return json.loads(output['text'])
+    try:
+        ans = json.loads(output)
+    except:
+        ans = output
+    
+    return ans

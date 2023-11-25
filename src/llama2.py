@@ -61,7 +61,7 @@ def get_response(queries,model_name,num_examples):
         res = {
             'question_id': idx+1,
             'question':query,
-            'answer': output['text']
+            'answer': helper.filter(output['text'])
         }
         responses.append(res)
     

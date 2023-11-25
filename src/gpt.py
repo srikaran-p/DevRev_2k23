@@ -37,14 +37,15 @@ def get_response(queries,model_name,num_examples):
         try:
             with get_openai_callback() as cb:
                 output = chain.invoke(input)
+                
                 file.write(str(cb)+'\n\n')
         except Exception as e:
-            raise Exception("Key is not correct")
+            break
             
         res = {
             'question_id': idx+1,
             'question':query,
-            'answer': helper.filter(output)
+            'answer': helper.filter(output['text'])
         }
         responses.append(res)
     

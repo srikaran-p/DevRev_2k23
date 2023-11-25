@@ -1,0 +1,62 @@
+[
+    {
+        "question": "Could you provide a condensed summary of these object details?",
+        "answer": {
+            "tool_name": "summarize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "Object details provided by the user"
+                }
+            ]
+        }
+    },
+    {
+        "question": "I need a brief overview of these particular items, can you help?",
+        "answer": {
+            "tool_name": "summarize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "Specific items provided by the user"
+                }
+            ]
+        }
+    },
+    {
+        "question": "Is it possible to get a quick summary for this set of objects?",
+        "answer": {
+            "tool_name": "summarize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "Set of objects provided by the user"
+                }
+            ]
+        }
+    },
+    {
+        "question": "Can you give me a rundown of what these objects represent?",
+        "answer": {
+            "tool_name": "summarize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "Objects and their representation provided by the user"
+                }
+            ]
+        }
+    },
+    {
+        "question": "I'm looking for a concise summary of these specific entities.",
+        "answer": {
+            "tool_name": "summarize_objects",
+            "arguments": [
+                {
+                    "argument_name": "objects",
+                    "argument_value": "Specific entities provided by the user"
+                }
+            ]
+        }
+    }
+]

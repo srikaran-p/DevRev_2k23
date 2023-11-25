@@ -1,0 +1,47 @@
+[
+    {
+        "question": "What tasks can we derive from 'Discussion C'?",
+        "answer": {
+            "tool_name": "create_actionable_tasks_from_text",
+            "arguments": [
+                {"argument_name": "text", "argument_value": "Discussion C"}
+            ]
+        }
+    },
+    {
+        "question": "Can we create a to-do list based on 'Analysis D'?",
+        "answer": {
+            "tool_name": "create_actionable_tasks_from_text",
+            "arguments": [
+                {"argument_name": "text", "argument_value": "Analysis D"}
+            ]
+        }
+    },
+    {
+        "question": "Are there any actionable points in 'Document E'?",
+        "answer": {
+            "tool_name": "create_actionable_tasks_from_text",
+            "arguments": [
+                {"argument_name": "text", "argument_value": "Document E"}
+            ]
+        }
+    },
+    {
+        "question": "What tasks should we extract from 'Conference F'?",
+        "answer": {
+            "tool_name": "create_actionable_tasks_from_text",
+            "arguments": [
+                {"argument_name": "text", "argument_value": "Conference F"}
+            ]
+        }
+    },
+    {
+        "question": "Could you identify action items from 'Briefing G'?",
+        "answer": {
+            "tool_name": "create_actionable_tasks_from_text",
+            "arguments": [
+                {"argument_name": "text", "argument_value": "Briefing G"}
+            ]
+        }
+    }
+]

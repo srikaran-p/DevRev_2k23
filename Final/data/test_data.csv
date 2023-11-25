@@ -1,0 +1,93 @@
+id,query_type,question
+test_data_0,single_tool_single_args,I'm interested in the workload of DEVU-456.
+test_data_1,single_tool_single_args,Is there any recent development regarding features coded as FEAT-992?
+test_data_2,single_tool_single_args,Let's review the 'issues' that are marked as high priority for this sprint.
+test_data_3,single_tool_single_args,Which tickets are tied to the REV-123 organization?
+test_data_4,single_tool_single_args,Arrange my to-do list in order of importance
+test_data_5,single_tool_single_args,What are the items that are currently waiting in the 'Review' stage?
+test_data_6,single_tool_single_args,I'm curious about the current status of tasks related to part FEAT-456.
+test_data_7,single_tool_single_args,Which tickets have been raised by ClientCo-123 in our system?
+test_data_8,single_tool_single_args,What tasks are we currently handling?
+test_data_9,single_tool_single_args,I'd like to know the number of issues reported through the customer service portal.
+test_data_10,single_tool_single_args,Provide a summary for the latest sales data
+test_data_11,single_tool_single_args,What’s the update on all the enhancements associated with the module MOD-756?
+test_data_12,single_tool_single_args,Are there any recent tasks or issues that were started by developer DevName-789?
+test_data_13,single_tool_single_args,I'd like to have a glance at the top 5 issues we have at the moment.
+test_data_14,single_tool_single_args,What are some issues similar to issue ID ISSUE-456?
+test_data_15,single_tool_single_args,"Can you give me a quick summary of these customer interactions: [Interaction1, Interaction2]?"
+test_data_16,single_tool_single_args,Retrieve work items in stages 'Development' and 'Testing'
+test_data_17,single_tool_single_args,It would be helpful to see all items classified as 'issue'.
+test_data_18,single_tool_single_args,Retrieve work items associated with organizations focused on software development
+test_data_19,single_tool_single_args,Can you list the tickets that are awaiting a response from our team?
+test_data_20,single_tool_multiple_args,"List all P0 tickets needing a response, from 'HR' department, related to 'PART-606', reported through 'Email', in 'Triage' stage, and with low severity."
+test_data_21,single_tool_multiple_args,List issues of type 'enhancement' in 'Triage' stage owned by 'UserE'.
+test_data_22,single_tool_multiple_args,"We need to create a new work item of type 'issue' with the following details:
+
+Type: issue
+Title: Address Bug in Module Y
+Description: This issue involves fixing a bug in Module Y that causes unexpected behavior.
+Assignee: DEVU-789
+Priority: medium
+Due Date: 2023-11-30
+Tags: ['bug', 'urgent']
+
+Could you create this work item?"
+test_data_23,single_tool_multiple_args,"Show all unassigned 'feature request' tasks in 'Review' stage, related to part 'PART-606'."
+test_data_24,single_tool_multiple_args,Retrieve work items owned by DEVU-123 with priority P1
+test_data_25,single_tool_multiple_args,What does our blocker severity ticket situation look like?
+test_data_26,single_tool_multiple_args,"Show me all issues in 'Review' stage, of type 'bug', created by 'UserD', and have high priority."
+test_data_27,single_tool_multiple_args,Add items FEAT-999 and TASK-321 to Sprint 5
+test_data_28,single_tool_multiple_args,"Can you find P1 issues in the 'Development' stage, created by 'UserA', and related to part 'PART-101'?"
+test_data_29,single_tool_multiple_args,"Show all 'feature request' tasks in 'Review' stage, related to part 'PART-909', reported through 'Email', owned by 'UserG', unassigned, and with high priority."
+test_data_30,single_tool_multiple_args,"Show all unassigned 'feature request' tasks in 'Review' stage, related to part 'PART-808', reported through 'Email', and owned by 'UserG'."
+test_data_31,single_tool_multiple_args,"Show me all issues in ""Development"" stage created by ""DeveloperA""."
+test_data_32,single_tool_multiple_args,List all tickets from 'CustomerB' in 'Triage' stage with medium severity.
+test_data_33,single_tool_multiple_args,"We have a new task at hand. Let's create a work item for it. The details are as follows:
+
+Type of Work: Task
+Title: Implement Feature X
+Description: This task involves implementing Feature X with specific requirements.
+Assignee: DEVU-456
+Priority: High
+Due Date: 2023-12-31
+Tags: ['urgent']
+
+Can you proceed with creating this work item?"
+test_data_34,single_tool_multiple_args,"List all P0 tickets needing a response, from 'HR' department, related to 'PART-707', reported through 'Email', in 'Triage' stage, with low severity, and unassigned, limiting to 15 results."
+test_data_35,multiple_tools,"Could you add these items [Item1, Item2] to the current sprint?"
+test_data_36,multiple_tools,Prioritize my tasks and add them to the current sprint
+test_data_37,multiple_tools,Assign all my pending works to John.
+test_data_38,multiple_tools,Retrieve my current user ID and summarize the objects from a list.
+test_data_39,multiple_tools,"Find all tasks owned by DEVU-789 or DEVU-456. If there are more than 5 tasks, get the current sprint ID and add them to the sprint. Summarize the tasks in the sprint."
+test_data_40,multiple_tools,"Create a new project named 'Project XYZ' with a start date of 2023-01-15, led by DEVU-789, and then create a new sprint named 'Sprint 1' within that project."
+test_data_41,multiple_tools,Summarize issues similar to don:core:dvrv-us-1:devo/0:issue/1
+test_data_42,multiple_tools,I need a summary of interactions with customer 'CustomerY'.
+test_data_43,multiple_tools,"Assign the issue 'ISSUE-456' to DEVU-789 with a due date, get the ID of the current sprint, and find work items similar to 'ISSUE-456'."
+test_data_44,multiple_tools,Find all issues with severity 'blocker' and Rev organization 'ORG-XYZ'. Summarize them.
+test_data_45,multiple_tools,What are the high severity tickets associated with REV-123 and owned by DEVU-123? Summarize them.
+test_data_46,multiple_tools,Retrieve my current user ID and search for objects related to 'ProjectX'.
+test_data_47,multiple_tools,Find issues similar to ENH-123 and prioritize them.
+test_data_48,multiple_tools,Summarize high severity tickets from the customer UltimateCustomer
+test_data_49,multiple_tools,"Add work items FEAT-123, ENH-123, and PROD-123 to the current sprint."
+test_data_50,multiple_tools,"Create a new issue named 'Security Vulnerability' under part PROD-456, set severity to 'high', and provide feedback on the code review with ID CR-789."
+test_data_51,multiple_tools,"Create a new task named 'Backend Refactoring', then create a new sprint named 'Sprint 2' within project PROJ-456, and add the task to 'Sprint 2'."
+test_data_52,multiple_tools,Summarize tasks that need a response and are associated with REV-123.
+test_data_53,multiple_tools,"Find all tasks owned by DEVU-789 or DEVU-456. If there are any tasks needing a response, add the first 5 of them to Sprint A. Summarize the tasks in Sprint A."
+test_data_54,multiple_tools,"Update the status of work item TASK-123 to 'Done', assign it to DEVU-789, and provide code review feedback."
+test_data_55,empty_answers,What is the meaning of life?
+test_data_56,tools_with_no_args,What's the identifier for our current sprint?
+test_data_57,tools_with_no_args,Retrieve the ID of our ongoing sprint phase
+test_data_58,zero_shot,Could we extract tasks from 'Meeting A' notes?
+test_data_59,zero_shot,What actionable items can we get from 'Report B'?
+test_data_60,multiple_tools,"Generate a test execution report for test suite 'TS-456', automate a workflow triggered on 'Task Completed' with notifications to DEVU-123 and DEVU-789, and assign a task to DEVU-456 with a due date."
+test_data_61,multiple_tools,Search for objects related to 'CustomerX' and create actionable tasks from the insights found.
+test_data_62,zero_shot,Generate tasks from the latest customer feedback
+test_data_63,multiple_tools,"Get all work items similar to TKT-123, summarize them, create issues from that summary, and prioritize them "
+test_data_64,zero_shot,"We want to automate a workflow triggered by 'New issue created' events. This workflow should execute specific actions, notify 'DEVU-456' and 'DEVU-123', and maintain an actions log. Can you help set up this workflow?"
+test_data_65,zero_shot,Create actionable tasks from the text 'Analyzing customer feedback for improvement'.
+test_data_66,zero_shot,Create actionable tasks from the following text: 'Review project milestones and update the timeline'
+test_data_67,multiple_tools,"Given a customer meeting transcript T, create action items and add them to my current sprint "
+test_data_68,zero_shot,"We need to automate a workflow triggered by 'Code review passed' events. This workflow should notify 'DEVU-789', execute specific actions, and maintain a log of these actions. Can you set up this workflow?"
+test_data_69,multiple_tools,Generate a test execution report for test suite TS-123 and automate a workflow triggering on 'New issue created' with notifications to DEVU-123.
+test_data_70,zero_shot,Create actionable tasks from insights found in the text 'Analyzing customer feedback for improvement'.
+test_data_71,zero_shot,Create tasks from the meeting notes I just uploaded

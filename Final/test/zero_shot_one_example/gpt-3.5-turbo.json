@@ -1,46 +1,49 @@
 [
     {
+        "id": "test_data_0",
+        "query_type": "single_tool_single_args",
         "question": "I'm interested in the workload of DEVU-456.",
         "answer": [
             {
-                "tool_name": "works_list",
+                "tool_name": "search_object_by_name",
                 "arguments": [
                     {
-                        "argument_name": "owned_by",
-                        "argument_value": [
-                            "DEVU-456"
-                        ]
+                        "argument_name": "query",
+                        "argument_value": "DEVU-456"
                     }
                 ]
-            }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_0"
-    },
-    {
-        "question": "Is there any recent development regarding features coded as FEAT-992?",
-        "answer": [
+            },
             {
-                "tool_name": "works_list",
+                "tool_name": "summarize_objects",
                 "arguments": [
                     {
-                        "argument_name": "applies_to_part",
-                        "argument_value": [
-                            "FEAT-992"
-                        ]
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_1"
+        ]
     },
     {
+        "id": "test_data_1",
+        "query_type": "single_tool_single_args",
+        "question": "Is there any recent development regarding features coded as FEAT-992?",
+        "answer": []
+    },
+    {
+        "id": "test_data_2",
+        "query_type": "single_tool_single_args",
         "question": "Let's review the 'issues' that are marked as high priority for this sprint.",
         "answer": [
             {
                 "tool_name": "works_list",
                 "arguments": [
+                    {
+                        "argument_name": "ticket.severity",
+                        "argument_value": [
+                            "high"
+                        ]
+                    },
                     {
                         "argument_name": "type",
                         "argument_value": [
@@ -48,46 +51,92 @@
                         ]
                     }
                 ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_2"
+        ]
     },
     {
+        "id": "test_data_3",
+        "query_type": "single_tool_single_args",
         "question": "Which tickets are tied to the REV-123 organization?",
+        "answer": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "tool_name": {
+                        "type": "string"
+                    },
+                    "arguments": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "argument_name": {
+                                    "type": "string"
+                                },
+                                "argument_value": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "argument_name",
+                                "argument_value"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "tool_name",
+                    "arguments"
+                ]
+            }
+        }
+    },
+    {
+        "id": "test_data_4",
+        "query_type": "single_tool_single_args",
+        "question": "Arrange my to-do list in order of importance",
         "answer": [
             {
                 "tool_name": "works_list",
                 "arguments": [
                     {
-                        "argument_name": "ticket.rev_org",
+                        "argument_name": "owned_by",
+                        "argument_value": "$$WHOAMI"
+                    },
+                    {
+                        "argument_name": "type",
                         "argument_value": [
-                            "REV-123"
+                            "task",
+                            "issue",
+                            "enhancement"
                         ]
                     }
                 ]
-            }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_3"
-    },
-    {
-        "question": "Arrange my to-do list in order of importance",
-        "answer": [
+            },
             {
                 "tool_name": "prioritize_objects",
                 "arguments": [
                     {
                         "argument_name": "objects",
-                        "argument_value": "to-do list"
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_4"
+        ]
     },
     {
+        "id": "test_data_5",
+        "query_type": "single_tool_single_args",
         "question": "What are the items that are currently waiting in the 'Review' stage?",
         "answer": [
             {
@@ -101,52 +150,29 @@
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_5"
+        ]
     },
     {
+        "id": "test_data_6",
+        "query_type": "single_tool_single_args",
         "question": "I'm curious about the current status of tasks related to part FEAT-456.",
         "answer": [
+            {
+                "tool_name": "search_object_by_name",
+                "arguments": [
+                    {
+                        "argument_name": "query",
+                        "argument_value": "FEAT-456"
+                    }
+                ]
+            },
             {
                 "tool_name": "works_list",
                 "arguments": [
                     {
                         "argument_name": "applies_to_part",
-                        "argument_value": [
-                            "FEAT-456"
-                        ]
-                    }
-                ]
-            }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_6"
-    },
-    {
-        "question": "Which tickets have been raised by ClientCo-123 in our system?",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "ticket.rev_org",
-                        "argument_value": [
-                            "ClientCo-123"
-                        ]
-                    }
-                ]
-            }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_7"
-    },
-    {
-        "question": "What tasks are we currently handling?",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
+                        "argument_value": "$$PREV[0]"
+                    },
                     {
                         "argument_name": "type",
                         "argument_value": [
@@ -154,17 +180,101 @@
                         ]
                     }
                 ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_8"
+        ]
     },
     {
-        "question": "I'd like to know the number of issues reported through the customer service portal.",
+        "id": "test_data_7",
+        "query_type": "single_tool_single_args",
+        "question": "Which tickets have been raised by ClientCo-123 in our system?",
         "answer": [
             {
                 "tool_name": "works_list",
                 "arguments": [
+                    {
+                        "argument_name": "created_by",
+                        "argument_value": "ClientCo-123"
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "ticket"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "test_data_8",
+        "query_type": "single_tool_single_args",
+        "question": "What tasks are we currently handling?",
+        "answer": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "tool_name": {
+                        "type": "string"
+                    },
+                    "arguments": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "argument_name": {
+                                    "type": "string"
+                                },
+                                "argument_value": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "argument_name",
+                                "argument_value"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "tool_name",
+                    "arguments"
+                ]
+            }
+        }
+    },
+    {
+        "id": "test_data_9",
+        "query_type": "single_tool_single_args",
+        "question": "I'd like to know the number of issues reported through the customer service portal.",
+        "answer": [
+            {
+                "tool_name": "search_object_by_name",
+                "arguments": [
+                    {
+                        "argument_name": "query",
+                        "argument_value": "customer service portal"
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "issue"
+                        ]
+                    },
                     {
                         "argument_name": "ticket.source_channel",
                         "argument_value": [
@@ -172,30 +282,38 @@
                         ]
                     }
                 ]
-            }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_9"
-    },
-    {
-        "question": "Provide a summary for the latest sales data",
-        "answer": [
+            },
             {
                 "tool_name": "summarize_objects",
                 "arguments": [
                     {
                         "argument_name": "objects",
-                        "argument_value": "latest sales data"
+                        "argument_value": "$$PREV[1]"
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_10"
+        ]
     },
     {
+        "id": "test_data_10",
+        "query_type": "single_tool_single_args",
+        "question": "Provide a summary for the latest sales data",
+        "answer": []
+    },
+    {
+        "id": "test_data_11",
+        "query_type": "single_tool_single_args",
         "question": "What\u2019s the update on all the enhancements associated with the module MOD-756?",
         "answer": [
+            {
+                "tool_name": "search_object_by_name",
+                "arguments": [
+                    {
+                        "argument_name": "query",
+                        "argument_value": "MOD-756"
+                    }
+                ]
+            },
             {
                 "tool_name": "works_list",
                 "arguments": [
@@ -204,14 +322,29 @@
                         "argument_value": [
                             "MOD-756"
                         ]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "enhancement"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_11"
+        ]
     },
     {
+        "id": "test_data_12",
+        "query_type": "single_tool_single_args",
         "question": "Are there any recent tasks or issues that were started by developer DevName-789?",
         "answer": [
             {
@@ -222,65 +355,76 @@
                         "argument_value": [
                             "DevName-789"
                         ]
+                    },
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": [
+                            "In Progress"
+                        ]
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_12"
+        ]
     },
     {
+        "id": "test_data_13",
+        "query_type": "single_tool_single_args",
         "question": "I'd like to have a glance at the top 5 issues we have at the moment.",
         "answer": [
             {
                 "tool_name": "works_list",
                 "arguments": [
                     {
-                        "argument_name": "limit",
-                        "argument_value": 5
-                    }
-                ]
-            }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_13"
-    },
-    {
-        "question": "What are some issues similar to issue ID ISSUE-456?",
-        "answer": [
-            {
-                "tool_name": "get_similar_work_items",
-                "arguments": [
+                        "argument_name": "type",
+                        "argument_value": [
+                            "issue"
+                        ]
+                    },
                     {
-                        "argument_name": "work_id",
-                        "argument_value": "ISSUE-456"
+                        "argument_name": "imit",
+                        "argument_value": "5"
                     }
                 ]
-            }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_14"
-    },
-    {
-        "question": "Can you give me a quick summary of these customer interactions: [Interaction1, Interaction2]?",
-        "answer": [
+            },
             {
                 "tool_name": "summarize_objects",
                 "arguments": [
                     {
                         "argument_name": "objects",
-                        "argument_value": [
-                            "Interaction1",
-                            "Interaction2"
-                        ]
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_15"
+        ]
     },
     {
+        "id": "test_data_14",
+        "query_type": "single_tool_single_args",
+        "question": "What are some issues similar to issue ID ISSUE-456?",
+        "answer": {
+            "type": "array",
+            "items": [
+                {
+                    "tool_name": "get_similar_work_items",
+                    "arguments": [
+                        {
+                            "argument_name": "work_id",
+                            "argument_value": "ISSUE-456"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": "test_data_15",
+        "query_type": "single_tool_single_args",
+        "question": "Can you give me a quick summary of these customer interactions: [Interaction1, Interaction2]?",
+        "answer": []
+    },
+    {
+        "id": "test_data_16",
+        "query_type": "single_tool_single_args",
         "question": "Retrieve work items in stages 'Development' and 'Testing'",
         "answer": [
             {
@@ -295,29 +439,49 @@
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_16"
+        ]
     },
     {
+        "id": "test_data_17",
+        "query_type": "single_tool_single_args",
         "question": "It would be helpful to see all items classified as 'issue'.",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "issue"
-                        ]
+        "answer": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "tool_name": {
+                        "type": "string"
+                    },
+                    "arguments": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "argument_name": {
+                                    "type": "string"
+                                },
+                                "argument_value": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "argument_name",
+                                "argument_value"
+                            ]
+                        }
                     }
+                },
+                "required": [
+                    "tool_name",
+                    "arguments"
                 ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_17"
+        }
     },
     {
+        "id": "test_data_18",
+        "query_type": "single_tool_single_args",
         "question": "Retrieve work items associated with organizations focused on software development",
         "answer": [
             {
@@ -326,32 +490,39 @@
                     {
                         "argument_name": "issue.rev_orgs",
                         "argument_value": [
-                            "software_dev_org"
+                            "software development"
                         ]
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_18"
+        ]
     },
     {
+        "id": "test_data_19",
+        "query_type": "single_tool_single_args",
         "question": "Can you list the tickets that are awaiting a response from our team?",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "ticket.needs_response",
-                        "argument_value": true
-                    }
-                ]
-            }
-        ],
-        "query_type": "single_tool_single_args",
-        "id": "test_data_19"
+        "answer": {
+            "type": "array",
+            "items": [
+                {
+                    "tool_name": "works_list",
+                    "arguments": [
+                        {
+                            "argument_name": "ticket.needs_response",
+                            "argument_value": "true"
+                        },
+                        {
+                            "argument_name": "type",
+                            "argument_value": "ticket"
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
+        "id": "test_data_20",
+        "query_type": "single_tool_multiple_args",
         "question": "List all P0 tickets needing a response, from 'HR' department, related to 'PART-606', reported through 'Email', in 'Triage' stage, and with low severity.",
         "answer": [
             {
@@ -365,9 +536,7 @@
                     },
                     {
                         "argument_name": "ticket.needs_response",
-                        "argument_value": [
-                            true
-                        ]
+                        "argument_value": true
                     },
                     {
                         "argument_name": "ticket.rev_org",
@@ -401,11 +570,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_20"
+        ]
     },
     {
+        "id": "test_data_21",
+        "query_type": "single_tool_multiple_args",
         "question": "List issues of type 'enhancement' in 'Triage' stage owned by 'UserE'.",
         "answer": [
             {
@@ -414,7 +583,7 @@
                     {
                         "argument_name": "type",
                         "argument_value": [
-                            "issue"
+                            "enhancement"
                         ]
                     },
                     {
@@ -431,69 +600,66 @@
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_21"
+        ]
     },
     {
+        "id": "test_data_22",
+        "query_type": "single_tool_multiple_args",
         "question": "We need to create a new work item of type 'issue' with the following details:\n\nType: issue\nTitle: Address Bug in Module Y\nDescription: This issue involves fixing a bug in Module Y that causes unexpected behavior.\nAssignee: DEVU-789\nPriority: medium\nDue Date: 2023-11-30\nTags: ['bug', 'urgent']\n\nCould you create this work item?",
         "answer": [
             {
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "issue"
+                        "argument_name": "work_item_type",
+                        "argument_value": "issue"
                     },
                     {
-                        "name": "title",
-                        "value": "Address Bug in Module Y"
+                        "argument_name": "title",
+                        "argument_value": "Address Bug in Module Y"
                     },
                     {
-                        "name": "description",
-                        "value": "This issue involves fixing a bug in Module Y that causes unexpected behavior."
+                        "argument_name": "description",
+                        "argument_value": "This issue involves fixing a bug in Module Y that causes unexpected behavior."
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-789"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-789"
                     },
                     {
-                        "name": "priority",
-                        "value": "medium"
+                        "argument_name": "priority",
+                        "argument_value": "medium"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-11-30"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-11-30"
                     },
                     {
-                        "name": "tags",
-                        "value": [
-                            "bug",
-                            "urgent"
-                        ]
+                        "argument_name": "tags",
+                        "argument_value": "['bug', 'urgent']"
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_22"
+        ]
     },
     {
+        "id": "test_data_23",
+        "query_type": "single_tool_multiple_args",
         "question": "Show all unassigned 'feature request' tasks in 'Review' stage, related to part 'PART-606'.",
         "answer": [
             {
                 "tool_name": "works_list",
                 "arguments": [
                     {
-                        "argument_name": "type",
+                        "argument_name": "applies_to_part",
                         "argument_value": [
-                            "task"
+                            "PART-606"
                         ]
                     },
                     {
                         "argument_name": "owned_by",
                         "argument_value": [
-                            ""
+                            "unassigned"
                         ]
                     },
                     {
@@ -503,18 +669,18 @@
                         ]
                     },
                     {
-                        "argument_name": "applies_to_part",
+                        "argument_name": "type",
                         "argument_value": [
-                            "PART-606"
+                            "task"
                         ]
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_23"
+        ]
     },
     {
+        "id": "test_data_24",
+        "query_type": "single_tool_multiple_args",
         "question": "Retrieve work items owned by DEVU-123 with priority P1",
         "answer": [
             {
@@ -526,15 +692,17 @@
                     },
                     {
                         "argument_name": "issue.priority",
-                        "argument_value": "P1"
+                        "argument_value": [
+                            "p1"
+                        ]
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_24"
+        ]
     },
     {
+        "id": "test_data_25",
+        "query_type": "single_tool_multiple_args",
         "question": "What does our blocker severity ticket situation look like?",
         "answer": [
             {
@@ -545,20 +713,14 @@
                         "argument_value": [
                             "blocker"
                         ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "ticket"
-                        ]
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_25"
+        ]
     },
     {
+        "id": "test_data_26",
+        "query_type": "single_tool_multiple_args",
         "question": "Show me all issues in 'Review' stage, of type 'bug', created by 'UserD', and have high priority.",
         "answer": [
             {
@@ -590,11 +752,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_26"
+        ]
     },
     {
+        "id": "test_data_27",
+        "query_type": "single_tool_multiple_args",
         "question": "Add items FEAT-999 and TASK-321 to Sprint 5",
         "answer": [
             {
@@ -602,7 +764,10 @@
                 "arguments": [
                     {
                         "argument_name": "work_ids",
-                        "argument_value": "FEAT-999,TASK-321"
+                        "argument_value": [
+                            "FEAT-999",
+                            "TASK-321"
+                        ]
                     },
                     {
                         "argument_name": "sprint_id",
@@ -610,11 +775,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_27"
+        ]
     },
     {
+        "id": "test_data_28",
+        "query_type": "single_tool_multiple_args",
         "question": "Can you find P1 issues in the 'Development' stage, created by 'UserA', and related to part 'PART-101'?",
         "answer": [
             {
@@ -646,20 +811,20 @@
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_28"
+        ]
     },
     {
+        "id": "test_data_29",
+        "query_type": "single_tool_multiple_args",
         "question": "Show all 'feature request' tasks in 'Review' stage, related to part 'PART-909', reported through 'Email', owned by 'UserG', unassigned, and with high priority.",
         "answer": [
             {
                 "tool_name": "works_list",
                 "arguments": [
                     {
-                        "argument_name": "type",
+                        "argument_name": "applies_to_part",
                         "argument_value": [
-                            "task"
+                            "PART-909"
                         ]
                     },
                     {
@@ -669,9 +834,9 @@
                         ]
                     },
                     {
-                        "argument_name": "applies_to_part",
+                        "argument_name": "type",
                         "argument_value": [
-                            "PART-909"
+                            "task"
                         ]
                     },
                     {
@@ -683,14 +848,12 @@
                     {
                         "argument_name": "owned_by",
                         "argument_value": [
-                            "UserG"
+                            "User-G"
                         ]
                     },
                     {
-                        "argument_name": "owned_by",
-                        "argument_value": [
-                            ""
-                        ]
+                        "argument_name": "ticket.needs_response",
+                        "argument_value": false
                     },
                     {
                         "argument_name": "issue.priority",
@@ -700,26 +863,26 @@
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_29"
+        ]
     },
     {
+        "id": "test_data_30",
+        "query_type": "single_tool_multiple_args",
         "question": "Show all unassigned 'feature request' tasks in 'Review' stage, related to part 'PART-808', reported through 'Email', and owned by 'UserG'.",
         "answer": [
             {
                 "tool_name": "works_list",
                 "arguments": [
                     {
-                        "argument_name": "type",
+                        "argument_name": "applies_to_part",
                         "argument_value": [
-                            "task"
+                            "PART-808"
                         ]
                     },
                     {
-                        "argument_name": "owned_by",
+                        "argument_name": "type",
                         "argument_value": [
-                            ""
+                            "task"
                         ]
                     },
                     {
@@ -729,30 +892,24 @@
                         ]
                     },
                     {
-                        "argument_name": "applies_to_part",
-                        "argument_value": [
-                            "PART-808"
-                        ]
-                    },
-                    {
                         "argument_name": "ticket.source_channel",
                         "argument_value": [
                             "Email"
                         ]
                     },
                     {
-                        "argument_name": "created_by",
+                        "argument_name": "owned_by",
                         "argument_value": [
-                            "UserG"
+                            "User-G"
                         ]
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_30"
+        ]
     },
     {
+        "id": "test_data_31",
+        "query_type": "single_tool_multiple_args",
         "question": "Show me all issues in \"Development\" stage created by \"DeveloperA\".",
         "answer": [
             {
@@ -769,21 +926,27 @@
                         "argument_value": [
                             "DeveloperA"
                         ]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "issue"
+                        ]
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_31"
+        ]
     },
     {
+        "id": "test_data_32",
+        "query_type": "single_tool_multiple_args",
         "question": "List all tickets from 'CustomerB' in 'Triage' stage with medium severity.",
         "answer": [
             {
                 "tool_name": "works_list",
                 "arguments": [
                     {
-                        "argument_name": "ticket.rev_org",
+                        "argument_name": "issue.rev_orgs",
                         "argument_value": [
                             "CustomerB"
                         ]
@@ -799,56 +962,60 @@
                         "argument_value": [
                             "medium"
                         ]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "ticket"
+                        ]
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_32"
+        ]
     },
     {
+        "id": "test_data_33",
+        "query_type": "single_tool_multiple_args",
         "question": "We have a new task at hand. Let's create a work item for it. The details are as follows:\n\nType of Work: Task\nTitle: Implement Feature X\nDescription: This task involves implementing Feature X with specific requirements.\nAssignee: DEVU-456\nPriority: High\nDue Date: 2023-12-31\nTags: ['urgent']\n\nCan you proceed with creating this work item?",
         "answer": [
             {
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     },
                     {
-                        "name": "title",
-                        "value": "Implement Feature X"
+                        "argument_name": "title",
+                        "argument_value": "Implement Feature X"
                     },
                     {
-                        "name": "description",
-                        "value": "This task involves implementing Feature X with specific requirements."
+                        "argument_name": "description",
+                        "argument_value": "This task involves implementing Feature X with specific requirements."
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-456"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-456"
                     },
                     {
-                        "name": "priority",
-                        "value": "high"
+                        "argument_name": "priority",
+                        "argument_value": "High"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-31"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-31"
                     },
                     {
-                        "name": "tags",
-                        "value": [
-                            "urgent"
-                        ]
+                        "argument_name": "tags",
+                        "argument_value": "['urgent']"
                     }
                 ]
             }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_33"
+        ]
     },
     {
+        "id": "test_data_34",
+        "query_type": "single_tool_multiple_args",
         "question": "List all P0 tickets needing a response, from 'HR' department, related to 'PART-707', reported through 'Email', in 'Triage' stage, with low severity, and unassigned, limiting to 15 results.",
         "answer": [
             {
@@ -858,12 +1025,6 @@
                         "argument_name": "issue.priority",
                         "argument_value": [
                             "p0"
-                        ]
-                    },
-                    {
-                        "argument_name": "ticket.needs_response",
-                        "argument_value": [
-                            true
                         ]
                     },
                     {
@@ -898,105 +1059,111 @@
                     },
                     {
                         "argument_name": "owned_by",
-                        "argument_value": [
-                            ""
-                        ]
+                        "argument_value": []
                     },
                     {
-                        "argument_name": "limit",
-                        "argument_value": [
-                            15
-                        ]
-                    }
-                ]
-            }
-        ],
-        "query_type": "single_tool_multiple_args",
-        "id": "test_data_34"
-    },
-    {
-        "question": "Could you add these items [Item1, Item2] to the current sprint?",
-        "answer": [
-            {
-                "tool_name": "get_sprint_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "add_work_items_to_sprint",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
-                        "argument_value": [
-                            "Item1",
-                            "Item2"
-                        ]
+                        "argument_name": "imit",
+                        "argument_value": "15"
                     },
-                    {
-                        "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[0]"
-                    }
-                ]
-            }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_35"
-    },
-    {
-        "question": "Prioritize my tasks and add them to the current sprint",
-        "answer": [
-            {
-                "tool_name": "get_sprint_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
                     {
                         "argument_name": "type",
                         "argument_value": [
-                            "task"
+                            "ticket"
                         ]
+                    },
+                    {
+                        "argument_name": "ticket.needs_response",
+                        "argument_value": true
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "id": "test_data_35",
+        "query_type": "multiple_tools",
+        "question": "Could you add these items [Item1, Item2] to the current sprint?",
+        "answer": [
             {
                 "tool_name": "add_work_items_to_sprint",
                 "arguments": [
                     {
                         "argument_name": "work_ids",
-                        "argument_value": "$$PREV[1]"
+                        "argument_value": "[Item1, Item2]"
                     },
                     {
                         "argument_name": "sprint_id",
                         "argument_value": "$$PREV[0]"
                     }
                 ]
+            },
+            {
+                "tool_name": "get_sprint_id",
+                "arguments": []
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_36"
+        ]
     },
     {
-        "question": "Assign all my pending works to John.",
+        "id": "test_data_36",
+        "query_type": "multiple_tools",
+        "question": "Prioritize my tasks and add them to the current sprint",
         "answer": [
-            {
-                "tool_name": "who_am_i",
-                "arguments": []
-            },
             {
                 "tool_name": "works_list",
                 "arguments": [
                     {
                         "argument_name": "owned_by",
-                        "argument_value": [
-                            "$$PREV[0]"
-                        ]
+                        "argument_value": "$$PREV[1].argument_value"
                     },
                     {
-                        "argument_name": "stage.name",
-                        "argument_value": [
-                            "pending"
-                        ]
+                        "argument_name": "type",
+                        "argument_value": "task"
+                    },
+                    {
+                        "argument_name": "imit",
+                        "argument_value": "50"
+                    }
+                ]
+            },
+            {
+                "tool_name": "prioritize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_work_items_to_sprint",
+                "arguments": [
+                    {
+                        "argument_name": "work_ids",
+                        "argument_value": "$$PREV[1].argument_value"
+                    },
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "$$PREV[3].argument_value"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_sprint_id",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "id": "test_data_37",
+        "query_type": "multiple_tools",
+        "question": "Assign all my pending works to John.",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": "whoami"
                     }
                 ]
             },
@@ -1005,7 +1172,7 @@
                 "arguments": [
                     {
                         "argument_name": "work_item_id",
-                        "argument_value": "$$PREV[1].work_item_id"
+                        "argument_value": "$$PREV[0].work_id"
                     },
                     {
                         "argument_name": "assignee",
@@ -1013,11 +1180,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_37"
+        ]
     },
     {
+        "id": "test_data_38",
+        "query_type": "multiple_tools",
         "question": "Retrieve my current user ID and summarize the objects from a list.",
         "answer": [
             {
@@ -1029,15 +1196,15 @@
                 "arguments": [
                     {
                         "argument_name": "objects",
-                        "argument_value": "[{ 'id': 'obj1' }, { 'id': 'obj2' }, { 'id': 'obj3' }]"
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_38"
+        ]
     },
     {
+        "id": "test_data_39",
+        "query_type": "multiple_tools",
         "question": "Find all tasks owned by DEVU-789 or DEVU-456. If there are more than 5 tasks, get the current sprint ID and add them to the sprint. Summarize the tasks in the sprint.",
         "answer": [
             {
@@ -1055,15 +1222,10 @@
                         "argument_value": [
                             "task"
                         ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "prioritize_objects",
-                "arguments": [
+                    },
                     {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[0].length > 5 ? $$PREV[0] : []"
+                        "argument_name": "imit",
+                        "argument_value": "5"
                     }
                 ]
             },
@@ -1076,11 +1238,11 @@
                 "arguments": [
                     {
                         "argument_name": "work_ids",
-                        "argument_value": "$$PREV[1].map(task => task.id)"
+                        "argument_value": "$$PREV[0].work_ids"
                     },
                     {
                         "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[2]"
+                        "argument_value": "$$PREV[1].sprint_id"
                     }
                 ]
             },
@@ -1088,8 +1250,8 @@
                 "tool_name": "works_list",
                 "arguments": [
                     {
-                        "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[2]"
+                        "argument_name": "applies_to_part",
+                        "argument_value": "$$PREV[1].work_ids"
                     }
                 ]
             },
@@ -1098,15 +1260,15 @@
                 "arguments": [
                     {
                         "argument_name": "objects",
-                        "argument_value": "$$PREV[4]"
+                        "argument_value": "$$PREV[3]"
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_39"
+        ]
     },
     {
+        "id": "test_data_40",
+        "query_type": "multiple_tools",
         "question": "Create a new project named 'Project XYZ' with a start date of 2023-01-15, led by DEVU-789, and then create a new sprint named 'Sprint 1' within that project.",
         "answer": [
             {
@@ -1117,12 +1279,24 @@
                         "argument_value": "Project XYZ"
                     },
                     {
+                        "argument_name": "project_description",
+                        "argument_value": ""
+                    },
+                    {
                         "argument_name": "project_lead",
                         "argument_value": "DEVU-789"
                     },
                     {
                         "argument_name": "start_date",
                         "argument_value": "2023-01-15"
+                    },
+                    {
+                        "argument_name": "project_team",
+                        "argument_value": []
+                    },
+                    {
+                        "argument_name": "target_date",
+                        "argument_value": ""
                     }
                 ]
             },
@@ -1139,23 +1313,27 @@
                     },
                     {
                         "argument_name": "sprint_duration",
-                        "argument_value": 2
+                        "argument_value": ""
                     },
                     {
                         "argument_name": "sprint_goals",
-                        "argument_value": "Complete user story implementations"
+                        "argument_value": ""
                     },
                     {
                         "argument_name": "sprint_capacity",
-                        "argument_value": 50
+                        "argument_value": ""
+                    },
+                    {
+                        "argument_name": "backlog_items",
+                        "argument_value": []
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_40"
+        ]
     },
     {
+        "id": "test_data_41",
+        "query_type": "multiple_tools",
         "question": "Summarize issues similar to don:core:dvrv-us-1:devo/0:issue/1",
         "answer": [
             {
@@ -1176,11 +1354,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_41"
+        ]
     },
     {
+        "id": "test_data_42",
+        "query_type": "multiple_tools",
         "question": "I need a summary of interactions with customer 'CustomerY'.",
         "answer": [
             {
@@ -1193,36 +1371,19 @@
                 ]
             },
             {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "ticket.rev_org",
-                        "argument_value": [
-                            "$$PREV[0]"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "ticket"
-                        ]
-                    }
-                ]
-            },
-            {
                 "tool_name": "summarize_objects",
                 "arguments": [
                     {
                         "argument_name": "objects",
-                        "argument_value": "$$PREV[1]"
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_42"
+        ]
     },
     {
+        "id": "test_data_43",
+        "query_type": "multiple_tools",
         "question": "Assign the issue 'ISSUE-456' to DEVU-789 with a due date, get the ID of the current sprint, and find work items similar to 'ISSUE-456'.",
         "answer": [
             {
@@ -1238,7 +1399,7 @@
                     },
                     {
                         "argument_name": "due_date",
-                        "argument_value": "2023-08-20"
+                        "argument_value": "2022-12-31"
                     },
                     {
                         "argument_name": "work_item_type",
@@ -1259,16 +1420,22 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_43"
+        ]
     },
     {
+        "id": "test_data_44",
+        "query_type": "multiple_tools",
         "question": "Find all issues with severity 'blocker' and Rev organization 'ORG-XYZ'. Summarize them.",
         "answer": [
             {
                 "tool_name": "works_list",
                 "arguments": [
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "issue"
+                        ]
+                    },
                     {
                         "argument_name": "ticket.severity",
                         "argument_value": [
@@ -1279,12 +1446,6 @@
                         "argument_name": "ticket.rev_org",
                         "argument_value": [
                             "ORG-XYZ"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "issue"
                         ]
                     }
                 ]
@@ -1298,26 +1459,26 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_44"
+        ]
     },
     {
+        "id": "test_data_45",
+        "query_type": "multiple_tools",
         "question": "What are the high severity tickets associated with REV-123 and owned by DEVU-123? Summarize them.",
         "answer": [
             {
                 "tool_name": "works_list",
                 "arguments": [
                     {
-                        "argument_name": "ticket.rev_org",
-                        "argument_value": [
-                            "REV-123"
-                        ]
-                    },
-                    {
                         "argument_name": "ticket.severity",
                         "argument_value": [
                             "high"
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": [
+                            "REV-123"
                         ]
                     },
                     {
@@ -1343,11 +1504,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_45"
+        ]
     },
     {
+        "id": "test_data_46",
+        "query_type": "multiple_tools",
         "question": "Retrieve my current user ID and search for objects related to 'ProjectX'.",
         "answer": [
             {
@@ -1363,11 +1524,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_46"
+        ]
     },
     {
+        "id": "test_data_47",
+        "query_type": "multiple_tools",
         "question": "Find issues similar to ENH-123 and prioritize them.",
         "answer": [
             {
@@ -1388,11 +1549,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_47"
+        ]
     },
     {
+        "id": "test_data_48",
+        "query_type": "multiple_tools",
         "question": "Summarize high severity tickets from the customer UltimateCustomer",
         "answer": [
             {
@@ -1408,22 +1569,14 @@
                 "tool_name": "works_list",
                 "arguments": [
                     {
-                        "argument_name": "ticket.rev_org",
-                        "argument_value": [
-                            "$$PREV[0]"
-                        ]
-                    },
-                    {
                         "argument_name": "ticket.severity",
                         "argument_value": [
                             "high"
                         ]
                     },
                     {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "ticket"
-                        ]
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": "$$PREV[0].id"
                     }
                 ]
             },
@@ -1436,11 +1589,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_48"
+        ]
     },
     {
+        "id": "test_data_49",
+        "query_type": "multiple_tools",
         "question": "Add work items FEAT-123, ENH-123, and PROD-123 to the current sprint.",
         "answer": [
             {
@@ -1452,11 +1605,7 @@
                 "arguments": [
                     {
                         "argument_name": "work_ids",
-                        "argument_value": [
-                            "FEAT-123",
-                            "ENH-123",
-                            "PROD-123"
-                        ]
+                        "argument_value": "FEAT-123, ENH-123, PROD-123"
                     },
                     {
                         "argument_name": "sprint_id",
@@ -1464,11 +1613,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_49"
+        ]
     },
     {
+        "id": "test_data_50",
+        "query_type": "multiple_tools",
         "question": "Create a new issue named 'Security Vulnerability' under part PROD-456, set severity to 'high', and provide feedback on the code review with ID CR-789.",
         "answer": [
             {
@@ -1483,13 +1632,39 @@
                         "argument_value": "Security Vulnerability"
                     },
                     {
-                        "argument_name": "issue.rev_orgs",
+                        "argument_name": "description",
+                        "argument_value": ""
+                    },
+                    {
+                        "argument_name": "assignee",
+                        "argument_value": ""
+                    },
+                    {
+                        "argument_name": "priority",
+                        "argument_value": ""
+                    },
+                    {
+                        "argument_name": "due_date",
+                        "argument_value": ""
+                    },
+                    {
+                        "argument_name": "tags",
+                        "argument_value": []
+                    },
+                    {
+                        "argument_name": "applies_to_part",
                         "argument_value": [
                             "PROD-456"
                         ]
                     },
                     {
-                        "argument_name": "ticket.severity",
+                        "argument_name": "type",
+                        "argument_value": [
+                            "issue"
+                        ]
+                    },
+                    {
+                        "argument_name": "issue.severity",
                         "argument_value": [
                             "high"
                         ]
@@ -1505,15 +1680,23 @@
                     },
                     {
                         "argument_name": "feedback",
-                        "argument_value": "Security review passed, no vulnerabilities found."
+                        "argument_value": ""
+                    },
+                    {
+                        "argument_name": "code_version",
+                        "argument_value": ""
+                    },
+                    {
+                        "argument_name": "severity",
+                        "argument_value": ""
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_50"
+        ]
     },
     {
+        "id": "test_data_51",
+        "query_type": "multiple_tools",
         "question": "Create a new task named 'Backend Refactoring', then create a new sprint named 'Sprint 2' within project PROJ-456, and add the task to 'Sprint 2'.",
         "answer": [
             {
@@ -1541,39 +1724,18 @@
                         "argument_value": "Sprint 2"
                     },
                     {
-                        "argument_name": "sprint_duration",
-                        "argument_value": 2
-                    },
-                    {
-                        "argument_name": "sprint_goals",
-                        "argument_value": "Refactor backend code for improved performance"
-                    },
-                    {
-                        "argument_name": "sprint_capacity",
-                        "argument_value": 40
-                    }
-                ]
-            },
-            {
-                "tool_name": "add_work_items_to_sprint",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
+                        "argument_name": "backlog_items",
                         "argument_value": [
-                            "$$PREV[0].work_item_id"
+                            "$$PREV[0].id"
                         ]
-                    },
-                    {
-                        "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[1]"
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_51"
+        ]
     },
     {
+        "id": "test_data_52",
+        "query_type": "multiple_tools",
         "question": "Summarize tasks that need a response and are associated with REV-123.",
         "answer": [
             {
@@ -1581,13 +1743,11 @@
                 "arguments": [
                     {
                         "argument_name": "ticket.needs_response",
-                        "argument_value": true
+                        "argument_value": "true"
                     },
                     {
                         "argument_name": "ticket.rev_org",
-                        "argument_value": [
-                            "REV-123"
-                        ]
+                        "argument_value": "REV-123"
                     },
                     {
                         "argument_name": "type",
@@ -1606,11 +1766,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_52"
+        ]
     },
     {
+        "id": "test_data_53",
+        "query_type": "multiple_tools",
         "question": "Find all tasks owned by DEVU-789 or DEVU-456. If there are any tasks needing a response, add the first 5 of them to Sprint A. Summarize the tasks in Sprint A.",
         "answer": [
             {
@@ -1618,10 +1778,7 @@
                 "arguments": [
                     {
                         "argument_name": "owned_by",
-                        "argument_value": [
-                            "DEVU-789",
-                            "DEVU-456"
-                        ]
+                        "argument_value": "DEVU-789"
                     },
                     {
                         "argument_name": "type",
@@ -1636,11 +1793,19 @@
                 "arguments": [
                     {
                         "argument_name": "owned_by",
-                        "argument_value": [
-                            "DEVU-789",
-                            "DEVU-456"
-                        ]
+                        "argument_value": "DEVU-456"
                     },
+                    {
+                        "argument_name": "type",
+                        "argument_value": [
+                            "task"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
                     {
                         "argument_name": "ticket.needs_response",
                         "argument_value": true
@@ -1662,17 +1827,8 @@
                 "arguments": [
                     {
                         "argument_name": "work_ids",
-                        "argument_value": "$$PREV[1].map(task => task.id)"
+                        "argument_value": "$$PREV[2].ids"
                     },
-                    {
-                        "argument_name": "sprint_id",
-                        "argument_value": "Sprint A"
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
                     {
                         "argument_name": "sprint_id",
                         "argument_value": "Sprint A"
@@ -1684,15 +1840,15 @@
                 "arguments": [
                     {
                         "argument_name": "objects",
-                        "argument_value": "$$PREV[3]"
+                        "argument_value": "$$PREV[3].work_items"
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_53"
+        ]
     },
     {
+        "id": "test_data_54",
+        "query_type": "multiple_tools",
         "question": "Update the status of work item TASK-123 to 'Done', assign it to DEVU-789, and provide code review feedback.",
         "answer": [
             {
@@ -1717,55 +1873,55 @@
                 "arguments": [
                     {
                         "argument_name": "review_id",
-                        "argument_value": "CR-789"
+                        "argument_value": "$$PREV[0].arguments[0].argument_value"
                     },
                     {
                         "argument_name": "feedback",
-                        "argument_value": "Code looks good, ready for merge."
+                        "argument_value": "Provide code review feedback here"
                     },
                     {
                         "argument_name": "code_version",
-                        "argument_value": "v1.2"
+                        "argument_value": "Specify code version here"
                     },
                     {
                         "argument_name": "severity",
-                        "argument_value": "minor"
+                        "argument_value": "Specify severity here"
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_54"
+        ]
     },
     {
-        "question": "What is the meaning of life?",
-        "answer": [],
+        "id": "test_data_55",
         "query_type": "empty_answers",
-        "id": "test_data_55"
+        "question": "What is the meaning of life?",
+        "answer": []
     },
     {
+        "id": "test_data_56",
+        "query_type": "tools_with_no_args",
         "question": "What's the identifier for our current sprint?",
         "answer": [
             {
                 "tool_name": "get_sprint_id",
                 "arguments": []
             }
-        ],
-        "query_type": "tools_with_no_args",
-        "id": "test_data_56"
+        ]
     },
     {
+        "id": "test_data_57",
+        "query_type": "tools_with_no_args",
         "question": "Retrieve the ID of our ongoing sprint phase",
         "answer": [
             {
                 "tool_name": "get_sprint_id",
                 "arguments": []
             }
-        ],
-        "query_type": "tools_with_no_args",
-        "id": "test_data_57"
+        ]
     },
     {
+        "id": "test_data_58",
+        "query_type": "zero_shot",
         "question": "Could we extract tasks from 'Meeting A' notes?",
         "answer": [
             {
@@ -1777,27 +1933,17 @@
                     }
                 ]
             }
-        ],
-        "query_type": "zero_shot",
-        "id": "test_data_58"
+        ]
     },
     {
+        "id": "test_data_59",
+        "query_type": "zero_shot",
         "question": "What actionable items can we get from 'Report B'?",
-        "answer": [
-            {
-                "tool_name": "create_actionable_tasks_from_text",
-                "arguments": [
-                    {
-                        "argument_name": "text",
-                        "argument_value": "Report B"
-                    }
-                ]
-            }
-        ],
-        "query_type": "zero_shot",
-        "id": "test_data_59"
+        "answer": []
     },
     {
+        "id": "test_data_60",
+        "query_type": "multiple_tools",
         "question": "Generate a test execution report for test suite 'TS-456', automate a workflow triggered on 'Task Completed' with notifications to DEVU-123 and DEVU-789, and assign a task to DEVU-456 with a due date.",
         "answer": [
             {
@@ -1808,12 +1954,16 @@
                         "argument_value": "TS-456"
                     },
                     {
+                        "argument_name": "test_environment",
+                        "argument_value": ""
+                    },
+                    {
                         "argument_name": "pass_fail_status",
-                        "argument_value": [
-                            "pass",
-                            "fail",
-                            "pass"
-                        ]
+                        "argument_value": []
+                    },
+                    {
+                        "argument_name": "test_case_types",
+                        "argument_value": []
                     }
                 ]
             },
@@ -1826,16 +1976,7 @@
                     },
                     {
                         "argument_name": "workflow_actions",
-                        "argument_value": [
-                            {
-                                "action": "Send notification",
-                                "recipient": "DEVU-123"
-                            },
-                            {
-                                "action": "Send notification",
-                                "recipient": "DEVU-789"
-                            }
-                        ]
+                        "argument_value": []
                     },
                     {
                         "argument_name": "notifications",
@@ -1846,20 +1987,16 @@
                     },
                     {
                         "argument_name": "actions_log",
-                        "argument_value": true
+                        "argument_value": false
                     }
                 ]
             },
             {
-                "tool_name": "create_work_item",
+                "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "argument_name": "work_item_type",
-                        "argument_value": "task"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "Review Task"
+                        "argument_name": "work_item_id",
+                        "argument_value": ""
                     },
                     {
                         "argument_name": "assignee",
@@ -1867,23 +2004,33 @@
                     },
                     {
                         "argument_name": "due_date",
-                        "argument_value": "2023-06-15"
+                        "argument_value": ""
+                    },
+                    {
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_60"
+        ]
     },
     {
+        "id": "test_data_61",
+        "query_type": "multiple_tools",
         "question": "Search for objects related to 'CustomerX' and create actionable tasks from the insights found.",
+        "answer": []
+    },
+    {
+        "id": "test_data_62",
+        "query_type": "zero_shot",
+        "question": "Generate tasks from the latest customer feedback",
         "answer": [
             {
                 "tool_name": "search_object_by_name",
                 "arguments": [
                     {
                         "argument_name": "query",
-                        "argument_value": "CustomerX"
+                        "argument_value": "latest customer feedback"
                     }
                 ]
             },
@@ -1892,31 +2039,15 @@
                 "arguments": [
                     {
                         "argument_name": "text",
-                        "argument_value": "Actionable tasks from 'CustomerX'"
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
-        ],
+        ]
+    },
+    {
+        "id": "test_data_63",
         "query_type": "multiple_tools",
-        "id": "test_data_61"
-    },
-    {
-        "question": "Generate tasks from the latest customer feedback",
-        "answer": [
-            {
-                "tool_name": "create_actionable_tasks_from_text",
-                "arguments": [
-                    {
-                        "argument_name": "text",
-                        "argument_value": "latest customer feedback"
-                    }
-                ]
-            }
-        ],
-        "query_type": "zero_shot",
-        "id": "test_data_62"
-    },
-    {
         "question": "Get all work items similar to TKT-123, summarize them, create issues from that summary, and prioritize them ",
         "answer": [
             {
@@ -1938,10 +2069,18 @@
                 ]
             },
             {
-                "tool_name": "create_actionable_tasks_from_text",
+                "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "argument_name": "text",
+                        "argument_name": "work_item_type",
+                        "argument_value": "issue"
+                    },
+                    {
+                        "argument_name": "title",
+                        "argument_value": "Summary of similar work items"
+                    },
+                    {
+                        "argument_name": "description",
                         "argument_value": "$$PREV[1]"
                     }
                 ]
@@ -1955,49 +2094,39 @@
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_63"
+        ]
     },
     {
+        "id": "test_data_64",
+        "query_type": "zero_shot",
         "question": "We want to automate a workflow triggered by 'New issue created' events. This workflow should execute specific actions, notify 'DEVU-456' and 'DEVU-123', and maintain an actions log. Can you help set up this workflow?",
         "answer": [
             {
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "New issue created"
+                        "argument_name": "trigger_event",
+                        "argument_value": "New issue created"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
-                            {
-                                "action": "Assign to Appropriate Team"
-                            },
-                            {
-                                "action": "Send Slack Notification"
-                            }
-                        ]
+                        "argument_name": "workflow_actions",
+                        "argument_value": "Specify the actions to be executed"
                     },
                     {
-                        "name": "notifications",
-                        "value": [
-                            "DEVU-456",
-                            "DEVU-123"
-                        ]
+                        "argument_name": "notifications",
+                        "argument_value": "DEVU-456, DEVU-123"
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": "true"
                     }
                 ]
             }
-        ],
-        "query_type": "zero_shot",
-        "id": "test_data_64"
+        ]
     },
     {
+        "id": "test_data_65",
+        "query_type": "zero_shot",
         "question": "Create actionable tasks from the text 'Analyzing customer feedback for improvement'.",
         "answer": [
             {
@@ -2009,11 +2138,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "zero_shot",
-        "id": "test_data_65"
+        ]
     },
     {
+        "id": "test_data_66",
+        "query_type": "zero_shot",
         "question": "Create actionable tasks from the following text: 'Review project milestones and update the timeline'",
         "answer": [
             {
@@ -2025,11 +2154,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "zero_shot",
-        "id": "test_data_66"
+        ]
     },
     {
+        "id": "test_data_67",
+        "query_type": "multiple_tools",
         "question": "Given a customer meeting transcript T, create action items and add them to my current sprint ",
         "answer": [
             {
@@ -2042,64 +2171,55 @@
                 ]
             },
             {
-                "tool_name": "get_sprint_id",
-                "arguments": []
-            },
-            {
                 "tool_name": "add_work_items_to_sprint",
                 "arguments": [
                     {
                         "argument_name": "work_ids",
-                        "argument_value": "$$PREV[0]"
+                        "argument_value": "$$PREV[0].result"
                     },
                     {
                         "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[1]"
+                        "argument_value": "$$PREV[1].result"
                     }
                 ]
+            },
+            {
+                "tool_name": "get_sprint_id",
+                "arguments": []
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_67"
+        ]
     },
     {
+        "id": "test_data_68",
+        "query_type": "zero_shot",
         "question": "We need to automate a workflow triggered by 'Code review passed' events. This workflow should notify 'DEVU-789', execute specific actions, and maintain a log of these actions. Can you set up this workflow?",
         "answer": [
             {
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Code review passed"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Code review passed"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
-                            {
-                                "action": "Execute Code Deployment"
-                            },
-                            {
-                                "action": "Send Notification Email"
-                            }
-                        ]
+                        "argument_name": "workflow_actions",
+                        "argument_value": "[{\"action\":\"Action 1\"},{\"action\":\"Action 2\"}]"
                     },
                     {
-                        "name": "notifications",
-                        "value": [
-                            "DEVU-789"
-                        ]
+                        "argument_name": "notifications",
+                        "argument_value": "[\"DEVU-789\"]"
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": "true"
                     }
                 ]
             }
-        ],
-        "query_type": "zero_shot",
-        "id": "test_data_68"
+        ]
     },
     {
+        "id": "test_data_69",
+        "query_type": "multiple_tools",
         "question": "Generate a test execution report for test suite TS-123 and automate a workflow triggering on 'New issue created' with notifications to DEVU-123.",
         "answer": [
             {
@@ -2111,7 +2231,15 @@
                     },
                     {
                         "argument_name": "test_environment",
-                        "argument_value": "Integration"
+                        "argument_value": ""
+                    },
+                    {
+                        "argument_name": "pass_fail_status",
+                        "argument_value": []
+                    },
+                    {
+                        "argument_name": "test_case_types",
+                        "argument_value": []
                     }
                 ]
             },
@@ -2134,15 +2262,15 @@
                     },
                     {
                         "argument_name": "actions_log",
-                        "argument_value": true
+                        "argument_value": false
                     }
                 ]
             }
-        ],
-        "query_type": "multiple_tools",
-        "id": "test_data_69"
+        ]
     },
     {
+        "id": "test_data_70",
+        "query_type": "zero_shot",
         "question": "Create actionable tasks from insights found in the text 'Analyzing customer feedback for improvement'.",
         "answer": [
             {
@@ -2154,11 +2282,11 @@
                     }
                 ]
             }
-        ],
-        "query_type": "zero_shot",
-        "id": "test_data_70"
+        ]
     },
     {
+        "id": "test_data_71",
+        "query_type": "zero_shot",
         "question": "Create tasks from the meeting notes I just uploaded",
         "answer": [
             {
@@ -2170,8 +2298,6 @@
                     }
                 ]
             }
-        ],
-        "query_type": "zero_shot",
-        "id": "test_data_71"
+        ]
     }
 ]

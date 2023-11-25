@@ -1,0 +1,9 @@
+transformers
+langchain
+openai
+cohere
+tiktoken
+huggingface
+python-dotenv
+chardet
+pandas

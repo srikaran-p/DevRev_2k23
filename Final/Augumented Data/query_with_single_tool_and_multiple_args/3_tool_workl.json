@@ -1,0 +1,262 @@
+[
+    {
+        "question": "Can you show me P1 issues in the 'Testing' stage created by 'UserA'?",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p1"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Testing"
+                    ]
+                },
+                {
+                    "argument_name": "created_by",
+                    "argument_value": [
+                        "UserA"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Find all tasks related to 'PART-200' that are high severity and need a response.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-200"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.severity",
+                    "argument_value": [
+                        "high"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.needs_response",
+                    "argument_value": [
+                        true
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "List all tickets from 'CustomerB' in 'Triage' stage with medium severity.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "ticket.rev_org",
+                    "argument_value": [
+                        "CustomerB"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Triage"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.severity",
+                    "argument_value": [
+                        "medium"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Show issues owned by 'DeveloperC' in 'Development' stage of type 'bug'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": [
+                        "DeveloperC"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Development"
+                    ]
+                },
+                {
+                    "argument_name": "type",
+                    "argument_value": [
+                        "issue"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "I want to see all P3 tickets from 'Finance' department reported via 'Email'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p3"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.rev_org",
+                    "argument_value": [
+                        "Finance"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.source_channel",
+                    "argument_value": [
+                        "Email"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Display all tasks created by 'UserD' under 'PART-300' that are unassigned.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "created_by",
+                    "argument_value": [
+                        "UserD"
+                    ]
+                },
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-300"
+                    ]
+                },
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Find all blocker tickets in 'Review' stage related to 'PART-400'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "ticket.severity",
+                    "argument_value": [
+                        "blocker"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Review"
+                    ]
+                },
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-400"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "List issues of type 'enhancement' in 'Triage' stage owned by 'UserE'.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "type",
+                    "argument_value": [
+                        "issue"
+                    ]
+                },
+                {
+                    "argument_name": "stage.name",
+                    "argument_value": [
+                        "Triage"
+                    ]
+                },
+                {
+                    "argument_name": "owned_by",
+                    "argument_value": [
+                        "UserE"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Can you show me all P0 tickets from 'Sales' team that need a response?",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p0"
+                    ]
+                },
+                {
+                    "argument_name": "issue.rev_orgs",
+                    "argument_value": [
+                        "Sales"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.needs_response",
+                    "argument_value": [
+                        true
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Display tasks related to 'PART-500' created by 'UserF' with low severity.",
+        "answer": {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "applies_to_part",
+                    "argument_value": [
+                        "PART-500"
+                    ]
+                },
+                {
+                    "argument_name": "created_by",
+                    "argument_value": [
+                        "UserF"
+                    ]
+                },
+                {
+                    "argument_name": "ticket.severity",
+                    "argument_value": [
+                        "low"
+                    ]
+                }
+            ]
+        }
+    }
+]

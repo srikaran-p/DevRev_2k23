@@ -1,0 +1,122 @@
+[
+
+    {
+        "question": "Could you add these items [Item1, Item2] to the current sprint?",
+        "answer": [
+            {
+                "tool_name": "get_sprint_id",
+                "arguments": []
+            },
+            {
+                "tool_name": "add_work_items_to_sprint",
+                "arguments": [
+                    {
+                        "argument_name": "work_ids",
+                        "argument_value": ["Item1", "Item2"]
+                    },
+                    {
+                        "argument_name": "sprint_id",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "What are the top 10 recent tasks assigned to me?",
+        "answer": [
+            {
+                "tool_name": "who_am_i",
+                "arguments": []
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": ["$$PREV[0]"]
+                    },
+                    {
+                        "argument_name": "limit",
+                        "argument_value": "10"
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": ["task"]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you summarize the last 5 tickets I worked on?",
+        "answer": [
+            {
+                "tool_name": "who_am_i",
+                "arguments": []
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "owned_by",
+                        "argument_value": ["$$PREV[0]"]
+                    },
+                    {
+                        "argument_name": "limit",
+                        "argument_value": "5"
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": ["ticket"]
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need a summary of interactions with customer 'CustomerY'.",
+        "answer": [
+            {
+                "tool_name": "search_object_by_name",
+                "arguments": [
+                    {
+                        "argument_name": "query",
+                        "argument_value": "CustomerY"
+                    }
+                ]
+            },
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": ["$$PREV[0]"]
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": ["ticket"]
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            }
+        ]
+    }
+]

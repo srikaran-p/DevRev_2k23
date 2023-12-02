@@ -530,12 +530,8 @@
                     {
                         "name": "workflow_actions",
                         "value": [
-                            {
-                                "action": "Execute Code Deployment"
-                            },
-                            {
-                                "action": "Send Notification Email"
-                            }
+                            "Execute Code Deployment",
+                            "Send Notification Email"
                         ]
                     },
                     {
@@ -565,12 +561,8 @@
                     {
                         "name": "workflow_actions",
                         "value": [
-                            {
-                                "action": "Assign to Appropriate Team"
-                            },
-                            {
-                                "action": "Send Slack Notification"
-                            }
+                            "Assign to Appropriate Team",
+                            "Send Slack Notification"
                         ]
                     },
                     {

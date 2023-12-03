@@ -1,6 +1,6 @@
 [
     {
-        "question": "A critical bug has been identified in our system. Let's create a work item to address it. The details are as follows:\n\nType of Work: Issue\nTitle: Resolve Critical System Bug\nDescription: This issue involves fixing a critical bug in the system that is impacting performance.\nAssignee: DEVU-987\nPriority: High\nDue Date: 2023-12-15\nTags: ['bug', 'critical', 'urgent']\n\nCan you proceed with creating this work item?",
+        "question": "A critical bug has been identified in our system. Let's create a work item to address it. The details are as follows:\n\nType of Work: Issue\nTitle: Resolve Critical System Bug\nDescription: This issue involves fixing a critical bug in the system that is impacting performance.\nAssignee: AMZ-987\nPriority: High\nDue Date: 2023-12-15\nTags: ['bug', 'critical', 'urgent']\n\nCan you proceed with creating this work item?",
         "answer": [
             {
                 "tool_name": "create_work_item",
@@ -19,7 +19,7 @@
                     },
                     {
                         "name": "assignee",
-                        "value": "DEVU-987"
+                        "value": "AMZ-987"
                     },
                     {
                         "name": "priority",
@@ -42,7 +42,7 @@
         ]
     },
     {
-        "question": "Our project requires a new task related to database optimization. Provide the details for creating this work item:\n\nType of Work: Task\nTitle: Optimize Database Performance\nDescription: This task involves optimizing database queries for better performance.\nAssignee: DEVU-567\nPriority: Medium\nDue Date: 2023-11-20\nTags: ['performance', 'database']\n\nCould you create this task?",
+        "question": "Our project requires a new task related to database optimization. Provide the details for creating this work item:\n\nType of Work: Task\nTitle: Optimize Database Performance\nDescription: This task involves optimizing database queries for better performance.\nAssignee: FPK-567\nPriority: Medium\nDue Date: 2023-11-20\nTags: ['performance', 'database']\n\nCould you create this task?",
         "answer": [
             {
                 "tool_name": "create_work_item",
@@ -61,7 +61,7 @@
                     },
                     {
                         "name": "assignee",
-                        "value": "DEVU-567"
+                        "value": "FPK-567"
                     },
                     {
                         "name": "priority",
@@ -83,7 +83,7 @@
         ]
     },
     {
-        "question": "We've identified an opportunity for a new enhancement in our project. Provide the details for creating this work item:\n\nType of Work: Enhancement\nTitle: Implement User Feedback Feature\nDescription: Enhance the system based on user feedback to improve overall user experience.\nAssignee: DEVU-234\nPriority: High\nDue Date: 2023-12-10\nTags: ['user-feedback', 'enhancement']\n\nCould you create this enhancement?",
+        "question": "We've identified an opportunity for a new enhancement in our project. Provide the details for creating this work item:\n\nType of Work: Enhancement\nTitle: Implement User Feedback Feature\nDescription: Enhance the system based on user feedback to improve overall user experience.\nAssignee: ABC-234\nPriority: High\nDue Date: 2023-12-10\nTags: ['user-feedback', 'enhancement']\n\nCould you create this enhancement?",
         "answer": [
             {
                 "tool_name": "create_work_item",
@@ -102,7 +102,7 @@
                     },
                     {
                         "name": "assignee",
-                        "value": "DEVU-234"
+                        "value": "ABC-234"
                     },
                     {
                         "name": "priority",
@@ -124,14 +124,14 @@
         ]
     },
     {
-        "question": "Can you update the status of task TASK-234 to 'In Progress'?",
+        "question": "Can you update the status of task AMZ-234 to 'In Progress'?",
         "answer": [
             {
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
                         "name": "work_item_id",
-                        "value": "TASK-234"
+                        "value": "AMZ-234"
                     },
                     {
                         "name": "new_status",
@@ -142,32 +142,32 @@
         ]
     },
     {
-        "question": "Assign task TASK-567 to DEVU-987. Could you please update the status accordingly?",
+        "question": "Assign task KHD-567 to DAVE-987. Could you please update the status accordingly?",
         "answer": [
             {
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
                         "name": "work_item_id",
-                        "value": "TASK-567"
+                        "value": "KHD-567"
                     },
                     {
                         "name": "new_assignee",
-                        "value": "DEVU-987"
+                        "value": "DAVE-987"
                     }
                 ]
             }
         ]
     },
     {
-        "question": "Is it possible to adjust the estimated effort for task TASK-876 to 10 story points?",
+        "question": "Is it possible to adjust the estimated effort for task WZX-876 to 10 story points?",
         "answer": [
             {
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
                         "name": "work_item_id",
-                        "value": "TASK-876"
+                        "value": "WZX-876"
                     },
                     {
                         "name": "estimated_effort",
@@ -178,32 +178,32 @@
         ]
     },
     {
-        "question": "Considering dependencies on TASK-456 and TASK-789, update the status of task TASK-123.",
+        "question": "Considering dependencies on AMZ-456 and PRF-789, update the status of task IIT-123.",
         "answer": [
             {
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
                         "name": "work_item_id",
-                        "value": "TASK-123"
+                        "value": "IIT-123"
                     },
                     {
                         "name": "dependencies",
-                        "value": ["TASK-456", "TASK-789"]
+                        "value": ["AMZ-456", "PRF-789"]
                     }
                 ]
             }
         ]
     },
     {
-        "question": "Could you change the status of task TASK-789 to 'Done'?",
+        "question": "Could you change the status of task TSK-789 to 'Done'?",
         "answer": [
             {
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
                         "name": "work_item_id",
-                        "value": "TASK-789"
+                        "value": "TSK-789"
                     },
                     {
                         "name": "new_status",
@@ -214,32 +214,32 @@
         ]
     },
     {
-        "question": "Task TASK-123 needs to be assigned to DEVU-456. Can you update the status accordingly?",
+        "question": "Task ABC-123 needs to be assigned to AMZ-456. Can you update the status accordingly?",
         "answer": [
             {
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
                         "name": "work_item_id",
-                        "value": "TASK-123"
+                        "value": "ABC-123"
                     },
                     {
                         "name": "new_assignee",
-                        "value": "DEVU-456"
+                        "value": "AMZ-456"
                     }
                 ]
             }
         ]
     },
     {
-        "question": "For task TASK-789, adjust the estimated effort to 12 story points. Can you do that?",
+        "question": "For task TSK-78, adjust the estimated effort to 12 story points. Can you do that?",
         "answer": [
             {
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
                         "name": "work_item_id",
-                        "value": "TASK-789"
+                        "value": "TSK-78"
                     },
                     {
                         "name": "estimated_effort",
@@ -250,25 +250,25 @@
         ]
     },
     {
-        "question": "Considering dependencies on TASK-789 and TASK-876, update the status of task TASK-123.",
+        "question": "Considering dependencies on TSK-78 and WRK-80, update the status of task KLS-123.",
         "answer": [
             {
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
                         "name": "work_item_id",
-                        "value": "TASK-123"
+                        "value": "KLS-123"
                     },
                     {
                         "name": "dependencies",
-                        "value": ["TASK-789", "TASK-876"]
+                        "value": ["TSK-78", "WRK-80"]
                     }
                 ]
             }
         ]
     },
     {
-        "question": "Let's kick off a new project called 'Project Delta'. The project involves building a data analytics platform. I've assigned 'DEVU-234' as the project lead, and the project should start on '2023-02-10'. The initial team members are ['DEVU-234', 'DEVU-567']. The target completion date is '2023-08-15'. Can you proceed with creating this project?",
+        "question": "Let's kick off a new project called 'Project Delta'. The project involves building a data analytics platform. I've assigned 'XYZW-234' as the project lead, and the project should start on '2023-02-10'. The initial team members are ['QWER-234', 'XYZW-234']. The target completion date is '2023-08-15'. Can you proceed with creating this project?",
         "answer": [
             {
                 "tool_name": "create_project",
@@ -283,7 +283,7 @@
                     },
                     {
                         "name": "project_lead",
-                        "value": "DEVU-234"
+                        "value": "XYZW-234"
                     },
                     {
                         "name": "start_date",
@@ -292,8 +292,8 @@
                     {
                         "name": "project_team",
                         "value": [
-                            "DEVU-234",
-                            "DEVU-567"
+                            "XYZW-234",
+                            "QWER-234"
                         ]
                     },
                     {
@@ -305,7 +305,7 @@
         ]
     },
     {
-        "question": "I'm launching a new project named 'Project Omega'. The project aims to develop a machine learning model for predictive analytics. 'DEVU-789' will lead the project, starting on '2023-04-05', with team members ['DEVU-789', 'DEVU-123']. The target completion date is '2023-10-31'. Can you assist in setting up this project?",
+        "question": "I'm launching a new project named 'Project Omega'. The project aims to develop a machine learning model for predictive analytics. 'EVT-234' will lead the project, starting on '2023-04-05', with team members ['UVWX-234', 'LOC-234']. The target completion date is '2023-10-31'. Can you assist in setting up this project?",
         "answer": [
             {
                 "tool_name": "create_project",
@@ -320,7 +320,7 @@
                     },
                     {
                         "name": "project_lead",
-                        "value": "DEVU-789"
+                        "value": "EVT-234"
                     },
                     {
                         "name": "start_date",
@@ -329,8 +329,8 @@
                     {
                         "name": "project_team",
                         "value": [
-                            "DEVU-789",
-                            "DEVU-123"
+                            "UVWX-234",
+                            "LOC-234"
                         ]
                     },
                     {
@@ -524,18 +524,18 @@
         ]
     },
     {
-        "question": "A new task 'TASK-876' has been identified, and it requires assignment to 'DEVU-456'. This task is marked as high-priority and needs completion by '2023-12-20'. Could you manage this assignment?",
+        "question": "A new task 'WRK-80' has been identified, and it requires assignment to 'AMZ-456'. This task is marked as high-priority and needs completion by '2023-12-20'. Could you manage this assignment?",
         "answer": [
             {
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
                         "name": "work_item_id",
-                        "value": "TASK-876"
+                        "value": "WRK-80"
                     },
                     {
                         "name": "assignee",
-                        "value": "DEVU-456"
+                        "value": "AMZ-456"
                     },
                     {
                         "name": "priority",

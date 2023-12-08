@@ -103,35 +103,3 @@ if __name__ == '__main__':
     toolset_ans = toolset_data['answer']
 
     calculate_metrics(toolset_ans , pred_ans , exp_ans)
-
-
-# def hallucination_calc(toolset_filename, pred_filename):
-#     toolset_file = open(toolset_filename)
-#     toolset_data = json.load(toolset_file)
-
-#     toolset_ans = toolset_data['answer']
-
-#     pred_file = open(pred_filename)
-#     pred_data = json.load(pred_file)
-
-#     pred_ans = []
-#     pred_que = []
-
-#     for pref in pred_data:
-#         pred_ans.append(pref['answer'])
-#         pred_que.append(pref['question'])
-
-#     metrics = Metrics()
-
-#     overall_hallucination_rate = 0
-
-#     for i in range(len(pred_ans)):
-#         hallucination_rate_example = metrics.hallucination_rate(toolset_ans, pred_ans[i])
-#         overall_hallucination_rate += hallucination_rate_example
-
-#     print("Overall Hallucination Rate: ", overall_hallucination_rate/len(pred_data))
-
-# toolset_filename = 'hallucination.json'
-# pred_filename = 'gpt-4.json'
-
-# hallucination_calc(toolset_filename, pred_filename)

@@ -29,67 +29,109 @@ def convert_strings_in_json(json_string):
 
     return converted_data
 
-exp_file = open('test_data.json')
 
-exp_data = json.load(exp_file)
-# exp_data = convert_strings_in_json(exp_data)
+def calculate_metrics(toolset_ans , pred_ans , exp_ans):
+    metrics = Metrics()
 
-exp_ans = []
-exp_que = []
+    em_score = 0
+    f1_score = 0
 
-for exp in exp_data:
-    exp_ans.append(exp['answer'])
-    exp_que.append(exp['question'])
+    for i in range(len(pred_ans)):
+        if metrics.exactMatch(pred_ans[i], exp_ans[i]) == True:
+            em_score += 1
 
-pred_file = open('gpt-4.json')
+        try:
+            f1_value = metrics.f1_score_overall(pred_ans[i], exp_ans[i])
+            f1_score += f1_value
+        except:
+            print(i, " index does not work")
+            pass
 
-print(exp_ans)
+    overall_hallucination_rate = 0
+    for i in range(len(pred_ans)):
+        hallucination_rate_example = metrics.hallucination_rate(toolset_ans, pred_ans[i])
+        overall_hallucination_rate += hallucination_rate_example
 
-pred_data = json.load(pred_file)
-# pred_data = convert_strings_in_json(pred_data)
+    print("Overall Hallucination Rate: ", overall_hallucination_rate/len(pred_data))
+    print("\nOverall EM Score: ", em_score/len(pred_ans))
+    print("\nOverall F1 Score: ", f1_score/len(pred_ans))
 
-pred_ans = []
-pred_que = []
 
-for pref in pred_data:
-    pred_ans.append(pref['answer'])
-    pred_que.append(pref['question'])
+if __name__ == '__main__':
+    exp_file = open('test_data.json')
 
-metrics = Metrics()
+    exp_data = json.load(exp_file)
+    exp_ans = []
+    exp_que = []
 
-em_score = 0
-f1_score = 0
+    for exp in exp_data:
+        exp_ans.append(exp['answer'])
+        exp_que.append(exp['question'])
 
-for i in range(len(pred_data)):
-    if metrics.exactMatch(pred_ans[i], exp_ans[i]) == True:
-        em_score += 1
-    else:
-        # print(i)
-        pass
+    pred_file = open('gpt-4.json')
 
-    try:
-        f1_value = metrics.f1_score_overall(pred_ans[i], exp_ans[i])
-        f1_score += f1_value
-    except:
-        print(i, " index does not work")
-        pass
+    pred_data = json.load(pred_file)
 
-index = 0
-print(exp_que[index])
-print()
-print(pred_que[index])
-print()
-print(exp_ans[index])
-print()
-print(pred_ans[index])
-print()
-print(metrics.exactMatch(pred_ans[index], exp_ans[index]))
-print()
-try:
-    print(metrics.f1_score_overall(pred_ans[index], exp_ans[index]))
-except:
-    print("Division by zero")
-print()
+    pred_ans = []
+    pred_que = []
 
-print("\nOverall EM Score: ", em_score/len(pred_data))
-print("\nOverall F1 Score: ", f1_score/len(pred_data))
+    for pref in pred_data:
+        pred_ans.append(pref['answer'])
+        pred_que.append(pref['question'])
+
+    # if a list or dictionary is being represented as a string, we manually parse
+    for idx , ans in enumerate(pred_ans):
+        for tool in ans:
+            for arg in tool['arguments']:
+
+                if isinstance(arg['argument_value'], str):
+                    if arg['argument_value'].strip()[0] == '[' and arg['argument_value'].strip()[-1] == ']':
+                        arg['argument_value'] = ast.literal_eval(arg['argument_value'])
+                
+                if isinstance(arg['argument_value'], str):
+                    if arg['argument_value'].strip()[0] == '{' and arg['argument_value'].strip()[-1] == '}':
+                        arg['argument_value'] = ast.literal_eval(arg['argument_value'])
+
+                if arg['argument_value'] == 'true':
+                    arg['argument_value'] = True
+                if arg['argument_value'] == 'false':
+                    arg['argument_value'] = False
+
+    toolset_filename = 'hallucination.json'
+    toolset_file = open(toolset_filename)
+    toolset_data = json.load(toolset_file)
+    toolset_ans = toolset_data['answer']
+
+    calculate_metrics(toolset_ans , pred_ans , exp_ans)
+
+
+# def hallucination_calc(toolset_filename, pred_filename):
+#     toolset_file = open(toolset_filename)
+#     toolset_data = json.load(toolset_file)
+
+#     toolset_ans = toolset_data['answer']
+
+#     pred_file = open(pred_filename)
+#     pred_data = json.load(pred_file)
+
+#     pred_ans = []
+#     pred_que = []
+
+#     for pref in pred_data:
+#         pred_ans.append(pref['answer'])
+#         pred_que.append(pref['question'])
+
+#     metrics = Metrics()
+
+#     overall_hallucination_rate = 0
+
+#     for i in range(len(pred_ans)):
+#         hallucination_rate_example = metrics.hallucination_rate(toolset_ans, pred_ans[i])
+#         overall_hallucination_rate += hallucination_rate_example
+
+#     print("Overall Hallucination Rate: ", overall_hallucination_rate/len(pred_data))
+
+# toolset_filename = 'hallucination.json'
+# pred_filename = 'gpt-4.json'
+
+# hallucination_calc(toolset_filename, pred_filename)

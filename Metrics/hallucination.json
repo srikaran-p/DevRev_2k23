@@ -1,0 +1,345 @@
+{
+"answer": [
+    {
+        "tool_name": "works_list",
+        "arguments": [
+            {
+                "argument_name": "created_by",
+                "argument_value": []
+            },
+            {
+                "argument_name": "stage.name",
+                "argument_value": []
+            },
+            {
+                "argument_name": "ticket.severity",
+                "argument_value": []
+            },
+            {
+                "argument_name": "ticket.rev_org",
+                "argument_value": []
+            },
+            {
+                "argument_name": "applies_to_part",
+                "argument_value": []
+            },
+            {
+                "argument_name": "ticket.needs_response",
+                "argument_value": []
+            },
+            {
+                "argument_name": "issue.priority",
+                "argument_value": []
+            },
+            {
+                "argument_name": "owned_by",
+                "argument_value": []
+            },
+            {
+                "argument_name": "ticket.source_channel",
+                "argument_value": []
+            },
+            {
+                "argument_name": "limit",
+                "argument_value": []
+            },
+            {
+                "argument_name": "type",
+                "argument_value": []
+            },
+            {
+                "argument_name": "issue.rev_orgs",
+                "argument_value": []
+            }
+        ]
+
+    },
+    {
+        "tool_name": "get_sprint_id",
+        "arguments": []
+    },
+    {
+        "tool_name": "add_work_items_to_sprint",
+        "arguments": [
+            {
+                "argument_name": "work_ids",
+                "argument_value": []
+            },
+            {
+                "argument_name": "sprint_id",
+                "argument_value": " "
+            }
+        ]
+    },
+    {
+        "tool_name": "summarize_objects",
+        "arguments": [
+            {
+                "argument_name": "objects",
+                "argument_value": ""
+            }
+        ]
+    },
+    {
+        "tool_name": "prioritize_objects",
+        "arguments": [
+            {
+                "argument_name": "objects",
+                "argument_value": ""
+            }
+        ]
+    },
+    {
+        "tool_name": "add_work_items_to_sprint",
+        "arguments": [
+            {
+                "argument_name": "work_ids",
+                "argument_value": []
+            },
+            {
+                "argument_name": "sprint_id",
+                "argument_value": " "
+            }
+        ]
+    },
+    {
+        "tool_name": "get_similar_work_items",
+        "arguments": [
+            {
+                "argument_name": "work_id",
+                "argument_value": " "
+            }
+        ]
+    },
+    {
+        "tool_name": "search_object_by_name",
+        "arguments": [
+            {
+                "argument_name": "query",
+                "argument_value": " "
+            }
+        ]
+    },
+    {
+        "tool_name": "create_actionable_tasks_from_text",
+        "arguments": [
+            {
+                "argument_name": "text",
+                "argument_value": " "
+            }
+        ]
+    },
+    {
+        "tool_name": "who_am_i",
+        "arguments": []
+    },
+    {
+        "tool_name": "create_work_item",
+        "arguments": [
+            {
+                "name": "work_item_type",
+                "value": " "
+            },
+            {
+                "name": "title",
+                "value": " "
+            },
+            {
+                "name": "description",
+                "value": " "
+            },
+            {
+                "name": "assignee",
+                "value": " "
+            },
+            {
+                "name": "priority",
+                "value": " "
+            },
+            {
+                "name": "due_date",
+                "value": " "
+            },
+            {
+                "name": "tags",
+                "value": [ ]
+            }
+        ]
+    },
+    {
+        "tool_name": "update_work_item_status",
+        "arguments": [
+            {
+                "name": "work_item_id",
+                "value": " "
+            },
+            {
+                "name": "new_status",
+                "value": " "
+            },
+            {
+                "name": "new_assignee",
+                "value": " "
+            },
+            {
+                "name": "estimated_effort",
+                "value": " "
+            },
+            {
+                "name": "dependencies",
+                "value": [ ]
+            },
+            {
+                "name": "new_status",
+                "value": " "
+            }
+
+        ]
+    },
+    {
+        "tool_name": "create_project",
+        "arguments": [
+            {
+                "name": "project_name",
+                "value": " "
+            },
+            {
+                "name": "project_description",
+                "value": " "
+            },
+            {
+                "name": "project_lead",
+                "value": " "
+            },
+            {
+                "name": "start_date",
+                "value": " "
+            },
+            {
+                "name": "project_team",
+                "value": [ ]
+            },
+            {
+                "name": "target_date",
+                "value": " "
+            }
+        ]
+    },
+    {
+        "tool_name": "code_review_feedback",
+        "arguments": [
+            {
+                "name": "review_id",
+                "value": " "
+            },
+            {
+                "name": "feedback",
+                "value": " "
+            },
+            {
+                "name": "code_version",
+                "value": " "
+            },
+            {
+                "name": "severity",
+                "value": " "
+            }
+        ]
+    },
+    {
+        "tool_name": "test_execution_report",
+        "arguments": [
+            {
+                "name": "test_suite_id",
+                "value": " "
+            },
+            {
+                "name": "test_environment",
+                "value":  " "
+            },
+            {
+                "name": "pass_fail_status",
+                "value": " "
+            },
+            {
+                "name": "test_case_types",
+                "value":  " "
+            }
+        ]
+    },
+    {
+        "tool_name": "create_sprint",
+        "arguments": [
+            {
+                "name": "project_id",
+                "value": " "
+            },
+            {
+                "name": "sprint_name",
+                "value": " "
+            },
+            {
+                "name": "sprint_duration",
+                "value": " "
+            },
+            {
+                "name": "sprint_goals",
+                "value": " "
+            },
+            {
+                "name": "sprint_capacity",
+                "value": " "
+            },
+            {
+                "name": "backlog_items",
+                "value": [ ]
+            }
+        ]
+    },
+    {
+        "tool_name": "automate_workflow",
+        "arguments": [
+            {
+                "name": "trigger_event",
+                "value": " "
+            },
+            {
+                "name": "workflow_actions",
+                "value": []
+            },
+            {
+                "name": "notifications",
+                "value": []
+            },
+            {
+                "name": "actions_log",
+                "value": " "
+            }
+        ]
+    },
+    {
+        "tool_name": "assign_work_item",
+        "arguments": [
+            {
+                "name": "work_item_id",
+                "value": " "
+            },
+            {
+                "name": "assignee",
+                "value": " "
+            },
+            {
+                "name": "due_date",
+                "value": " "
+            },
+            {
+                "name": "work_item_type",
+                "value": " "
+            }
+        ]
+    }
+
+
+
+]
+}

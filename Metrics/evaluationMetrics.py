@@ -206,12 +206,8 @@ class Metrics:
 
         precision = self.precision(predictedList, requiredList)
         recall = self.recall(predictedList, requiredList)
-        # print("PredictedList: ", predictedList)
-        # print("RequiredList: ", requiredList)
-        # print("Precision: ", precision)
+
         if precision + recall <= 1e-6:
-            print("PList: ", predictedList)
-            print("RList: ", requiredList)
             return 0
         return (2 * precision * recall)/(precision + recall)
 
@@ -432,14 +428,5 @@ class Metrics:
         w1 = 1
         w2 = recall_args
         w3 = recall_args * recall_values
-
-        # print("Recall Args: ", recall_args)
-        # print("Recall Values: ", recall_values)
-        #
-        # print("F1 Tools Score: ", f1_score_tools)
-        # print("F1 Args Score: ", f1_score_args)
-        # print("F1 Args List: ", f1_score_args_list)
-        # print("F1 Values Score: ", f1_score_values)
-        # print("F1 Values List: ", f1_score_values_list)
 
         return ((w1 * f1_score_tools) + (w2 * f1_score_args) + (w3 * f1_score_values)) / (w1 + w2 + w3)

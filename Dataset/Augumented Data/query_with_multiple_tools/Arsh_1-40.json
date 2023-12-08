@@ -1,0 +1,2270 @@
+[
+    {
+        "question": "Retrieve today's stock prices for 'AAPL' (Apple Inc.) and 'MSFT' (Microsoft), compare them, convert the prices to Euros, and email the analysis to financeexpert@example.com.",
+        "tools": [
+            {
+                "tool_name": "query_stock",
+                "arguments": [
+                    {
+                        "argument_name": "stock_code",
+                        "argument_value": "AAPL"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "today's date"
+                    }
+                ]
+            },
+            {
+                "tool_name": "query_stock",
+                "arguments": [
+                    {
+                        "argument_name": "stock_code",
+                        "argument_value": "MSFT"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "today's date"
+                    }
+                ]
+            },
+            {
+                "tool_name": "compare_prices",
+                "arguments": [
+                    {
+                        "argument_name": "prices",
+                        "argument_value": [
+                            "$$PREV[0]",
+                            "$$PREV[1]"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "currency_conversion",
+                "arguments": [
+                    {
+                        "argument_name": "amount",
+                        "argument_value": "$$PREV[2]"
+                    },
+                    {
+                        "argument_name": "from_currency",
+                        "argument_value": "USD"
+                    },
+                    {
+                        "argument_name": "to_currency",
+                        "argument_value": "EUR"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "financeexpert@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Stock Price Analysis"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[3]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Translate a document from French to English, the document URL being 'http://example.com/document.txt', summarize it, and email the summary to myemail@example.com.",
+        "tools": [
+            {
+                "tool_name": "translate",
+                "arguments": [
+                    {
+                        "argument_name": "src",
+                        "argument_value": "http://example.com/document.txt"
+                    },
+                    {
+                        "argument_name": "src_lang",
+                        "argument_value": "French"
+                    },
+                    {
+                        "argument_name": "tgt_lang",
+                        "argument_value": "English"
+                    }
+                ]
+            },
+            {
+                "tool_name": "document_q_a",
+                "arguments": [
+                    {
+                        "argument_name": "url",
+                        "argument_value": "http://example.com/document.txt"
+                    },
+                    {
+                        "argument_name": "question",
+                        "argument_value": "Summarize the document"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "myemail@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Document Summary"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[2]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find nearby pharmacies from my current location at latitude 34.0522, longitude -118.2437, for cold symptoms, and email the list to healthquery@example.com.",
+        "tools": [
+            {
+                "tool_name": "emergency_knowledge",
+                "arguments": [
+                    {
+                        "argument_name": "symptom",
+                        "argument_value": "cold"
+                    }
+                ]
+            },
+            {
+                "tool_name": "symptomsearch",
+                "arguments": [
+                    {
+                        "argument_name": "symptom",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "nearby_restaurants",
+                "arguments": [
+                    {
+                        "argument_name": "latitude",
+                        "argument_value": 34.0522
+                    },
+                    {
+                        "argument_name": "longitude",
+                        "argument_value": -118.2437
+                    },
+                    {
+                        "argument_name": "distance",
+                        "argument_value": "nearby"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "healthquery@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Nearby Pharmacies for Cold Symptoms"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[2]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Book a hotel room at 'The Grand Hotel' in Paris (48.8566, 2.3522) for October 5th to 10th, send the booking details to travelplanner@example.com.",
+        "tools": [
+            {
+                "tool_name": "book_hotel",
+                "arguments": [
+                    {
+                        "argument_name": "hotel_name",
+                        "argument_value": "The Grand Hotel"
+                    },
+                    {
+                        "argument_name": "check_in_time",
+                        "argument_value": "2023-10-05"
+                    },
+                    {
+                        "argument_name": "check_out_time",
+                        "argument_value": "2023-10-10"
+                    },
+                    {
+                        "argument_name": "latitude",
+                        "argument_value": 48.8566
+                    },
+                    {
+                        "argument_name": "longitude",
+                        "argument_value": 2.3522
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "travelplanner@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Hotel Booking Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            },
+            {
+                "tool_name": "geocoding",
+                "arguments": [
+                    {
+                        "argument_name": "address",
+                        "argument_value": "The Grand Hotel, Paris"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Record my running data for today, June 15, 2023, compare it with yesterday's data, and update my health tracker profile 'user123'.",
+        "tools": [
+            {
+                "tool_name": "record_health_data",
+                "arguments": [
+                    {
+                        "argument_name": "user_id",
+                        "argument_value": "user123"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-06-15"
+                    }
+                ]
+            },
+            {
+                "tool_name": "query_health_data",
+                "arguments": [
+                    {
+                        "argument_name": "user_id",
+                        "argument_value": "user123"
+                    },
+                    {
+                        "argument_name": "start_time",
+                        "argument_value": "2023-06-14"
+                    },
+                    {
+                        "argument_name": "end_time",
+                        "argument_value": "2023-06-15"
+                    }
+                ]
+            },
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user123"
+                    }
+                ]
+            },
+            {
+                "tool_name": "compare_calories",
+                "arguments": [
+                    {
+                        "argument_name": "data1",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "data2",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find the closest Italian restaurant to my location at 40.7128, -74.0060, book a table for two on July 22, 2023, and email the booking to dinnerplans@example.com.",
+        "tools": [
+            {
+                "tool_name": "nearby_restaurants",
+                "arguments": [
+                    {
+                        "argument_name": "latitude",
+                        "argument_value": 40.7128
+                    },
+                    {
+                        "argument_name": "longitude",
+                        "argument_value": -74.0060
+                    },
+                    {
+                        "argument_name": "distance",
+                        "argument_value": "Italian restaurant"
+                    }
+                ]
+            },
+            {
+                "tool_name": "book_restaurant",
+                "arguments": [
+                    {
+                        "argument_name": "restaurant_name",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "booking_date",
+                        "argument_value": "2023-07-22"
+                    },
+                    {
+                        "argument_name": "number_of_people",
+                        "argument_value": 2
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "dinnerplans@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Restaurant Booking Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "geocoding",
+                "arguments": [
+                    {
+                        "argument_name": "address",
+                        "argument_value": "current location"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Set a morning workout alarm for 6:00 AM on July 15, 2023, then play a motivational playlist.",
+        "tools": [
+            {
+                "tool_name": "addalarm",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-07-15 06:00:00"
+                    }
+                ]
+            },
+            {
+                "tool_name": "play_music",
+                "arguments": [
+                    {
+                        "argument_name": "music_name",
+                        "argument_value": "Motivational Playlist"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            },
+            {
+                "tool_name": "check_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Recommend movies based on my preference for action and sci-fi, and email the list to movielover@example.com.",
+        "tools": [
+            {
+                "tool_name": "user_movie_preferences",
+                "arguments": [
+                    {
+                        "argument_name": "user_name",
+                        "argument_value": "user's name"
+                    }
+                ]
+            },
+            {
+                "tool_name": "movie_recommendations",
+                "arguments": [
+                    {
+                        "argument_name": "preferences",
+                        "argument_value": [
+                            "action",
+                            "sci-fi"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "movielover@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Movie Recommendations"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Translate my health report from German to English, the document URL being 'http://example.com/healthreport.txt', summarize the key findings, and email them to myhealth@example.com.",
+        "tools": [
+            {
+                "tool_name": "translate",
+                "arguments": [
+                    {
+                        "argument_name": "src",
+                        "argument_value": "http://example.com/healthreport.txt"
+                    },
+                    {
+                        "argument_name": "src_lang",
+                        "argument_value": "German"
+                    },
+                    {
+                        "argument_name": "tgt_lang",
+                        "argument_value": "English"
+                    }
+                ]
+            },
+            {
+                "tool_name": "document_q_a",
+                "arguments": [
+                    {
+                        "argument_name": "url",
+                        "argument_value": "http://example.com/healthreport.txt"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "myhealth@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Health Report Summary"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[2]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Register me for the New York Marathon on September 10, 2023, set a reminder for the race day, and email the details to runner123@example.com.",
+        "tools": [
+            {
+                "tool_name": "appointment_registration",
+                "arguments": [
+                    {
+                        "argument_name": "patient_name",
+                        "argument_value": "user's name"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "2023-09-10"
+                    },
+                    {
+                        "argument_name": "doctor_name",
+                        "argument_value": "Marathon Registration"
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_reminder",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "New York Marathon"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-09-10"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "runner123@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Marathon Registration Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Retrieve the weather forecast for London at coordinates 51.5074, -0.1278, suggest clothing for a rainy day, and email the suggestions to rainydayfashion@example.com.",
+        "tools": [
+            {
+                "tool_name": "get_weather_for_coordinates",
+                "arguments": [
+                    {
+                        "argument_name": "latitude",
+                        "argument_value": 51.5074
+                    },
+                    {
+                        "argument_name": "longitude",
+                        "argument_value": -0.1278
+                    }
+                ]
+            },
+            {
+                "tool_name": "clothing_recommendation",
+                "arguments": [
+                    {
+                        "argument_name": "weather_conditions",
+                        "argument_value": "rainy"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "rainydayfashion@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Clothing Recommendations for Rainy Weather"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "geocoding",
+                "arguments": [
+                    {
+                        "argument_name": "address",
+                        "argument_value": "London"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find yoga classes near 37.7749, -122.4194, prioritize them based on customer reviews, and email me the top 5 options to yogi@example.com.",
+        "tools": [
+            {
+                "tool_name": "nearby_fitness_classes",
+                "arguments": [
+                    {
+                        "argument_name": "latitude",
+                        "argument_value": 37.7749
+                    },
+                    {
+                        "argument_name": "longitude",
+                        "argument_value": -122.4194
+                    }
+                ]
+            },
+            {
+                "tool_name": "prioritize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "yogi@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Top 5 Yoga Classes Near You"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Top 5 prioritized yoga classes based on customer reviews"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Search for the latest news on quantum computing, summarize the top three articles, and email the summary to techenthusiast@example.com.",
+        "tools": [
+            {
+                "tool_name": "search_engine",
+                "arguments": [
+                    {
+                        "argument_name": "keyword",
+                        "argument_value": "quantum computing"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "techenthusiast@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Quantum Computing News Summary"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Summary of top three articles on quantum computing"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Update my account password from 'oldpassword123' to 'newsecurepassword456', confirm the update via email to myaccount@example.com, and log the action in my user profile.",
+        "tools": [
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "oldpassword123"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newsecurepassword456"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "myaccount@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Account Password Update Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Your password has been successfully updated."
+                    }
+                ]
+            },
+            {
+                "tool_name": "record_health_data",
+                "arguments": [
+                    {
+                        "argument_name": "user_id",
+                        "argument_value": "user's ID"
+                    },
+                    {
+                        "argument_name": "health_data",
+                        "argument_value": [
+                            "Password update logged"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Find the nearest electric vehicle charging station to 34.0522, -118.2437, estimate the cost for a full charge, and email the details to electriccarowner@example.com.",
+        "tools": [
+            {
+                "tool_name": "nearby_restaurants",
+                "arguments": [
+                    {
+                        "argument_name": "latitude",
+                        "argument_value": 34.0522
+                    },
+                    {
+                        "argument_name": "longitude",
+                        "argument_value": -118.2437
+                    },
+                    {
+                        "argument_name": "distance",
+                        "argument_value": "electric vehicle charging station"
+                    }
+                ]
+            },
+            {
+                "tool_name": "calculator",
+                "arguments": [
+                    {
+                        "argument_name": "formula",
+                        "argument_value": "cost estimation formula"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "electriccarowner@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "EV Charging Station Details"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Location and cost estimation for the nearest EV charging station"
+                    }
+                ]
+            },
+            {
+                "tool_name": "geocoding",
+                "arguments": [
+                    {
+                        "argument_name": "address",
+                        "argument_value": "current location"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Retrieve my meeting schedule for the week starting July 10, 2023, set reminders for each, and email the reminders to busybee@example.com.",
+        "tools": [
+            {
+                "tool_name": "query_meeting",
+                "arguments": [
+                    {
+                        "argument_name": "user_name",
+                        "argument_value": "current user"
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_reminder",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "user token"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "meeting details from query_meeting"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "meeting time from query_meeting"
+                    }
+                ]
+            },
+            {
+                "tool_name": "email_reminder",
+                "arguments": [
+                    {
+                        "argument_name": "content",
+                        "argument_value": "reminder details from add_reminder"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "reminder time from add_reminder"
+                    },
+                    {
+                        "argument_name": "location",
+                        "argument_value": "meeting location from query_meeting"
+                    },
+                    {
+                        "argument_name": "recipient",
+                        "argument_value": "busybee@example.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find historical events that happened on July 4, 1776, summarize them, and send the summary to historybuff@example.com.",
+        "tools": [
+            {
+                "tool_name": "query_history_today",
+                "arguments": [
+                    {
+                        "argument_name": "date",
+                        "argument_value": "1776-07-04"
+                    }
+                ]
+            },
+            {
+                "tool_name": "wiki",
+                "arguments": [
+                    {
+                        "argument_name": "keyword",
+                        "argument_value": "July 4, 1776"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": [
+                            "results from query_history_today",
+                            "results from wiki"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "historybuff@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Historical Summary of July 4, 1776"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "summary from summarize_objects"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Play 'Here Comes the Sun' by The Beatles, set a timed switch to turn off the music after 30 minutes.",
+        "tools": [
+            {
+                "tool_name": "play_music",
+                "arguments": [
+                    {
+                        "argument_name": "music_name",
+                        "argument_value": "Here Comes the Sun by The Beatles"
+                    }
+                ]
+            },
+            {
+                "tool_name": "timed_switch",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "music player"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "time to turn off after 30 minutes"
+                    },
+                    {
+                        "argument_name": "on",
+                        "argument_value": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Register a new account with username 'john_doe', password 'secure123', email 'johndoe@example.com', and send a confirmation email.",
+        "tools": [
+            {
+                "tool_name": "register_user",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "john_doe"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "secure123"
+                    },
+                    {
+                        "argument_name": "email",
+                        "argument_value": "johndoe@example.com"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "johndoe@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Account Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Your account 'john_doe' has been successfully registered."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Calculate the estimated tax for my salary of 75,000 USD, send the report to taxreport@example.com.",
+        "tools": [
+            {
+                "tool_name": "tax_calculator",
+                "arguments": [
+                    {
+                        "argument_name": "salary",
+                        "argument_value": 75000
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "taxreport@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Tax Calculation Report"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "tax calculation details from tax_calculator"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Retrieve the salary range for data scientists in Silicon Valley, compare it with New York salaries, and email the comparison to datasciencepros@example.com.",
+        "tools": [
+            {
+                "tool_name": "get_occupation_salary",
+                "arguments": [
+                    {
+                        "argument_name": "occupation",
+                        "argument_value": "data scientist Silicon Valley"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_occupation_salary",
+                "arguments": [
+                    {
+                        "argument_name": "occupation",
+                        "argument_value": "data scientist New York"
+                    }
+                ]
+            },
+            {
+                "tool_name": "compare_prices",
+                "arguments": [
+                    {
+                        "argument_name": "prices",
+                        "argument_value": [
+                            "$$PREV[0]",
+                            "$$PREV[1]"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "datasciencepros@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Data Scientist Salary Comparison"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[2]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Locate pet-friendly parks near 25.7617, -80.1918, check the weekend weather forecast, and email me suitable times to visit to petowner@example.com.",
+        "tools": [
+            {
+                "tool_name": "search_engine",
+                "arguments": [
+                    {
+                        "argument_name": "keyword",
+                        "argument_value": "pet-friendly parks near 25.7617, -80.1918"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_weather_for_coordinates",
+                "arguments": [
+                    {
+                        "argument_name": "latitude",
+                        "argument_value": 25.7617
+                    },
+                    {
+                        "argument_name": "longitude",
+                        "argument_value": -80.1918
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "petowner@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Weekend Weather Forecast and Park Visits"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Details of pet-friendly parks and weekend weather forecast"
+                    }
+                ]
+            },
+            {
+                "tool_name": "geocoding",
+                "arguments": [
+                    {
+                        "argument_name": "address",
+                        "argument_value": "25.7617, -80.1918"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Retrieve my health data from June 1 to June 30, 2023, compare it with May's data, and update my profile on the health tracker app.",
+        "tools": [
+            {
+                "tool_name": "query_health_data",
+                "arguments": [
+                    {
+                        "argument_name": "user_id",
+                        "argument_value": "user's ID"
+                    },
+                    {
+                        "argument_name": "start_time",
+                        "argument_value": "2023-06-01"
+                    },
+                    {
+                        "argument_name": "end_time",
+                        "argument_value": "2023-06-30"
+                    }
+                ]
+            },
+            {
+                "tool_name": "compare_calories",
+                "arguments": [
+                    {
+                        "argument_name": "data1",
+                        "argument_value": "May health data"
+                    },
+                    {
+                        "argument_name": "data2",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user's username"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "user's password"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "Updated health data"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Find and book a flight to Tokyo for departure on August 10, 2023, and send the booking details and a reminder to mytrip@example.com.",
+        "tools": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "user's current location"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "Tokyo"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-08-10"
+                    }
+                ]
+            },
+            {
+                "tool_name": "book_hotel",
+                "arguments": [
+                    {
+                        "argument_name": "hotel_name",
+                        "argument_value": "Recommended hotel in Tokyo"
+                    },
+                    {
+                        "argument_name": "check_in_time",
+                        "argument_value": "2023-08-10"
+                    },
+                    {
+                        "argument_name": "check_out_time",
+                        "argument_value": "Check-out date"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "mytrip@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Flight Booking to Tokyo"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Flight and hotel booking details"
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_reminder",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "user's token"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Reminder for Tokyo trip"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-08-10"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Search for team-building activities in Los Angeles, prioritize them based on user ratings, and email me the sorted list at teamleader@example.com.",
+        "tools": [
+            {
+                "tool_name": "search_engine",
+                "arguments": [
+                    {
+                        "argument_name": "keyword",
+                        "argument_value": "team-building activities Los Angeles"
+                    }
+                ]
+            },
+            {
+                "tool_name": "prioritize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "teamleader@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Prioritized List of Team-Building Activities"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Sorted list of team-building activities based on user ratings"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Check my bank account balance, calculate my monthly expenses based on the last month's data, and email a financial summary to mybudget@example.com.",
+        "tools": [
+            {
+                "tool_name": "query_balance",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "user token"
+                    }
+                ]
+            },
+            {
+                "tool_name": "calculator",
+                "arguments": [
+                    {
+                        "argument_name": "formula",
+                        "argument_value": "calculation of monthly expenses based on last month's data"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "mybudget@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Financial Summary"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "financial summary including balance and expenses calculation"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Retrieve coordinates for the nearest gym to 51.5074, -0.1278, book a personal training session for July 20, 2023, and email the confirmation to fitnessfanatic@example.com.",
+        "tools": [
+            {
+                "tool_name": "geocoding",
+                "arguments": [
+                    {
+                        "argument_name": "address",
+                        "argument_value": "nearest gym to 51.5074, -0.1278"
+                    }
+                ]
+            },
+            {
+                "tool_name": "book_fitness_class",
+                "arguments": [
+                    {
+                        "argument_name": "class_date",
+                        "argument_value": "2023-07-20"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "fitnessfanatic@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Training Session Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "confirmation of booked training session"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find top-rated Chinese restaurants within 5km of 40.7128, -74.0060, book a table for four on July 25, 2023, and email the booking to chinesecuisine@example.com.",
+        "tools": [
+            {
+                "tool_name": "nearby_restaurants",
+                "arguments": [
+                    {
+                        "argument_name": "latitude",
+                        "argument_value": 40.7128
+                    },
+                    {
+                        "argument_name": "longitude",
+                        "argument_value": -74.0060
+                    },
+                    {
+                        "argument_name": "distance",
+                        "argument_value": 5000
+                    }
+                ]
+            },
+            {
+                "tool_name": "book_restaurant",
+                "arguments": [
+                    {
+                        "argument_name": "date",
+                        "argument_value": "2023-07-25"
+                    },
+                    {
+                        "argument_name": "party_size",
+                        "argument_value": 4
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "chinesecuisine@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Restaurant Booking Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "confirmation of restaurant booking"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Set an alarm for my doctor's appointment at 10:00 AM on August 5, 2023, and send a reminder email the day before to healthcheck@example.com.",
+        "tools": [
+            {
+                "tool_name": "addalarm",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "user token"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-08-05 10:00:00"
+                    }
+                ]
+            },
+            {
+                "tool_name": "email_reminder",
+                "arguments": [
+                    {
+                        "argument_name": "content",
+                        "argument_value": "reminder of doctor's appointment"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-08-04 10:00:00"
+                    },
+                    {
+                        "argument_name": "location",
+                        "argument_value": "doctor's office location"
+                    },
+                    {
+                        "argument_name": "recipient",
+                        "argument_value": "healthcheck@example.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Translate a culinary recipe from Italian to English, the URL being 'http://example.com/italianrecipe.txt', calculate the ingredients for six servings, and email the recipe to chef@example.com.",
+        "tools": [
+            {
+                "tool_name": "translate",
+                "arguments": [
+                    {
+                        "argument_name": "src",
+                        "argument_value": "URL: http://example.com/italianrecipe.txt"
+                    },
+                    {
+                        "argument_name": "src_lang",
+                        "argument_value": "Italian"
+                    },
+                    {
+                        "argument_name": "tgt_lang",
+                        "argument_value": "English"
+                    }
+                ]
+            },
+            {
+                "tool_name": "calculator",
+                "arguments": [
+                    {
+                        "argument_name": "formula",
+                        "argument_value": "ingredient calculation for six servings"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "chef@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Translated Recipe"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "translated recipe with calculated ingredients"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Retrieve my scheduled meetings for the upcoming week starting July 20th, 2023, set reminders, and email them to meetings@example.com.",
+        "tools": [
+            {
+                "tool_name": "query_meeting",
+                "arguments": [
+                    {
+                        "argument_name": "user_name",
+                        "argument_value": "current user"
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_reminder",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "user token"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "time of each meeting from query_meeting"
+                    }
+                ]
+            },
+            {
+                "tool_name": "email_reminder",
+                "arguments": [
+                    {
+                        "argument_name": "content",
+                        "argument_value": "details of reminders from add_reminder"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "time of each reminder from add_reminder"
+                    },
+                    {
+                        "argument_name": "location",
+                        "argument_value": "location of each meeting from query_meeting"
+                    },
+                    {
+                        "argument_name": "recipient",
+                        "argument_value": "meetings@example.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find notable events that occurred on this date in history, summarize them, and send the summary to historytoday@example.com.",
+        "tools": [
+            {
+                "tool_name": "query_history_today",
+                "arguments": [
+                    {
+                        "argument_name": "date",
+                        "argument_value": "current date"
+                    }
+                ]
+            },
+            {
+                "tool_name": "wiki",
+                "arguments": [
+                    {
+                        "argument_name": "keyword",
+                        "argument_value": "events on current date"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": [
+                            "results from query_history_today",
+                            "results from wiki"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "historytoday@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Historical Events Summary"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "summary from summarize_objects"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Play 'Bohemian Rhapsody' by Queen, set a timed switch to turn off after 45 minutes, and confirm the action via email.",
+        "tools": [
+            {
+                "tool_name": "play_music",
+                "arguments": [
+                    {
+                        "argument_name": "music_name",
+                        "argument_value": "Bohemian Rhapsody by Queen"
+                    }
+                ]
+            },
+            {
+                "tool_name": "timed_switch",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "music player"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "in 45 minutes"
+                    },
+                    {
+                        "argument_name": "on",
+                        "argument_value": false
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "user email"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Music Play Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Confirmation of playing 'Bohemian Rhapsody' and timed switch off after 45 minutes"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Create a new user account with username 'alice2023', password 'wonderland', email 'alice2023@example.com', and send a confirmation.",
+        "tools": [
+            {
+                "tool_name": "register_user",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "alice2023"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "wonderland"
+                    },
+                    {
+                        "argument_name": "email",
+                        "argument_value": "alice2023@example.com"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "alice2023@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Account Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Your account 'alice2023' has been successfully created."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Estimate the tax for a salary of $85,000, send the detailed report to mytaxadvisor@example.com.",
+        "tools": [
+            {
+                "tool_name": "tax_calculator",
+                "arguments": [
+                    {
+                        "argument_name": "salary",
+                        "argument_value": 85000
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "mytaxadvisor@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Tax Calculation Report"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Detailed tax report for a salary of $85,000"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find the current stock price for Amazon (AMZN) and Google (GOOGL), compare them, and email the analysis to stocks@example.com.",
+        "tools": [
+            {
+                "tool_name": "query_stock",
+                "arguments": [
+                    {
+                        "argument_name": "stock_code",
+                        "argument_value": "AMZN"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "current date"
+                    }
+                ]
+            },
+            {
+                "tool_name": "query_stock",
+                "arguments": [
+                    {
+                        "argument_name": "stock_code",
+                        "argument_value": "GOOGL"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "current date"
+                    }
+                ]
+            },
+            {
+                "tool_name": "compare_prices",
+                "arguments": [
+                    {
+                        "argument_name": "prices",
+                        "argument_value": [
+                            "$$PREV[0]",
+                            "$$PREV[1]"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "stocks@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Stock Price Comparison: Amazon vs. Google"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[2]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Translate a Spanish article from 'http://example.com/article.txt' to English, summarize the translation, and email it to info@example.com.",
+        "tools": [
+            {
+                "tool_name": "translate",
+                "arguments": [
+                    {
+                        "argument_name": "src",
+                        "argument_value": "http://example.com/article.txt"
+                    },
+                    {
+                        "argument_name": "src_lang",
+                        "argument_value": "Spanish"
+                    },
+                    {
+                        "argument_name": "tgt_lang",
+                        "argument_value": "English"
+                    }
+                ]
+            },
+            {
+                "tool_name": "document_q_a",
+                "arguments": [
+                    {
+                        "argument_name": "url",
+                        "argument_value": "http://example.com/article.txt"
+                    },
+                    {
+                        "argument_name": "question",
+                        "argument_value": "Summarize the article"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "info@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Summarized Translation of Spanish Article"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[2]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Search for symptoms of seasonal allergies and locate nearby clinics from my current location at 34.0522, -118.2437.",
+        "tools": [
+            {
+                "tool_name": "emergency_knowledge",
+                "arguments": [
+                    {
+                        "argument_name": "symptom",
+                        "argument_value": "seasonal allergies"
+                    }
+                ]
+            },
+            {
+                "tool_name": "symptomsearch",
+                "arguments": [
+                    {
+                        "argument_name": "symptom",
+                        "argument_value": "seasonal allergies"
+                    }
+                ]
+            },
+            {
+                "tool_name": "search_engine",
+                "arguments": [
+                    {
+                        "argument_name": "keyword",
+                        "argument_value": "nearby clinics 34.0522, -118.2437"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Book a hotel room at 'The Plaza' in New York City (40.7624, -73.9753) for December 25th to 30th, and email the confirmation to travel@example.com.",
+        "tools": [
+            {
+                "tool_name": "book_hotel",
+                "arguments": [
+                    {
+                        "argument_name": "hotel_name",
+                        "argument_value": "The Plaza"
+                    },
+                    {
+                        "argument_name": "check_in_time",
+                        "argument_value": "2023-12-25"
+                    },
+                    {
+                        "argument_name": "check_out_time",
+                        "argument_value": "2023-12-30"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "travel@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Hotel Booking Confirmation at The Plaza"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Your hotel booking details for The Plaza"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            },
+            {
+                "tool_name": "geocoding",
+                "arguments": [
+                    {
+                        "argument_name": "address",
+                        "argument_value": "New York City"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Record my jogging distance for today, June 25th, 2023, compare it with last week's data, and update my fitness tracker 'user145'.",
+        "tools": [
+            {
+                "tool_name": "record_health_data",
+                "arguments": [
+                    {
+                        "argument_name": "user_id",
+                        "argument_value": "user145"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-06-25"
+                    },
+                    {
+                        "argument_name": "health_data",
+                        "argument_value": "Today's jogging distance"
+                    }
+                ]
+            },
+            {
+                "tool_name": "query_health_data",
+                "arguments": [
+                    {
+                        "argument_name": "user_id",
+                        "argument_value": "user145"
+                    },
+                    {
+                        "argument_name": "start_time",
+                        "argument_value": "Date one week ago"
+                    },
+                    {
+                        "argument_name": "end_time",
+                        "argument_value": "2023-06-25"
+                    }
+                ]
+            },
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user145"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "user's password"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "Updated jogging data"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find an Italian restaurant near the coordinates 43.7695, 11.2558 (Florence, Italy), book a table for July 31st, and email me at dineout@example.com.",
+        "tools": [
+            {
+                "tool_name": "nearby_restaurants",
+                "arguments": [
+                    {
+                        "argument_name": "latitude",
+                        "argument_value": 43.7695
+                    },
+                    {
+                        "argument_name": "longitude",
+                        "argument_value": 11.2558
+                    }
+                ]
+            },
+            {
+                "tool_name": "book_restaurant",
+                "arguments": [
+                    {
+                        "argument_name": "restaurant_name",
+                        "argument_value": "Selected Italian restaurant"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "2023-07-31"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "dineout@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Italian Restaurant Booking Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Details of your restaurant booking on July 31st"
+                    }
+                ]
+            },
+            {
+                "tool_name": "geocoding",
+                "arguments": [
+                    {
+                        "argument_name": "address",
+                        "argument_value": "43.7695, 11.2558"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Set a wake-up alarm for 7:00 AM on August 1st, 2023, and play a gentle wake-up playlist at that time.",
+        "tools": [
+            {
+                "tool_name": "addalarm",
+                "arguments": [
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-08-01 07:00:00"
+                    }
+                ]
+            },
+            {
+                "tool_name": "play_music",
+                "arguments": [
+                    {
+                        "argument_name": "music_name",
+                        "argument_value": "Gentle Wake-up Playlist"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            },
+            {
+                "tool_name": "check_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Find movie recommendations based on my preference for thrillers, and email the list to movies@example.com.",
+        "tools": [
+            {
+                "tool_name": "user_movie_preferences",
+                "arguments": [
+                    {
+                        "argument_name": "user_name",
+                        "argument_value": "user's name"
+                    }
+                ]
+            },
+            {
+                "tool_name": "movie_recommendations",
+                "arguments": [
+                    {
+                        "argument_name": "preferences",
+                        "argument_value": [
+                            "thrillers"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "movies@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Thriller Movie Recommendations"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "List of recommended thriller movies"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "question": "Translate a German medical report from 'http://example.com/medicalreport.txt' to English, summarize the key points, and email them to doc@example.com.",
+        "tools": [
+            {
+                "tool_name": "translate",
+                "arguments": [
+                    {
+                        "argument_name": "src",
+                        "argument_value": "http://example.com/medicalreport.txt"
+                    },
+                    {
+                        "argument_name": "src_lang",
+                        "argument_value": "German"
+                    },
+                    {
+                        "argument_name": "tgt_lang",
+                        "argument_value": "English"
+                    }
+                ]
+            },
+            {
+                "tool_name": "document_q_a",
+                "arguments": [
+                    {
+                        "argument_name": "url",
+                        "argument_value": "http://example.com/medicalreport.txt"
+                    },
+                    {
+                        "argument_name": "question",
+                        "argument_value": "Summarize the key points"
+                    }
+                ]
+            },
+            {
+                "tool_name": "summarize_objects",
+                "arguments": [
+                    {
+                        "argument_name": "objects",
+                        "argument_value": "$$PREV[1]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "doc@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Summarized Medical Report Translation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "$$PREV[2]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Register me for the Chicago Half Marathon on September 25, 2023, set a reminder, and email the details to runner@example.com.",
+        "tools": [
+            {
+                "tool_name": "appointment_registration",
+                "arguments": [
+                    {
+                        "argument_name": "patient_name",
+                        "argument_value": "user's name"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "2023-09-25"
+                    },
+                    {
+                        "argument_name": "doctor_name",
+                        "argument_value": "Marathon Organizer"
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_reminder",
+                "arguments": [
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Reminder for Chicago Half Marathon"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-09-25"
+                    }
+                ]
+            },
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                    {
+                        "argument_name": "receiver",
+                        "argument_value": "runner@example.com"
+                    },
+                    {
+                        "argument_name": "subject",
+                        "argument_value": "Chicago Half Marathon Registration Confirmation"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Details of your registration for the Chicago Half Marathon"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": []
+            }
+        ]
+    }
+]

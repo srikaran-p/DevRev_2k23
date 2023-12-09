@@ -1,0 +1,225 @@
+[
+    {
+        "question": "What user am I currently logged in as?",
+        "answer": [
+            {
+                "tool_name": "who_am_i",
+                "arguments": []
+            }
+        ],
+        "query_type": "tools_with_no_args",
+        "id": "train_data_192"
+    }
+,
+{
+    "question": "Identify the user I am logged in as right now.",
+    "answer": [
+        {
+            "tool_name": "who_am_i",
+            "arguments": []
+        }
+    ],
+    "query_type": "tools_with_no_args",
+    "id": "train_data_193"
+}
+,
+{
+    "question": "Show me the user I am currently logged in as in the system.",
+    "answer": [
+        {
+            "tool_name": "who_am_i",
+            "arguments": []
+        }
+    ],
+    "query_type": "tools_with_no_args",
+    "id": "train_data_194"
+}
+,
+{
+    "question": "What is the name of the user I am logged in as?",
+    "answer": [
+        {
+            "tool_name": "who_am_i",
+            "arguments": []
+        }
+    ],
+    "query_type": "tools_with_no_args",
+    "id": "train_data_195"
+}
+,
+{
+    "question": "Check the current user I am logged in as on the system.",
+    "answer": [
+        {
+            "tool_name": "who_am_i",
+            "arguments": []
+        }
+    ],
+    "query_type": "tools_with_no_args",
+    "id": "train_data_196"
+}
+,
+{
+    "question": "Retrieve the ID of the ongoing sprint.",
+    "answer": [
+        {
+            "tool_name": "get_sprint_id",
+            "arguments": []
+        }
+    ],
+    "query_type": "tools_with_no_args",
+    "id": "train_data_197"
+}
+,
+{
+    "question": "What is the current sprint's ID?",
+    "answer": [
+        {
+            "tool_name": "get_sprint_id",
+            "arguments": []
+        }
+    ],
+    "query_type": "tools_with_no_args",
+    "id": "train_data_198"
+}
+,
+{
+    "question": "Get the ID of the sprint that is currently active.",
+    "answer": [
+        {
+            "tool_name": "get_sprint_id",
+            "arguments": []
+        }
+    ],
+    "query_type": "tools_with_no_args",
+    "id": "train_data_199"
+}
+,
+{
+    "question": "Provide the ID of the sprint in progress.",
+    "answer": [
+        {
+            "tool_name": "get_sprint_id",
+            "arguments": []
+        }
+    ],
+    "query_type": "tools_with_no_args",
+    "id": "train_data_200"
+}
+,
+{
+    "question": "What ID is assigned to the current sprint?",
+    "answer": [
+        {
+            "tool_name": "get_sprint_id",
+            "arguments": []
+        }
+    ],
+    "query_type": "tools_with_no_args",
+    "id": "train_data_201"
+}
+
+,
+
+    {
+      "question": "Get the ID of the current sprint and find similar work items to TASK-789.",
+      "answer": [
+        {
+          "tool_name": "get_sprint_id",
+          "arguments": []
+        },
+        {
+          "tool_name": "get_similar_work_items",
+          "arguments": [
+            {
+              "argument_name": "work_id",
+              "argument_value": "TASK-789"
+            }
+          ]
+        }
+      ],
+      "query_type": "multiple_tools",
+      "id": "train_data_189"
+    },
+    {
+      "question": "Retrieve the ID of the ongoing sprint and identify similar work items to BUG-456.",
+      "answer": [
+        {
+          "tool_name": "get_sprint_id",
+          "arguments": []
+        },
+        {
+          "tool_name": "get_similar_work_items",
+          "arguments": [
+            {
+              "argument_name": "work_id",
+              "argument_value": "BUG-456"
+            }
+          ]
+        }
+      ],
+      "query_type": "multiple_tools",
+      "id": "train_data_190"
+    },
+    {
+      "question": "Obtain the current sprint ID and locate work items similar to FEATURE-321.",
+      "answer": [
+        {
+          "tool_name": "get_sprint_id",
+          "arguments": []
+        },
+        {
+          "tool_name": "get_similar_work_items",
+          "arguments": [
+            {
+              "argument_name": "work_id",
+              "argument_value": "FEATURE-321"
+            }
+          ]
+        }
+      ],
+      "query_type": "multiple_tools",
+      "id": "train_data_191"
+    },
+    {
+      "question": "Get the ID of the active sprint and find similar work items to EPIC-987.",
+      "answer": [
+        {
+          "tool_name": "get_sprint_id",
+          "arguments": []
+        },
+        {
+          "tool_name": "get_similar_work_items",
+          "arguments": [
+            {
+              "argument_name": "work_id",
+              "argument_value": "EPIC-987"
+            }
+          ]
+        }
+      ],
+      "query_type": "multiple_tools",
+      "id": "train_data_192"
+    },
+    {
+      "question": "Fetch the current sprint ID and discover similar work items to USERSTORY-234.",
+      "answer": [
+        {
+          "tool_name": "get_sprint_id",
+          "arguments": []
+        },
+        {
+          "tool_name": "get_similar_work_items",
+          "arguments": [
+            {
+              "argument_name": "work_id",
+              "argument_value": "USERSTORY-234"
+            }
+          ]
+        }
+      ],
+      "query_type": "multiple_tools",
+      "id": "train_data_193"
+    }
+  ]
+  

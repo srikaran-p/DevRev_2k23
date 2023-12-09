@@ -50,8 +50,7 @@
           ]
         }
       ], 
-      "query_type": "multiple_tools",
-      "id": "example_1"
+      "query_type": "multiple_tools"
     },
 
     {
@@ -92,8 +91,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
-        "id": "example_2"
+        "query_type": "multiple_tools"
       },
 
       {
@@ -145,8 +143,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
-        "id": "example_3"
+        "query_type": "multiple_tools"
       },
       
       {
@@ -187,8 +184,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
-        "id": "example_4"
+        "query_type": "multiple_tools"
       },
 
       {
@@ -229,8 +225,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
-        "id": "example_5"
+        "query_type": "multiple_tools"
       },
       
       {
@@ -263,8 +258,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
-        "id": "example_6"
+        "query_type": "multiple_tools"
       },
       
       {
@@ -297,8 +291,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
-        "id": "example_7"
+        "query_type": "multiple_tools"
       },
       
       {
@@ -351,8 +344,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
-        "id": "example_8"
+        "query_type": "multiple_tools"
       },
 
       {
@@ -389,8 +381,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
-        "id": "example_9"
+        "query_type": "multiple_tools"
       },
 
       {
@@ -427,8 +418,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
-        "id": "example_10"
+        "query_type": "multiple_tools"
       },
     
       {
@@ -465,8 +455,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
-        "id": "example_11"
+        "query_type": "multiple_tools"
       },
 
       {
@@ -490,8 +479,7 @@
             ]
           }
         ], 
-        "query_type": "single_tool_multiple_args",
-        "id": "example_12"
+        "query_type": "single_tool_multiple_args"
       },
 
       {
@@ -515,8 +503,7 @@
             ]
           }
         ], 
-        "query_type": "single_tool_multiple_args",
-        "id": "example_13"
+        "query_type": "single_tool_multiple_args"
       },
 
       {
@@ -540,8 +527,7 @@
             ]
           }
         ], 
-        "query_type": "single_tool_multiple_args",
-        "id": "example_14"
+        "query_type": "single_tool_multiple_args"
       },
 
       {
@@ -577,8 +563,7 @@
             ]
           }
         ], 
-        "query_type": "single_tool_multiple_args",
-        "id": "example_15"
+        "query_type": "single_tool_multiple_args"
       },
 
       {
@@ -614,8 +599,7 @@
             ]
           }
         ], 
-        "query_type": "single_tool_multiple_args",
-        "id": "example_16"
+        "query_type": "single_tool_multiple_args"
       },
 
       {
@@ -651,8 +635,7 @@
             ]
           }
         ], 
-        "query_type": "single_tool_multiple_args",
-        "id": "example_17"
+        "query_type": "single_tool_multiple_args"
       },
 
       {
@@ -688,8 +671,7 @@
             ]
           }
         ], 
-        "query_type": "single_tool_multiple_args",
-        "id": "example_18"
+        "query_type": "single_tool_multiple_args"
       },
 
       {
@@ -725,8 +707,207 @@
             ]
           }
         ], 
-        "query_type": "single_tool_multiple_args",
-        "id": "example_19"
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "What is (5*6)/(2+3)? Also tell me the historical events that happened on 10th December.",
+        "answer":[
+          {
+            "tool_name": "calculator",
+            "arguments": [
+              {
+                "argument_name": "formula",
+                "argument_value": "(5*6)/(2+3)"
+              }
+            ]
+          },
+          {
+            "tool_name": "query_history_today",
+            "arguments": [
+              {
+                "argument_name": "date",
+                "argument_value": "2022-12-10"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "Please perform (5+10)*3. Also tell me the historical events that happened on 29th February.",
+        "answer":[
+          {
+            "tool_name": "calculator",
+            "arguments": [
+              {
+                "argument_name": "formula",
+                "argument_value": "(5+10)*3"
+              }
+            ]
+          },
+          {
+            "tool_name": "query_history_today",
+            "arguments": [
+              {
+                "argument_name": "date",
+                "argument_value": "2020-02-29"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "Please perform (5+10)*3 / (25-10).",
+        "answer":[
+          {
+            "tool_name": "calculator",
+            "arguments": [
+              {
+                "argument_name": "formula",
+                "argument_value": "(5+10)*3 / (25-10)"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "Please cancel my appointment with id 78901234 for August 5th with Dr. X under the name XYZ",
+        "answer":[
+          {
+            "tool_name": "cancel_registration",
+            "arguments": [
+              {
+                "argument_name": "appointment_id",
+                "argument_value": "78901234"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "please record my health data: blood pressure 120/80, heart rate 80, the time is 2023-08-06 09:00:00 and my user id is 1234.",
+        "answer":[
+          {
+            "tool_name": "record_health_data",
+            "arguments": [
+              {
+                "argument_name": "user_id",
+                "argument_value": "1234"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2023-08-06 09:00:00"
+              },
+              {
+                "argument_name": "health_data",
+                "argument_value": [
+                    {
+                        "name": "blood pressure",
+                        "value": "120/80"
+                    },
+                    {
+                        "name": "heart rate",
+                        "value": "80"
+                    }
+                ]
+              }   
+            ]
+          }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Please check if there was any appointment with Dr. X on 20th May, 2023? My name is XYZ.",
+        "answer":[
+          {
+            "tool_name": "query_registration",
+            "arguments": [
+              {
+                "argument_name": "patient_name",
+                "argument_value": "XYZ"
+              },
+              {
+                "argument_name": "date",
+                "argument_value": "2023-05-20"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Cancel my appointment with appointment id 123456 on April 10th with Dr. D, under the name ABC.",
+        "answer":[
+          {
+            "tool_name": "cancel_registration",
+            "arguments": [
+              {
+                "argument_name": "appointment_id",
+                "argument_value": "123456"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "please cancel a timed switch for smart device id 123000. It is set for 19th march, 2023 at 9:30 AM.",
+        "answer":[
+          {
+            "tool_name": "cancel_timed_switch",
+            "arguments": [
+              {
+                "argument_name": "device_id",
+                "argument_value": "123000"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2023-03-19 09:30:00"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Delete my account with username foo, and password bar",
+        "answer":[
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                  {
+                    "argument_name": "username",
+                    "argument_value": "foo"
+                  },
+                  {
+                    "argument_name": "password",
+                    "argument_value": "bar"
+                  }
+                ]
+              },
+              {
+                "tool_name": "delete_account",
+                "arguments": [
+                {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[0]"
+                }
+                ]
+          }
+        ],
+        "query_type": "multiple_tools"
       }
 
       

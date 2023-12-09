@@ -1727,7 +1727,226 @@
         ],
         "query_type": "multiple_tools"
       },
+
+      {
+        "question": "Please modify my meeting reservation. The topic was New Employee orientation. Change the start time to 2023-03-27 09:00:00 and end time to 2023-03-27 11:00:00, location to Training room and the attendees would be A, B, and C. My username is user and password is pass.",
+        "answer":[
+            {
+              "tool_name": "get_user_token",
+              "arguments": [
+                {
+                    "argument_name": "username",
+                    "argument_value": "user"
+                },
+                {
+                    "argument_name": "password",
+                    "argument_value": "pass"
+                }
+              ]
+            },
+            {
+                "tool_name": "modifymeeting",
+                "arguments": [
+                {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[0]"
+                },
+                {
+                    "argument_name": "meeting_topic",
+                    "argument_value": "New Employee Orientation"
+                },
+                {
+                    "argument_name": "start_time",
+                    "argument_value": "2023-03-27 09:00:00"
+                },
+                {
+                    "argument_name": "end_time",
+                    "argument_value": "2023-03-27 11:00:00"
+                },
+                {
+                    "argument_name": "location",
+                    "argument_value": "Training Room"
+                },
+                {
+                    "argument_name": "attendees",
+                    "argument_value": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+              ]   
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "Please help me in changing my password. My username is user, email is user@example.com , old password is oldpass and new password is newpass.",
+        "answer":[
+            {
+              "tool_name": "get_user_token",
+              "arguments": [
+                {
+                    "argument_name": "username",
+                    "argument_value": "user"
+                },
+                {
+                    "argument_name": "password",
+                    "argument_value": "oldpass"
+                }
+              ]
+            },
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[0]"
+                },
+                {
+                    "argument_name": "old_password",
+                    "argument_value": "oldpass"
+                },
+                {
+                    "argument_name": "new_password",
+                    "argument_value": "newpass"
+                }
+              ]   
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "I need to reschedule my appointment with Dr. X on April 2nd, 2023 to April 5th with Dr. M. My appointment id was 127363.",
+        "answer":[
+            {
+              "tool_name": "modify_registration",
+              "arguments": [
+                {
+                    "argument_name": "appointment_id",
+                    "argument_value": "127363"
+                },
+                {
+                    "argument_name": "new_appointment_date",
+                    "argument_value": "2023-04-05"
+                },
+                {
+                    "argument_name": "new_appointment_doctor",
+                    "argument_value": "Dr. M"
+                }
+              ]
+            }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "please change the description of the reminder to Submit report on 2023-03-17 09:00:00. My username is admin and password is adminpass.",
+        "answer":[
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                  {
+                      "argument_name": "username",
+                      "argument_value": "admin"
+                  },
+                  {
+                      "argument_name": "password",
+                      "argument_value": "adminpass"
+                  }
+                ]
+              },
+              {
+              "tool_name": "modify_reminder",
+              "arguments": [
+                {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[0]"
+                },
+                {
+                    "argument_name": "content",
+                    "argument_value": "Submit report"
+                },
+                {
+                    "argument_name": "time",
+                    "argument_value": "2023-03-17 09:00:00"
+                }
+              ]
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "I need to open a new bank account. My account number is 123456, username is user123, password is pass123, and name is J. Please tell my account balance as well.",
+        "answer":[
+            {
+                "tool_name": "open_bank_account",
+                "arguments": [
+                  {
+                      "argument_name": "account",
+                      "argument_value": "123456"
+                  },
+                  {
+                      "argument_name": "password",
+                      "argument_value": "pass123"
+                  },
+                  {
+                    "argument_name": "name",
+                    "argument_value": "J"
+                  }
+                ]
+              },
+              {
+                "tool_name": "get_user_token",
+                "arguments": [
+                  {
+                      "argument_name": "username",
+                      "argument_value": "user123"
+                  },
+                  {
+                      "argument_name": "password",
+                      "argument_value": "pass123"
+                  }
+                ]
+              },
+              {
+              "tool_name": "query_balance",
+              "arguments": [
+                {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[1]"
+                }
+              ]
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "What was the stock price for Amazon on 12th march, 2023?",
+        "answer":[
+            {
+                "tool_name": "query_stock",
+                "arguments": [
+                  {
+                      "argument_name": "stock_code",
+                      "argument_value": "AMZN"
+                  },
+                  {
+                      "argument_name": "date",
+                      "argument_value": "2023-03-12"
+                  },
+                ]
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
       
+
+
 
       
       

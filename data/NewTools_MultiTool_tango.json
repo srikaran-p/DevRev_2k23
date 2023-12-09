@@ -353,5 +353,194 @@
         ], 
         "query_type": "multiple_tools",
         "id": "example_8"
+      },
+
+      {
+        "question": "Please schedule a reminder for me to call my mom tomorrow at 10am. My username is user1 and password is user1pass. Remind me at 2022-05-10 at 10AM.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "user1"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "user1pass"
+              }
+            ]
+          },
+          {
+            "tool_name": "add_reminder",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "call mom"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2022-05-10 10:00:00"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_9"
+      },
+
+      {
+        "question": "Please schedule a reminder for me to call M tomorrow at 3pm. Today is 2022-05-24. My username is user1 and password is user1pass. Remind me at 2022-05-10 at 10AM.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "user1"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "user1pass"
+              }
+            ]
+          },
+          {
+            "tool_name": "add_reminder",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "call M"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2022-05-25 15:00:00"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_10"
+      },
+    
+      {
+        "question": "Please schedule a reminder for a meeting on 2022-05-06 at 2PM. My username is user1 and password is user1pass.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "user1"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "user1pass"
+              }
+            ]
+          },
+          {
+            "tool_name": "add_reminder",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "meeting"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2022-05-06 14:00:00"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_11"
+      },
+
+      {
+        "question": "I need to register an appointement with a specific doctor Dr. D on 2022-01-06. My name is H.",
+        "answer":[
+          {
+            "tool_name": "appointment_registration",
+            "arguments": [
+              {
+                "argument_name": "patient_name",
+                "argument_value": "H"
+              },
+              {
+                "argument_name": "date",
+                "argument_value": "2022-01-06"
+              },
+              {
+                "argument_name": "doctor_name",
+                "argument_value": "Dr. D"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_12"
+      },
+
+      {
+        "question": "Can you help me register an appointment at the hospital, the patient name is Q, appointment date is 2022-03-05 and doctor name is Dr.X.",
+        "answer":[
+          {
+            "tool_name": "appointment_registration",
+            "arguments": [
+              {
+                "argument_name": "patient_name",
+                "argument_value": "Q"
+              },
+              {
+                "argument_name": "date",
+                "argument_value": "2022-03-05"
+              },
+              {
+                "argument_name": "doctor_name",
+                "argument_value": "Dr.X"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_13"
+      },
+
+      {
+        "question": "I need to book an appointment with Dr. X for M on 2022-08-15.",
+        "answer":[
+          {
+            "tool_name": "appointment_registration",
+            "arguments": [
+              {
+                "argument_name": "patient_name",
+                "argument_value": "M"
+              },
+              {
+                "argument_name": "date",
+                "argument_value": "2022-08-15"
+              },
+              {
+                "argument_name": "doctor_name",
+                "argument_value": "Dr.X"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_14"
       }
 ]

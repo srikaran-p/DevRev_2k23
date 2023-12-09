@@ -740,8 +740,1221 @@
       "query_type": "single_tool_single_args",
       "id": "example_40"
   }
+  {
+      "question": "Can you show me the current 'issues' our team is addressing?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "type",
+                      "argument_value": [
+                          "issue"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_41"
+  },
   
+  {
+      "question": "What 'tasks' are assigned to our team members at the moment?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "type",
+                      "argument_value": [
+                          "task"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_42"
+  },
+  
+  {
+      "question": "Which 'tickets' are currently in progress within our department?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "type",
+                      "argument_value": [
+                          "ticket"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_43"
+  },
+  
+  {
+      "question": "Are there any 'issues' that are still being resolved by our team?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "type",
+                      "argument_value": [
+                          "issue"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_44"
+  },
+  
+  {
+      "question": "What are the ongoing 'tasks' that our team is focusing on right now?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "type",
+                      "argument_value": [
+                          "task"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_45"
+  },
+  {
+      "question": "What is the count of issues associated with the business partner PartnerOrg-456?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "issue.rev_orgs",
+                      "argument_value": [
+                          "PartnerOrg-456"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_46"
+  },
+  
+  {
+      "question": "Can you list the issues related to the supplier SupplierOrg-789?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "issue.rev_orgs",
+                      "argument_value": [
+                          "SupplierOrg-789"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_47"
+  },
+  
+  {
+      "question": "Are there any issues currently linked to our affiliate AffiliateOrg-321?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "issue.rev_orgs",
+                      "argument_value": [
+                          "AffiliateOrg-321"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_48"
+  },
+  
+  {
+      "question": "How many issues are presently connected to the customer CustomerOrg-654?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "issue.rev_orgs",
+                      "argument_value": [
+                          "CustomerOrg-654"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_49"
+  },
+  
+  {
+      "question": "What are the issues tied to the entity EntityOrg-987?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "issue.rev_orgs",
+                      "argument_value": [
+                          "EntityOrg-987"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_50"
+  },
+    {
+      "question": "Which tickets have been reported through the 'Web' platform?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "Web"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_51"
+  },
+  
+  {
+      "question": "Can you show me the tickets that were received via 'Email'?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "Email"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_52"
+  },
+  
+  {
+      "question": "What tickets have come in through the 'Phone' channel?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "Phone"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_53"
+  },
+  
+  {
+      "question": "Are there any tickets submitted through 'Social Media' channels?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "Social Media"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_54"
+  },
+  
+  {
+      "question": "Can you identify tickets that have been logged via 'Chat' support?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "Chat"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_55"
+  },
+  {
+      "question": "Organize my upcoming meetings in order of importance",
+      "answer": [
+          {
+              "tool_name": "prioritize_objects",
+              "arguments": [
+                  {
+                      "argument_name": "objects",
+                      "argument_value": "upcoming meetings"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_56"
+  },
+  
+  {
+      "question": "Sort out the most critical reports I need to review by the end of the month",
+      "answer": [
+          {
+              "tool_name": "prioritize_objects",
+              "arguments": [
+                  {
+                      "argument_name": "objects",
+                      "argument_value": "reports for review by month end"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_57"
+  },
+  
+  {
+      "question": "Rank the project milestones we need to achieve in the next quarter",
+      "answer": [
+          {
+              "tool_name": "prioritize_objects",
+              "arguments": [
+                  {
+                      "argument_name": "objects",
+                      "argument_value": "project milestones for next quarter"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_58"
+  },
+  
+  {
+      "question": "Determine the priority of client calls I have scheduled for this week",
+      "answer": [
+          {
+              "tool_name": "prioritize_objects",
+              "arguments": [
+                  {
+                      "argument_name": "objects",
+                      "argument_value": "client calls scheduled for this week"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_59"
+  },
+  
+  {
+      "question": "Please prioritize the list of software updates that need to be deployed",
+      "answer": [
+          {
+              "tool_name": "prioritize_objects",
+              "arguments": [
+                  {
+                      "argument_name": "objects",
+                      "argument_value": "software updates to deploy"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_60"
+  },
+  {
+      "question": "Can you show me the tickets related to the organization ORG-123?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.rev_org",
+                      "argument_value": [
+                          "ORG-123"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_61"
+  },
+  
+  {
+      "question": "What work items are linked to the company COMP-456?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.rev_org",
+                      "argument_value": [
+                          "COMP-456"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_62"
+  },
+  
+  {
+      "question": "Retrieve all support requests for the client CLIENT-789",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.rev_org",
+                      "argument_value": [
+                          "CLIENT-789"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_63"
+  },
+  
+  {
+      "question": "List the service issues connected to partner PARTNER-321",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.rev_org",
+                      "argument_value": [
+                          "PARTNER-321"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_64"
+  },
+  
+  {
+      "question": "Display the project tasks associated with department DEPT-654",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.rev_org",
+                      "argument_value": [
+                          "DEPT-654"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_65"
+  },
+  {
+      "question": "What is the status of parts related to the model numbers MODEL-123 and MODEL-456?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "applies_to_part",
+                      "argument_value": [
+                          "MODEL-123",
+                          "MODEL-456"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_66"
+  },
+  
+  {
+      "question": "Can you provide updates on components with the identification codes IDCODE-789 and IDCODE-987?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "applies_to_part",
+                      "argument_value": [
+                          "IDCODE-789",
+                          "IDCODE-987"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_67"
+  },
+  
+  {
+      "question": "How are the elements associated with the serial number SERIAL-321 progressing?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "applies_to_part",
+                      "argument_value": [
+                          "SERIAL-321"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_68"
+  },
+  
+  {
+      "question": "I need a report on the development of products with the tags TAG-111 and TAG-222",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "applies_to_part",
+                      "argument_value": [
+                          "TAG-111",
+                          "TAG-222"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_69"
+  },
+  
+  {
+      "question": "Are there any updates on the batch numbers BATCH-333 and BATCH-444?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "applies_to_part",
+                      "argument_value": [
+                          "BATCH-333",
+                          "BATCH-444"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_70"
+  },
+  {
+      "question": "What are the tasks associated with PROJ-123?",
+      "answer": [
+          {
+              "tool_name": "get_similar_work_items",
+              "arguments": [
+                  {
+                      "argument_name": "work_id",
+                      "argument_value": "PROJ-123"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_71"
+  },
+  
+  {
+      "question": "Can you find work items related to TASK-456?",
+      "answer": [
+          {
+              "tool_name": "get_similar_work_items",
+              "arguments": [
+                  {
+                      "argument_name": "work_id",
+                      "argument_value": [
+                          "TASK-456",
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_72"
+  },
+  
+  {
+      "question": "Identify the work items linked to the code CODE-321",
+      "answer": [
+          {
+              "tool_name": "get_similar_work_items",
+              "arguments": [
+                  {
+                      "argument_name": "work_id",
+                      "argument_value": "CODE-321"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_73"
+  },
+  
+  {
+      "question": "Display similar work items for the identifier ID-655",
+      "answer": [
+          {
+              "tool_name": "get_similar_work_items",
+              "arguments": [
+                  {
+                      "argument_name": "work_id",
+                      "argument_value": [
+                          "ID-655"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_74"
+  },
+  
+  {
+      "question": "List out the tasks connected to the ticket number TICKET-876",
+      "answer": [
+          {
+              "tool_name": "get_similar_work_items",
+              "arguments": [
+                  {
+                      "argument_name": "work_id",
+                      "argument_value": "TICKET-876"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_75"
+  },
+  {
+      "question": "What is the number of issues related to ORG-123?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "issue.rev_orgs",
+                      "argument_value": [
+                          "ORG-123"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_76"
+  },
+  
+  {
+      "question": "Can you count the issues linked to both COMP-456 and COMP-789?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "issue.rev_orgs",
+                      "argument_value": [
+                          "COMP-456",
+                          "COMP-789"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_77"
+  },
+  
+  {
+      "question": "How many issues are connected to CLIENT-321?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "issue.rev_orgs",
+                      "argument_value": [
+                          "CLIENT-321"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_78"
+  },
+  
+  {
+      "question": "Identify the number of issues associated with PARTNER-654 and PARTNER-655",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "issue.rev_orgs",
+                      "argument_value": [
+                          "PARTNER-654",
+                          "PARTNER-655"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_79"
+  },
+  
+  {
+      "question": "List the total issues related to the entity ENTITY-876",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "issue.rev_orgs",
+                      "argument_value": [
+                          "ENTITY-876"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_80"
+  },
+  {
+      "question": "Can you list the tickets that are currently marked with 'low' severity?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.severity",
+                      "argument_value": [
+                          "low"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_81"
+  },
+  
+  {
+      "question": "Show me the work items that have been categorized as 'blocker' severity.",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.severity",
+                      "argument_value": [
+                          "blocker"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_82"
+  },
+  
+  {
+      "question": "What are the tasks with severities 'medium' and 'low'?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.severity",
+                      "argument_value": [
+                          "medium",
+                          "low"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_83"
+  },
+  
+  {
+      "question": "Identify the tickets classified under both 'high' and 'blocker' severity levels.",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.severity",
+                      "argument_value": [
+                          "high",
+                          "blocker"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_84"
+  },
+  
+  {
+      "question": "Retrieve all work items marked with a severity of 'low'.",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.severity",
+                      "argument_value": [
+                          "low"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_85"
+  },
+  {
+      "question": "How many tickets have been received via the email and phone channels?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "email",
+                          "phone"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_86"
+  },
+  
+  {
+      "question": "Can you determine the number of tickets submitted through the web portal?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "web"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_87"
+  },
+  
+  {
+      "question": "What is the count of tickets that have come in through the mobile app and chat support?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "mobile app",
+                          "chat"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_88"
+  },
+  
+  {
+      "question": "Show the volume of tickets generated from in-person and fax interactions.",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "in-person",
+                          "fax"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_89"
+  },
+  
+  {
+      "question": "Identify the number of tickets submitted via social media platforms and voicemail.",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "social media",
+                          "voicemail"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_90"
+  },
+  {
+      "question": "Can you tell me the number of tickets received via the web and mobile app channels?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "web",
+                          "mobile app"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_91"
+  },
+  
+  {
+      "question": "What is the total count of tickets generated from phone calls?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "phone"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_92"
+  },
+  
+  {
+      "question": "How many tickets have been submitted through chat and social media?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "chat",
+                          "social media"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_93"
+  },
+  
+  {
+      "question": "Could you provide the number of tickets that came in through fax and voicemail?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "fax",
+                          "voicemail"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_94"
+  },
+  
+  {
+      "question": "I'm interested in the volume of tickets that arrived via in-person interactions.",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "in-person"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_95"
+  },
+  {
+      "question": "Can you locate work items that are similar to TASK-456?",
+      "answer": [
+          {
+              "tool_name": "get_similar_work_items",
+              "arguments": [
+                  {
+                      "argument_name": "work_id",
+                      "argument_value": "TASK-456"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_96"
+  },
+  
+  {
+      "question": "What are the work items that closely match with PROJ-789?",
+      "answer": [
+          {
+              "tool_name": "get_similar_work_items",
+              "arguments": [
+                  {
+                      "argument_name": "work_id",
+                      "argument_value": "PROJ-789"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_97"
+  },
+  
+  {
+      "question": "Find items that are analogous to ISSUE-321 in our system.",
+      "answer": [
+          {
+              "tool_name": "get_similar_work_items",
+              "arguments": [
+                  {
+                      "argument_name": "work_id",
+                      "argument_value": "ISSUE-321"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_98"
+  },
+  
+  {
+      "question": "Identify work items that are akin to CODE-654.",
+      "answer": [
+          {
+              "tool_name": "get_similar_work_items",
+              "arguments": [
+                  {
+                      "argument_name": "work_id",
+                      "argument_value": "CODE-654"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_99"
+  },
+  
+  {
+      "question": "Are there any work items similar to REPORT-987 in our database?",
+      "answer": [
+          {
+              "tool_name": "get_similar_work_items",
+              "arguments": [
+                  {
+                      "argument_name": "work_id",
+                      "argument_value": "REPORT-987"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_100"
+  },
+  {
+    "question": "What issues of priority levels p1 and p2 are currently open?",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p1",
+                        "p2"
+                    ]
+                }
+            ]
+        }
+    ],
+    "query_type": "single_tool_single_args",
+    "id": "example_101"
+},
 
+{
+    "question": "Can you list out the issues classified as p3 priority?",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p3"
+                    ]
+                }
+            ]
+        }
+    ],
+    "query_type": "single_tool_single_args",
+    "id": "example_102"
+},
+
+{
+    "question": "Are there any critical (p0) issues that need immediate attention?",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p0"
+                    ]
+                }
+            ]
+        }
+    ],
+    "query_type": "single_tool_single_args",
+    "id": "example_103"
+},
+
+{
+    "question": "I need to review issues with priority levels ranging from p1 to p3.",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p1",
+                        "p2",
+                        "p3"
+                    ]
+                }
+            ]
+        }
+    ],
+    "query_type": "single_tool_single_args",
+    "id": "example_9104"
+},
+
+{
+    "question": "Show me the current issues categorized under priorities p0 and p2.",
+    "answer": [
+        {
+            "tool_name": "works_list",
+            "arguments": [
+                {
+                    "argument_name": "issue.priority",
+                    "argument_value": [
+                        "p0",
+                        "p2"
+                    ]
+                }
+            ]
+        }
+    ],
+    "query_type": "single_tool_single_args",
+    "id": "example_105"
+}
 
 
 

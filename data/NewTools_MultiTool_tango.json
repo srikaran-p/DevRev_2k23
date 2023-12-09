@@ -490,7 +490,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
+        "query_type": "single_tool_multiple_args",
         "id": "example_12"
       },
 
@@ -515,7 +515,7 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
+        "query_type": "single_tool_multiple_args",
         "id": "example_13"
       },
 
@@ -540,7 +540,195 @@
             ]
           }
         ], 
-        "query_type": "multiple_tools",
+        "query_type": "single_tool_multiple_args",
         "id": "example_14"
+      },
+
+      {
+        "question": "Book a hotel for two adults and one child, in Hilton in San Francisco. I want to check-in 10th August and check out on the 15th. One room for all of us should be enough. ",
+        "answer":[
+          {
+            "tool_name": "book_hotel",
+            "arguments": [
+              {
+                "argument_name": "hotel_name",
+                "argument_value": "Hilton San Francisco"
+              },
+              {
+                "argument_name": "check_in_time",
+                "argument_value": "2023-08-10"
+              },
+              {
+                "argument_name": "check_out_time",
+                "argument_value": "2023-08-15"
+              },
+              {
+                "argument_name": "room_count",
+                "argument_value": "1"
+              },
+              {
+                "argument_name": "adult_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "child_count",
+                "argument_value": "1"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_15"
+      },
+
+      {
+        "question": "I need a hotel room at the Hilton from 1st June to 10th June. Book two rooms for four adults and two children.",
+        "answer":[
+          {
+            "tool_name": "book_hotel",
+            "arguments": [
+              {
+                "argument_name": "hotel_name",
+                "argument_value": "Hilton"
+              },
+              {
+                "argument_name": "check_in_time",
+                "argument_value": "2023-06-01"
+              },
+              {
+                "argument_name": "check_out_time",
+                "argument_value": "2023-06-10"
+              },
+              {
+                "argument_name": "room_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "adult_count",
+                "argument_value": "4"
+              },
+              {
+                "argument_name": "child_count",
+                "argument_value": "2"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_16"
+      },
+
+      {
+        "question": "Please book a room at the Marriott from 2022-05-20 to 2022-05-22. Make sure you book two rooms for two adults and no children",
+        "answer":[
+          {
+            "tool_name": "book_hotel",
+            "arguments": [
+              {
+                "argument_name": "hotel_name",
+                "argument_value": "Marriott"
+              },
+              {
+                "argument_name": "check_in_time",
+                "argument_value": "2022-05-20"
+              },
+              {
+                "argument_name": "check_out_time",
+                "argument_value": "2022-05-22"
+              },
+              {
+                "argument_name": "room_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "adult_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "child_count",
+                "argument_value": "0"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_17"
+      },
+
+      {
+        "question": "Please book a room at the Hilton from Monday, 2022-03-14 to Friday. Make sure you book two rooms for two adults and one kid",
+        "answer":[
+          {
+            "tool_name": "book_hotel",
+            "arguments": [
+              {
+                "argument_name": "hotel_name",
+                "argument_value": "Hilton"
+              },
+              {
+                "argument_name": "check_in_time",
+                "argument_value": "2022-03-14"
+              },
+              {
+                "argument_name": "check_out_time",
+                "argument_value": "2022-03-18"
+              },
+              {
+                "argument_name": "room_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "adult_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "child_count",
+                "argument_value": "1"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_18"
+      },
+
+      {
+        "question": "Book a room for 2 adults and one child from 1st September to 5th September at the Sheraton Hotel.",
+        "answer":[
+          {
+            "tool_name": "book_hotel",
+            "arguments": [
+              {
+                "argument_name": "hotel_name",
+                "argument_value": "Sheraton Hotel"
+              },
+              {
+                "argument_name": "check_in_time",
+                "argument_value": "2022-09-01"
+              },
+              {
+                "argument_name": "check_out_time",
+                "argument_value": "2022-09-05"
+              },
+              {
+                "argument_name": "room_count",
+                "argument_value": "1"
+              },
+              {
+                "argument_name": "adult_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "child_count",
+                "argument_value": "1"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_19"
       }
+
+      
+
 ]

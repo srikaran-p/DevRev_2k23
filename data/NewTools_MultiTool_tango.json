@@ -908,7 +908,226 @@
           }
         ],
         "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "please delete the agenda of me picking up my dry cleaning on March 21st, 3Pm at the Cleaners. My username is newuser and password is newpass.",
+        "answer":[
+          {
+              "tool_name": "get_user_token",
+              "arguments": [
+                {
+                  "argument_name": "username",
+                  "argument_value": "newuser"
+                },
+                {
+                  "argument_name": "password",
+                  "argument_value": "newpass"
+                }
+              ]
+            },
+            {
+              "tool_name": "delete_agenda",
+              "arguments": [
+              {
+                  "argument_name": "token",
+                  "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "Pick up dry cleaning"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2023-03-21 15:00:00"
+              },
+              {
+                "argument_name": "location",
+                "argument_value": "Cleaners"
+              }
+            ]
+          }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "Delete the alarm set for March 16th at 7pm. My username is admin and password is adminpass.",
+        "answer":[
+          {
+              "tool_name": "get_user_token",
+              "arguments": [
+                {
+                  "argument_name": "username",
+                  "argument_value": "admin"
+                },
+                {
+                  "argument_name": "password",
+                  "argument_value": "adminpass"
+                }
+              ]
+            },
+            {
+              "tool_name": "delete_alarm",
+              "arguments": [
+              {
+                  "argument_name": "token",
+                  "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2023-03-16 19:00:00"
+              }
+            ]
+          }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "Delete the alarm set for March 24th at 7pm. My username is admin and password is adminpass. Also add an agenda item to attend a meeting at the office downtown, at 2:00pm on March 18th.",
+        "answer":[
+          {
+              "tool_name": "get_user_token",
+              "arguments": [
+                {
+                  "argument_name": "username",
+                  "argument_value": "admin"
+                },
+                {
+                  "argument_name": "password",
+                  "argument_value": "adminpass"
+                }
+              ]
+            },
+            {
+              "tool_name": "delete_alarm",
+              "arguments": [
+              {
+                  "argument_name": "token",
+                  "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2023-03-24 19:00:00"
+              }
+            ]
+          },
+          {
+            "tool_name": "addagenda",
+            "arguments": [
+            {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+            },
+            {
+              "argument_name": "time",
+              "argument_value": "2023-03-18 14:00:00"
+            },
+            {
+                "argument_name": "content",
+                "argument_value": "Attend meeting"
+            },
+            {
+                "argument_name": "location",
+                "argument_value": "office downtown"
+            }
+          ]
+        }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "I had reserved a meeting on \"New Employee Orientation\". The starting time was 2023-03-27 09:00:00, end time was 2023-03-27 11:00:00, with the location being Training room and the attendees being M, N and O. My username is user and password is pass. please delete this meeting reservation",
+        "answer":[
+          {
+              "tool_name": "get_user_token",
+              "arguments": [
+                {
+                  "argument_name": "username",
+                  "argument_value": "user"
+                },
+                {
+                  "argument_name": "password",
+                  "argument_value": "pass"
+                }
+              ]
+            },
+            {
+              "tool_name": "delete_meeting",
+              "arguments": [
+              {
+                  "argument_name": "token",
+                  "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "meeting_topic",
+                "argument_value": "New Employee Orientation"
+              },
+              {
+                "argument_name": "start_time",
+                "argument_value": "2023-03-27 09:00:00"
+              },
+              {
+                "argument_name": "end_time",
+                "argument_value": "2023-03-27 11:00:00"
+              },
+              {
+                "argument_name": "location",
+                "argument_value": "Training Room"
+              },
+              {
+                "argument_name": "attendees",
+                "argument_value": [
+                    "M",
+                    "N",
+                    "O"
+                ]
+              }
+            ]
+          }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "Delete my reminder to call the dentist on March 16th at 9am. My username is user4 and password is user4pass",
+        "answer":[
+          {
+              "tool_name": "get_user_token",
+              "arguments": [
+                {
+                  "argument_name": "username",
+                  "argument_value": "user4"
+                },
+                {
+                  "argument_name": "password",
+                  "argument_value": "user4pass"
+                }
+              ]
+            },
+            {
+              "tool_name": "delete_reminder",
+              "arguments": [
+              {
+                  "argument_name": "token",
+                  "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "Call Dentist"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2023-03-16 09:00:00"
+              }
+            ]
+          }
+        ],
+        "query_type": "multiple_tools"
       }
+      
 
       
 

@@ -5367,7 +5367,7 @@
         "id": "train_data_188"
     },
     {
-        "question": "Can you identify my user ID in the current session? XX",
+        "question": "Can you identify my user ID in the current session? ",
         "answer": [
             {
                 "tool_name": "who_am_i",

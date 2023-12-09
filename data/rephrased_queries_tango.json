@@ -93,10 +93,6 @@
       "query_type": "single_tool_single_args",
       "id": "example_5"
   },
-  
-  Certainly, here are five examples in the requested JSON format, starting from index 6:
-  
-  ```json
   {
       "question": "Which tasks are currently in the 'Research' phase of their workflow?",
       "answer": [
@@ -739,7 +735,7 @@
       ],
       "query_type": "single_tool_single_args",
       "id": "example_40"
-  }
+  },
   {
       "question": "Can you show me the current 'issues' our team is addressing?",
       "answer": [
@@ -1324,7 +1320,7 @@
                   {
                       "argument_name": "work_id",
                       "argument_value": [
-                          "TASK-456",
+                          "TASK-456"
                       ]
                   }
               ]

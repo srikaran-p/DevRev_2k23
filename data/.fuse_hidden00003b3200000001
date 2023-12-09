@@ -1,0 +1,734 @@
+[
+    {
+      "question": "Please add a schedule on July 5th, 2023 at 2pm with the title \"Meeting with Client A\" at their office. My username is newuser, password id newpass, and email is newuser@example.com. Please remind me 10 minutes before the schedule",
+      "answer":[
+        {
+          "tool_name": "get_user_token",
+          "arguments": [
+            {
+              "argument_name": "username",
+              "argument_value": "newuser"
+            },
+            {
+              "argument_name": "password",
+              "argument_value": "newpass"
+            }
+          ]
+        },
+        {
+          "tool_name": "addagenda",
+          "arguments": [
+            {
+              "argument_name": "token",
+              "argument_value": "$$PREV[0]"
+            },
+            {
+              "argument_name": "content",
+              "argument_value": "Meeting with Client A"
+            },
+            {
+              "argument_name": "time",
+              "argument_value": "2023-07-05 14:00:00"
+            },
+            {
+              "argument_name": "location",
+              "argument_value": "office"
+            }
+          ]
+        },
+        {
+          "tool_name": "addalarm",
+          "arguments": [
+            {
+              "argument_name": "token",
+              "argument_value": "$$PREV[0]"
+            },
+            {
+              "argument_name": "time",
+              "argument_value": "2023-07-05 13:50:00"
+            }
+          ]
+        }
+      ], 
+      "query_type": "multiple_tools",
+      "id": "example_1"
+    },
+
+    {
+        "question": "Please add a schedule on February 28th, 2023 at 12 noon with the title \"Meeting with Client X\" at the coffee shop on main street. My username is newuser, password id newpass, and email is newuser@example.com.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "newuser"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "newpass"
+              }
+            ]
+          },
+          {
+            "tool_name": "addagenda",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "Meeting with Client X"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2023-02-28 12:00:00"
+              },
+              {
+                "argument_name": "location",
+                "argument_value": "coffee shop on Main Street"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_2"
+      },
+
+      {
+        "question": "Please add a meeting reservation for me on November 12th, 2023 at 3pm about the new project launch. It will be helpd in the conference room with M and N.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "newuser"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "newpass"
+              }
+            ]
+          },
+          {
+            "tool_name": "add_meeting",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "meeting_topic",
+                "argument_value": "new project launch"
+              },
+              {
+                "argument_name": "start_time",
+                "argument_value": "2023-11-12 15:00:00"
+              },
+              {
+                "argument_name": "end_time",
+                "argument_value": "2023-11-12 16:00:00"
+              },
+              {
+                "argument_name": "location",
+                "argument_value": "conference room"
+              },
+              {
+                "argument_name": "attendees",
+                "argument_value": [
+                    "M",
+                    "N"
+                ]
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_3"
+      },
+      
+      {
+        "question": "Please add \"Meeting with clients\" for me on December 15th, 2023 at 2:00 Pm at ABC company. My username is newuser and password is newpass.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "newuser"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "newpass"
+              }
+            ]
+          },
+          {
+            "tool_name": "addagenda",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "Meeting with clients at ABC company"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2023-12-15 14:00:00"
+              },
+              {
+                "argument_name": "location",
+                "argument_value": "ABC company"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_4"
+      },
+
+      {
+        "question": "Please help me add a new schedule for my meeting tomorrow at 2pm. Today is 2021-09-27. It is a meeting with the marketing team at the conference room. My username is foo, my password is bar.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "foo"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "bar"
+              }
+            ]
+          },
+          {
+            "tool_name": "addagenda",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "Meeting with the marketing team"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2021-09-28 14:00:00"
+              },
+              {
+                "argument_name": "location",
+                "argument_value": "Conference room"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_5"
+      },
+      
+      {
+        "question": "Please set an alarm for 8:30 am on 25th March, 2023. My username is admin and password is adminpass.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "admin"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "adminpass"
+              }
+            ]
+          },
+          {
+            "tool_name": "addalarm",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2023-03-25 08:30:00"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_6"
+      },
+      
+      {
+        "question": "Please set an alarm for 8:00 am for tomorrow. today is 12th January,2017. My username is John and password is 123456.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "John"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "123456"
+              }
+            ]
+          },
+          {
+            "tool_name": "addalarm",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2017-01-13 08:00:00"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_7"
+      },
+      
+      {
+        "question": "Please schedule a meeting about project updates, which starts on 2022-12-15 at 2Pm, and should end by 4Pm. We will host it in our Conference room, and will be attended by P, Q, and R. My username is foo and password is bar.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "foo"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "bar"
+              }
+            ]
+          },
+          {
+            "tool_name": "add_meeting",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "meeting_topic",
+                "argument_value": "project update"
+              },
+              {
+                "argument_name": "start_time",
+                "argument_value": "2022-12-15 14:00:00"
+              },
+              {
+                "argument_name": "end_time",
+                "argument_value": "2022-12-15 16:00:00"
+              },
+              {
+                "argument_name": "location",
+                "argument_value": "conference room"
+              },
+              {
+                "argument_name": "attendees",
+                "argument_value": [
+                    "P",
+                    "Q",
+                    "R"
+                ]
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_8"
+      },
+
+      {
+        "question": "Please schedule a reminder for me to call my mom tomorrow at 10am. My username is user1 and password is user1pass. Remind me at 2022-05-10 at 10AM.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "user1"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "user1pass"
+              }
+            ]
+          },
+          {
+            "tool_name": "add_reminder",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "call mom"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2022-05-10 10:00:00"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_9"
+      },
+
+      {
+        "question": "Please schedule a reminder for me to call M tomorrow at 3pm. Today is 2022-05-24. My username is user1 and password is user1pass. Remind me at 2022-05-10 at 10AM.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "user1"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "user1pass"
+              }
+            ]
+          },
+          {
+            "tool_name": "add_reminder",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "call M"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2022-05-25 15:00:00"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_10"
+      },
+    
+      {
+        "question": "Please schedule a reminder for a meeting on 2022-05-06 at 2PM. My username is user1 and password is user1pass.",
+        "answer":[
+          {
+            "tool_name": "get_user_token",
+            "arguments": [
+              {
+                "argument_name": "username",
+                "argument_value": "user1"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "user1pass"
+              }
+            ]
+          },
+          {
+            "tool_name": "add_reminder",
+            "arguments": [
+              {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+              },
+              {
+                "argument_name": "content",
+                "argument_value": "meeting"
+              },
+              {
+                "argument_name": "time",
+                "argument_value": "2022-05-06 14:00:00"
+              }
+            ]
+          }
+        ], 
+        "query_type": "multiple_tools",
+        "id": "example_11"
+      },
+
+      {
+        "question": "I need to register an appointement with a specific doctor Dr. D on 2022-01-06. My name is H.",
+        "answer":[
+          {
+            "tool_name": "appointment_registration",
+            "arguments": [
+              {
+                "argument_name": "patient_name",
+                "argument_value": "H"
+              },
+              {
+                "argument_name": "date",
+                "argument_value": "2022-01-06"
+              },
+              {
+                "argument_name": "doctor_name",
+                "argument_value": "Dr. D"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_12"
+      },
+
+      {
+        "question": "Can you help me register an appointment at the hospital, the patient name is Q, appointment date is 2022-03-05 and doctor name is Dr.X.",
+        "answer":[
+          {
+            "tool_name": "appointment_registration",
+            "arguments": [
+              {
+                "argument_name": "patient_name",
+                "argument_value": "Q"
+              },
+              {
+                "argument_name": "date",
+                "argument_value": "2022-03-05"
+              },
+              {
+                "argument_name": "doctor_name",
+                "argument_value": "Dr.X"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_13"
+      },
+
+      {
+        "question": "I need to book an appointment with Dr. X for M on 2022-08-15.",
+        "answer":[
+          {
+            "tool_name": "appointment_registration",
+            "arguments": [
+              {
+                "argument_name": "patient_name",
+                "argument_value": "M"
+              },
+              {
+                "argument_name": "date",
+                "argument_value": "2022-08-15"
+              },
+              {
+                "argument_name": "doctor_name",
+                "argument_value": "Dr.X"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_14"
+      },
+
+      {
+        "question": "Book a hotel for two adults and one child, in Hilton in San Francisco. I want to check-in 10th August and check out on the 15th. One room for all of us should be enough. ",
+        "answer":[
+          {
+            "tool_name": "book_hotel",
+            "arguments": [
+              {
+                "argument_name": "hotel_name",
+                "argument_value": "Hilton San Francisco"
+              },
+              {
+                "argument_name": "check_in_time",
+                "argument_value": "2023-08-10"
+              },
+              {
+                "argument_name": "check_out_time",
+                "argument_value": "2023-08-15"
+              },
+              {
+                "argument_name": "room_count",
+                "argument_value": "1"
+              },
+              {
+                "argument_name": "adult_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "child_count",
+                "argument_value": "1"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_15"
+      },
+
+      {
+        "question": "I need a hotel room at the Hilton from 1st June to 10th June. Book two rooms for four adults and two children.",
+        "answer":[
+          {
+            "tool_name": "book_hotel",
+            "arguments": [
+              {
+                "argument_name": "hotel_name",
+                "argument_value": "Hilton"
+              },
+              {
+                "argument_name": "check_in_time",
+                "argument_value": "2023-06-01"
+              },
+              {
+                "argument_name": "check_out_time",
+                "argument_value": "2023-06-10"
+              },
+              {
+                "argument_name": "room_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "adult_count",
+                "argument_value": "4"
+              },
+              {
+                "argument_name": "child_count",
+                "argument_value": "2"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_16"
+      },
+
+      {
+        "question": "Please book a room at the Marriott from 2022-05-20 to 2022-05-22. Make sure you book two rooms for two adults and no children",
+        "answer":[
+          {
+            "tool_name": "book_hotel",
+            "arguments": [
+              {
+                "argument_name": "hotel_name",
+                "argument_value": "Marriott"
+              },
+              {
+                "argument_name": "check_in_time",
+                "argument_value": "2022-05-20"
+              },
+              {
+                "argument_name": "check_out_time",
+                "argument_value": "2022-05-22"
+              },
+              {
+                "argument_name": "room_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "adult_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "child_count",
+                "argument_value": "0"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_17"
+      },
+
+      {
+        "question": "Please book a room at the Hilton from Monday, 2022-03-14 to Friday. Make sure you book two rooms for two adults and one kid",
+        "answer":[
+          {
+            "tool_name": "book_hotel",
+            "arguments": [
+              {
+                "argument_name": "hotel_name",
+                "argument_value": "Hilton"
+              },
+              {
+                "argument_name": "check_in_time",
+                "argument_value": "2022-03-14"
+              },
+              {
+                "argument_name": "check_out_time",
+                "argument_value": "2022-03-18"
+              },
+              {
+                "argument_name": "room_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "adult_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "child_count",
+                "argument_value": "1"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_18"
+      },
+
+      {
+        "question": "Book a room for 2 adults and one child from 1st September to 5th September at the Sheraton Hotel.",
+        "answer":[
+          {
+            "tool_name": "book_hotel",
+            "arguments": [
+              {
+                "argument_name": "hotel_name",
+                "argument_value": "Sheraton Hotel"
+              },
+              {
+                "argument_name": "check_in_time",
+                "argument_value": "2022-09-01"
+              },
+              {
+                "argument_name": "check_out_time",
+                "argument_value": "2022-09-05"
+              },
+              {
+                "argument_name": "room_count",
+                "argument_value": "1"
+              },
+              {
+                "argument_name": "adult_count",
+                "argument_value": "2"
+              },
+              {
+                "argument_name": "child_count",
+                "argument_value": "1"
+              }
+            ]
+          }
+        ], 
+        "query_type": "single_tool_multiple_args",
+        "id": "example_19"
+      }
+
+      
+
+]

@@ -1,0 +1,58 @@
+[
+    {
+      "question": "Please add a schedule on July 5th, 2023 at 2pm with the title \"Meeting with Client A\" at their office. My username is newuser, password id newpass, and email is newuser@example.com. Please remind me 10 minutes before the schedule",
+      "answer":[
+        {
+          "tool_name": "get_user_token",
+          "arguments": [
+            {
+              "argument_name": "username",
+              "argument_value": "newuser"
+            },
+            {
+              "argument_name": "password",
+              "argument_value": "newpass"
+            }
+          ]
+        },
+        {
+          "tool_name": "add_agenda"
+          "arguments": [
+            {
+              "argument_name": "token",
+              "argument_value": "$$PREV[0]"
+            },
+            {
+              "argument_name": "content",
+              "argument_value": "Meeting with Client A at the office"
+            },
+            {
+              "argument_name": "time",
+              "argument_value": "2023-07-05 14:00:00"
+            },
+            {
+              "argument_name": "location",
+              "argument_value": "office"
+            }
+          ]
+        },
+        {
+          "tool_name": "add_alarm",
+          "arguments": [
+            {
+              "argument_name": "token",
+              "argument_value": "$$PREV[0]"
+            },
+            {
+              "argument_name": "time",
+              "argument_value": "2023-07-05 13:50:00"
+            }
+          ]
+        }
+      ] 
+      "query_type": "multiple_tools",
+      "id": "example_1"
+    },
+  
+        
+]

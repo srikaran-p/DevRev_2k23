@@ -1,0 +1,769 @@
+[
+  {
+      "question": "Can you provide a list of all tickets submitted by the user with the account ID 'UserAccount-123'?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.rev_org",
+                      "argument_value": [
+                          "UserAccount-123"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_1"
+  },
+  
+  {
+      "question": "What are the recent issue reports logged under the business account 'BizAcc-890'?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.rev_org",
+                      "argument_value": [
+                          "BizAcc-890"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_2"
+  },
+  
+  {
+      "question": "How many support requests have been raised from the account named 'Client-456XYZ'?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.rev_org",
+                      "argument_value": [
+                          "Client-456XYZ"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_3"
+  },
+  
+  {
+      "question": "Could you check if there are any open or closed tickets associated with the account 'Enterprise-7890'?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.rev_org",
+                      "argument_value": [
+                          "Enterprise-7890"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_4"
+  },
+  
+  {
+      "question": "I need to review all service inquiries linked to the account 'CustomerID-321AB'.",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.rev_org",
+                      "argument_value": [
+                          "CustomerID-321AB"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_5"
+  },
+  
+  Certainly, here are five examples in the requested JSON format, starting from index 6:
+  
+  ```json
+  {
+      "question": "Which tasks are currently in the 'Research' phase of their workflow?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "stage.name",
+                      "argument_value": [
+                          "Research"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_6"
+  },
+  
+  {
+      "question": "Could you identify the work items currently in the 'Conceptualization' stage?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "stage.name",
+                      "argument_value": [
+                          "Conceptualization"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_7"
+  },
+  
+  {
+      "question": "What are the current work items in the 'Development' phase?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "stage.name",
+                      "argument_value": [
+                          "Development"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_8"
+  },
+  
+  {
+      "question": "Can you show me the items that are in the 'Quality Assurance' stage right now?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "stage.name",
+                      "argument_value": [
+                          "Quality Assurance"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_9"
+  },
+  
+  {
+      "question": "Which work items are currently in the 'Final Review' stage of their process?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "stage.name",
+                      "argument_value": [
+                          "Final Review"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_10"
+  },
+
+  {
+      "question": "Which tickets currently require a follow-up response?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.needs_response",
+                      "argument_value": true
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_11"
+  },
+  
+  {
+      "question": "Are there any tickets that do not require a follow-up response at this time?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.needs_response",
+                      "argument_value": false
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_12"
+  },
+  
+  {
+      "question": "Can you show me tickets that are flagged as needing immediate attention?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.needs_response",
+                      "argument_value": true
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_13"
+  },
+  
+  {
+      "question": "What tickets are currently in a state where they don't need an urgent response?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.needs_response",
+                      "argument_value": false
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_14"
+  },
+  
+  {
+      "question": "Are there tickets that are pending a response from our team?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.needs_response",
+                      "argument_value": true
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_15"
+  },
+  {
+      "question": "Can you list the work items that originated from the 'Phone' and 'Chat' channels?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "Phone",
+                          "Chat"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_16"
+  },
+  
+  {
+      "question": "What are the tickets submitted through 'Social Media' platforms?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "Social Media"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_17"
+  },
+  
+  {
+      "question": "Retrieve the work items that came in via 'In-Person' and 'Mail' channels.",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "In-Person",
+                          "Mail"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_18"
+  },
+  
+  {
+      "question": "Show me the tickets that were reported through 'Fax' and 'Voicemail' channels.",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "Fax",
+                          "Voicemail"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_19"
+  },
+  
+  {
+      "question": "What work items have been logged via the 'Mobile App' and 'API' channels?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "ticket.source_channel",
+                      "argument_value": [
+                          "Mobile App",
+                          "API"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_20"
+  },
+  {
+      "question": "What are the current projects overseen by SupervisorID-567?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "owned_by",
+                      "argument_value": [
+                          "SupervisorID-567"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_21"
+  },
+  
+  {
+      "question": "Can you list the tasks that are being managed by CoordinatorID-789?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "owned_by",
+                      "argument_value": [
+                          "CoordinatorID-789"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_22"
+  },
+  
+  {
+      "question": "Which work items are currently under the responsibility of TeamLeadID-123?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "owned_by",
+                      "argument_value": [
+                          "TeamLeadID-123"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_23"
+  },
+  
+  {
+      "question": "Retrieve the work items currently assigned to ProjectManagerID-456?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "owned_by",
+                      "argument_value": [
+                          "ProjectManagerID-456"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_24"
+  },
+  
+  {
+      "question": "What tasks are being supervised by DepartmentHeadID-321?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "owned_by",
+                      "argument_value": [
+                          "DepartmentHeadID-321"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_25"
+  },
+  {
+      "question": "Can you display all the 'issues' that are scheduled for this quarter?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "type",
+                      "argument_value": [
+                          "issue"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_26"
+  },
+  
+  {
+      "question": "Which 'tickets' are scheduled to be resolved by the end of this month?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "type",
+                      "argument_value": [
+                          "ticket"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_27"
+  },
+  
+  {
+      "question": "Show me the list of 'tasks' that are set to be completed next week.",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "type",
+                      "argument_value": [
+                          "task"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_28"
+  },
+  
+  {
+      "question": "What 'issues' are currently being addressed in this fiscal year?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "type",
+                      "argument_value": [
+                          "issue"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_29"
+  },
+  
+  {
+      "question": "Can you provide a summary of all 'tickets' that have been opened this week?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "type",
+                      "argument_value": [
+                          "ticket"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_30"
+  },
+  {
+      "question": "Can you outline the tasks currently assigned to EmployeeID-123?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "owned_by",
+                      "argument_value": [
+                          "EmployeeID-123"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_31"
+  },
+  
+  {
+      "question": "What projects are currently under the management of EmployeeID-456?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "owned_by",
+                      "argument_value": [
+                          "EmployeeID-456"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_32"
+  },
+  
+  {
+      "question": "Which responsibilities are being handled by EmployeeID-789 in the team?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "owned_by",
+                      "argument_value": [
+                          "EmployeeID-789"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_33"
+  },
+  
+  {
+      "question": "What is the current workload of EmployeeID-321 in our department?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "owned_by",
+                      "argument_value": [
+                          "EmployeeID-321"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_34"
+  },
+  
+  {
+      "question": "What tasks are currently being managed by EmployeeID-987?",
+      "answer": [
+          {
+              "tool_name": "works_list",
+              "arguments": [
+                  {
+                      "argument_name": "owned_by",
+                      "argument_value": [
+                          "EmployeeID-987"
+                      ]
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_35"
+  },
+  {
+      "question": "Do we have any record associated with 'Project Alpha'?",
+      "answer": [
+          {
+              "tool_name": "search_object_by_name",
+              "arguments": [
+                  {
+                      "argument_name": "query",
+                      "argument_value": "Project Alpha"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_36"
+  },
+  
+  {
+      "question": "Can you find an object ID corresponding to 'Vendor X' in our system?",
+      "answer": [
+          {
+              "tool_name": "search_object_by_name",
+              "arguments": [
+                  {
+                      "argument_name": "query",
+                      "argument_value": "Vendor X"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_37"
+  },
+  
+  {
+      "question": "Is there a match in our database for an item named 'Product Z'?",
+      "answer": [
+          {
+              "tool_name": "search_object_by_name",
+              "arguments": [
+                  {
+                      "argument_name": "query",
+                      "argument_value": "Product Z"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_38"
+  },
+  
+  {
+      "question": "What is the object ID for the entity known as 'Service A'?",
+      "answer": [
+          {
+              "tool_name": "search_object_by_name",
+              "arguments": [
+                  {
+                      "argument_name": "query",
+                      "argument_value": "Service A"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_39"
+  },
+  
+  {
+      "question": "Does 'EmployeeID-222' have a corresponding object ID in our records?",
+      "answer": [
+          {
+              "tool_name": "search_object_by_name",
+              "arguments": [
+                  {
+                      "argument_name": "query",
+                      "argument_value": "EmployeeID-222"
+                  }
+              ]
+          }
+      ],
+      "query_type": "single_tool_single_args",
+      "id": "example_40"
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+]

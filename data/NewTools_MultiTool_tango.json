@@ -1177,7 +1177,7 @@
             ]
           }
         ],
-        "query_type": "single_tool_single_args"
+        "query_type": "single_tool_multiple_args"
       },
 
       {
@@ -1197,8 +1197,539 @@
             ]
           }
         ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "I'm experiencing shortness of breath, could you tell me what could be a potential reason? Also, please modify my appoinment with Dr. X on 10th October to 15th. Change the doctor to Dr. Y. The id was 98765",
+        "answer":[
+            {
+              "tool_name": "emergency_knowledge",
+              "arguments": [
+              {
+                  "argument_name": "symptom",
+                  "argument_value": "shortness of breath"
+              }
+            ]
+          },
+          {
+            "tool_name": "modify_registration",
+            "arguments": [
+            {
+                "argument_name": "appointment_id",
+                "argument_value": "98765"
+            },
+            {
+                "argument_name": "new_appointment_date",
+                "argument_value": "2023-10-15"
+            },
+            {
+                "argument_name": "new_appointment_doctor",
+                "argument_value": "Dr. Y"
+            }
+          ]
+        }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "Please tell me the possible diseases and first-aid methods for stomach ache. Also please record my health data. Blood pressure is 120/80 and heart rate is 80. My user id is 12345 and the time is 2023-10-19 10:30:00",
+        "answer":[
+            {
+              "tool_name": "emergency_knowledge",
+              "arguments": [
+              {
+                  "argument_name": "symptom",
+                  "argument_value": "stomach ache"
+              }
+            ]
+          },
+          {
+            "tool_name": "record_health_data",
+            "arguments": [
+            {
+                "argument_name": "user_id",
+                "argument_value": "12345"
+            },
+            {
+                "argument_name": "time",
+                "argument_value": "2023-10-19 10:30:00"
+            },
+            {
+                "argument_name": "health_data",
+                "argument_value": [
+                    {
+                        "name": "blood pressure",
+                        "value": "120/80"
+                    },
+                    {
+                        "name": "heart rate",
+                        "value": "80"
+                    }
+                ]
+            }
+          ]
+        }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "I want to reset my password. My username is foo and email is foo@example.com",
+        "answer":[
+            {
+              "tool_name": "forgot_password",
+              "arguments": [
+              {
+                  "argument_name": "status",
+                  "argument_value": "forgot password"
+              },
+              {
+                "argument_name": "username",
+                "argument_value": "foo"
+              },
+              {
+                "argument_name": "email",
+                "argument_value": "foo@example.com"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "I want to reset my password. The verification code is 198298 and new password is newpassword",
+        "answer":[
+            {
+              "tool_name": "forgot_password",
+              "arguments": [
+              {
+                  "argument_name": "status",
+                  "argument_value": "verification code"
+              },
+              {
+                "argument_name": "verification_code",
+                "argument_value": "198298"
+              },
+              {
+                "argument_name": "new_password",
+                "argument_value": "newpassword"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Please help me registering an account. username should be foo, password is bar and email is foo@example.com",
+        "answer":[
+            {
+              "tool_name": "register_user",
+              "arguments": [
+              {
+                  "argument_name": "username",
+                  "argument_value": "foo"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "bar"
+              },
+              {
+                "argument_name": "email",
+                "argument_value": "foo@example.com"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "I want to reset my password. My username is foo and email is foo@example.com",
+        "answer":[
+            {
+              "tool_name": "forgot_password",
+              "arguments": [
+              {
+                  "argument_name": "status",
+                  "argument_value": "forgot password"
+              },
+              {
+                "argument_name": "username",
+                "argument_value": "foo"
+              },
+              {
+                "argument_name": "email",
+                "argument_value": "foo@example.com"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Please help me check if there is a meeting on 2023-03-15 from 2pm to 4pm in the conference room with A and B attending. My username is foo and password is bar.",
+        "answer":[
+            {
+              "tool_name": "get_user_token",
+              "arguments": [
+              {
+                  "argument_name": "username",
+                  "argument_value": "foo"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "bar"
+              }
+            ]
+          },
+          {
+            "tool_name": "query_meeting",
+            "arguments": [
+            {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+            },
+            {
+              "argument_name": "meeting_topic",
+              "argument_value": "Sales meeting"
+            },
+            {
+                "argument_name": "start_time",
+                "argument_value": "2023-03-15 14:00:00"
+            },
+            {
+                "argument_name": "end_time",
+                "argument_value": "2023-03-15 16:00:00"
+            },
+            {
+                "argument_name": "end_time",
+                "argument_value": "2023-03-15 16:00:00"
+            },
+            {
+                "argument_name": "location",
+                "argument_value": "conference room"
+            },
+            {
+                "argument_name": "attendees",
+                "argument_value": [
+                    "A",
+                    "B"
+                ]
+            }
+          ]
+        }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "I want to reset my password. My username is foo and email is foo@example.com",
+        "answer":[
+            {
+              "tool_name": "forgot_password",
+              "arguments": [
+              {
+                  "argument_name": "status",
+                  "argument_value": "forgot password"
+              },
+              {
+                "argument_name": "username",
+                "argument_value": "foo"
+              },
+              {
+                "argument_name": "email",
+                "argument_value": "foo@example.com"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Please help me check if there is a meeting on 2023-03-15 from 2pm to 4pm in the conference room with A and B attending. My username is foo and password is bar.",
+        "answer":[
+            {
+              "tool_name": "get_user_token",
+              "arguments": [
+              {
+                  "argument_name": "username",
+                  "argument_value": "foo"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "bar"
+              }
+            ]
+          },
+          {
+            "tool_name": "query_meeting",
+            "arguments": [
+            {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+            },
+            {
+              "argument_name": "meeting_topic",
+              "argument_value": "Sales meeting"
+            },
+            {
+                "argument_name": "start_time",
+                "argument_value": "2023-03-15 14:00:00"
+            },
+            {
+                "argument_name": "end_time",
+                "argument_value": "2023-03-15 16:00:00"
+            },
+            {
+                "argument_name": "end_time",
+                "argument_value": "2023-03-15 16:00:00"
+            },
+            {
+                "argument_name": "location",
+                "argument_value": "conference room"
+            },
+            {
+                "argument_name": "attendees",
+                "argument_value": [
+                    "A",
+                    "B"
+                ]
+            }
+          ]
+        }
+        ],
+        "query_type": "multiple_tools"
+      },
+      {
+        "question": "I want to reset my password. My username is foo and email is foo@example.com",
+        "answer":[
+            {
+              "tool_name": "forgot_password",
+              "arguments": [
+              {
+                  "argument_name": "status",
+                  "argument_value": "forgot password"
+              },
+              {
+                "argument_name": "username",
+                "argument_value": "foo"
+              },
+              {
+                "argument_name": "email",
+                "argument_value": "foo@example.com"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Please help me check if there is a meeting on 2023-03-15 from 2pm to 4pm in the conference room with A and B attending. My username is foo and password is bar.",
+        "answer":[
+            {
+              "tool_name": "get_user_token",
+              "arguments": [
+              {
+                  "argument_name": "username",
+                  "argument_value": "foo"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "bar"
+              }
+            ]
+          },
+          {
+            "tool_name": "query_meeting",
+            "arguments": [
+            {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+            },
+            {
+              "argument_name": "meeting_topic",
+              "argument_value": "Sales meeting"
+            },
+            {
+                "argument_name": "start_time",
+                "argument_value": "2023-03-15 14:00:00"
+            },
+            {
+                "argument_name": "end_time",
+                "argument_value": "2023-03-15 16:00:00"
+            },
+            {
+                "argument_name": "end_time",
+                "argument_value": "2023-03-15 16:00:00"
+            },
+            {
+                "argument_name": "location",
+                "argument_value": "conference room"
+            },
+            {
+                "argument_name": "attendees",
+                "argument_value": [
+                    "A",
+                    "B"
+                ]
+            }
+          ]
+        }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "please check for a reminder to pick up my dry cleaning on March 16th at 2:30 PM. My username is admin and password is adminpass",
+        "answer":[
+            {
+              "tool_name": "get_user_token",
+              "arguments": [
+              {
+                  "argument_name": "username",
+                  "argument_value": "admin"
+              },
+              {
+                "argument_name": "password",
+                "argument_value": "adminpass"
+              }
+            ]
+          },
+          {
+            "tool_name": "query_reminder",
+            "arguments": [
+            {
+                "argument_name": "token",
+                "argument_value": "$$PREV[0]"
+            },
+            {
+              "argument_name": "content",
+              "argument_value": "Pick up dry cleaning"
+            },
+            {
+                "argument_name": "time",
+                "argument_value": "2023-03-16 14:30:00"
+            }
+          ]
+        }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "What is today's date?",
+        "answer":[
+            {
+              "tool_name": "get_today",
+              "arguments": []
+            }
+        ],
         "query_type": "single_tool_single_args"
-      }
+      },
+
+      {
+        "question": "Please modify the alarm on 20th August from 6:30 am to 7:30 am. My username is admin and password is adminpass.",
+        "answer":[
+            {
+              "tool_name": "get_user_token",
+              "arguments": [
+                {
+                    "argument_name": "username",
+                    "argument_value": "admin"
+                },
+                {
+                    "argument_name": "password",
+                    "argument_value": "adminpass"
+                }
+              ]
+            },
+            {
+                "tool_name": "modify_alarm",
+                "arguments": [
+                {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[0]"
+                },
+                {
+                    "argument_name": "from_time",
+                    "argument_value": "2023-08-20 06:30:00"
+                },
+                {
+                    "argument_name": "to_time",
+                    "argument_value": "2023-08-20 07:30:00"
+                }
+                ]
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
+      
+      {
+        "question": "Please describe the image given at https://abc.efg.com",
+        "answer":[
+            {
+              "tool_name": "image_caption",
+              "arguments": [
+                {
+                    "argument_name": "url",
+                    "argument_value": "https://abc.efg.com"
+                }
+              ]
+            }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "I need to modify my schedule for the next week. Need to change the time and location for reparing my mobile phone to 23rd March 6PM and Mobile Shopee. My username is newuser and password newpass.",
+        "answer":[
+            {
+              "tool_name": "get_user_token",
+              "arguments": [
+                {
+                    "argument_name": "username",
+                    "argument_value": "newuser"
+                },
+                {
+                    "argument_name": "password",
+                    "argument_value": "newpass"
+                }
+              ]
+            },
+            {
+                "tool_name": "modify_agenda",
+                "arguments": [
+                {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[0]"
+                },
+                {
+                    "argument_name": "content",
+                    "argument_value": "Repair mobile phone"
+                },
+                {
+                    "argument_name": "time",
+                    "argument_value": "2023-03-23 18:00:00"
+                },
+                {
+                    "argument_name": "location",
+                    "argument_value": "Mobile Shopee"
+                }
+              ]   
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
+      
+
+      
       
 
       

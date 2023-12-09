@@ -1942,7 +1942,454 @@
                 ]
             }
         ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "open a bank account with account number 54564, password secret123, name P.",
+        "answer":[
+            {
+                "tool_name": "open_bank_account",
+                "arguments": [
+                  {
+                      "argument_name": "account",
+                      "argument_value": "54564"
+                  },
+                  {
+                      "argument_name": "password",
+                      "argument_value": "secret123"
+                  },
+                  {
+                    "argument_name": "name",
+                    "argument_value": "P"
+                  }
+                ]
+            }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Please play the song XYZ by ABC",
+        "answer":[
+            {
+                "tool_name": "play_music",
+                "arguments": [
+                  {
+                      "argument_name": "music_name",
+                      "argument_value": "XYZ"
+                  }
+                ]
+            }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "Do I have a meeting with a client on 2023-03-18 at 3pm at 123 Main Street? My username is user and password is pass. ",
+        "answer":[
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                  {
+                      "argument_name": "username",
+                      "argument_value": "user"
+                  },
+                  {
+                      "argument_name": "password",
+                      "argument_value": "pass"
+                  }
+                ]
+              },
+              {
+              "tool_name": "query_agenda",
+              "arguments": [
+                {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[0]"
+                },
+                {
+                    "argument_name": "content",
+                    "argument_value": "Meeting with a client"
+                },
+                {
+                    "argument_name": "time",
+                    "argument_value": "2023-03-18 15:00:00"
+                },
+                {
+                    "argument_name": "location",
+                    "argument_value": "123 Main Street"
+                }
+              ]
+            }
+        ],
         "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "Can you help check an alarm at 6:30 am on 23rd March? My username is admin and password is 123456.",
+        "answer":[
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                  {
+                      "argument_name": "username",
+                      "argument_value": "admin"
+                  },
+                  {
+                      "argument_name": "password",
+                      "argument_value": "123456"
+                  }
+                ]
+              },
+              {
+              "tool_name": "query_alarm",
+              "arguments": [
+                {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[0]"
+                },
+                {
+                    "argument_name": "time",
+                    "argument_value": "2023-03-23 06:30:00"
+                }
+              ]
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "Please tell me the balance in my account. My username is admin and password is 123456.",
+        "answer":[
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                  {
+                      "argument_name": "username",
+                      "argument_value": "admin"
+                  },
+                  {
+                      "argument_name": "password",
+                      "argument_value": "123456"
+                  }
+                ]
+              },
+              {
+              "tool_name": "query_balance",
+              "arguments": [
+                {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[0]"
+                }
+              ]
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "Please tell me my health data from 15th March 10am to 18th Marxh 10am. My userid is 1243.",
+        "answer":[
+            {
+                "tool_name": "query_health_data",
+                "arguments": [
+                  {
+                    "argument_name": "user_id",
+                    "argument_value": "1243"
+                  },
+                  {
+                    "argument_name": "start_time",
+                    "argument_value": "2023-03-15 10:00:00"
+                  },
+                  {
+                    "argument_name": "end_time",
+                    "argument_value": "2023-03-18 10:00:00"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Please give all the health data you have for user A12345 from 2023-03-01 to 2023-03-31",
+        "answer":[
+            {
+                "tool_name": "query_health_data",
+                "arguments": [
+                  {
+                    "argument_name": "user_id",
+                    "argument_value": "A12345"
+                  },
+                  {
+                    "argument_name": "start_time",
+                    "argument_value": "2023-03-01 00:00:00"
+                  },
+                  {
+                    "argument_name": "end_time",
+                    "argument_value": "2023-03-31 23:59:59"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Can you tell me what happened on 25th August in history?",
+        "answer":[
+            {
+                "tool_name": "query_history_today",
+                "arguments": [
+                  {
+                    "argument_name": "date",
+                    "argument_value": "2023-08-25"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "Which all devices are included in the Morning routine scene?",
+        "answer":[
+            {
+                "tool_name": "query_scene",
+                "arguments": [
+                  {
+                    "argument_name": "name",
+                    "argument_value": "Morning routine"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "Can you tell me the stock price of netflix on February 17, 2022?",
+        "answer":[
+            {
+                "tool_name": "query_stock",
+                "arguments": [
+                  {
+                    "argument_name": "stock_code",
+                    "argument_value": "NFLX"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "make a new account with the username user2, password pass4 and email user4@example.com",
+        "answer":[
+            {
+                "tool_name": "register_user",
+                "arguments": [
+                  {
+                    "argument_name": "username",
+                    "argument_value": "user4"
+                  },
+                  {
+                    "argument_name": "password",
+                    "argument_value": "pass4"
+                  },
+                  {
+                    "argument_name": "email",
+                    "argument_value": "user4@example.com"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Search for some news articles about sustainable development goals.",
+        "answer":[
+            {
+                "tool_name": "search_engine",
+                "arguments": [
+                  {
+                    "argument_name": "keyword",
+                    "argument_value": "substainable development"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "Can you help send an email to XYZ@example.com with subject Meeting Reminder and content donot forget meeting tomorrow at 2pm.",
+        "answer":[
+            {
+                "tool_name": "send_email",
+                "arguments": [
+                  {
+                    "argument_name": "receiver",
+                    "argument_value": "XYZ@example.com"
+                  },
+                  {
+                    "argument_name": "subject",
+                    "argument_value": "Meeting Reminder"
+                  },
+                  {
+                    "argument_name": "content",
+                    "argument_value": "donot forget meeting tomorrow at 2pm"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "Recognize the speech in the url abc.com",
+        "answer":[
+            {
+                "tool_name": "speech_recognition",
+                "arguments": [
+                  {
+                    "argument_name": "url",
+                    "argument_value": "abc.com"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "What could be possible diseases related tp fatigue?",
+        "answer":[
+            {
+                "tool_name": "symptom_search",
+                "arguments": [
+                  {
+                    "argument_name": "symptom",
+                    "argument_value": "fatigue"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "What could be possible diseases related to fatigue?",
+        "answer":[
+            {
+                "tool_name": "symptom_search",
+                "arguments": [
+                  {
+                    "argument_name": "symptom",
+                    "argument_value": "fatigue"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "Find some information on abdominal pain",
+        "answer":[
+            {
+                "tool_name": "symptom_search",
+                "arguments": [
+                  {
+                    "argument_name": "symptom",
+                    "argument_value": "abdominal pain"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "Please turn on the light in the living room at 7pm today 2021-08-05. The device id is 12345",
+        "answer":[
+            {
+                "tool_name": "timed_switch",
+                "arguments": [
+                  {
+                    "argument_name": "device_id",
+                    "argument_value": "12345"
+                  },
+                  {
+                    "argument_name": "time",
+                    "argument_value": "2023-08-05 19:00:00"
+                  },
+                  {
+                    "argument_name": "on",
+                    "argument_value": "True"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "please translate \"Hello how are you\" to french",
+        "answer":[
+            {
+                "tool_name": "translate",
+                "arguments": [
+                  {
+                    "argument_name": "src",
+                    "argument_value": "Hello how are you"
+                  },
+                  {
+                    "argument_name": "tgt_lang",
+                    "argument_value": "fr"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Please help me transalte \"The quick brown fox jumps over the lazy dog\" to spanish.",
+        "answer":[
+            {
+                "tool_name": "translate",
+                "arguments": [
+                  {
+                    "argument_name": "src",
+                    "argument_value": "The quick brown fox jumps over the lazy dog"
+                  },
+                  {
+                    "argument_name": "tgt_lang",
+                    "argument_value": "es"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_multiple_args"
+      },
+
+      {
+        "question": "Please search artificial intelligence on wikipedia",
+        "answer":[
+            {
+                "tool_name": "wiki",
+                "arguments": [
+                  {
+                    "argument_name": "keyword",
+                    "argument_value": "Artificial intelligence"
+                  }
+                ]
+              }
+        ],
+        "query_type": "single_tool_single_args"
       },
       
 

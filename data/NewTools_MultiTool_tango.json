@@ -1126,6 +1126,78 @@
           }
         ],
         "query_type": "multiple_tools"
+      },
+
+      {
+        "question": "please delete a scene named \"Movie Time\"",
+        "answer":[
+            {
+              "tool_name": "delete_scene",
+              "arguments": [
+              {
+                  "argument_name": "name",
+                  "argument_value": "Movie Time"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+      
+      {
+        "question": "Can you explain me the meaning of the word perplexed?",
+        "answer":[
+            {
+              "tool_name": "dictionary",
+              "arguments": [
+              {
+                  "argument_name": "keyword",
+                  "argument_value": "perplexed"
+              }
+            ]
+          }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "please read the document on this url: url.com and tell me what are the key features of that software.",
+        "answer":[
+            {
+              "tool_name": "document_q_a",
+              "arguments": [
+              {
+                  "argument_name": "url",
+                  "argument_value": "url.com"
+              },
+              {
+                "argument_name": "question",
+                "argument_value": "What are the key features of this software?"
+             }
+            ]
+          }
+        ],
+        "query_type": "single_tool_single_args"
+      },
+
+      {
+        "question": "please read the document on abcd.in and tell me which operating systems is the software compatible with?",
+        "answer":[
+            {
+              "tool_name": "document_q_a",
+              "arguments": [
+              {
+                  "argument_name": "url",
+                  "argument_value": "abcd.in"
+              },
+              {
+                "argument_name": "question",
+                "argument_value": "Which operating systems is the software compatible with?"
+             }
+            ]
+          }
+        ],
+        "query_type": "single_tool_single_args"
       }
       
 

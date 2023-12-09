@@ -2107,7 +2107,7 @@
                     "argument_value": "2023-03-18 10:00:00"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_multiple_args"
       },
@@ -2131,7 +2131,7 @@
                     "argument_value": "2023-03-31 23:59:59"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_multiple_args"
       },
@@ -2147,7 +2147,7 @@
                     "argument_value": "2023-08-25"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_single_args"
       },
@@ -2163,7 +2163,7 @@
                     "argument_value": "Morning routine"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_single_args"
       },
@@ -2179,7 +2179,7 @@
                     "argument_value": "NFLX"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_single_args"
       },
@@ -2203,7 +2203,7 @@
                     "argument_value": "user4@example.com"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_multiple_args"
       },
@@ -2219,7 +2219,7 @@
                     "argument_value": "substainable development"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_single_args"
       },
@@ -2243,7 +2243,7 @@
                     "argument_value": "donot forget meeting tomorrow at 2pm"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_single_args"
       },
@@ -2259,7 +2259,7 @@
                     "argument_value": "abc.com"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_single_args"
       },
@@ -2275,7 +2275,7 @@
                     "argument_value": "fatigue"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_single_args"
       },
@@ -2291,7 +2291,7 @@
                     "argument_value": "fatigue"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_single_args"
       },
@@ -2307,7 +2307,7 @@
                     "argument_value": "abdominal pain"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_single_args"
       },
@@ -2331,7 +2331,7 @@
                     "argument_value": "True"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_multiple_args"
       },
@@ -2351,7 +2351,7 @@
                     "argument_value": "fr"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_multiple_args"
       },
@@ -2371,7 +2371,7 @@
                     "argument_value": "es"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_multiple_args"
       },
@@ -2387,17 +2387,246 @@
                     "argument_value": "Artificial intelligence"
                   }
                 ]
-              }
+            }
         ],
         "query_type": "single_tool_single_args"
       },
-      
+
+      {
+        "question": "Help me check the remaining money in the bank. My username is user, password is pass, email is user@example.com, my bank is BOC, my monthly salary is 3000, monthly expense is 2000 and credit card time is 2023-04-15 00:00:00. Also add a reminder to pay the bill!",
+        "answer":[
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                  {
+                    "argument_name": "username",
+                    "argument_value": "user"
+                  },
+                  {
+                    "argument_name": "password",
+                    "argument_value": "pass"
+                  }
+                ]
+            },
+            {
+                "tool_name": "query_balance",
+                "arguments": [
+                  {
+                    "argument_name": "token",
+                    "argument_value": "$$PREV[0]"
+                  }
+                ]
+            },
+            {
+                "tool_name": "calculator",
+                "arguments": [
+                    {
+                        "argument_name": "formula",
+                        "argument_value": "$$PREV[1] + 3000 - 2000"
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_reminder",
+                "arguments":[
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Pay credit card bill"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-04-15 00:00:00"
+                    }
+                ]
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
 
 
+      {
+        "question": "Help me schedule an appointment at ABC hospital with name N, username user, password pass, email user@example.com, appointment date 2023-04-01, appointment time 11:00, doctor Dr.X and symptoms fever, cough and headache.",
+        "answer":[
+            {
+                "tool_name": "appointment_registration",
+                "arguments": [
+                  {
+                    "argument_name": "patient_name",
+                    "argument_value": "N"
+                  },
+                  {
+                    "argument_name": "date",
+                    "argument_value": "2023-04-01"
+                  },
+                  {
+                    "argument_name": "doctor_name",
+                    "argument_value": "Dr. X"
+                  }
+                ]
+            },
+            {
+                "tool_name": "symptom_search",
+                "arguments": [
+                  {
+                    "argument_name": "symptom",
+                    "argument_value": ["cough","fever","headache"]
+                  }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "pass"
+                    }
+                ]
+            },
+            {
+                "tool_name": "addagenda",
+                "arguments":[
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[2]"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Hospital Annoucement"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-04-01 11:00:00"
+                    },
+                    {
+                        "argument_name": "location",
+                        "argument_value": "ABC hospital"
+                    }
+                ]
+            }
+        ],
+        "query_type": "multiple_tools"
+      },
 
-      
-      
-
-      
-
+      {
+        "question": "Please book a room for 1 adult at the Beijing Hilton Hotel from 2023-03-30 to 2023-04-01. Add the check-in to agenda. Schedule a meeting with the Boss on 2023-03-31 at 10:00 at Beiijing Hilton Hotel 2nd floor. Please set an alarm at 2023-03-30 8:00. My username is user and password is pass. My name is N",
+        "answer":[
+            {
+                "tool_name": "book_hotel",
+                "arguments": [
+                  {
+                    "argument_name": "hotel_name",
+                    "argument_value": "Beijing Hilton Hotel"
+                  },
+                  {
+                    "argument_name": "check_in_time",
+                    "argument_value": "2023-03-30"
+                  },
+                  {
+                    "argument_name": "check_out_time",
+                    "argument_value": "2023-04-01"
+                  },
+                  {
+                    "argument_name": "room_count",
+                    "argument_value": "1"
+                  },
+                  {
+                    "argument_name": "adult_count",
+                    "argument_value": "1"
+                  },
+                  {
+                    "argument_name": "child_count",
+                    "argument_value": "0"
+                  }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "pass"
+                    }
+                ]
+            },
+            {
+                "tool_name": "addagenda",
+                "arguments":[
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[1]"
+                    },
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Check-in"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-03-30 12:00:00"
+                    },
+                    {
+                        "argument_name": "location",
+                        "argument_value": "Beijing Hilton Hotel"
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_meeting",
+                "arguments":[
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[1]"
+                    },
+                    {
+                        "argument_name": "meeting_topic",
+                        "argument_value": "Meeting with Boss"
+                    },
+                    {
+                        "argument_name": "start_time",
+                        "argument_value": "2023-03-31 10:00:00"
+                    },
+                    {
+                        "argument_name": "end_time",
+                        "argument_value": "2023-03-31 11:00:00"
+                    },
+                    {
+                        "argument_name": "location",
+                        "argument_value": "Beijing Hilton Hotel 2nd floor"
+                    },
+                    {
+                        "argument_name": "attendees",
+                        "argument_value": [
+                            "Boss",
+                            "N"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "addalarm",
+                "arguments":[
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[1]"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-03-30 8:00:00"
+                    }
+                ]
+            }
+        ],
+        "query_type": "multiple_tools"
+      }
 ]

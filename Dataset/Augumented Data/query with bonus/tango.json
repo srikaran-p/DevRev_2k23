@@ -1,0 +1,247 @@
+[
+    {
+        "question": "Please check the stock price of Amazon for today. If the price is lower than $100, please send an email to mnp@example.com to buy it. Else, we can ask him to hold. The subject of the mail could be information regarding stock.",
+        "answer": [
+            {
+                "tool_name": "get_today",
+                "arguments": []
+            },
+            {
+                "tool_name": "query_stock",
+                "arguments": [
+                    {
+                        "argument_name": "stock_name",
+                        "argument_value": "AMZN"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "if_tool",
+                "arguments": [
+                    {
+                        "argument_name": "lhs",
+                        "argument_value": "$$PREV[1]"
+                    },
+                    {
+                        "argument_name": "operator",
+                        "argument_value": "<"
+                    },
+                    {
+                        "argument_name": "rhs",
+                        "argument_value": "100"
+                    },
+                    {
+                        "argument_name": "if_true",
+                        "argument_value": [
+                            {
+                                "tool_name": "send_email",
+                                "arguments": [
+                                    {
+                                        "argument_name": "receiver",
+                                        "argument_value": "mnp@example.com"
+                                    },
+                                    {
+                                        "argument_name": "subject",
+                                        "argument_value": "Information regarding stock"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "Buy Amazon stock"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "argument_name": "else_if",
+                        "argument_value": []
+                    },
+                    {
+                        "argument_name": "else",
+                        "argument_value": [
+                            {
+                                "tool_name": "send_email",
+                                "arguments": [
+                                    {
+                                        "argument_name": "receiver",
+                                        "argument_value": "mnp@example.com"
+                                    },
+                                    {
+                                        "argument_name": "subject",
+                                        "argument_value": "Information regarding stock"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "Hold the stock."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "question": "Get all work items similar to TKT-222. For each work item, set a reminder for tomorrow 2023-02-03 10:00:00. My username is user4 and password is pass4.",
+        "answer": [
+            {
+                "tool_name": "get_similar_work_items",
+                "arguments": [
+                    {
+                        "argument_name": "work_id",
+                        "argument_value": "TKT-222"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user4"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "pass4"
+                    }
+                ]
+            },
+            {
+                "tool_name": "for_each",
+                "arguments": [
+                    {
+                        "argument_name": "items",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "tools",
+                        "argument_value": [
+                            {
+                                "tool_name": "add_reminder",
+                                "arguments": [
+                                    {
+                                        "argument_name": "token",
+                                        "argument_value": "$$PREV[1]"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "$$CURRENT"
+                                    },
+                                    {
+                                        "argument_name": "date",
+                                        "argument_value": "2023-02-03 10:00:00"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "question": "Find all tickets, from 'HR' department, related to 'PART-606', reported through 'Email', in 'Triage' stage, and with low severity. If you find any issue which has priority p3, please add a reminder for tomorrow 2023-03-04 10:00",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": [
+                            "p3"
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.needs_response",
+                        "argument_value": [
+                            true
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": [
+                            "HR"
+                        ]
+                    },
+                    {
+                        "argument_name": "applies_to_part",
+                        "argument_value": [
+                            "PART-606"
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.source_channel",
+                        "argument_value": [
+                            "Email"
+                        ]
+                    },
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": [
+                            "Triage"
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.severity",
+                        "argument_value": [
+                            "low"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user4"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "pass4"
+                    }
+                ]
+            },
+            {
+                "tool_name": "for_each",
+                "arguments": [
+                    {
+                        "argument_name": "items",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "tools",
+                        "argument_value": [
+                            {
+                                "tool_name": "add_reminder",
+                                "arguments": [
+                                    {
+                                        "argument_name": "token",
+                                        "argument_value": "$$PREV[1]"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "$$CURRENT"
+                                    },
+                                    {
+                                        "argument_name": "date",
+                                        "argument_value": "2023-03-04 10:00"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+
+        ]
+    }
+
+]

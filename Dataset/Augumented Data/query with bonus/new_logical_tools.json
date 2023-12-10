@@ -29,7 +29,7 @@
                 "description": "Array of 'else if' conditions, each with its own criteria and actions"
             },
             {
-                "name": "if_false",
+                "name": "else",
                 "type": "array of objects",
                 "description": "The set of tools to be executed if the condition is false. Use $$PREV[i] to reference the value of the ith tool in the chain."
             }

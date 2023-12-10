@@ -5,13 +5,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "issue" },
-                    { "name": "title", "value": "Patch Security Vulnerability" },
-                    { "name": "description", "value": "This issue involves fixing a critical security vulnerability in the system." },
-                    { "name": "assignee", "value": "John_Doe" },
-                    { "name": "priority", "value": "high" },
-                    { "name": "due_date", "value": "2023-12-20" },
-                    { "name": "tags", "value": ["security", "vulnerability", "urgent"] }
+                    { "argument_name": "work_item_type", "argument_value": "issue" },
+                    { "argument_name": "title", "argument_value": "Patch Security Vulnerability" },
+                    { "argument_name": "description", "argument_value": "This issue involves fixing a critical security vulnerability in the system." },
+                    { "argument_name": "assignee", "argument_value": "John_Doe" },
+                    { "argument_name": "priority", "argument_value": "high" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-20" },
+                    { "argument_name": "tags", "argument_value": ["security", "vulnerability", "urgent"] }
                 ]
             }
         ]
@@ -22,13 +22,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "enhancement" },
-                    { "name": "title", "value": "Implement New Feature" },
-                    { "name": "description", "value": "This task involves implementing a new feature to enhance the application's functionality." },
-                    { "name": "assignee", "value": "Alice_Smith" },
-                    { "name": "priority", "value": "medium" },
-                    { "name": "due_date", "value": "2023-12-18" },
-                    { "name": "tags", "value": ["feature", "enhancement"] }
+                    { "argument_name": "work_item_type", "argument_value": "enhancement" },
+                    { "argument_name": "title", "argument_value": "Implement New Feature" },
+                    { "argument_name": "description", "argument_value": "This task involves implementing a new feature to enhance the application's functionality." },
+                    { "argument_name": "assignee", "argument_value": "Alice_Smith" },
+                    { "argument_name": "priority", "argument_value": "medium" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-18" },
+                    { "argument_name": "tags", "argument_value": ["feature", "enhancement"] }
                 ]
             }
         ]
@@ -39,13 +39,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "bug" },
-                    { "name": "title", "value": "Fix Data Inconsistency" },
-                    { "name": "description", "value": "This issue involves resolving a critical data inconsistency in the database." },
-                    { "name": "assignee", "value": "Robert_Jackson" },
-                    { "name": "priority", "value": "high" },
-                    { "name": "due_date", "value": "2023-12-22" },
-                    { "name": "tags", "value": ["bug", "data", "urgent"] }
+                    { "argument_name": "work_item_type", "argument_value": "bug" },
+                    { "argument_name": "title", "argument_value": "Fix Data Inconsistency" },
+                    { "argument_name": "description", "argument_value": "This issue involves resolving a critical data inconsistency in the database." },
+                    { "argument_name": "assignee", "argument_value": "Robert_Jackson" },
+                    { "argument_name": "priority", "argument_value": "high" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-22" },
+                    { "argument_name": "tags", "argument_value": ["bug", "data", "urgent"] }
                 ]
             }
         ]
@@ -56,13 +56,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "issue" },
-                    { "name": "title", "value": "Improve User Experience" },
-                    { "name": "description", "value": "This issue involves addressing a usability issue reported by a user." },
-                    { "name": "assignee", "value": "Emily_Wilson" },
-                    { "name": "priority", "value": "medium" },
-                    { "name": "due_date", "value": "2023-12-17" },
-                    { "name": "tags", "value": ["usability", "issue"] }
+                    { "argument_name": "work_item_type", "argument_value": "issue" },
+                    { "argument_name": "title", "argument_value": "Improve User Experience" },
+                    { "argument_name": "description", "argument_value": "This issue involves addressing a usability issue reported by a user." },
+                    { "argument_name": "assignee", "argument_value": "Emily_Wilson" },
+                    { "argument_name": "priority", "argument_value": "medium" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-17" },
+                    { "argument_name": "tags", "argument_value": ["usability", "issue"] }
                 ]
             }
         ]
@@ -73,13 +73,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "performance" },
-                    { "name": "title", "value": "Optimize Application Performance" },
-                    { "name": "description", "value": "This task involves optimizing the application to address a performance bottleneck." },
-                    { "name": "assignee", "value": "Daniel_Miller" },
-                    { "name": "priority", "value": "high" },
-                    { "name": "due_date", "value": "2023-12-21" },
-                    { "name": "tags", "value": ["performance", "optimization"] }
+                    { "argument_name": "work_item_type", "argument_value": "performance" },
+                    { "argument_name": "title", "argument_value": "Optimize Application Performance" },
+                    { "argument_name": "description", "argument_value": "This task involves optimizing the application to address a performance bottleneck." },
+                    { "argument_name": "assignee", "argument_value": "Daniel_Miller" },
+                    { "argument_name": "priority", "argument_value": "high" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-21" },
+                    { "argument_name": "tags", "argument_value": ["performance", "optimization"] }
                 ]
             }
         ]
@@ -92,13 +92,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "task" },
-                    { "name": "title", "value": "Enhance System Security" },
-                    { "name": "description", "value": "This task involves implementing security measures to enhance the overall system security." },
-                    { "name": "assignee", "value": "Rachel_Anderson" },
-                    { "name": "priority", "value": "high" },
-                    { "name": "due_date", "value": "2023-11-25" },
-                    { "name": "tags", "value": ["security", "task"] }
+                    { "argument_name": "work_item_type", "argument_value": "task" },
+                    { "argument_name": "title", "argument_value": "Enhance System Security" },
+                    { "argument_name": "description", "argument_value": "This task involves implementing security measures to enhance the overall system security." },
+                    { "argument_name": "assignee", "argument_value": "Rachel_Anderson" },
+                    { "argument_name": "priority", "argument_value": "high" },
+                    { "argument_name": "due_date", "argument_value": "2023-11-25" },
+                    { "argument_name": "tags", "argument_value": ["security", "task"] }
                 ]
             }
         ]
@@ -109,13 +109,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "bug" },
-                    { "name": "title", "value": "Fix UI Issue" },
-                    { "name": "description", "value": "This issue involves resolving a critical user interface issue impacting user experience." },
-                    { "name": "assignee", "value": "Alex_Morris" },
-                    { "name": "priority", "value": "high" },
-                    { "name": "due_date", "value": "2023-11-30" },
-                    { "name": "tags", "value": ["bug", "ui", "urgent"] }
+                    { "argument_name": "work_item_type", "argument_value": "bug" },
+                    { "argument_name": "title", "argument_value": "Fix UI Issue" },
+                    { "argument_name": "description", "argument_value": "This issue involves resolving a critical user interface issue impacting user experience." },
+                    { "argument_name": "assignee", "argument_value": "Alex_Morris" },
+                    { "argument_name": "priority", "argument_value": "high" },
+                    { "argument_name": "due_date", "argument_value": "2023-11-30" },
+                    { "argument_name": "tags", "argument_value": ["bug", "ui", "urgent"] }
                 ]
             }
         ]
@@ -126,13 +126,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "performance" },
-                    { "name": "title", "value": "Resolve Server Performance Issue" },
-                    { "name": "description", "value": "This task involves optimizing server performance to address a performance bottleneck." },
-                    { "name": "assignee", "value": "Jessica_Wright" },
-                    { "name": "priority", "value": "high" },
-                    { "name": "due_date", "value": "2023-12-05" },
-                    { "name": "tags", "value": ["performance", "server"] }
+                    { "argument_name": "work_item_type", "argument_value": "performance" },
+                    { "argument_name": "title", "argument_value": "Resolve Server Performance Issue" },
+                    { "argument_name": "description", "argument_value": "This task involves optimizing server performance to address a performance bottleneck." },
+                    { "argument_name": "assignee", "argument_value": "Jessica_Wright" },
+                    { "argument_name": "priority", "argument_value": "high" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-05" },
+                    { "argument_name": "tags", "argument_value": ["performance", "server"] }
                 ]
             }
         ]
@@ -143,13 +143,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "feature" },
-                    { "name": "title", "value": "Implement New Feature" },
-                    { "name": "description", "value": "This task involves implementing a new feature to enhance project functionality." },
-                    { "name": "assignee", "value": "Brian_Cooper" },
-                    { "name": "priority", "value": "medium" },
-                    { "name": "due_date", "value": "2023-12-10" },
-                    { "name": "tags", "value": ["feature", "task"] }
+                    { "argument_name": "work_item_type", "argument_value": "feature" },
+                    { "argument_name": "title", "argument_value": "Implement New Feature" },
+                    { "argument_name": "description", "argument_value": "This task involves implementing a new feature to enhance project functionality." },
+                    { "argument_name": "assignee", "argument_value": "Brian_Cooper" },
+                    { "argument_name": "priority", "argument_value": "medium" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-10" },
+                    { "argument_name": "tags", "argument_value": ["feature", "task"] }
                 ]
             }
         ]
@@ -160,13 +160,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "bug" },
-                    { "name": "title", "value": "Resolve Data Inconsistency" },
-                    { "name": "description", "value": "This issue involves resolving a critical data inconsistency in the system." },
-                    { "name": "assignee", "value": "Samantha_Miller" },
-                    { "name": "priority", "value": "high" },
-                    { "name": "due_date", "value": "2023-12-15" },
-                    { "name": "tags", "value": ["bug", "data", "urgent"] }
+                    { "argument_name": "work_item_type", "argument_value": "bug" },
+                    { "argument_name": "title", "argument_value": "Resolve Data Inconsistency" },
+                    { "argument_name": "description", "argument_value": "This issue involves resolving a critical data inconsistency in the system." },
+                    { "argument_name": "assignee", "argument_value": "Samantha_Miller" },
+                    { "argument_name": "priority", "argument_value": "high" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-15" },
+                    { "argument_name": "tags", "argument_value": ["bug", "data", "urgent"] }
                 ]
             }
         ]
@@ -178,13 +178,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "issue" },
-                    { "name": "title", "value": "Address Security Vulnerability" },
-                    { "name": "description", "value": "Resolve a critical security vulnerability to safeguard the system." },
-                    { "name": "assignee", "value": "XYZ-789" },
-                    { "name": "priority", "value": "urgent" },
-                    { "name": "due_date", "value": "2023-12-15" },
-                    { "name": "tags", "value": ["security", "vulnerability", "urgent"] }
+                    { "argument_name": "work_item_type", "argument_value": "issue" },
+                    { "argument_name": "title", "argument_value": "Address Security Vulnerability" },
+                    { "argument_name": "description", "argument_value": "Resolve a critical security vulnerability to safeguard the system." },
+                    { "argument_name": "assignee", "argument_value": "XYZ-789" },
+                    { "argument_name": "priority", "argument_value": "urgent" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-15" },
+                    { "argument_name": "tags", "argument_value": ["security", "vulnerability", "urgent"] }
                 ]
             }
         ]
@@ -195,13 +195,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "bug" },
-                    { "name": "title", "value": "Fix Critical System Bug" },
-                    { "name": "description", "value": "Resolve a critical bug impacting system stability and performance." },
-                    { "name": "assignee", "value": "PQR-456" },
-                    { "name": "priority", "value": "high" },
-                    { "name": "due_date", "value": "2023-12-12" },
-                    { "name": "tags", "value": ["bug", "critical", "performance"] }
+                    { "argument_name": "work_item_type", "argument_value": "bug" },
+                    { "argument_name": "title", "argument_value": "Fix Critical System Bug" },
+                    { "argument_name": "description", "argument_value": "Resolve a critical bug impacting system stability and performance." },
+                    { "argument_name": "assignee", "argument_value": "PQR-456" },
+                    { "argument_name": "priority", "argument_value": "high" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-12" },
+                    { "argument_name": "tags", "argument_value": ["bug", "critical", "performance"] }
                 ]
             }
         ]
@@ -212,13 +212,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "issue" },
-                    { "name": "title", "value": "Enhance User Experience" },
-                    { "name": "description", "value": "Address a reported usability issue to improve overall user satisfaction." },
-                    { "name": "assignee", "value": "LMN-123" },
-                    { "name": "priority", "value": "medium" },
-                    { "name": "due_date", "value": "2023-12-14" },
-                    { "name": "tags", "value": ["usability", "issue"] }
+                    { "argument_name": "work_item_type", "argument_value": "issue" },
+                    { "argument_name": "title", "argument_value": "Enhance User Experience" },
+                    { "argument_name": "description", "argument_value": "Address a reported usability issue to improve overall user satisfaction." },
+                    { "argument_name": "assignee", "argument_value": "LMN-123" },
+                    { "argument_name": "priority", "argument_value": "medium" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-14" },
+                    { "argument_name": "tags", "argument_value": ["usability", "issue"] }
                 ]
             }
         ]
@@ -229,13 +229,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "performance" },
-                    { "name": "title", "value": "Optimize Application Performance" },
-                    { "name": "description", "value": "Optimize the application to address a performance bottleneck and improve overall efficiency." },
-                    { "name": "assignee", "value": "UVW-567" },
-                    { "name": "priority", "value": "high" },
-                    { "name": "due_date", "value": "2023-12-18" },
-                    { "name": "tags", "value": ["performance", "optimization"] }
+                    { "argument_name": "work_item_type", "argument_value": "performance" },
+                    { "argument_name": "title", "argument_value": "Optimize Application Performance" },
+                    { "argument_name": "description", "argument_value": "Optimize the application to address a performance bottleneck and improve overall efficiency." },
+                    { "argument_name": "assignee", "argument_value": "UVW-567" },
+                    { "argument_name": "priority", "argument_value": "high" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-18" },
+                    { "argument_name": "tags", "argument_value": ["performance", "optimization"] }
                 ]
             }
         ]
@@ -246,13 +246,13 @@
             {
                 "tool_name": "create_work_item",
                 "arguments": [
-                    { "name": "work_item_type", "value": "bug" },
-                    { "name": "title", "value": "Resolve Data Inconsistency" },
-                    { "name": "description", "value": "This issue involves resolving a critical data inconsistency in the system." },
-                    { "name": "assignee", "value": "XYZ-789" },
-                    { "name": "priority", "value": "high" },
-                    { "name": "due_date", "value": "2023-12-15" },
-                    { "name": "tags", "value": ["bug", "data", "urgent"] }
+                    { "argument_name": "work_item_type", "argument_value": "bug" },
+                    { "argument_name": "title", "argument_value": "Resolve Data Inconsistency" },
+                    { "argument_name": "description", "argument_value": "This issue involves resolving a critical data inconsistency in the system." },
+                    { "argument_name": "assignee", "argument_value": "XYZ-789" },
+                    { "argument_name": "priority", "argument_value": "high" },
+                    { "argument_name": "due_date", "argument_value": "2023-12-15" },
+                    { "argument_name": "tags", "argument_value": ["bug", "data", "urgent"] }
                 ]
             }
         ]
@@ -265,12 +265,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "XYZ-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "XYZ-567"
                     },
                     {
-                        "name": "new_status",
-                        "value": "Completed"
+                        "argument_name": "new_status",
+                        "argument_value": "Completed"
                     }
                 ]
             }
@@ -283,12 +283,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "PQR-789"
+                        "argument_name": "work_item_id",
+                        "argument_value": "PQR-789"
                     },
                     {
-                        "name": "new_status",
-                        "value": "On Hold"
+                        "argument_name": "new_status",
+                        "argument_value": "On Hold"
                     }
                 ]
             }
@@ -301,12 +301,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "LMN-456"
+                        "argument_name": "work_item_id",
+                        "argument_value": "LMN-456"
                     },
                     {
-                        "name": "new_status",
-                        "value": "In Review"
+                        "argument_name": "new_status",
+                        "argument_value": "In Review"
                     }
                 ]
             }
@@ -319,12 +319,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "UVW-123"
+                        "argument_name": "work_item_id",
+                        "argument_value": "UVW-123"
                     },
                     {
-                        "name": "new_status",
-                        "value": "Pending Approval"
+                        "argument_name": "new_status",
+                        "argument_value": "Pending Approval"
                     }
                 ]
             }
@@ -337,12 +337,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "EFG-789"
+                        "argument_name": "work_item_id",
+                        "argument_value": "EFG-789"
                     },
                     {
-                        "name": "new_status",
-                        "value": "In Progress"
+                        "argument_name": "new_status",
+                        "argument_value": "In Progress"
                     }
                 ]
             }
@@ -356,12 +356,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "XYZ-123"
+                        "argument_name": "work_item_id",
+                        "argument_value": "XYZ-123"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "ALICE-789"
+                        "argument_name": "new_assignee",
+                        "argument_value": "ALICE-789"
                     }
                 ]
             }
@@ -374,12 +374,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "PQR-456"
+                        "argument_name": "work_item_id",
+                        "argument_value": "PQR-456"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "JAMES-654"
+                        "argument_name": "new_assignee",
+                        "argument_value": "JAMES-654"
                     }
                 ]
             }
@@ -392,12 +392,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "LMN-789"
+                        "argument_name": "work_item_id",
+                        "argument_value": "LMN-789"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "SARAH-345"
+                        "argument_name": "new_assignee",
+                        "argument_value": "SARAH-345"
                     }
                 ]
             }
@@ -410,12 +410,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "UVW-234"
+                        "argument_name": "work_item_id",
+                        "argument_value": "UVW-234"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "MIKE-876"
+                        "argument_name": "new_assignee",
+                        "argument_value": "MIKE-876"
                     }
                 ]
             }
@@ -428,12 +428,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "EFG-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "EFG-567"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "LUCY-321"
+                        "argument_name": "new_assignee",
+                        "argument_value": "LUCY-321"
                     }
                 ]
             }
@@ -448,12 +448,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "ABC-234"
+                        "argument_name": "work_item_id",
+                        "argument_value": "ABC-234"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 15
+                        "argument_name": "estimated_effort",
+                        "argument_value": 15
                     }
                 ]
             }
@@ -466,12 +466,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "XYZ-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "XYZ-567"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 8
+                        "argument_name": "estimated_effort",
+                        "argument_value": 8
                     }
                 ]
             }
@@ -484,12 +484,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "PQR-789"
+                        "argument_name": "work_item_id",
+                        "argument_value": "PQR-789"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 12
+                        "argument_name": "estimated_effort",
+                        "argument_value": 12
                     }
                 ]
             }
@@ -502,12 +502,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "LMN-456"
+                        "argument_name": "work_item_id",
+                        "argument_value": "LMN-456"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 20
+                        "argument_name": "estimated_effort",
+                        "argument_value": 20
                     }
                 ]
             }
@@ -520,12 +520,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "UVW-123"
+                        "argument_name": "work_item_id",
+                        "argument_value": "UVW-123"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 18
+                        "argument_name": "estimated_effort",
+                        "argument_value": 18
                     }
                 ]
             }
@@ -539,12 +539,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "LMN-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "LMN-567"
                     },
                     {
-                        "name": "dependencies",
-                        "value": ["XYZ-789", "PQR-234"]
+                        "argument_name": "dependencies",
+                        "argument_value": ["XYZ-789", "PQR-234"]
                     }
                 ]
             }
@@ -557,12 +557,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "DEF-890"
+                        "argument_name": "work_item_id",
+                        "argument_value": "DEF-890"
                     },
                     {
-                        "name": "dependencies",
-                        "value": ["ABC-123", "UVW-567"]
+                        "argument_name": "dependencies",
+                        "argument_value": ["ABC-123", "UVW-567"]
                     }
                 ]
             }
@@ -575,12 +575,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "EFG-234"
+                        "argument_name": "work_item_id",
+                        "argument_value": "EFG-234"
                     },
                     {
-                        "name": "dependencies",
-                        "value": ["PQR-456", "LMN-789"]
+                        "argument_name": "dependencies",
+                        "argument_value": ["PQR-456", "LMN-789"]
                     }
                 ]
             }
@@ -593,12 +593,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "OPQ-789"
+                        "argument_name": "work_item_id",
+                        "argument_value": "OPQ-789"
                     },
                     {
-                        "name": "dependencies",
-                        "value": ["UVW-123", "XYZ-456"]
+                        "argument_name": "dependencies",
+                        "argument_value": ["UVW-123", "XYZ-456"]
                     }
                 ]
             }
@@ -611,12 +611,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "RST-234"
+                        "argument_name": "work_item_id",
+                        "argument_value": "RST-234"
                     },
                     {
-                        "name": "dependencies",
-                        "value": ["LMN-567", "EFG-890"]
+                        "argument_name": "dependencies",
+                        "argument_value": ["LMN-567", "EFG-890"]
                     }
                 ]
             }
@@ -630,12 +630,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "PRJ-456"
+                        "argument_name": "work_item_id",
+                        "argument_value": "PRJ-456"
                     },
                     {
-                        "name": "new_status",
-                        "value": "Completed"
+                        "argument_name": "new_status",
+                        "argument_value": "Completed"
                     }
                 ]
             }
@@ -648,12 +648,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "ABC-123"
+                        "argument_name": "work_item_id",
+                        "argument_value": "ABC-123"
                     },
                     {
-                        "name": "new_status",
-                        "value": "Finished"
+                        "argument_name": "new_status",
+                        "argument_value": "Finished"
                     }
                 ]
             }
@@ -666,12 +666,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "XYZ-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "XYZ-567"
                     },
                     {
-                        "name": "new_status",
-                        "value": "Resolved"
+                        "argument_name": "new_status",
+                        "argument_value": "Resolved"
                     }
                 ]
             }
@@ -684,12 +684,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "PQR-890"
+                        "argument_name": "work_item_id",
+                        "argument_value": "PQR-890"
                     },
                     {
-                        "name": "new_status",
-                        "value": "Closed"
+                        "argument_name": "new_status",
+                        "argument_value": "Closed"
                     }
                 ]
             }
@@ -702,12 +702,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "LMN-234"
+                        "argument_name": "work_item_id",
+                        "argument_value": "LMN-234"
                     },
                     {
-                        "name": "new_status",
-                        "value": "Approved"
+                        "argument_name": "new_status",
+                        "argument_value": "Approved"
                     }
                 ]
             }
@@ -721,12 +721,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "XYZ-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "XYZ-567"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "PQR-890"
+                        "argument_name": "new_assignee",
+                        "argument_value": "PQR-890"
                     }
                 ]
             }
@@ -739,12 +739,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "LMN-234"
+                        "argument_name": "work_item_id",
+                        "argument_value": "LMN-234"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "UVW-123"
+                        "argument_name": "new_assignee",
+                        "argument_value": "UVW-123"
                     }
                 ]
             }
@@ -757,12 +757,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "PQR-890"
+                        "argument_name": "work_item_id",
+                        "argument_value": "PQR-890"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "XYZ-567"
+                        "argument_name": "new_assignee",
+                        "argument_value": "XYZ-567"
                     }
                 ]
             }
@@ -775,12 +775,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "EFG-345"
+                        "argument_name": "work_item_id",
+                        "argument_value": "EFG-345"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "LMN-678"
+                        "argument_name": "new_assignee",
+                        "argument_value": "LMN-678"
                     }
                 ]
             }
@@ -794,12 +794,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "PRJ-56"
+                        "argument_name": "work_item_id",
+                        "argument_value": "PRJ-56"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 15
+                        "argument_name": "estimated_effort",
+                        "argument_value": 15
                     }
                 ]
             }
@@ -812,12 +812,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "ABC-23"
+                        "argument_name": "work_item_id",
+                        "argument_value": "ABC-23"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 8
+                        "argument_name": "estimated_effort",
+                        "argument_value": 8
                     }
                 ]
             }
@@ -830,12 +830,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "XYZ-67"
+                        "argument_name": "work_item_id",
+                        "argument_value": "XYZ-67"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 10
+                        "argument_name": "estimated_effort",
+                        "argument_value": 10
                     }
                 ]
             }
@@ -848,12 +848,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "PQR-89"
+                        "argument_name": "work_item_id",
+                        "argument_value": "PQR-89"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 18
+                        "argument_name": "estimated_effort",
+                        "argument_value": 18
                     }
                 ]
             }
@@ -866,12 +866,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "LMN-45"
+                        "argument_name": "work_item_id",
+                        "argument_value": "LMN-45"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 22
+                        "argument_name": "estimated_effort",
+                        "argument_value": 22
                     }
                 ]
             }
@@ -885,12 +885,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "XYZ-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "XYZ-567"
                     },
                     {
-                        "name": "dependencies",
-                        "value": ["PRJ-56", "BUG-34"]
+                        "argument_name": "dependencies",
+                        "argument_value": ["PRJ-56", "BUG-34"]
                     }
                 ]
             }
@@ -903,12 +903,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "LMN-234"
+                        "argument_name": "work_item_id",
+                        "argument_value": "LMN-234"
                     },
                     {
-                        "name": "dependencies",
-                        "value": ["ABC-23", "TSK-78"]
+                        "argument_name": "dependencies",
+                        "argument_value": ["ABC-23", "TSK-78"]
                     }
                 ]
             }
@@ -921,12 +921,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "PQR-89"
+                        "argument_name": "work_item_id",
+                        "argument_value": "PQR-89"
                     },
                     {
-                        "name": "dependencies",
-                        "value": ["XYZ-67", "PRJ-56"]
+                        "argument_name": "dependencies",
+                        "argument_value": ["XYZ-67", "PRJ-56"]
                     }
                 ]
             }
@@ -939,12 +939,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "EFG-234"
+                        "argument_name": "work_item_id",
+                        "argument_value": "EFG-234"
                     },
                     {
-                        "name": "dependencies",
-                        "value": ["LMN-45", "PQR-89"]
+                        "argument_name": "dependencies",
+                        "argument_value": ["LMN-45", "PQR-89"]
                     }
                 ]
             }
@@ -957,12 +957,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "RST-456"
+                        "argument_name": "work_item_id",
+                        "argument_value": "RST-456"
                     },
                     {
-                        "name": "dependencies",
-                        "value": ["TSK-78", "XYZ-567"]
+                        "argument_name": "dependencies",
+                        "argument_value": ["TSK-78", "XYZ-567"]
                     }
                 ]
             }
@@ -976,31 +976,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project Alpha"
+                        "argument_name": "project_name",
+                        "argument_value": "Project Alpha"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Developing a mobile application."
+                        "argument_name": "project_description",
+                        "argument_value": "Developing a mobile application."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "ABCD-567"
+                        "argument_name": "project_lead",
+                        "argument_value": "ABCD-567"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-03-15"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-03-15"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "ABCD-567",
                             "EFGH-567"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2023-10-20"
+                        "argument_name": "target_date",
+                        "argument_value": "2023-10-20"
                     }
                 ]
             }
@@ -1013,31 +1013,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project Gamma"
+                        "argument_name": "project_name",
+                        "argument_value": "Project Gamma"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Redesigning the website."
+                        "argument_name": "project_description",
+                        "argument_value": "Redesigning the website."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "PQRS-890"
+                        "argument_name": "project_lead",
+                        "argument_value": "PQRS-890"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-04-20"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-04-20"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "PQRS-890",
                             "TUVW-890"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2023-11-25"
+                        "argument_name": "target_date",
+                        "argument_value": "2023-11-25"
                     }
                 ]
             }
@@ -1050,31 +1050,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project Beta"
+                        "argument_name": "project_name",
+                        "argument_value": "Project Beta"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Implementing a cybersecurity solution."
+                        "argument_name": "project_description",
+                        "argument_value": "Implementing a cybersecurity solution."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "UVWX-123"
+                        "argument_name": "project_lead",
+                        "argument_value": "UVWX-123"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-05-25"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-05-25"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "UVWX-123",
                             "QRST-123"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2024-01-30"
+                        "argument_name": "target_date",
+                        "argument_value": "2024-01-30"
                     }
                 ]
             }
@@ -1087,31 +1087,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project Sigma"
+                        "argument_name": "project_name",
+                        "argument_value": "Project Sigma"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Creating an artificial intelligence module."
+                        "argument_name": "project_description",
+                        "argument_value": "Creating an artificial intelligence module."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "LMNO-456"
+                        "argument_name": "project_lead",
+                        "argument_value": "LMNO-456"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-06-30"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-06-30"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "LMNO-456",
                             "WXYZ-456"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2024-02-28"
+                        "argument_name": "target_date",
+                        "argument_value": "2024-02-28"
                     }
                 ]
             }
@@ -1124,31 +1124,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project Omega"
+                        "argument_name": "project_name",
+                        "argument_value": "Project Omega"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Developing a virtual reality application."
+                        "argument_name": "project_description",
+                        "argument_value": "Developing a virtual reality application."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "IJKL-789"
+                        "argument_name": "project_lead",
+                        "argument_value": "IJKL-789"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-07-15"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-07-15"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "IJKL-789",
                             "OPQR-789"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2024-03-15"
+                        "argument_name": "target_date",
+                        "argument_value": "2024-03-15"
                     }
                 ]
             }
@@ -1162,31 +1162,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project Zeta"
+                        "argument_name": "project_name",
+                        "argument_value": "Project Zeta"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Developing an e-commerce platform."
+                        "argument_name": "project_description",
+                        "argument_value": "Developing an e-commerce platform."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "JKL-567"
+                        "argument_name": "project_lead",
+                        "argument_value": "JKL-567"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-08-10"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-08-10"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "OPQ-567",
                             "MNO-567"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2024-02-28"
+                        "argument_name": "target_date",
+                        "argument_value": "2024-02-28"
                     }
                 ]
             }
@@ -1199,31 +1199,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project Theta"
+                        "argument_name": "project_name",
+                        "argument_value": "Project Theta"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Developing a mobile application for healthcare."
+                        "argument_name": "project_description",
+                        "argument_value": "Developing a mobile application for healthcare."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "RST-890"
+                        "argument_name": "project_lead",
+                        "argument_value": "RST-890"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-09-20"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-09-20"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "ABC-890",
                             "PQR-890"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2024-03-31"
+                        "argument_name": "target_date",
+                        "argument_value": "2024-03-31"
                     }
                 ]
             }
@@ -1236,31 +1236,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project Epsilon"
+                        "argument_name": "project_name",
+                        "argument_value": "Project Epsilon"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Implementing a customer relationship management system."
+                        "argument_name": "project_description",
+                        "argument_value": "Implementing a customer relationship management system."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "GHI-123"
+                        "argument_name": "project_lead",
+                        "argument_value": "GHI-123"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-10-15"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-10-15"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "DEF-123",
                             "JKL-123"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2024-04-30"
+                        "argument_name": "target_date",
+                        "argument_value": "2024-04-30"
                     }
                 ]
             }
@@ -1273,31 +1273,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project Kappa"
+                        "argument_name": "project_name",
+                        "argument_value": "Project Kappa"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Creating a content management system."
+                        "argument_name": "project_description",
+                        "argument_value": "Creating a content management system."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "MNO-456"
+                        "argument_name": "project_lead",
+                        "argument_value": "MNO-456"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-11-25"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-11-25"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "GHI-456",
                             "ABC-456"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2024-05-15"
+                        "argument_name": "target_date",
+                        "argument_value": "2024-05-15"
                     }
                 ]
             }
@@ -1310,31 +1310,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project Lambda"
+                        "argument_name": "project_name",
+                        "argument_value": "Project Lambda"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Developing a blockchain-based application."
+                        "argument_name": "project_description",
+                        "argument_value": "Developing a blockchain-based application."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "PQR-789"
+                        "argument_name": "project_lead",
+                        "argument_value": "PQR-789"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-12-10"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-12-10"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "XYZ-789",
                             "EFG-789"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2024-06-30"
+                        "argument_name": "target_date",
+                        "argument_value": "2024-06-30"
                     }
                 ]
             }
@@ -1348,20 +1348,20 @@
                 "tool_name": "code_review_feedback",
                 "arguments": [
                     {
-                        "name": "review_id",
-                        "value": "CR-789"
+                        "argument_name": "review_id",
+                        "argument_value": "CR-789"
                     },
                     {
-                        "name": "feedback",
-                        "value": "Refactor this module to enhance readability."
+                        "argument_name": "feedback",
+                        "argument_value": "Refactor this module to enhance readability."
                     },
                     {
-                        "name": "code_version",
-                        "value": "v2.1"
+                        "argument_name": "code_version",
+                        "argument_value": "v2.1"
                     },
                     {
-                        "name": "severity",
-                        "value": "medium"
+                        "argument_name": "severity",
+                        "argument_value": "medium"
                     }
                 ]
             }
@@ -1374,20 +1374,20 @@
                 "tool_name": "code_review_feedback",
                 "arguments": [
                     {
-                        "name": "review_id",
-                        "value": "CR-234"
+                        "argument_name": "review_id",
+                        "argument_value": "CR-234"
                     },
                     {
-                        "name": "feedback",
-                        "value": "Fix the null pointer exception in line 120."
+                        "argument_name": "feedback",
+                        "argument_value": "Fix the null pointer exception in line 120."
                     },
                     {
-                        "name": "code_version",
-                        "value": "v1.5"
+                        "argument_name": "code_version",
+                        "argument_value": "v1.5"
                     },
                     {
-                        "name": "severity",
-                        "value": "high"
+                        "argument_name": "severity",
+                        "argument_value": "high"
                     }
                 ]
             }
@@ -1400,20 +1400,20 @@
                 "tool_name": "code_review_feedback",
                 "arguments": [
                     {
-                        "name": "review_id",
-                        "value": "CR-890"
+                        "argument_name": "review_id",
+                        "argument_value": "CR-890"
                     },
                     {
-                        "name": "feedback",
-                        "value": "Use a more efficient algorithm for sorting."
+                        "argument_name": "feedback",
+                        "argument_value": "Use a more efficient algorithm for sorting."
                     },
                     {
-                        "name": "code_version",
-                        "value": "v4.2"
+                        "argument_name": "code_version",
+                        "argument_value": "v4.2"
                     },
                     {
-                        "name": "severity",
-                        "value": "low"
+                        "argument_name": "severity",
+                        "argument_value": "low"
                     }
                 ]
             }
@@ -1426,20 +1426,20 @@
                 "tool_name": "code_review_feedback",
                 "arguments": [
                     {
-                        "name": "review_id",
-                        "value": "CR-123"
+                        "argument_name": "review_id",
+                        "argument_value": "CR-123"
                     },
                     {
-                        "name": "feedback",
-                        "value": "Fix the memory leak in the file handling module."
+                        "argument_name": "feedback",
+                        "argument_value": "Fix the memory leak in the file handling module."
                     },
                     {
-                        "name": "code_version",
-                        "value": "v1.8"
+                        "argument_name": "code_version",
+                        "argument_value": "v1.8"
                     },
                     {
-                        "name": "severity",
-                        "value": "critical"
+                        "argument_name": "severity",
+                        "argument_value": "critical"
                     }
                 ]
             }
@@ -1452,20 +1452,20 @@
                 "tool_name": "code_review_feedback",
                 "arguments": [
                     {
-                        "name": "review_id",
-                        "value": "CR-567"
+                        "argument_name": "review_id",
+                        "argument_value": "CR-567"
                     },
                     {
-                        "name": "feedback",
-                        "value": "Improve error handling for edge cases."
+                        "argument_name": "feedback",
+                        "argument_value": "Improve error handling for edge cases."
                     },
                     {
-                        "name": "code_version",
-                        "value": "v3.5"
+                        "argument_name": "code_version",
+                        "argument_value": "v3.5"
                     },
                     {
-                        "name": "severity",
-                        "value": "medium"
+                        "argument_name": "severity",
+                        "argument_value": "medium"
                     }
                 ]
             }
@@ -1479,20 +1479,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TS-234"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TS-234"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -1505,20 +1505,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TS-456"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TS-456"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -1531,20 +1531,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TS-123"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TS-123"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -1557,20 +1557,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TS-567"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TS-567"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -1583,20 +1583,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TS-890"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TS-890"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -1610,20 +1610,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TC-234"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TC-234"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -1636,20 +1636,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TC-456"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TC-456"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -1662,20 +1662,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TC-123"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TC-123"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -1688,20 +1688,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TC-567"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TC-567"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -1714,20 +1714,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TC-890"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TC-890"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -1741,28 +1741,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-789"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-789"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint Alpha"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint Alpha"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "3 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "3 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "Bug Fixes"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "Bug Fixes"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 30
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 30
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-789",
                             "STORY-456"
                         ]
@@ -1778,28 +1778,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-890"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-890"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint Beta"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint Beta"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "2 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "2 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "Technical Debt Reduction"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "Technical Debt Reduction"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 35
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 35
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-890",
                             "STORY-678"
                         ]
@@ -1815,28 +1815,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-123"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-123"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint Delta"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint Delta"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "4 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "4 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "Infrastructure Upgrades"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "Infrastructure Upgrades"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 50
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 50
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-123",
                             "STORY-456"
                         ]
@@ -1852,28 +1852,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-456"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-456"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint Gamma"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint Gamma"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "3 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "3 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "Performance Optimization"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "Performance Optimization"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 40
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 40
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-456",
                             "STORY-789"
                         ]
@@ -1889,28 +1889,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-678"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-678"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint Zeta"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint Zeta"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "2 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "2 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "User Interface Refinement"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "User Interface Refinement"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 30
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 30
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-678",
                             "STORY-890"
                         ]
@@ -1927,28 +1927,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-567"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-567"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint Bravo"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint Bravo"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "3 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "3 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "Feature Development"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "Feature Development"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 60
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 60
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-567",
                             "STORY-234"
                         ]
@@ -1964,28 +1964,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-890"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-890"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint Gamma"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint Gamma"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "2 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "2 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "Technical Debt Reduction"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "Technical Debt Reduction"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 45
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 45
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-890",
                             "STORY-678"
                         ]
@@ -2001,28 +2001,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-123"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-123"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint Delta"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint Delta"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "4 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "4 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "Infrastructure Upgrades"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "Infrastructure Upgrades"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 55
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 55
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-123",
                             "STORY-456"
                         ]
@@ -2038,28 +2038,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-456"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-456"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint Epsilon"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint Epsilon"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "3 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "3 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "Performance Optimization"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "Performance Optimization"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 50
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 50
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-456",
                             "STORY-789"
                         ]
@@ -2075,28 +2075,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-678"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-678"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint Zeta"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint Zeta"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "2 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "2 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "User Interface Refinement"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "User Interface Refinement"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 35
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 35
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-678",
                             "STORY-890"
                         ]
@@ -2113,24 +2113,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "BUG-789"
+                        "argument_name": "work_item_id",
+                        "argument_value": "BUG-789"
                     },
                     {
-                        "name": "assignee",
-                        "value": "QA-123"
+                        "argument_name": "assignee",
+                        "argument_value": "QA-123"
                     },
                     {
-                        "name": "priority",
-                        "value": "medium"
+                        "argument_name": "priority",
+                        "argument_value": "medium"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-11-30"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-11-30"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "bug"
+                        "argument_name": "work_item_type",
+                        "argument_value": "bug"
                     }
                 ]
             }
@@ -2143,24 +2143,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "ENH-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "ENH-567"
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVX-890"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVX-890"
                     },
                     {
-                        "name": "priority",
-                        "value": "low"
+                        "argument_name": "priority",
+                        "argument_value": "low"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-20"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-20"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "enhancement"
+                        "argument_name": "work_item_type",
+                        "argument_value": "enhancement"
                     }
                 ]
             }
@@ -2173,24 +2173,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "ISSUE-123"
+                        "argument_name": "work_item_id",
+                        "argument_value": "ISSUE-123"
                     },
                     {
-                        "name": "assignee",
-                        "value": "PROD-456"
+                        "argument_name": "assignee",
+                        "argument_value": "PROD-456"
                     },
                     {
-                        "name": "priority",
-                        "value": "urgent"
+                        "argument_name": "priority",
+                        "argument_value": "urgent"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2024-02-05"
+                        "argument_name": "due_date",
+                        "argument_value": "2024-02-05"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "issue"
+                        "argument_name": "work_item_type",
+                        "argument_value": "issue"
                     }
                 ]
             }
@@ -2203,24 +2203,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-567"
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVY-123"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVY-123"
                     },
                     {
-                        "name": "priority",
-                        "value": "medium"
+                        "argument_name": "priority",
+                        "argument_value": "medium"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-15"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-15"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     }
                 ]
             }
@@ -2233,24 +2233,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "BUG-123"
+                        "argument_name": "work_item_id",
+                        "argument_value": "BUG-123"
                     },
                     {
-                        "name": "assignee",
-                        "value": "QA-567"
+                        "argument_name": "assignee",
+                        "argument_value": "QA-567"
                     },
                     {
-                        "name": "priority",
-                        "value": "high"
+                        "argument_name": "priority",
+                        "argument_value": "high"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-11-25"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-11-25"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "bug"
+                        "argument_name": "work_item_type",
+                        "argument_value": "bug"
                     }
                 ]
             }
@@ -2264,24 +2264,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "BUG-456"
+                        "argument_name": "work_item_id",
+                        "argument_value": "BUG-456"
                     },
                     {
-                        "name": "assignee",
-                        "value": "QA-890"
+                        "argument_name": "assignee",
+                        "argument_value": "QA-890"
                     },
                     {
-                        "name": "priority",
-                        "value": "medium"
+                        "argument_name": "priority",
+                        "argument_value": "medium"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-11-30"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-11-30"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "bug"
+                        "argument_name": "work_item_type",
+                        "argument_value": "bug"
                     }
                 ]
             }
@@ -2294,24 +2294,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "ENH-890"
+                        "argument_name": "work_item_id",
+                        "argument_value": "ENH-890"
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVX-567"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVX-567"
                     },
                     {
-                        "name": "priority",
-                        "value": "low"
+                        "argument_name": "priority",
+                        "argument_value": "low"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2024-01-05"
+                        "argument_name": "due_date",
+                        "argument_value": "2024-01-05"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "enhancement"
+                        "argument_name": "work_item_type",
+                        "argument_value": "enhancement"
                     }
                 ]
             }
@@ -2324,24 +2324,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "ISSUE-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "ISSUE-567"
                     },
                     {
-                        "name": "assignee",
-                        "value": "PROD-123"
+                        "argument_name": "assignee",
+                        "argument_value": "PROD-123"
                     },
                     {
-                        "name": "priority",
-                        "value": "urgent"
+                        "argument_name": "priority",
+                        "argument_value": "urgent"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2024-02-10"
+                        "argument_name": "due_date",
+                        "argument_value": "2024-02-10"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "issue"
+                        "argument_name": "work_item_type",
+                        "argument_value": "issue"
                     }
                 ]
             }
@@ -2354,24 +2354,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-890"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-890"
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVY-567"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVY-567"
                     },
                     {
-                        "name": "priority",
-                        "value": "medium"
+                        "argument_name": "priority",
+                        "argument_value": "medium"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-25"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-25"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     }
                 ]
             }
@@ -2384,24 +2384,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "BUG-890"
+                        "argument_name": "work_item_id",
+                        "argument_value": "BUG-890"
                     },
                     {
-                        "name": "assignee",
-                        "value": "QA-567"
+                        "argument_name": "assignee",
+                        "argument_value": "QA-567"
                     },
                     {
-                        "name": "priority",
-                        "value": "high"
+                        "argument_name": "priority",
+                        "argument_value": "high"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-15"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-15"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "bug"
+                        "argument_name": "work_item_type",
+                        "argument_value": "bug"
                     }
                 ]
             }
@@ -2415,25 +2415,25 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Bug fix approved"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Bug fix approved"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Execute Bug Resolution",
                             "Send Notification Email"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "DEVU-567"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2446,25 +2446,25 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Feature Request Approved"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Feature Request Approved"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Implement Feature Update",
                             "Send Alert Email"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "DEVX-789"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2477,25 +2477,25 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Code Review Passed"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Code Review Passed"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Enact Code Approval",
                             "Notify QA Team"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "QA-567"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2508,25 +2508,25 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Task Completed"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Task Completed"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Mark Task as Complete",
                             "Send Project Manager Notification"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "PM-234"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2539,25 +2539,25 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Document Approval Received"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Document Approval Received"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Process Document Approval",
                             "Notify Document Control"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "DOC-789"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2570,25 +2570,25 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "User Registration"
+                        "argument_name": "trigger_event",
+                        "argument_value": "User Registration"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Process User Registration",
                             "Alert Security Team"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "SEC-567"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2602,26 +2602,26 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "New Feature Proposal"
+                        "argument_name": "trigger_event",
+                        "argument_value": "New Feature Proposal"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Assess Feature Proposal",
                             "Notify Development Team"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "Sarah",
                             "John"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2634,26 +2634,26 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Product Enhancement Request"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Product Enhancement Request"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Implement Enhancement Request",
                             "Alert Development Team"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "Elijah",
                             "Emma"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2666,26 +2666,26 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Change Request"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Change Request"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Process Change Request",
                             "Send Alert to Development Team"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "Olivia",
                             "Liam"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2698,26 +2698,26 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "New Idea Submission"
+                        "argument_name": "trigger_event",
+                        "argument_value": "New Idea Submission"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Review Idea Submission",
                             "Notify Development Team"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "James",
                             "Ava"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2730,26 +2730,26 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Enhancement Request"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Enhancement Request"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             "Implement Enhancement",
                             "Alert Development Team"
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "Sophia",
                             "Noah"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }

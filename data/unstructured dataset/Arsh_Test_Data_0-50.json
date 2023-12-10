@@ -2222,32 +2222,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     },
                     {
-                        "name": "title",
-                        "value": "Implement Feature A"
+                        "argument_name": "title",
+                        "argument_value": "Implement Feature A"
                     },
                     {
-                        "name": "description",
-                        "value": "This task involves implementing Feature A based on the specifications."
+                        "argument_name": "description",
+                        "argument_value": "This task involves implementing Feature A based on the specifications."
                     },
                     {
-                        "name": "assignee",
-                        "value": "JohnSmith"
+                        "argument_name": "assignee",
+                        "argument_value": "JohnSmith"
                     },
                     {
-                        "name": "priority",
-                        "value": "high"
+                        "argument_name": "priority",
+                        "argument_value": "high"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-10"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-10"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "feature",
                             "important"
                         ]
@@ -2265,32 +2265,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "bug"
+                        "argument_name": "work_item_type",
+                        "argument_value": "bug"
                     },
                     {
-                        "name": "title",
-                        "value": "Fix Critical Issue in Module X"
+                        "argument_name": "title",
+                        "argument_value": "Fix Critical Issue in Module X"
                     },
                     {
-                        "name": "description",
-                        "value": "This bug involves fixing a critical issue in Module X that is causing system crashes."
+                        "argument_name": "description",
+                        "argument_value": "This bug involves fixing a critical issue in Module X that is causing system crashes."
                     },
                     {
-                        "name": "assignee",
-                        "value": "MaryJohnson"
+                        "argument_name": "assignee",
+                        "argument_value": "MaryJohnson"
                     },
                     {
-                        "name": "priority",
-                        "value": "urgent"
+                        "argument_name": "priority",
+                        "argument_value": "urgent"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-11-25"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-11-25"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "bug",
                             "critical"
                         ]
@@ -2308,32 +2308,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     },
                     {
-                        "name": "title",
-                        "value": "Implement Feature B"
+                        "argument_name": "title",
+                        "argument_value": "Implement Feature B"
                     },
                     {
-                        "name": "description",
-                        "value": "This task involves implementing Feature B as per the project requirements."
+                        "argument_name": "description",
+                        "argument_value": "This task involves implementing Feature B as per the project requirements."
                     },
                     {
-                        "name": "assignee",
-                        "value": "DavidWilliams"
+                        "argument_name": "assignee",
+                        "argument_value": "DavidWilliams"
                     },
                     {
-                        "name": "priority",
-                        "value": "medium"
+                        "argument_name": "priority",
+                        "argument_value": "medium"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-05"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-05"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "feature",
                             "important"
                         ]
@@ -2351,32 +2351,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "bug"
+                        "argument_name": "work_item_type",
+                        "argument_value": "bug"
                     },
                     {
-                        "name": "title",
-                        "value": "Resolve Critical Issue in Module Z"
+                        "argument_name": "title",
+                        "argument_value": "Resolve Critical Issue in Module Z"
                     },
                     {
-                        "name": "description",
-                        "value": "This bug involves resolving a critical issue in Module Z that affects system stability."
+                        "argument_name": "description",
+                        "argument_value": "This bug involves resolving a critical issue in Module Z that affects system stability."
                     },
                     {
-                        "name": "assignee",
-                        "value": "SarahDavis"
+                        "argument_name": "assignee",
+                        "argument_value": "SarahDavis"
                     },
                     {
-                        "name": "priority",
-                        "value": "urgent"
+                        "argument_name": "priority",
+                        "argument_value": "urgent"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-11-20"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-11-20"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "bug",
                             "critical"
                         ]
@@ -2394,32 +2394,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     },
                     {
-                        "name": "title",
-                        "value": "Develop Feature C"
+                        "argument_name": "title",
+                        "argument_value": "Develop Feature C"
                     },
                     {
-                        "name": "description",
-                        "value": "This task involves developing Feature C according to the project specifications."
+                        "argument_name": "description",
+                        "argument_value": "This task involves developing Feature C according to the project specifications."
                     },
                     {
-                        "name": "assignee",
-                        "value": "EmilyBrown"
+                        "argument_name": "assignee",
+                        "argument_value": "EmilyBrown"
                     },
                     {
-                        "name": "priority",
-                        "value": "high"
+                        "argument_name": "priority",
+                        "argument_value": "high"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-12"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-12"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "feature",
                             "important"
                         ]
@@ -4077,32 +4077,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     },
                     {
-                        "name": "title",
-                        "value": "Fix Critical Bug"
+                        "argument_name": "title",
+                        "argument_value": "Fix Critical Bug"
                     },
                     {
-                        "name": "description",
-                        "value": "This task involves fixing a critical bug in our software."
+                        "argument_name": "description",
+                        "argument_value": "This task involves fixing a critical bug in our software."
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-123"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-123"
                     },
                     {
-                        "name": "priority",
-                        "value": "high"
+                        "argument_name": "priority",
+                        "argument_value": "high"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-15"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-15"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "urgent",
                             "bug"
                         ]
@@ -4120,32 +4120,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "user story"
+                        "argument_name": "work_item_type",
+                        "argument_value": "user story"
                     },
                     {
-                        "name": "title",
-                        "value": "User Story for Feature Y"
+                        "argument_name": "title",
+                        "argument_value": "User Story for Feature Y"
                     },
                     {
-                        "name": "description",
-                        "value": "This user story is for implementing Feature Y."
+                        "argument_name": "description",
+                        "argument_value": "This user story is for implementing Feature Y."
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-789"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-789"
                     },
                     {
-                        "name": "priority",
-                        "value": "normal"
+                        "argument_name": "priority",
+                        "argument_value": "normal"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2024-01-15"
+                        "argument_name": "due_date",
+                        "argument_value": "2024-01-15"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "feature"
                         ]
                     }
@@ -4162,32 +4162,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "issue"
+                        "argument_name": "work_item_type",
+                        "argument_value": "issue"
                     },
                     {
-                        "name": "title",
-                        "value": "Critical Security Vulnerability"
+                        "argument_name": "title",
+                        "argument_value": "Critical Security Vulnerability"
                     },
                     {
-                        "name": "description",
-                        "value": "This issue involves a critical security vulnerability."
+                        "argument_name": "description",
+                        "argument_value": "This issue involves a critical security vulnerability."
                     },
                     {
-                        "name": "assignee",
-                        "value": "SEC-001"
+                        "argument_name": "assignee",
+                        "argument_value": "SEC-001"
                     },
                     {
-                        "name": "priority",
-                        "value": "critical"
+                        "argument_name": "priority",
+                        "argument_value": "critical"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-10"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-10"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "security",
                             "urgent"
                         ]
@@ -4205,32 +4205,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "feature request"
+                        "argument_name": "work_item_type",
+                        "argument_value": "feature request"
                     },
                     {
-                        "name": "title",
-                        "value": "New Feature Request"
+                        "argument_name": "title",
+                        "argument_value": "New Feature Request"
                     },
                     {
-                        "name": "description",
-                        "value": "This feature request is for a new functionality."
+                        "argument_name": "description",
+                        "argument_value": "This feature request is for a new functionality."
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-001"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-001"
                     },
                     {
-                        "name": "priority",
-                        "value": "high"
+                        "argument_name": "priority",
+                        "argument_value": "high"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-20"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-20"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "feature"
                         ]
                     }
@@ -4247,32 +4247,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     },
                     {
-                        "name": "title",
-                        "value": "Critical Task"
+                        "argument_name": "title",
+                        "argument_value": "Critical Task"
                     },
                     {
-                        "name": "description",
-                        "value": "This task is of utmost importance."
+                        "argument_name": "description",
+                        "argument_value": "This task is of utmost importance."
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-789"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-789"
                     },
                     {
-                        "name": "priority",
-                        "value": "critical"
+                        "argument_name": "priority",
+                        "argument_value": "critical"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-10"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-10"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "urgent"
                         ]
                     }

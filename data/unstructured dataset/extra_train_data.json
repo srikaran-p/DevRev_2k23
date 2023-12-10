@@ -6,12 +6,12 @@
                 "tool_name": "query_stock",
                 "arguments": [
                     {
-                        "name": "stock_code",
-                        "value": "AAPL"
+                        "argument_name": "stock_code",
+                        "argument_value": "AAPL"
                     },
                     {
-                        "name": "date",
-                        "value": "2023-01-15"
+                        "argument_name": "date",
+                        "argument_value": "2023-01-15"
                     }
                 ]
             }
@@ -24,8 +24,8 @@
                 "tool_name": "emergency_knowledge",
                 "arguments": [
                     {
-                        "name": "symptom",
-                        "value": "chest pain"
+                        "argument_name": "symptom",
+                        "argument_value": "chest pain"
                     }
                 ]
             }
@@ -38,12 +38,12 @@
                 "tool_name": "delete_alarm",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "xyz123"
+                        "argument_name": "token",
+                        "argument_value": "xyz123"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-01-20 08:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-01-20 08:00:00"
                     }
                 ]
             }
@@ -56,16 +56,16 @@
                 "tool_name": "register_user",
                 "arguments": [
                     {
-                        "name": "username",
-                        "value": "john_doe"
+                        "argument_name": "username",
+                        "argument_value": "john_doe"
                     },
                     {
-                        "name": "password",
-                        "value": "pass123"
+                        "argument_name": "password",
+                        "argument_value": "pass123"
                     },
                     {
-                        "name": "email",
-                        "value": "john@example.com"
+                        "argument_name": "email",
+                        "argument_value": "john@example.com"
                     }
                 ]
             }
@@ -78,8 +78,8 @@
                 "tool_name": "play_music",
                 "arguments": [
                     {
-                        "name": "music_name",
-                        "value": "Relaxation Symphony"
+                        "argument_name": "music_name",
+                        "argument_value": "Relaxation Symphony"
                     }
                 ]
             }
@@ -92,8 +92,8 @@
                 "tool_name": "check_token",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "abc123"
+                        "argument_name": "token",
+                        "argument_value": "abc123"
                     }
                 ]
             }
@@ -106,8 +106,8 @@
                 "tool_name": "query_meeting",
                 "arguments": [
                     {
-                        "name": "user_name",
-                        "value": "Jane_Doe"
+                        "argument_name": "user_name",
+                        "argument_value": "Jane_Doe"
                     }
                 ]
             }
@@ -120,8 +120,8 @@
                 "tool_name": "query_scene",
                 "arguments": [
                     {
-                        "name": "name",
-                        "value": "Living Room"
+                        "argument_name": "name",
+                        "argument_value": "Living Room"
                     }
                 ]
             }
@@ -134,16 +134,16 @@
                 "tool_name": "translate",
                 "arguments": [
                     {
-                        "name": "src",
-                        "value": "Hello, how are you?"
+                        "argument_name": "src",
+                        "argument_value": "Hello, how are you?"
                     },
                     {
-                        "name": "src_lang",
-                        "value": "auto"
+                        "argument_name": "src_lang",
+                        "argument_value": "auto"
                     },
                     {
-                        "name": "tgt_lang",
-                        "value": "fr"
+                        "argument_name": "tgt_lang",
+                        "argument_value": "fr"
                     }
                 ]
             }
@@ -156,16 +156,16 @@
                 "tool_name": "timed_switch",
                 "arguments": [
                     {
-                        "name": "name",
-                        "value": "SmartBulb"
+                        "argument_name": "name",
+                        "argument_value": "SmartBulb"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-01-25 18:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-01-25 18:00:00"
                     },
                     {
-                        "name": "on",
-                        "value": true
+                        "argument_name": "on",
+                        "argument_value": true
                     }
                 ]
             }
@@ -178,16 +178,16 @@
                 "tool_name": "appointment_registration",
                 "arguments": [
                     {
-                        "name": "patient_name",
-                        "value": "Alice"
+                        "argument_name": "patient_name",
+                        "argument_value": "Alice"
                     },
                     {
-                        "name": "date",
-                        "value": "2023-02-10"
+                        "argument_name": "date",
+                        "argument_value": "2023-02-10"
                     },
                     {
-                        "name": "doctor_name",
-                        "value": "Dr. Smith"
+                        "argument_name": "doctor_name",
+                        "argument_value": "Dr. Smith"
                     }
                 ]
             }
@@ -200,12 +200,12 @@
                 "tool_name": "addalarm",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "xyz789"
+                        "argument_name": "token",
+                        "argument_value": "xyz789"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-01-22 07:30:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-01-22 07:30:00"
                     }
                 ]
             }
@@ -218,12 +218,12 @@
                 "tool_name": "query_alarm",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "abc456"
+                        "argument_name": "token",
+                        "argument_value": "abc456"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-01-22 08:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-01-22 08:00:00"
                     }
                 ]
             }
@@ -236,12 +236,12 @@
                 "tool_name": "add_scene",
                 "arguments": [
                     {
-                        "name": "name",
-                        "value": "Cozy Evening"
+                        "argument_name": "name",
+                        "argument_value": "Cozy Evening"
                     },
                     {
-                        "name": "devices",
-                        "value": ["SmartBulb", "SmartSpeaker", "SmartThermostat"]
+                        "argument_name": "devices",
+                        "argument_value": ["SmartBulb", "SmartSpeaker", "SmartThermostat"]
                     }
                 ]
             }
@@ -254,8 +254,8 @@
                 "tool_name": "image_caption",
                 "arguments": [
                     {
-                        "name": "url",
-                        "value": "https://example.com/image.jpg"
+                        "argument_name": "url",
+                        "argument_value": "https://example.com/image.jpg"
                     }
                 ]
             }
@@ -268,8 +268,8 @@
                 "tool_name": "speech_recognition",
                 "arguments": [
                     {
-                        "name": "url",
-                        "value": "https://example.com/audio.wav"
+                        "argument_name": "url",
+                        "argument_value": "https://example.com/audio.wav"
                     }
                 ]
             }
@@ -282,20 +282,20 @@
                 "tool_name": "delete_agenda",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "xyz987"
+                        "argument_name": "token",
+                        "argument_value": "xyz987"
                     },
                     {
-                        "name": "content",
-                        "value": "Meeting"
+                        "argument_name": "content",
+                        "argument_value": "Meeting"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-01-20 10:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-01-20 10:00:00"
                     },
                     {
-                        "name": "location",
-                        "value": "Conference Room"
+                        "argument_name": "location",
+                        "argument_value": "Conference Room"
                     }
                 ]
             }
@@ -308,8 +308,8 @@
                 "tool_name": "symptomsearch",
                 "arguments": [
                     {
-                        "name": "symptom",
-                        "value": "headache"
+                        "argument_name": "symptom",
+                        "argument_value": "headache"
                     }
                 ]
             }
@@ -322,8 +322,8 @@
                 "tool_name": "symptomsearch",
                 "arguments": [
                     {
-                        "name": "symptom",
-                        "value": "headache"
+                        "argument_name": "symptom",
+                        "argument_value": "headache"
                     }
                 ]
             }
@@ -336,8 +336,8 @@
                 "tool_name": "delete_scene",
                 "arguments": [
                     {
-                        "name": "name",
-                        "value": "Garden"
+                        "argument_name": "name",
+                        "argument_value": "Garden"
                     }
                 ]
             }
@@ -350,8 +350,8 @@
                 "tool_name": "search_engine",
                 "arguments": [
                     {
-                        "name": "keyword",
-                        "value": "technology"
+                        "argument_name": "keyword",
+                        "argument_value": "technology"
                     }
                 ]
             }
@@ -364,16 +364,16 @@
                 "tool_name": "modify_password",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "abc789"
+                        "argument_name": "token",
+                        "argument_value": "abc789"
                     },
                     {
-                        "name": "old_password",
-                        "value": "oldpass"
+                        "argument_name": "old_password",
+                        "argument_value": "oldpass"
                     },
                     {
-                        "name": "new_password",
-                        "value": "newpass"
+                        "argument_name": "new_password",
+                        "argument_value": "newpass"
                     }
                 ]
             }
@@ -386,12 +386,12 @@
                 "tool_name": "document_q_a",
                 "arguments": [
                     {
-                        "name": "url",
-                        "value": "https://example.com/document.txt"
+                        "argument_name": "url",
+                        "argument_value": "https://example.com/document.txt"
                     },
                     {
-                        "name": "question",
-                        "value": "What is the capital of France?"
+                        "argument_name": "question",
+                        "argument_value": "What is the capital of France?"
                     }
                 ]
             }
@@ -404,8 +404,8 @@
                 "tool_name": "query_balance",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "xyz123"
+                        "argument_name": "token",
+                        "argument_value": "xyz123"
                     }
                 ]
             }
@@ -418,16 +418,16 @@
                 "tool_name": "record_health_data",
                 "arguments": [
                     {
-                        "name": "user_id",
-                        "value": "user123"
+                        "argument_name": "user_id",
+                        "argument_value": "user123"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-01-25 12:30:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-01-25 12:30:00"
                     },
                     {
-                        "name": "health_data",
-                        "value": {"heart_rate": 75, "steps_count": 5000}
+                        "argument_name": "health_data",
+                        "argument_value": {"heart_rate": 75, "steps_count": 5000}
                     }
                 ]
             }
@@ -440,16 +440,16 @@
                 "tool_name": "open_bank_account",
                 "arguments": [
                     {
-                        "name": "account",
-                        "value": "123456"
+                        "argument_name": "account",
+                        "argument_value": "123456"
                     },
                     {
-                        "name": "password",
-                        "value": "bankpass"
+                        "argument_name": "password",
+                        "argument_value": "bankpass"
                     },
                     {
-                        "name": "name",
-                        "value": "John Doe"
+                        "argument_name": "name",
+                        "argument_value": "John Doe"
                     }
                 ]
             }
@@ -462,12 +462,12 @@
                 "tool_name": "query_registration",
                 "arguments": [
                     {
-                        "name": "patient_name",
-                        "value": "John Doe"
+                        "argument_name": "patient_name",
+                        "argument_value": "John Doe"
                     },
                     {
-                        "name": "date",
-                        "value": "2023-02-15"
+                        "argument_name": "date",
+                        "argument_value": "2023-02-15"
                     }
                 ]
             }
@@ -480,16 +480,16 @@
                 "tool_name": "modify_reminder",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     },
                     {
-                        "name": "content",
-                        "value": "Conference"
+                        "argument_name": "content",
+                        "argument_value": "Conference"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-02-20 15:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-02-20 15:00:00"
                     }
                 ]
             }
@@ -502,16 +502,16 @@
                 "tool_name": "modify_registration",
                 "arguments": [
                     {
-                        "name": "appointment_id",
-                        "value": "app123"
+                        "argument_name": "appointment_id",
+                        "argument_value": "app123"
                     },
                     {
-                        "name": "new_appointment_date",
-                        "value": "2023-03-01"
+                        "argument_name": "new_appointment_date",
+                        "argument_value": "2023-03-01"
                     },
                     {
-                        "name": "new_appointment_doctor",
-                        "value": "Dr. Smith"
+                        "argument_name": "new_appointment_doctor",
+                        "argument_value": "Dr. Smith"
                     }
                 ]
             }
@@ -524,24 +524,24 @@
                 "tool_name": "add_meeting",
                 "arguments": [
                     {
-                        "name": "meeting_topic",
-                        "value": "Project Kickoff"
+                        "argument_name": "meeting_topic",
+                        "argument_value": "Project Kickoff"
                     },
                     {
-                        "name": "start_time",
-                        "value": "2023-02-25 09:00:00"
+                        "argument_name": "start_time",
+                        "argument_value": "2023-02-25 09:00:00"
                     },
                     {
-                        "name": "end_time",
-                        "value": "2023-02-25 11:00:00"
+                        "argument_name": "end_time",
+                        "argument_value": "2023-02-25 11:00:00"
                     },
                     {
-                        "name": "location",
-                        "value": "Conference Room"
+                        "argument_name": "location",
+                        "argument_value": "Conference Room"
                     },
                     {
-                        "name": "attendees",
-                        "value": ["John Doe", "Jane Smith"]
+                        "argument_name": "attendees",
+                        "argument_value": ["John Doe", "Jane Smith"]
                     }
                 ]
             }
@@ -554,16 +554,16 @@
                 "tool_name": "forgot_password",
                 "arguments": [
                     {
-                        "name": "status",
-                        "value": "Forgot Password"
+                        "argument_name": "status",
+                        "argument_value": "Forgot Password"
                     },
                     {
-                        "name": "username",
-                        "value": "user123"
+                        "argument_name": "username",
+                        "argument_value": "user123"
                     },
                     {
-                        "name": "email",
-                        "value": "user123@example.com"
+                        "argument_name": "email",
+                        "argument_value": "user123@example.com"
                     }
                 ]
             }
@@ -576,8 +576,8 @@
                 "tool_name": "cancel_registration",
                 "arguments": [
                     {
-                        "name": "appointment_id",
-                        "value": "app456"
+                        "argument_name": "appointment_id",
+                        "argument_value": "app456"
                     }
                 ]
             }
@@ -590,20 +590,20 @@
                 "tool_name": "query_agenda",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token789"
+                        "argument_name": "token",
+                        "argument_value": "token789"
                     },
                     {
-                        "name": "content",
-                        "value": "Meeting"
+                        "argument_name": "content",
+                        "argument_value": "Meeting"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-02-28 14:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-02-28 14:00:00"
                     },
                     {
-                        "name": "location",
-                        "value": "Board Room"
+                        "argument_name": "location",
+                        "argument_value": "Board Room"
                     }
                 ]
             }
@@ -616,12 +616,12 @@
                 "tool_name": "cancel_timed_switch",
                 "arguments": [
                     {
-                        "name": "name",
-                        "value": "SmartLamp"
+                        "argument_name": "name",
+                        "argument_value": "SmartLamp"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-03-05 22:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-03-05 22:00:00"
                     }
                 ]
             }
@@ -634,28 +634,28 @@
                 "tool_name": "book_hotel",
                 "arguments": [
                     {
-                        "name": "hotel_name",
-                        "value": "Grand Hotel"
+                        "argument_name": "hotel_name",
+                        "argument_value": "Grand Hotel"
                     },
                     {
-                        "name": "check_in_time",
-                        "value": "2023-03-10 15:00:00"
+                        "argument_name": "check_in_time",
+                        "argument_value": "2023-03-10 15:00:00"
                     },
                     {
-                        "name": "check_out_time",
-                        "value": "2023-03-15 12:00:00"
+                        "argument_name": "check_out_time",
+                        "argument_value": "2023-03-15 12:00:00"
                     },
                     {
-                        "name": "room_count",
-                        "value": 2
+                        "argument_name": "room_count",
+                        "argument_value": 2
                     },
                     {
-                        "name": "adult_count",
-                        "value": 3
+                        "argument_name": "adult_count",
+                        "argument_value": 3
                     },
                     {
-                        "name": "child_count",
-                        "value": 1
+                        "argument_name": "child_count",
+                        "argument_value": 1
                     }
                 ]
             }
@@ -668,8 +668,8 @@
                 "tool_name": "calculator",
                 "arguments": [
                     {
-                        "name": "formula",
-                        "value": "5 + 3 * 2"
+                        "argument_name": "formula",
+                        "argument_value": "5 + 3 * 2"
                     }
                 ]
             }
@@ -682,8 +682,8 @@
                 "tool_name": "query_history_today",
                 "arguments": [
                     {
-                        "name": "date",
-                        "value": "2023-11-18"
+                        "argument_name": "date",
+                        "argument_value": "2023-11-18"
                     }
                 ]
             }
@@ -696,28 +696,28 @@
                 "tool_name": "delete_meeting",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     },
                     {
-                        "name": "meeting_topic",
-                        "value": "Project Kickoff"
+                        "argument_name": "meeting_topic",
+                        "argument_value": "Project Kickoff"
                     },
                     {
-                        "name": "start_time",
-                        "value": "2023-02-25 09"
+                        "argument_name": "start_time",
+                        "argument_value": "2023-02-25 09"
                     },
                     {
-                        "name": "end_time",
-                        "value": "2023-02-25 11"
+                        "argument_name": "end_time",
+                        "argument_value": "2023-02-25 11"
                     },
                     {
-                        "name": "location",
-                        "value": "Conference Room"
+                        "argument_name": "location",
+                        "argument_value": "Conference Room"
                     },
                     {
-                        "name": "attendees",
-                        "value": ["John Doe", "Jane Smith"]
+                        "argument_name": "attendees",
+                        "argument_value": ["John Doe", "Jane Smith"]
                     }
                 ]
             }
@@ -739,28 +739,28 @@
                 "tool_name": "modifymeeting",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     },
                     {
-                        "name": "meeting_topic",
-                        "value": "Project Kickoff"
+                        "argument_name": "meeting_topic",
+                        "argument_value": "Project Kickoff"
                     },
                     {
-                        "name": "start_time",
-                        "value": "2023-02-25 09"
+                        "argument_name": "start_time",
+                        "argument_value": "2023-02-25 09"
                     },
                     {
-                        "name": "end_time",
-                        "value": "2023-02-25 11"
+                        "argument_name": "end_time",
+                        "argument_value": "2023-02-25 11"
                     },
                     {
-                        "name": "location",
-                        "value": "Conference Room"
+                        "argument_name": "location",
+                        "argument_value": "Conference Room"
                     },
                     {
-                        "name": "attendees",
-                        "value": ["John Doe", "Jane Smith"]
+                        "argument_name": "attendees",
+                        "argument_value": ["John Doe", "Jane Smith"]
                     }
                 ]
             }
@@ -773,16 +773,16 @@
                 "tool_name": "delete_reminder",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     },
                     {
-                        "name": "content",
-                        "value": "Conference"
+                        "argument_name": "content",
+                        "argument_value": "Conference"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-02-20 15:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-02-20 15:00:00"
                     }
                 ]
             }
@@ -795,20 +795,20 @@
                 "tool_name": "modify_agenda",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     },
                     {
-                        "name": "content",
-                        "value": "Meeting"
+                        "argument_name": "content",
+                        "argument_value": "Meeting"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-02-28 14:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-02-28 14:00:00"
                     },
                     {
-                        "name": "location",
-                        "value": "Board Room"
+                        "argument_name": "location",
+                        "argument_value": "Board Room"
                     }
                 ]
             }
@@ -821,16 +821,16 @@
                 "tool_name": "query_reminder",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     },
                     {
-                        "name": "content",
-                        "value": "Conference"
+                        "argument_name": "content",
+                        "argument_value": "Conference"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-02-20 15:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-02-20 15:00:00"
                     }
                 ]
             }
@@ -843,16 +843,16 @@
                 "tool_name": "modify_alarm",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     },
                     {
-                        "name": "from_time",
-                        "value": "2023-03-01 08:00:00"
+                        "argument_name": "from_time",
+                        "argument_value": "2023-03-01 08:00:00"
                     },
                     {
-                        "name": "to_time",
-                        "value": "2023-03-01 09:00:00"
+                        "argument_name": "to_time",
+                        "argument_value": "2023-03-01 09:00:00"
                     }
                 ]
             }
@@ -865,16 +865,16 @@
                 "tool_name": "add_reminder",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     },
                     {
-                        "name": "content",
-                        "value": "Meeting with Client"
+                        "argument_name": "content",
+                        "argument_value": "Meeting with Client"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-02-20 15:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-02-20 15:00:00"
                     }
                 ]
             }
@@ -887,8 +887,8 @@
                 "tool_name": "dictionary",
                 "arguments": [
                     {
-                        "name": "keyword",
-                        "value": "technology"
+                        "argument_name": "keyword",
+                        "argument_value": "technology"
                     }
                 ]
             }
@@ -901,16 +901,16 @@
                 "tool_name": "send_email",
                 "arguments": [
                     {
-                        "name": "receiver",
-                        "value": "john.doe@example.com"
+                        "argument_name": "receiver",
+                        "argument_value": "john.doe@example.com"
                     },
                     {
-                        "name": "subject",
-                        "value": "Project Update"
+                        "argument_name": "subject",
+                        "argument_value": "Project Update"
                     },
                     {
-                        "name": "content",
-                        "value": "Please find the latest project update attached."
+                        "argument_name": "content",
+                        "argument_value": "Please find the latest project update attached."
                     }
                 ]
             }
@@ -923,16 +923,16 @@
                 "tool_name": "query_health_data",
                 "arguments": [
                     {
-                        "name": "user_id",
-                        "value": "user123"
+                        "argument_name": "user_id",
+                        "argument_value": "user123"
                     },
                     {
-                        "name": "start_time",
-                        "value": "2023-02-01 00:00:00"
+                        "argument_name": "start_time",
+                        "argument_value": "2023-02-01 00:00:00"
                     },
                     {
-                        "name": "end_time",
-                        "value": "2023-02-28 23:59:59"
+                        "argument_name": "end_time",
+                        "argument_value": "2023-02-28 23:59:59"
                     }
                 ]
             }
@@ -945,8 +945,8 @@
                 "tool_name": "wiki",
                 "arguments": [
                     {
-                        "name": "keyword",
-                        "value": "artificial intelligence"
+                        "argument_name": "keyword",
+                        "argument_value": "artificial intelligence"
                     }
                 ]
             }
@@ -959,12 +959,12 @@
                 "tool_name": "get_user_token",
                 "arguments": [
                     {
-                        "name": "username",
-                        "value": "john_doe"
+                        "argument_name": "username",
+                        "argument_value": "john_doe"
                     },
                     {
-                        "name": "password",
-                        "value": "password123"
+                        "argument_name": "password",
+                        "argument_value": "password123"
                     }
                 ]
             }
@@ -977,20 +977,20 @@
                 "tool_name": "addagenda",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     },
                     {
-                        "name": "content",
-                        "value": "Team Meeting"
+                        "argument_name": "content",
+                        "argument_value": "Team Meeting"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-02-28 10:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-02-28 10:00:00"
                     },
                     {
-                        "name": "location",
-                        "value": "Conference Room"
+                        "argument_name": "location",
+                        "argument_value": "Conference Room"
                     }
                 ]
             }
@@ -1003,20 +1003,20 @@
                 "tool_name": "addagenda",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     },
                     {
-                        "name": "content",
-                        "value": "Team Meeting"
+                        "argument_name": "content",
+                        "argument_value": "Team Meeting"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-02-28 10:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-02-28 10:00:00"
                     },
                     {
-                        "name": "location",
-                        "value": "Conference Room"
+                        "argument_name": "location",
+                        "argument_value": "Conference Room"
                     }
                 ]
             }
@@ -1029,8 +1029,8 @@
                 "tool_name": "delete_account",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     }
                 ]
             }
@@ -1043,12 +1043,12 @@
                 "tool_name": "modify_scene",
                 "arguments": [
                     {
-                        "name": "name",
-                        "value": "Evening Scene"
+                        "argument_name": "name",
+                        "argument_value": "Evening Scene"
                     },
                     {
-                        "name": "devices",
-                        "value": ["Light1", "Thermostat"]
+                        "argument_name": "devices",
+                        "argument_value": ["Light1", "Thermostat"]
                     }
                 ]
             }
@@ -1061,8 +1061,8 @@
                 "tool_name": "organization_members",
                 "arguments": [
                     {
-                        "name": "organization",
-                        "value": "ABC Corp"
+                        "argument_name": "organization",
+                        "argument_value": "ABC Corp"
                     }
                 ]
             }
@@ -1075,8 +1075,8 @@
                 "tool_name": "travel_status",
                 "arguments": [
                     {
-                        "name": "member_name",
-                        "value": "Alice"
+                        "argument_name": "member_name",
+                        "argument_value": "Alice"
                     }
                 ]
             }
@@ -1089,8 +1089,8 @@
                 "tool_name": "user_movie_preferences",
                 "arguments": [
                     {
-                        "name": "user_name",
-                        "value": "movie_lover123"
+                        "argument_name": "user_name",
+                        "argument_value": "movie_lover123"
                     }
                 ]
             }
@@ -1103,12 +1103,12 @@
                 "tool_name": "account_info",
                 "arguments": [
                     {
-                        "name": "username",
-                        "value": "user123"
+                        "argument_name": "username",
+                        "argument_value": "user123"
                     },
                     {
-                        "name": "password",
-                        "value": "new_password123"
+                        "argument_name": "password",
+                        "argument_value": "new_password123"
                     }
                 ]
             }
@@ -1121,16 +1121,16 @@
                 "tool_name": "flight_search",
                 "arguments": [
                     {
-                        "name": "source",
-                        "value": "CityA"
+                        "argument_name": "source",
+                        "argument_value": "CityA"
                     },
                     {
-                        "name": "destination",
-                        "value": "CityB"
+                        "argument_name": "destination",
+                        "argument_value": "CityB"
                     },
                     {
-                        "name": "travel_dates",
-                        "value": "2023-03-15"
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-03-15"
                     }
                 ]
             }
@@ -1143,8 +1143,8 @@
                 "tool_name": "tax_calculator",
                 "arguments": [
                     {
-                        "name": "salary",
-                        "value": 50000.0
+                        "argument_name": "salary",
+                        "argument_value": 50000.0
                     }
                 ]
             }
@@ -1157,16 +1157,16 @@
                 "tool_name": "hotel_availability",
                 "arguments": [
                     {
-                        "name": "destination",
-                        "value": "ResortCity"
+                        "argument_name": "destination",
+                        "argument_value": "ResortCity"
                     },
                     {
-                        "name": "check_in_date",
-                        "value": "2023-04-10"
+                        "argument_name": "check_in_date",
+                        "argument_value": "2023-04-10"
                     },
                     {
-                        "name": "check_out_date",
-                        "value": "2023-04-15"
+                        "argument_name": "check_out_date",
+                        "argument_value": "2023-04-15"
                     }
                 ]
             }
@@ -1179,8 +1179,8 @@
                 "tool_name": "get_occupation_salary",
                 "arguments": [
                     {
-                        "name": "occupation",
-                        "value": "Software Engineer"
+                        "argument_name": "occupation",
+                        "argument_value": "Software Engineer"
                     }
                 ]
             }
@@ -1193,8 +1193,8 @@
                 "tool_name": "geocoding",
                 "arguments": [
                     {
-                        "name": "address",
-                        "value": "123 Main St, CityX"
+                        "argument_name": "address",
+                        "argument_value": "123 Main St, CityX"
                     }
                 ]
             }
@@ -1207,16 +1207,16 @@
                 "tool_name": "personal_info_update",
                 "arguments": [
                     {
-                        "name": "username",
-                        "value": "user123"
+                        "argument_name": "username",
+                        "argument_value": "user123"
                     },
                     {
-                        "name": "password",
-                        "value": "new_password"
+                        "argument_name": "password",
+                        "argument_value": "new_password"
                     },
                     {
-                        "name": "address",
-                        "value": "456 Oak St, TownY"
+                        "argument_name": "address",
+                        "argument_value": "456 Oak St, TownY"
                     }
                 ]
             }
@@ -1229,16 +1229,16 @@
                 "tool_name": "nearby_restaurants",
                 "arguments": [
                     {
-                        "name": "latitude",
-                        "value": 40.7128
+                        "argument_name": "latitude",
+                        "argument_value": 40.7128
                     },
                     {
-                        "name": "longitude",
-                        "value": -74.0060
+                        "argument_name": "longitude",
+                        "argument_value": -74.0060
                     },
                     {
-                        "name": "distance",
-                        "value": 500
+                        "argument_name": "distance",
+                        "argument_value": 500
                     }
                 ]
             }
@@ -1251,20 +1251,20 @@
                 "tool_name": "email_reminder",
                 "arguments": [
                     {
-                        "name": "content",
-                        "value": "Team Meeting"
+                        "argument_name": "content",
+                        "argument_value": "Team Meeting"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-03-01 14:30:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-03-01 14:30:00"
                     },
                     {
-                        "name": "location",
-                        "value": "Conference Room 2"
+                        "argument_name": "location",
+                        "argument_value": "Conference Room 2"
                     },
                     {
-                        "name": "recipient",
-                        "value": "john.doe@example.com"
+                        "argument_name": "recipient",
+                        "argument_value": "john.doe@example.com"
                     }
                 ]
             }
@@ -1277,8 +1277,8 @@
                 "tool_name": "user_watched_movies",
                 "arguments": [
                     {
-                        "name": "user_name",
-                        "value": "movie_buff456"
+                        "argument_name": "user_name",
+                        "argument_value": "movie_buff456"
                     }
                 ]
             }
@@ -1291,12 +1291,12 @@
                 "tool_name": "get_weather_for_coordinates",
                 "arguments": [
                     {
-                        "name": "latitude",
-                        "value": 37.7749
+                        "argument_name": "latitude",
+                        "argument_value": 37.7749
                     },
                     {
-                        "name": "longitude",
-                        "value": -122.4194
+                        "argument_name": "longitude",
+                        "argument_value": -122.4194
                     }
                 ]
             }
@@ -1309,8 +1309,8 @@
                 "tool_name": "like_count",
                 "arguments": [
                     {
-                        "name": "post_id",
-                        "value": 123
+                        "argument_name": "post_id",
+                        "argument_value": 123
                     }
                 ]
             }
@@ -1323,8 +1323,8 @@
                 "tool_name": "user_posts",
                 "arguments": [
                     {
-                        "name": "user_id",
-                        "value": 456
+                        "argument_name": "user_id",
+                        "argument_value": 456
                     }
                 ]
             }
@@ -1337,8 +1337,8 @@
                 "tool_name": "movie_recommendations",
                 "arguments": [
                     {
-                        "name": "preferences",
-                        "value": ["Action", "Comedy"]
+                        "argument_name": "preferences",
+                        "argument_value": ["Action", "Comedy"]
                     }
                 ]
             }
@@ -1351,16 +1351,16 @@
                 "tool_name": "clothing_recommendation",
                 "arguments": [
                     {
-                        "name": "temperature",
-                        "value": 25.5
+                        "argument_name": "temperature",
+                        "argument_value": 25.5
                     },
                     {
-                        "name": "humidity",
-                        "value": 60.0
+                        "argument_name": "humidity",
+                        "argument_value": 60.0
                     },
                     {
-                        "name": "weather_conditions",
-                        "value": "Sunny"
+                        "argument_name": "weather_conditions",
+                        "argument_value": "Sunny"
                     }
                 ]
             }
@@ -1374,12 +1374,12 @@
                 "tool_name": "query_stock",
                 "arguments": [
                     {
-                        "name": "stock_code",
-                        "value": "AAPL"
+                        "argument_name": "stock_code",
+                        "argument_value": "AAPL"
                     },
                     {
-                        "name": "date",
-                        "value": "2023-01-15"
+                        "argument_name": "date",
+                        "argument_value": "2023-01-15"
                     }
                 ]
             }
@@ -1392,8 +1392,8 @@
                 "tool_name": "emergency_knowledge",
                 "arguments": [
                     {
-                        "name": "symptom",
-                        "value": "chest pain"
+                        "argument_name": "symptom",
+                        "argument_value": "chest pain"
                     }
                 ]
             }
@@ -1406,12 +1406,12 @@
                 "tool_name": "delete_alarm",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "xyz123"
+                        "argument_name": "token",
+                        "argument_value": "xyz123"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-01-20 08:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-01-20 08:00:00"
                     }
                 ]
             }
@@ -1424,16 +1424,16 @@
                 "tool_name": "register_user",
                 "arguments": [
                     {
-                        "name": "username",
-                        "value": "jane_smith"
+                        "argument_name": "username",
+                        "argument_value": "jane_smith"
                     },
                     {
-                        "name": "password",
-                        "value": "securepass123"
+                        "argument_name": "password",
+                        "argument_value": "securepass123"
                     },
                     {
-                        "name": "email",
-                        "value": "jane@example.com"
+                        "argument_name": "email",
+                        "argument_value": "jane@example.com"
                     }
                 ]
             }
@@ -1446,8 +1446,8 @@
                 "tool_name": "play_music",
                 "arguments": [
                     {
-                        "name": "music_name",
-                        "value": "Calming Melody"
+                        "argument_name": "music_name",
+                        "argument_value": "Calming Melody"
                     }
                 ]
             }
@@ -1460,8 +1460,8 @@
                 "tool_name": "check_token",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token456"
+                        "argument_name": "token",
+                        "argument_value": "token456"
                     }
                 ]
             }
@@ -1474,8 +1474,8 @@
                 "tool_name": "check_token",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "securetoken789"
+                        "argument_name": "token",
+                        "argument_value": "securetoken789"
                     }
                 ]
             }
@@ -1488,8 +1488,8 @@
                 "tool_name": "query_meeting",
                 "arguments": [
                     {
-                        "name": "user_name",
-                        "value": "John_Smith"
+                        "argument_name": "user_name",
+                        "argument_value": "John_Smith"
                     }
                 ]
             }
@@ -1502,8 +1502,8 @@
                 "tool_name": "query_scene",
                 "arguments": [
                     {
-                        "name": "name",
-                        "value": "Home Office"
+                        "argument_name": "name",
+                        "argument_value": "Home Office"
                     }
                 ]
             }
@@ -1516,16 +1516,16 @@
                 "tool_name": "translate",
                 "arguments": [
                     {
-                        "name": "src",
-                        "value": "Bonjour, comment ça va?"
+                        "argument_name": "src",
+                        "argument_value": "Bonjour, comment ça va?"
                     },
                     {
-                        "name": "src_lang",
-                        "value": "auto"
+                        "argument_name": "src_lang",
+                        "argument_value": "auto"
                     },
                     {
-                        "name": "tgt_lang",
-                        "value": "es"
+                        "argument_name": "tgt_lang",
+                        "argument_value": "es"
                     }
                 ]
             }
@@ -1538,16 +1538,16 @@
                 "tool_name": "timed_switch",
                 "arguments": [
                     {
-                        "name": "name",
-                        "value": "SmartLamp"
+                        "argument_name": "name",
+                        "argument_value": "SmartLamp"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-01-25 18:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-01-25 18:00:00"
                     },
                     {
-                        "name": "on",
-                        "value": true
+                        "argument_name": "on",
+                        "argument_value": true
                     }
                 ]
             }
@@ -1560,16 +1560,16 @@
                 "tool_name": "appointment_registration",
                 "arguments": [
                     {
-                        "name": "patient_name",
-                        "value": "Bob"
+                        "argument_name": "patient_name",
+                        "argument_value": "Bob"
                     },
                     {
-                        "name": "date",
-                        "value": "2023-02-10"
+                        "argument_name": "date",
+                        "argument_value": "2023-02-10"
                     },
                     {
-                        "name": "doctor_name",
-                        "value": "Dr. Johnson"
+                        "argument_name": "doctor_name",
+                        "argument_value": "Dr. Johnson"
                     }
                 ]
             }
@@ -1582,12 +1582,12 @@
                     "tool_name": "addalarm",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "token123"
+                            "argument_name": "token",
+                            "argument_value": "token123"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-01-22 07:30:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-01-22 07:30:00"
                         }
                     ]
                 }
@@ -1600,12 +1600,12 @@
                     "tool_name": "query_alarm",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "xyz789"
+                            "argument_name": "token",
+                            "argument_value": "xyz789"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-01-22 08:00:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-01-22 08:00:00"
                         }
                     ]
                 }
@@ -1618,12 +1618,12 @@
                     "tool_name": "add_scene",
                     "arguments": [
                         {
-                            "name": "name",
-                            "value": "Warm Atmosphere"
+                            "argument_name": "name",
+                            "argument_value": "Warm Atmosphere"
                         },
                         {
-                            "name": "devices",
-                            "value": ["SmartLamp", "SmartSpeaker", "SmartThermostat"]
+                            "argument_name": "devices",
+                            "argument_value": ["SmartLamp", "SmartSpeaker", "SmartThermostat"]
                         }
                     ]
                 }
@@ -1636,8 +1636,8 @@
                     "tool_name": "image_caption",
                     "arguments": [
                         {
-                            "name": "url",
-                            "value": "https://example.com/photo.jpg"
+                            "argument_name": "url",
+                            "argument_value": "https://example.com/photo.jpg"
                         }
                     ]
                 }
@@ -1650,8 +1650,8 @@
                     "tool_name": "speech_recognition",
                     "arguments": [
                         {
-                            "name": "url",
-                            "value": "https://example.com/voice.wav"
+                            "argument_name": "url",
+                            "argument_value": "https://example.com/voice.wav"
                         }
                     ]
                 }
@@ -1664,20 +1664,20 @@
                     "tool_name": "delete_agenda",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "abc987"
+                            "argument_name": "token",
+                            "argument_value": "abc987"
                         },
                         {
-                            "name": "content",
-                            "value": "Team Meeting"
+                            "argument_name": "content",
+                            "argument_value": "Team Meeting"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-01-20 10:00:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-01-20 10:00:00"
                         },
                         {
-                            "name": "location",
-                            "value": "Conference Room"
+                            "argument_name": "location",
+                            "argument_value": "Conference Room"
                         }
                     ]
                 }
@@ -1690,8 +1690,8 @@
                     "tool_name": "symptomsearch",
                     "arguments": [
                         {
-                            "name": "symptom",
-                            "value": "migraine"
+                            "argument_name": "symptom",
+                            "argument_value": "migraine"
                         }
                     ]
                 }
@@ -1704,8 +1704,8 @@
                     "tool_name": "symptomsearch",
                     "arguments": [
                         {
-                            "name": "symptom",
-                            "value": "migraine"
+                            "argument_name": "symptom",
+                            "argument_value": "migraine"
                         }
                     ]
                 }
@@ -1718,8 +1718,8 @@
                     "tool_name": "delete_scene",
                     "arguments": [
                         {
-                            "name": "name",
-                            "value": "Backyard Oasis"
+                            "argument_name": "name",
+                            "argument_value": "Backyard Oasis"
                         }
                     ]
                 }
@@ -1732,8 +1732,8 @@
                     "tool_name": "search_engine",
                     "arguments": [
                         {
-                            "name": "keyword",
-                            "value": "innovation"
+                            "argument_name": "keyword",
+                            "argument_value": "innovation"
                         }
                     ]
                 }
@@ -1746,8 +1746,8 @@
                     "tool_name": "search_engine",
                     "arguments": [
                         {
-                            "name": "keyword",
-                            "value": "innovation"
+                            "argument_name": "keyword",
+                            "argument_value": "innovation"
                         }
                     ]
                 }
@@ -1760,16 +1760,16 @@
                     "tool_name": "modify_password",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "xyz789"
+                            "argument_name": "token",
+                            "argument_value": "xyz789"
                         },
                         {
-                            "name": "old_password",
-                            "value": "oldpassword"
+                            "argument_name": "old_password",
+                            "argument_value": "oldpassword"
                         },
                         {
-                            "name": "new_password",
-                            "value": "newpassword"
+                            "argument_name": "new_password",
+                            "argument_value": "newpassword"
                         }
                     ]
                 }
@@ -1782,12 +1782,12 @@
                     "tool_name": "document_q_a",
                     "arguments": [
                         {
-                            "name": "url",
-                            "value": "https://example.com/data.txt"
+                            "argument_name": "url",
+                            "argument_value": "https://example.com/data.txt"
                         },
                         {
-                            "name": "question",
-                            "value": "Which city is the capital of Japan?"
+                            "argument_name": "question",
+                            "argument_value": "Which city is the capital of Japan?"
                         }
                     ]
                 }
@@ -1801,8 +1801,8 @@
                     "tool_name": "query_balance",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "abc789"
+                            "argument_name": "token",
+                            "argument_value": "abc789"
                         }
                     ]
                 }
@@ -1815,16 +1815,16 @@
                     "tool_name": "record_health_data",
                     "arguments": [
                         {
-                            "name": "user_id",
-                            "value": "user456"
+                            "argument_name": "user_id",
+                            "argument_value": "user456"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-02-01 08:45:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-02-01 08:45:00"
                         },
                         {
-                            "name": "health_data",
-                            "value": {"blood_pressure": "120/80", "steps_count": 8000}
+                            "argument_name": "health_data",
+                            "argument_value": {"blood_pressure": "120/80", "steps_count": 8000}
                         }
                     ]
                 }
@@ -1837,16 +1837,16 @@
                     "tool_name": "open_bank_account",
                     "arguments": [
                         {
-                            "name": "account",
-                            "value": "789012"
+                            "argument_name": "account",
+                            "argument_value": "789012"
                         },
                         {
-                            "name": "password",
-                            "value": "securepass"
+                            "argument_name": "password",
+                            "argument_value": "securepass"
                         },
                         {
-                            "name": "name",
-                            "value": "Jane Doe"
+                            "argument_name": "name",
+                            "argument_value": "Jane Doe"
                         }
                     ]
                 }
@@ -1859,12 +1859,12 @@
                     "tool_name": "query_registration",
                     "arguments": [
                         {
-                            "name": "patient_name",
-                            "value": "Jane Smith"
+                            "argument_name": "patient_name",
+                            "argument_value": "Jane Smith"
                         },
                         {
-                            "name": "date",
-                            "value": "2023-03-10"
+                            "argument_name": "date",
+                            "argument_value": "2023-03-10"
                         }
                     ]
                 }
@@ -1877,16 +1877,16 @@
                     "tool_name": "modify_reminder",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "user789"
+                            "argument_name": "token",
+                            "argument_value": "user789"
                         },
                         {
-                            "name": "content",
-                            "value": "Team Briefing"
+                            "argument_name": "content",
+                            "argument_value": "Team Briefing"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-03-15 11:30:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-03-15 11:30:00"
                         }
                     ]
                 }
@@ -1899,16 +1899,16 @@
                     "tool_name": "modify_registration",
                     "arguments": [
                         {
-                            "name": "appointment_id",
-                            "value": "app789"
+                            "argument_name": "appointment_id",
+                            "argument_value": "app789"
                         },
                         {
-                            "name": "new_appointment_date",
-                            "value": "2023-04-01"
+                            "argument_name": "new_appointment_date",
+                            "argument_value": "2023-04-01"
                         },
                         {
-                            "name": "new_appointment_doctor",
-                            "value": "Dr. Johnson"
+                            "argument_name": "new_appointment_doctor",
+                            "argument_value": "Dr. Johnson"
                         }
                     ]
                 }
@@ -1921,24 +1921,24 @@
                     "tool_name": "add_meeting",
                     "arguments": [
                         {
-                            "name": "meeting_topic",
-                            "value": "Product Launch"
+                            "argument_name": "meeting_topic",
+                            "argument_value": "Product Launch"
                         },
                         {
-                            "name": "start_time",
-                            "value": "2023-03-01 10:00:00"
+                            "argument_name": "start_time",
+                            "argument_value": "2023-03-01 10:00:00"
                         },
                         {
-                            "name": "end_time",
-                            "value": "2023-03-01 12:00:00"
+                            "argument_name": "end_time",
+                            "argument_value": "2023-03-01 12:00:00"
                         },
                         {
-                            "name": "location",
-                            "value": "Meeting Room"
+                            "argument_name": "location",
+                            "argument_value": "Meeting Room"
                         },
                         {
-                            "name": "attendees",
-                            "value": ["John Smith", "Jane Doe"]
+                            "argument_name": "attendees",
+                            "argument_value": ["John Smith", "Jane Doe"]
                         }
                     ]
                 }
@@ -1951,16 +1951,16 @@
                     "tool_name": "forgot_password",
                     "arguments": [
                         {
-                            "name": "status",
-                            "value": "Forgot Password"
+                            "argument_name": "status",
+                            "argument_value": "Forgot Password"
                         },
                         {
-                            "name": "username",
-                            "value": "user456"
+                            "argument_name": "username",
+                            "argument_value": "user456"
                         },
                         {
-                            "name": "email",
-                            "value": "user456@example.com"
+                            "argument_name": "email",
+                            "argument_value": "user456@example.com"
                         }
                     ]
                 }
@@ -1973,8 +1973,8 @@
                     "tool_name": "cancel_registration",
                     "arguments": [
                         {
-                            "name": "appointment_id",
-                            "value": "app789"
+                            "argument_name": "appointment_id",
+                            "argument_value": "app789"
                         }
                     ]
                 }
@@ -1987,20 +1987,20 @@
                     "tool_name": "query_agenda",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "token789"
+                            "argument_name": "token",
+                            "argument_value": "token789"
                         },
                         {
-                            "name": "content",
-                            "value": "Team Discussion"
+                            "argument_name": "content",
+                            "argument_value": "Team Discussion"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-03-10 14:00:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-03-10 14:00:00"
                         },
                         {
-                            "name": "location",
-                            "value": "Conference Hall"
+                            "argument_name": "location",
+                            "argument_value": "Conference Hall"
                         }
                     ]
                 }
@@ -2013,16 +2013,16 @@
                     "tool_name": "delete_reminder",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "token789"
+                            "argument_name": "token",
+                            "argument_value": "token789"
                         },
                         {
-                            "name": "content",
-                            "value": "Team Meeting"
+                            "argument_name": "content",
+                            "argument_value": "Team Meeting"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-03-10 16:30:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-03-10 16:30:00"
                         }
                     ]
                 }
@@ -2035,20 +2035,20 @@
                     "tool_name": "modify_agenda",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "token789"
+                            "argument_name": "token",
+                            "argument_value": "token789"
                         },
                         {
-                            "name": "content",
-                            "value": "Client Meeting"
+                            "argument_name": "content",
+                            "argument_value": "Client Meeting"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-03-15 09:00:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-03-15 09:00:00"
                         },
                         {
-                            "name": "location",
-                            "value": "Board Room"
+                            "argument_name": "location",
+                            "argument_value": "Board Room"
                         }
                     ]
                 }
@@ -2061,28 +2061,28 @@
                     "tool_name": "delete_meeting",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "token123"
+                            "argument_name": "token",
+                            "argument_value": "token123"
                         },
                         {
-                            "name": "meeting_topic",
-                            "value": "Project Kickoff"
+                            "argument_name": "meeting_topic",
+                            "argument_value": "Project Kickoff"
                         },
                         {
-                            "name": "start_time",
-                            "value": "2023-02-25 09:00:00"
+                            "argument_name": "start_time",
+                            "argument_value": "2023-02-25 09:00:00"
                         },
                         {
-                            "name": "end_time",
-                            "value": "2023-02-25 11:00:00"
+                            "argument_name": "end_time",
+                            "argument_value": "2023-02-25 11:00:00"
                         },
                         {
-                            "name": "location",
-                            "value": "Conference Room"
+                            "argument_name": "location",
+                            "argument_value": "Conference Room"
                         },
                         {
-                            "name": "attendees",
-                            "value": ["John Doe", "Jane Smith"]
+                            "argument_name": "attendees",
+                            "argument_value": ["John Doe", "Jane Smith"]
                         }
                     ]
                 }
@@ -2095,12 +2095,12 @@
                     "tool_name": "cancel_timed_switch",
                     "arguments": [
                         {
-                            "name": "name",
-                            "value": "SmartDesk"
+                            "argument_name": "name",
+                            "argument_value": "SmartDesk"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-03-10 18:30:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-03-10 18:30:00"
                         }
                     ]
                 }
@@ -2113,28 +2113,28 @@
                     "tool_name": "book_hotel",
                     "arguments": [
                         {
-                            "name": "hotel_name",
-                            "value": "Luxury Resort"
+                            "argument_name": "hotel_name",
+                            "argument_value": "Luxury Resort"
                         },
                         {
-                            "name": "check_in_time",
-                            "value": "2023-03-15 14:00:00"
+                            "argument_name": "check_in_time",
+                            "argument_value": "2023-03-15 14:00:00"
                         },
                         {
-                            "name": "check_out_time",
-                            "value": "2023-03-20 12:00:00"
+                            "argument_name": "check_out_time",
+                            "argument_value": "2023-03-20 12:00:00"
                         },
                         {
-                            "name": "room_count",
-                            "value": 2
+                            "argument_name": "room_count",
+                            "argument_value": 2
                         },
                         {
-                            "name": "adult_count",
-                            "value": 4
+                            "argument_name": "adult_count",
+                            "argument_value": 4
                         },
                         {
-                            "name": "child_count",
-                            "value": 2
+                            "argument_name": "child_count",
+                            "argument_value": 2
                         }
                     ]
                 }
@@ -2147,8 +2147,8 @@
                     "tool_name": "calculator",
                     "arguments": [
                         {
-                            "name": "formula",
-                            "value": "8 - 2 * 3"
+                            "argument_name": "formula",
+                            "argument_value": "8 - 2 * 3"
                         }
                     ]
                 }
@@ -2161,8 +2161,8 @@
                     "tool_name": "query_history_today",
                     "arguments": [
                         {
-                            "name": "date",
-                            "value": "2023-03-05"
+                            "argument_name": "date",
+                            "argument_value": "2023-03-05"
                         }
                     ]
                 }
@@ -2175,28 +2175,28 @@
                     "tool_name": "delete_meeting",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "user456"
+                            "argument_name": "token",
+                            "argument_value": "user456"
                         },
                         {
-                            "name": "meeting_topic",
-                            "value": "Team Building"
+                            "argument_name": "meeting_topic",
+                            "argument_value": "Team Building"
                         },
                         {
-                            "name": "start_time",
-                            "value": "2023-03-01 14:00:00"
+                            "argument_name": "start_time",
+                            "argument_value": "2023-03-01 14:00:00"
                         },
                         {
-                            "name": "end_time",
-                            "value": "2023-03-01 16:00:00"
+                            "argument_name": "end_time",
+                            "argument_value": "2023-03-01 16:00:00"
                         },
                         {
-                            "name": "location",
-                            "value": "Conference Hall"
+                            "argument_name": "location",
+                            "argument_value": "Conference Hall"
                         },
                         {
-                            "name": "attendees",
-                            "value": ["Alice Johnson", "Bob Smith"]
+                            "argument_name": "attendees",
+                            "argument_value": ["Alice Johnson", "Bob Smith"]
                         }
                     ]
                 }
@@ -2218,28 +2218,28 @@
                     "tool_name": "modifymeeting",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "token789"
+                            "argument_name": "token",
+                            "argument_value": "token789"
                         },
                         {
-                            "name": "meeting_topic",
-                            "value": "Project Review"
+                            "argument_name": "meeting_topic",
+                            "argument_value": "Project Review"
                         },
                         {
-                            "name": "start_time",
-                            "value": "2023-03-05 10:00:00"
+                            "argument_name": "start_time",
+                            "argument_value": "2023-03-05 10:00:00"
                         },
                         {
-                            "name": "end_time",
-                            "value": "2023-03-05 12:00:00"
+                            "argument_name": "end_time",
+                            "argument_value": "2023-03-05 12:00:00"
                         },
                         {
-                            "name": "location",
-                            "value": "Meeting Room 2"
+                            "argument_name": "location",
+                            "argument_value": "Meeting Room 2"
                         },
                         {
-                            "name": "attendees",
-                            "value": ["John Doe", "Jane Smith"]
+                            "argument_name": "attendees",
+                            "argument_value": ["John Doe", "Jane Smith"]
                         }
                     ]
                 }
@@ -2254,16 +2254,16 @@
                     "tool_name": "query_reminder",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "token123"
+                            "argument_name": "token",
+                            "argument_value": "token123"
                         },
                         {
-                            "name": "content",
-                            "value": "Conference"
+                            "argument_name": "content",
+                            "argument_value": "Conference"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-02-20 15:00:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-02-20 15:00:00"
                         }
                     ]
                 }
@@ -2276,16 +2276,16 @@
                     "tool_name": "modify_alarm",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "token123"
+                            "argument_name": "token",
+                            "argument_value": "token123"
                         },
                         {
-                            "name": "from_time",
-                            "value": "2023-03-01 08:00:00"
+                            "argument_name": "from_time",
+                            "argument_value": "2023-03-01 08:00:00"
                         },
                         {
-                            "name": "to_time",
-                            "value": "2023-03-01 09:00:00"
+                            "argument_name": "to_time",
+                            "argument_value": "2023-03-01 09:00:00"
                         }
                     ]
                 }
@@ -2298,16 +2298,16 @@
                     "tool_name": "add_reminder",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "token123"
+                            "argument_name": "token",
+                            "argument_value": "token123"
                         },
                         {
-                            "name": "content",
-                            "value": "Meeting with Client"
+                            "argument_name": "content",
+                            "argument_value": "Meeting with Client"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-02-20 15:00:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-02-20 15:00:00"
                         }
                     ]
                 }
@@ -2320,8 +2320,8 @@
                     "tool_name": "dictionary",
                     "arguments": [
                         {
-                            "name": "keyword",
-                            "value": "technology"
+                            "argument_name": "keyword",
+                            "argument_value": "technology"
                         }
                     ]
                 }
@@ -2334,16 +2334,16 @@
                     "tool_name": "send_email",
                     "arguments": [
                         {
-                            "name": "receiver",
-                            "value": "john.doe@example.com"
+                            "argument_name": "receiver",
+                            "argument_value": "john.doe@example.com"
                         },
                         {
-                            "name": "subject",
-                            "value": "Project Update"
+                            "argument_name": "subject",
+                            "argument_value": "Project Update"
                         },
                         {
-                            "name": "content",
-                            "value": "Please find the latest project update attached."
+                            "argument_name": "content",
+                            "argument_value": "Please find the latest project update attached."
                         }
                     ]
                 }
@@ -2356,16 +2356,16 @@
                     "tool_name": "query_health_data",
                     "arguments": [
                         {
-                            "name": "user_id",
-                            "value": "user123"
+                            "argument_name": "user_id",
+                            "argument_value": "user123"
                         },
                         {
-                            "name": "start_time",
-                            "value": "2023-02-01 00:00:00"
+                            "argument_name": "start_time",
+                            "argument_value": "2023-02-01 00:00:00"
                         },
                         {
-                            "name": "end_time",
-                            "value": "2023-02-28 23:59:59"
+                            "argument_name": "end_time",
+                            "argument_value": "2023-02-28 23:59:59"
                         }
                     ]
                 }
@@ -2378,8 +2378,8 @@
                     "tool_name": "wiki",
                     "arguments": [
                         {
-                            "name": "keyword",
-                            "value": "artificial intelligence"
+                            "argument_name": "keyword",
+                            "argument_value": "artificial intelligence"
                         }
                     ]
                 }
@@ -2392,12 +2392,12 @@
                     "tool_name": "get_user_token",
                     "arguments": [
                         {
-                            "name": "username",
-                            "value": "john_doe"
+                            "argument_name": "username",
+                            "argument_value": "john_doe"
                         },
                         {
-                            "name": "password",
-                            "value": "password123"
+                            "argument_name": "password",
+                            "argument_value": "password123"
                         }
                     ]
                 }
@@ -2410,20 +2410,20 @@
                     "tool_name": "addagenda",
                     "arguments": [
                         {
-                            "name": "token",
-                            "value": "token123"
+                            "argument_name": "token",
+                            "argument_value": "token123"
                         },
                         {
-                            "name": "content",
-                            "value": "Team Meeting"
+                            "argument_name": "content",
+                            "argument_value": "Team Meeting"
                         },
                         {
-                            "name": "time",
-                            "value": "2023-02-28 10:00:00"
+                            "argument_name": "time",
+                            "argument_value": "2023-02-28 10:00:00"
                         },
                         {
-                            "name": "location",
-                            "value": "Conference Room"
+                            "argument_name": "location",
+                            "argument_value": "Conference Room"
                         }
                     ]
                 }
@@ -2436,8 +2436,8 @@
                     "tool_name": "dictionary",
                     "arguments": [
                         {
-                            "name": "keyword",
-                            "value": "technology"
+                            "argument_name": "keyword",
+                            "argument_value": "technology"
                         }
                     ]
                 }
@@ -2452,8 +2452,8 @@
                 "tool_name": "delete_account",
                 "arguments": [
                     {
-                        "name": "token",
-                        "value": "token123"
+                        "argument_name": "token",
+                        "argument_value": "token123"
                     }
                 ]
             }
@@ -2466,12 +2466,12 @@
                 "tool_name": "modify_scene",
                 "arguments": [
                     {
-                        "name": "name",
-                        "value": "Evening Scene"
+                        "argument_name": "name",
+                        "argument_value": "Evening Scene"
                     },
                     {
-                        "name": "devices",
-                        "value": ["Light1", "Thermostat"]
+                        "argument_name": "devices",
+                        "argument_value": ["Light1", "Thermostat"]
                     }
                 ]
             }
@@ -2484,8 +2484,8 @@
                 "tool_name": "organization_members",
                 "arguments": [
                     {
-                        "name": "organization",
-                        "value": "ABC Corp"
+                        "argument_name": "organization",
+                        "argument_value": "ABC Corp"
                     }
                 ]
             }
@@ -2498,8 +2498,8 @@
                 "tool_name": "travel_status",
                 "arguments": [
                     {
-                        "name": "member_name",
-                        "value": "Alice"
+                        "argument_name": "member_name",
+                        "argument_value": "Alice"
                     }
                 ]
             }
@@ -2512,8 +2512,8 @@
                 "tool_name": "user_movie_preferences",
                 "arguments": [
                     {
-                        "name": "user_name",
-                        "value": "movie_lover123"
+                        "argument_name": "user_name",
+                        "argument_value": "movie_lover123"
                     }
                 ]
             }
@@ -2526,12 +2526,12 @@
                 "tool_name": "account_info",
                 "arguments": [
                     {
-                        "name": "username",
-                        "value": "user123"
+                        "argument_name": "username",
+                        "argument_value": "user123"
                     },
                     {
-                        "name": "password",
-                        "value": "new_password123"
+                        "argument_name": "password",
+                        "argument_value": "new_password123"
                     }
                 ]
             }
@@ -2544,16 +2544,16 @@
                 "tool_name": "flight_search",
                 "arguments": [
                     {
-                        "name": "source",
-                        "value": "CityA"
+                        "argument_name": "source",
+                        "argument_value": "CityA"
                     },
                     {
-                        "name": "destination",
-                        "value": "CityB"
+                        "argument_name": "destination",
+                        "argument_value": "CityB"
                     },
                     {
-                        "name": "travel_dates",
-                        "value": "2023-03-15"
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-03-15"
                     }
                 ]
             }
@@ -2566,8 +2566,8 @@
                 "tool_name": "tax_calculator",
                 "arguments": [
                     {
-                        "name": "salary",
-                        "value": 50000.0
+                        "argument_name": "salary",
+                        "argument_value": 50000.0
                     }
                 ]
             }
@@ -2580,16 +2580,16 @@
                 "tool_name": "hotel_availability",
                 "arguments": [
                     {
-                        "name": "destination",
-                        "value": "ResortCity"
+                        "argument_name": "destination",
+                        "argument_value": "ResortCity"
                     },
                     {
-                        "name": "check_in_date",
-                        "value": "2023-04-10"
+                        "argument_name": "check_in_date",
+                        "argument_value": "2023-04-10"
                     },
                     {
-                        "name": "check_out_date",
-                        "value": "2023-04-15"
+                        "argument_name": "check_out_date",
+                        "argument_value": "2023-04-15"
                     }
                 ]
             }
@@ -2602,8 +2602,8 @@
                 "tool_name": "get_occupation_salary",
                 "arguments": [
                     {
-                        "name": "occupation",
-                        "value": "Software Engineer"
+                        "argument_name": "occupation",
+                        "argument_value": "Software Engineer"
                     }
                 ]
             }
@@ -2616,8 +2616,8 @@
                 "tool_name": "geocoding",
                 "arguments": [
                     {
-                        "name": "address",
-                        "value": "123 Main St, CityX"
+                        "argument_name": "address",
+                        "argument_value": "123 Main St, CityX"
                     }
                 ]
             }
@@ -2630,16 +2630,16 @@
                 "tool_name": "personal_info_update",
                 "arguments": [
                     {
-                        "name": "username",
-                        "value": "new_user789"
+                        "argument_name": "username",
+                        "argument_value": "new_user789"
                     },
                     {
-                        "name": "password",
-                        "value": "updated_password"
+                        "argument_name": "password",
+                        "argument_value": "updated_password"
                     },
                     {
-                        "name": "address",
-                        "value": "789 Elm St, CityZ"
+                        "argument_name": "address",
+                        "argument_value": "789 Elm St, CityZ"
                     }
                 ]
             }
@@ -2652,16 +2652,16 @@
                 "tool_name": "nearby_cafes",
                 "arguments": [
                     {
-                        "name": "latitude",
-                        "value": 41.8781
+                        "argument_name": "latitude",
+                        "argument_value": 41.8781
                     },
                     {
-                        "name": "longitude",
-                        "value": -87.6298
+                        "argument_name": "longitude",
+                        "argument_value": -87.6298
                     },
                     {
-                        "name": "distance",
-                        "value": 500
+                        "argument_name": "distance",
+                        "argument_value": 500
                     }
                 ]
             }
@@ -2674,20 +2674,20 @@
                 "tool_name": "email_reminder",
                 "arguments": [
                     {
-                        "name": "content",
-                        "value": "Project Kickoff"
+                        "argument_name": "content",
+                        "argument_value": "Project Kickoff"
                     },
                     {
-                        "name": "time",
-                        "value": "2023-03-15 15:00:00"
+                        "argument_name": "time",
+                        "argument_value": "2023-03-15 15:00:00"
                     },
                     {
-                        "name": "location",
-                        "value": "Room 101"
+                        "argument_name": "location",
+                        "argument_value": "Room 101"
                     },
                     {
-                        "name": "recipient",
-                        "value": "jane.doe@example.com"
+                        "argument_name": "recipient",
+                        "argument_value": "jane.doe@example.com"
                     }
                 ]
             }
@@ -2700,8 +2700,8 @@
                 "tool_name": "user_watched_movies",
                 "arguments": [
                     {
-                        "name": "user_name",
-                        "value": "film_enthusiast789"
+                        "argument_name": "user_name",
+                        "argument_value": "film_enthusiast789"
                     }
                 ]
             }
@@ -2714,12 +2714,12 @@
                 "tool_name": "get_weather_for_coordinates",
                 "arguments": [
                     {
-                        "name": "latitude",
-                        "value": 34.0522
+                        "argument_name": "latitude",
+                        "argument_value": 34.0522
                     },
                     {
-                        "name": "longitude",
-                        "value": -118.2437
+                        "argument_name": "longitude",
+                        "argument_value": -118.2437
                     }
                 ]
             }
@@ -2732,8 +2732,8 @@
                 "tool_name": "like_count",
                 "arguments": [
                     {
-                        "name": "post_id",
-                        "value": 789
+                        "argument_name": "post_id",
+                        "argument_value": 789
                     }
                 ]
             }
@@ -2746,8 +2746,8 @@
                 "tool_name": "user_posts",
                 "arguments": [
                     {
-                        "name": "user_id",
-                        "value": 789
+                        "argument_name": "user_id",
+                        "argument_value": 789
                     }
                 ]
             }
@@ -2760,8 +2760,8 @@
                 "tool_name": "movie_recommendations",
                 "arguments": [
                     {
-                        "name": "preferences",
-                        "value": ["Drama", "Sci-Fi"]
+                        "argument_name": "preferences",
+                        "argument_value": ["Drama", "Sci-Fi"]
                     }
                 ]
             }
@@ -2774,16 +2774,16 @@
                 "tool_name": "clothing_recommendation",
                 "arguments": [
                     {
-                        "name": "temperature",
-                        "value": 20.0
+                        "argument_name": "temperature",
+                        "argument_value": 20.0
                     },
                     {
-                        "name": "humidity",
-                        "value": 55.0
+                        "argument_name": "humidity",
+                        "argument_value": 55.0
                     },
                     {
-                        "name": "weather_conditions",
-                        "value": "Clear"
+                        "argument_name": "weather_conditions",
+                        "argument_value": "Clear"
                     }
                 ]
             }

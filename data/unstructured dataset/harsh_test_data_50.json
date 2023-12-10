@@ -1519,12 +1519,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Bug Report Submitted"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Bug Report Submitted"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Assign to Appropriate Team"
                             },
@@ -1534,15 +1534,15 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "QA-789",
                             "QA-234"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -1557,12 +1557,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Feature Request Submitted"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Feature Request Submitted"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Assign to Appropriate Team"
                             },
@@ -1572,15 +1572,15 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "PM-111",
                             "PM-222"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -1595,12 +1595,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Support Ticket Created"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Support Ticket Created"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Assign to Appropriate Team"
                             },
@@ -1610,15 +1610,15 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "SUPPORT-333",
                             "SUPPORT-444"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -1633,12 +1633,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Task Assigned"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Task Assigned"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Assign to Appropriate Team"
                             },
@@ -1648,15 +1648,15 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "TEAM-ABC",
                             "TEAM-XYZ"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -1671,12 +1671,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Change Request Submitted"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Change Request Submitted"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Assign to Appropriate Team"
                             },
@@ -1686,15 +1686,15 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "CR-567",
                             "CR-789"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -1922,12 +1922,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Bug fix completed"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Bug fix completed"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Run Regression Tests"
                             },
@@ -1937,14 +1937,14 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "QA-456"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -1959,12 +1959,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Feature implemented"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Feature implemented"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Update Project Status"
                             },
@@ -1974,14 +1974,14 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "PM-789"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -1996,12 +1996,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Test case passed"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Test case passed"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Close Jira Tickets"
                             },
@@ -2011,14 +2011,14 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "QA-123"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2033,12 +2033,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Deployment successful"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Deployment successful"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Monitor Server Performance"
                             },
@@ -2048,14 +2048,14 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "OPS-789"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2070,12 +2070,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Security scan passed"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Security scan passed"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Generate Security Report"
                             },
@@ -2085,14 +2085,14 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "SEC-456"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }

@@ -1537,12 +1537,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-789"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-789"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 12
+                        "argument_name": "estimated_effort",
+                        "argument_value": 12
                     }
                 ]
             }
@@ -1557,12 +1557,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-789"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-789"
                     },
                     {
-                        "name": "estimated_effort",
-                        "value": 8
+                        "argument_name": "estimated_effort",
+                        "argument_value": 8
                     }
                 ]
             }
@@ -1619,32 +1619,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "enhancement"
+                        "argument_name": "work_item_type",
+                        "argument_value": "enhancement"
                     },
                     {
-                        "name": "title",
-                        "value": "Improve User Interface"
+                        "argument_name": "title",
+                        "argument_value": "Improve User Interface"
                     },
                     {
-                        "name": "description",
-                        "value": "Enhance the user interface to provide a more user-friendly experience."
+                        "argument_name": "description",
+                        "argument_value": "Enhance the user interface to provide a more user-friendly experience."
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-789"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-789"
                     },
                     {
-                        "name": "priority",
-                        "value": "medium"
+                        "argument_name": "priority",
+                        "argument_value": "medium"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-11-30"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-11-30"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "ui",
                             "enhancement"
                         ]
@@ -2040,7 +2040,7 @@
                 "tool_name": "works_list",
                 "arguments": [
                     {
-                        "name": "stage.name",
+                        "argument_name": "stage.name",
                         "description": "Filters for records in the provided stage(s) by name",
                         "type": "array of strings",
                         "example": [
@@ -2048,7 +2048,7 @@
                         ]
                     },
                     {
-                        "name": "owned_by",
+                        "argument_name": "owned_by",
                         "description": "Filters for work owned by any of these users",
                         "type": "array of strings",
                         "example": [
@@ -2056,7 +2056,7 @@
                         ]
                     },
                     {
-                        "name": "type",
+                        "argument_name": "type",
                         "description": "Filters for work of the provided types. Allowed values: issue, ticket, task",
                         "type": "array of strings",
                         "example": [
@@ -2076,12 +2076,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-456"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-456"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "DEVU-789"
+                        "argument_name": "new_assignee",
+                        "argument_value": "DEVU-789"
                     }
                 ]
             }
@@ -2132,20 +2132,20 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-567"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-567"
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-123"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-123"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-31"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-31"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     }
                 ]
             }
@@ -2226,12 +2226,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-123"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-123"
                     },
                     {
-                        "name": "new_assignee",
-                        "value": "DEVU-456"
+                        "argument_name": "new_assignee",
+                        "argument_value": "DEVU-456"
                     }
                 ]
             }
@@ -2330,12 +2330,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-123"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-123"
                     },
                     {
-                        "name": "dependencies",
-                        "value": [
+                        "argument_name": "dependencies",
+                        "argument_value": [
                             "TASK-456",
                             "TASK-789"
                         ]
@@ -2395,12 +2395,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-123"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-123"
                     },
                     {
-                        "name": "dependencies",
-                        "value": [
+                        "argument_name": "dependencies",
+                        "argument_value": [
                             "TASK-789",
                             "TASK-876"
                         ]
@@ -2502,32 +2502,32 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project XYZ"
+                        "argument_name": "project_name",
+                        "argument_value": "Project XYZ"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Development of a cutting-edge software solution."
+                        "argument_name": "project_description",
+                        "argument_value": "Development of a cutting-edge software solution."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "DEVU-789"
+                        "argument_name": "project_lead",
+                        "argument_value": "DEVU-789"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-01-15"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-01-15"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "DEVU-789",
                             "DEVU-456",
                             "DEVU-123"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2023-06-30"
+                        "argument_name": "target_date",
+                        "argument_value": "2023-06-30"
                     }
                 ]
             }
@@ -2728,24 +2728,24 @@
                 "tool_name": "assign_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-987"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-987"
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-789"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-789"
                     },
                     {
-                        "name": "priority",
-                        "value": "high"
+                        "argument_name": "priority",
+                        "argument_value": "high"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-15"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-15"
                     },
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     }
                 ]
             }
@@ -2814,31 +2814,31 @@
                 "tool_name": "create_project",
                 "arguments": [
                     {
-                        "name": "project_name",
-                        "value": "Project ABC"
+                        "argument_name": "project_name",
+                        "argument_value": "Project ABC"
                     },
                     {
-                        "name": "project_description",
-                        "value": "Enhancing user experience for our mobile app."
+                        "argument_name": "project_description",
+                        "argument_value": "Enhancing user experience for our mobile app."
                     },
                     {
-                        "name": "project_lead",
-                        "value": "DEVU-456"
+                        "argument_name": "project_lead",
+                        "argument_value": "DEVU-456"
                     },
                     {
-                        "name": "start_date",
-                        "value": "2023-03-01"
+                        "argument_name": "start_date",
+                        "argument_value": "2023-03-01"
                     },
                     {
-                        "name": "project_team",
-                        "value": [
+                        "argument_name": "project_team",
+                        "argument_value": [
                             "DEVU-456",
                             "DEVU-789"
                         ]
                     },
                     {
-                        "name": "target_date",
-                        "value": "2023-09-30"
+                        "argument_name": "target_date",
+                        "argument_value": "2023-09-30"
                     }
                 ]
             }
@@ -2943,28 +2943,28 @@
                 "tool_name": "create_sprint",
                 "arguments": [
                     {
-                        "name": "project_id",
-                        "value": "PROJ-789"
+                        "argument_name": "project_id",
+                        "argument_value": "PROJ-789"
                     },
                     {
-                        "name": "sprint_name",
-                        "value": "Sprint 2"
+                        "argument_name": "sprint_name",
+                        "argument_value": "Sprint 2"
                     },
                     {
-                        "name": "sprint_duration",
-                        "value": "3 weeks"
+                        "argument_name": "sprint_duration",
+                        "argument_value": "3 weeks"
                     },
                     {
-                        "name": "sprint_goals",
-                        "value": "User Story Implementations"
+                        "argument_name": "sprint_goals",
+                        "argument_value": "User Story Implementations"
                     },
                     {
-                        "name": "sprint_capacity",
-                        "value": 60
+                        "argument_name": "sprint_capacity",
+                        "argument_value": 60
                     },
                     {
-                        "name": "backlog_items",
-                        "value": [
+                        "argument_name": "backlog_items",
+                        "argument_value": [
                             "STORY-789",
                             "STORY-123"
                         ]
@@ -3467,20 +3467,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TC-456"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TC-456"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -3717,20 +3717,20 @@
                 "tool_name": "code_review_feedback",
                 "arguments": [
                     {
-                        "name": "review_id",
-                        "value": "CR-123"
+                        "argument_name": "review_id",
+                        "argument_value": "CR-123"
                     },
                     {
-                        "name": "feedback",
-                        "value": "$$PREV[0]"
+                        "argument_name": "feedback",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "code_version",
-                        "value": "$$PREV[0]"
+                        "argument_name": "code_version",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "severity",
-                        "value": "major"
+                        "argument_name": "severity",
+                        "argument_value": "major"
                     }
                 ]
             }
@@ -3769,20 +3769,20 @@
                 "tool_name": "test_execution_report",
                 "arguments": [
                     {
-                        "name": "test_suite_id",
-                        "value": "TS-456"
+                        "argument_name": "test_suite_id",
+                        "argument_value": "TS-456"
                     },
                     {
-                        "name": "test_environment",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_environment",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "pass_fail_status",
-                        "value": "$$PREV[0]"
+                        "argument_name": "pass_fail_status",
+                        "argument_value": "$$PREV[0]"
                     },
                     {
-                        "name": "test_case_types",
-                        "value": "$$PREV[0]"
+                        "argument_name": "test_case_types",
+                        "argument_value": "$$PREV[0]"
                     }
                 ]
             }
@@ -3989,12 +3989,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-789"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-789"
                     },
                     {
-                        "name": "new_status",
-                        "value": "Done"
+                        "argument_name": "new_status",
+                        "argument_value": "Done"
                     }
                 ]
             }
@@ -4087,12 +4087,12 @@
                 "tool_name": "update_work_item_status",
                 "arguments": [
                     {
-                        "name": "work_item_id",
-                        "value": "TASK-123"
+                        "argument_name": "work_item_id",
+                        "argument_value": "TASK-123"
                     },
                     {
-                        "name": "new_status",
-                        "value": "In Progress"
+                        "argument_name": "new_status",
+                        "argument_value": "In Progress"
                     }
                 ]
             }

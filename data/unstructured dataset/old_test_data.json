@@ -442,32 +442,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "issue"
+                        "argument_name": "work_item_type",
+                        "argument_value": "issue"
                     },
                     {
-                        "name": "title",
-                        "value": "Address Bug in Module Y"
+                        "argument_name": "title",
+                        "argument_value": "Address Bug in Module Y"
                     },
                     {
-                        "name": "description",
-                        "value": "This issue involves fixing a bug in Module Y that causes unexpected behavior."
+                        "argument_name": "description",
+                        "argument_value": "This issue involves fixing a bug in Module Y that causes unexpected behavior."
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-789"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-789"
                     },
                     {
-                        "name": "priority",
-                        "value": "medium"
+                        "argument_name": "priority",
+                        "argument_value": "medium"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-11-30"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-11-30"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "bug",
                             "urgent"
                         ]
@@ -813,32 +813,32 @@
                 "tool_name": "create_work_item",
                 "arguments": [
                     {
-                        "name": "work_item_type",
-                        "value": "task"
+                        "argument_name": "work_item_type",
+                        "argument_value": "task"
                     },
                     {
-                        "name": "title",
-                        "value": "Implement Feature X"
+                        "argument_name": "title",
+                        "argument_value": "Implement Feature X"
                     },
                     {
-                        "name": "description",
-                        "value": "This task involves implementing Feature X with specific requirements."
+                        "argument_name": "description",
+                        "argument_value": "This task involves implementing Feature X with specific requirements."
                     },
                     {
-                        "name": "assignee",
-                        "value": "DEVU-456"
+                        "argument_name": "assignee",
+                        "argument_value": "DEVU-456"
                     },
                     {
-                        "name": "priority",
-                        "value": "high"
+                        "argument_name": "priority",
+                        "argument_value": "high"
                     },
                     {
-                        "name": "due_date",
-                        "value": "2023-12-31"
+                        "argument_name": "due_date",
+                        "argument_value": "2023-12-31"
                     },
                     {
-                        "name": "tags",
-                        "value": [
+                        "argument_name": "tags",
+                        "argument_value": [
                             "urgent"
                         ]
                     }
@@ -1966,12 +1966,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "New issue created"
+                        "argument_name": "trigger_event",
+                        "argument_value": "New issue created"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Assign to Appropriate Team"
                             },
@@ -1981,15 +1981,15 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "DEVU-456",
                             "DEVU-123"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }
@@ -2069,12 +2069,12 @@
                 "tool_name": "automate_workflow",
                 "arguments": [
                     {
-                        "name": "trigger_event",
-                        "value": "Code review passed"
+                        "argument_name": "trigger_event",
+                        "argument_value": "Code review passed"
                     },
                     {
-                        "name": "workflow_actions",
-                        "value": [
+                        "argument_name": "workflow_actions",
+                        "argument_value": [
                             {
                                 "action": "Execute Code Deployment"
                             },
@@ -2084,14 +2084,14 @@
                         ]
                     },
                     {
-                        "name": "notifications",
-                        "value": [
+                        "argument_name": "notifications",
+                        "argument_value": [
                             "DEVU-789"
                         ]
                     },
                     {
-                        "name": "actions_log",
-                        "value": true
+                        "argument_name": "actions_log",
+                        "argument_value": true
                     }
                 ]
             }

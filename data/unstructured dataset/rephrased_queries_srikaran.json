@@ -4368,12 +4368,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "WORK-123"
+            "argument_name": "work_item_id",
+            "argument_value": "WORK-123"
           },
           {
-            "name": "estimated_effort",
-            "value": 8
+            "argument_name": "estimated_effort",
+            "argument_value": 8
           }
         ]
       }
@@ -4388,12 +4388,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-456"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-456"
           },
           {
-            "name": "estimated_effort",
-            "value": 15
+            "argument_name": "estimated_effort",
+            "argument_value": 15
           }
         ]
       }
@@ -4408,12 +4408,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "ITEM-789"
+            "argument_name": "work_item_id",
+            "argument_value": "ITEM-789"
           },
           {
-            "name": "estimated_effort",
-            "value": 10
+            "argument_name": "estimated_effort",
+            "argument_value": 10
           }
         ]
       }
@@ -4428,12 +4428,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "ISSUE-456"
+            "argument_name": "work_item_id",
+            "argument_value": "ISSUE-456"
           },
           {
-            "name": "estimated_effort",
-            "value": 20
+            "argument_name": "estimated_effort",
+            "argument_value": 20
           }
         ]
       }
@@ -4448,12 +4448,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-789"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-789"
           },
           {
-            "name": "estimated_effort",
-            "value": 12
+            "argument_name": "estimated_effort",
+            "argument_value": 12
           }
         ]
       }
@@ -4888,32 +4888,32 @@
         "tool_name": "create_work_item",
         "arguments": [
           {
-            "name": "work_item_type",
-            "value": "task"
+            "argument_name": "work_item_type",
+            "argument_value": "task"
           },
           {
-            "name": "title",
-            "value": "Implement Database Schema"
+            "argument_name": "title",
+            "argument_value": "Implement Database Schema"
           },
           {
-            "name": "description",
-            "value": "Implement the database schema based on project requirements."
+            "argument_name": "description",
+            "argument_value": "Implement the database schema based on project requirements."
           },
           {
-            "name": "assignee",
-            "value": "USER-A"
+            "argument_name": "assignee",
+            "argument_value": "USER-A"
           },
           {
-            "name": "priority",
-            "value": "high"
+            "argument_name": "priority",
+            "argument_value": "high"
           },
           {
-            "name": "due_date",
-            "value": "2023-12-15"
+            "argument_name": "due_date",
+            "argument_value": "2023-12-15"
           },
           {
-            "name": "tags",
-            "value": [
+            "argument_name": "tags",
+            "argument_value": [
               "database",
               "task"
             ]
@@ -4931,32 +4931,32 @@
         "tool_name": "create_work_item",
         "arguments": [
           {
-            "name": "work_item_type",
-            "value": "bug"
+            "argument_name": "work_item_type",
+            "argument_value": "bug"
           },
           {
-            "name": "title",
-            "value": "Fix Security Vulnerability"
+            "argument_name": "title",
+            "argument_value": "Fix Security Vulnerability"
           },
           {
-            "name": "description",
-            "value": "Address and fix the identified security vulnerability in the system."
+            "argument_name": "description",
+            "argument_value": "Address and fix the identified security vulnerability in the system."
           },
           {
-            "name": "assignee",
-            "value": "USER-B"
+            "argument_name": "assignee",
+            "argument_value": "USER-B"
           },
           {
-            "name": "priority",
-            "value": "critical"
+            "argument_name": "priority",
+            "argument_value": "critical"
           },
           {
-            "name": "due_date",
-            "value": "2023-12-10"
+            "argument_name": "due_date",
+            "argument_value": "2023-12-10"
           },
           {
-            "name": "tags",
-            "value": [
+            "argument_name": "tags",
+            "argument_value": [
               "security",
               "bug"
             ]
@@ -4974,32 +4974,32 @@
         "tool_name": "create_work_item",
         "arguments": [
           {
-            "name": "work_item_type",
-            "value": "feature"
+            "argument_name": "work_item_type",
+            "argument_value": "feature"
           },
           {
-            "name": "title",
-            "value": "Social Media Integration"
+            "argument_name": "title",
+            "argument_value": "Social Media Integration"
           },
           {
-            "name": "description",
-            "value": "Integrate social media platforms into our application for enhanced user engagement."
+            "argument_name": "description",
+            "argument_value": "Integrate social media platforms into our application for enhanced user engagement."
           },
           {
-            "name": "assignee",
-            "value": "USER-C"
+            "argument_name": "assignee",
+            "argument_value": "USER-C"
           },
           {
-            "name": "priority",
-            "value": "medium"
+            "argument_name": "priority",
+            "argument_value": "medium"
           },
           {
-            "name": "due_date",
-            "value": "2024-01-05"
+            "argument_name": "due_date",
+            "argument_value": "2024-01-05"
           },
           {
-            "name": "tags",
-            "value": [
+            "argument_name": "tags",
+            "argument_value": [
               "feature",
               "integration"
             ]
@@ -5017,32 +5017,32 @@
         "tool_name": "create_work_item",
         "arguments": [
           {
-            "name": "work_item_type",
-            "value": "improvement"
+            "argument_name": "work_item_type",
+            "argument_value": "improvement"
           },
           {
-            "name": "title",
-            "value": "Performance Optimization"
+            "argument_name": "title",
+            "argument_value": "Performance Optimization"
           },
           {
-            "name": "description",
-            "value": "Optimize system performance for faster response times."
+            "argument_name": "description",
+            "argument_value": "Optimize system performance for faster response times."
           },
           {
-            "name": "assignee",
-            "value": "USER-D"
+            "argument_name": "assignee",
+            "argument_value": "USER-D"
           },
           {
-            "name": "priority",
-            "value": "low"
+            "argument_name": "priority",
+            "argument_value": "low"
           },
           {
-            "name": "due_date",
-            "value": "2023-12-20"
+            "argument_name": "due_date",
+            "argument_value": "2023-12-20"
           },
           {
-            "name": "tags",
-            "value": [
+            "argument_name": "tags",
+            "argument_value": [
               "performance",
               "improvement"
             ]
@@ -5060,32 +5060,32 @@
         "tool_name": "create_work_item",
         "arguments": [
           {
-            "name": "work_item_type",
-            "value": "task"
+            "argument_name": "work_item_type",
+            "argument_value": "task"
           },
           {
-            "name": "title",
-            "value": "Resolve System Outage"
+            "argument_name": "title",
+            "argument_value": "Resolve System Outage"
           },
           {
-            "name": "description",
-            "value": "Investigate and resolve the ongoing system outage affecting users."
+            "argument_name": "description",
+            "argument_value": "Investigate and resolve the ongoing system outage affecting users."
           },
           {
-            "name": "assignee",
-            "value": "USER-E"
+            "argument_name": "assignee",
+            "argument_value": "USER-E"
           },
           {
-            "name": "priority",
-            "value": "critical"
+            "argument_name": "priority",
+            "argument_value": "critical"
           },
           {
-            "name": "due_date",
-            "value": "2023-12-08"
+            "argument_name": "due_date",
+            "argument_value": "2023-12-08"
           },
           {
-            "name": "tags",
-            "value": [
+            "argument_name": "tags",
+            "argument_value": [
               "critical",
               "task"
             ]
@@ -7713,12 +7713,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-789"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-789"
           },
           {
-            "name": "new_assignee",
-            "value": "JohnDoe"
+            "argument_name": "new_assignee",
+            "argument_value": "JohnDoe"
           }
         ]
       }
@@ -7733,12 +7733,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "BUG-123"
+            "argument_name": "work_item_id",
+            "argument_value": "BUG-123"
           },
           {
-            "name": "new_assignee",
-            "value": "JaneSmith"
+            "argument_name": "new_assignee",
+            "argument_value": "JaneSmith"
           }
         ]
       }
@@ -7753,12 +7753,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-987"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-987"
           },
           {
-            "name": "new_assignee",
-            "value": "MarkJohnson"
+            "argument_name": "new_assignee",
+            "argument_value": "MarkJohnson"
           }
         ]
       }
@@ -7773,12 +7773,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-345"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-345"
           },
           {
-            "name": "new_assignee",
-            "value": "SarahBrown"
+            "argument_name": "new_assignee",
+            "argument_value": "SarahBrown"
           }
         ]
       }
@@ -7793,12 +7793,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "FEATURE-567"
+            "argument_name": "work_item_id",
+            "argument_value": "FEATURE-567"
           },
           {
-            "name": "new_assignee",
-            "value": "ChrisMiller"
+            "argument_name": "new_assignee",
+            "argument_value": "ChrisMiller"
           }
         ]
       }
@@ -7993,20 +7993,20 @@
         "tool_name": "assign_work_item",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-789"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-789"
           },
           {
-            "name": "assignee",
-            "value": "DEVU-456"
+            "argument_name": "assignee",
+            "argument_value": "DEVU-456"
           },
           {
-            "name": "due_date",
-            "value": "2023-11-15"
+            "argument_name": "due_date",
+            "argument_value": "2023-11-15"
           },
           {
-            "name": "work_item_type",
-            "value": "task"
+            "argument_name": "work_item_type",
+            "argument_value": "task"
           }
         ]
       }
@@ -8021,20 +8021,20 @@
         "tool_name": "assign_work_item",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-987"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-987"
           },
           {
-            "name": "assignee",
-            "value": "DEVU-789"
+            "argument_name": "assignee",
+            "argument_value": "DEVU-789"
           },
           {
-            "name": "due_date",
-            "value": "2023-12-15"
+            "argument_name": "due_date",
+            "argument_value": "2023-12-15"
           },
           {
-            "name": "work_item_type",
-            "value": "task"
+            "argument_name": "work_item_type",
+            "argument_value": "task"
           }
         ]
       }
@@ -8049,20 +8049,20 @@
         "tool_name": "assign_work_item",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-333"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-333"
           },
           {
-            "name": "assignee",
-            "value": "DEVU-555"
+            "argument_name": "assignee",
+            "argument_value": "DEVU-555"
           },
           {
-            "name": "due_date",
-            "value": "2023-11-30"
+            "argument_name": "due_date",
+            "argument_value": "2023-11-30"
           },
           {
-            "name": "work_item_type",
-            "value": "task"
+            "argument_name": "work_item_type",
+            "argument_value": "task"
           }
         ]
       }
@@ -8077,20 +8077,20 @@
         "tool_name": "assign_work_item",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-222"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-222"
           },
           {
-            "name": "assignee",
-            "value": "DEVU-999"
+            "argument_name": "assignee",
+            "argument_value": "DEVU-999"
           },
           {
-            "name": "due_date",
-            "value": "2023-10-31"
+            "argument_name": "due_date",
+            "argument_value": "2023-10-31"
           },
           {
-            "name": "work_item_type",
-            "value": "task"
+            "argument_name": "work_item_type",
+            "argument_value": "task"
           }
         ]
       }
@@ -8105,20 +8105,20 @@
         "tool_name": "assign_work_item",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-456"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-456"
           },
           {
-            "name": "assignee",
-            "value": "DEVU-111"
+            "argument_name": "assignee",
+            "argument_value": "DEVU-111"
           },
           {
-            "name": "due_date",
-            "value": "2023-11-10"
+            "argument_name": "due_date",
+            "argument_value": "2023-11-10"
           },
           {
-            "name": "work_item_type",
-            "value": "task"
+            "argument_name": "work_item_type",
+            "argument_value": "task"
           }
         ]
       }
@@ -8463,12 +8463,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-789"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-789"
           },
           {
-            "name": "new_assignee",
-            "value": "DEVU-890"
+            "argument_name": "new_assignee",
+            "argument_value": "DEVU-890"
           }
         ]
       }
@@ -8483,12 +8483,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-567"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-567"
           },
           {
-            "name": "new_assignee",
-            "value": "DEVU-234"
+            "argument_name": "new_assignee",
+            "argument_value": "DEVU-234"
           }
         ]
       }
@@ -8503,12 +8503,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-890"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-890"
           },
           {
-            "name": "new_assignee",
-            "value": "DEVU-123"
+            "argument_name": "new_assignee",
+            "argument_value": "DEVU-123"
           }
         ]
       }
@@ -8523,12 +8523,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-456"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-456"
           },
           {
-            "name": "new_assignee",
-            "value": "DEVU-789"
+            "argument_name": "new_assignee",
+            "argument_value": "DEVU-789"
           }
         ]
       }
@@ -8543,12 +8543,12 @@
         "tool_name": "update_work_item_status",
         "arguments": [
           {
-            "name": "work_item_id",
-            "value": "TASK-345"
+            "argument_name": "work_item_id",
+            "argument_value": "TASK-345"
           },
           {
-            "name": "new_assignee",
-            "value": "DEVU-567"
+            "argument_name": "new_assignee",
+            "argument_value": "DEVU-567"
           }
         ]
       }
@@ -9029,8 +9029,8 @@
             "argument_value": "TASK-999"
           },
           {
-            "name": "dependencies",
-            "value": [
+            "argument_name": "dependencies",
+            "argument_value": [
               "TASK-111",
               "TASK-222",
               "TASK-333"

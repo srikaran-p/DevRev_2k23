@@ -810,12 +810,12 @@
                 "argument_name": "health_data",
                 "argument_value": [
                     {
-                        "name": "blood pressure",
-                        "value": "120/80"
+                        "argument_name": "blood pressure",
+                        "argument_value": "120/80"
                     },
                     {
-                        "name": "heart rate",
-                        "value": "80"
+                        "argument_name": "heart rate",
+                        "argument_value": "80"
                     }
                 ]
               }   
@@ -1260,12 +1260,12 @@
                 "argument_name": "health_data",
                 "argument_value": [
                     {
-                        "name": "blood pressure",
-                        "value": "120/80"
+                        "argument_name": "blood pressure",
+                        "argument_value": "120/80"
                     },
                     {
-                        "name": "heart rate",
-                        "value": "80"
+                        "argument_name": "heart rate",
+                        "argument_value": "80"
                     }
                 ]
             }

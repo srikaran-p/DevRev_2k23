@@ -348,7 +348,7 @@
             }
         ]
     }
-
+,
     {
         "question": "Assign task XYZ-123 to ALICE-789. Could you please update the status accordingly?",
         "answer": [
@@ -439,7 +439,7 @@
             }
         ]
     }
-
+,
 
     {
         "question": "Can we update the estimated effort for task ABC-234 to 15 story points?",

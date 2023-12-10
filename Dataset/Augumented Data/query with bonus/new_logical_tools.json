@@ -59,21 +59,39 @@
                 "example": ""
             },
             {
-        "tool_name": "for_each",
-        "tool_description": "Iterates over a list of items and applies a set of tools to each item",
-        "arguments": [
-            {
-                "name": "items",
-                "description": "List of items to iterate over",
-                "type": "array",
-                "example": ""
-            },
-            {
-                "name": "enumerate",
-                "description": "Allows to reference the index of the current item in the list. Use $$INDEX to reference the index.",
-                "type": "boolean",
-                "example": "true"
-            },
+                "tool_name": "for_each",
+                "tool_description": "Iterates over a list of items and applies a set of tools to each item",
+                "arguments": [
+                    {
+                        "name": "items",
+                        "description": "List of items to iterate over",
+                        "type": "array",
+                        "example": ""
+                    },
+                    {
+                        "name": "enumerate",
+                        "description": "Allows to reference the index of the current item in the list. Use $$INDEX to reference the index.",
+                        "type": "boolean",
+                        "example": "true"
+                    },
+                    {
+                        "name": "tools",
+                        "description": "List of tools to apply to each item",
+                        "type": "array of objects",
+                        "example": [
+                            {
+                                "tool_name": "summarize_objects",
+                                "arguments": [
+                                    {
+                                        "argument_name": "objects",
+                                        "argument_value": "$$CURRENT_ITEM"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
             {
                 "name": "tools",
                 "description": "List of tools to apply to each item",
@@ -91,22 +109,46 @@
                 ]
             }
         ]
-    }
+    },
+    {
+        "tool_name": "while_tool",
+        "tool_description": "Executes a set of tools repeatedly while a specified condition is true.",
+        "arguments": [
+            {
+                "name": "condition",
+                "description": "The condition that must be true for the loop to continue. This is typically a comparison of two values.",
+                "type": "object",
+                "example": {
+                    "lhs": "counter",
+                    "operator": "<",
+                    "rhs": "10"
+                }
+            },
             {
                 "name": "tools",
-                "description": "List of tools to apply to each item",
+                "description": "List of tools to apply repeatedly as long as the condition is true.",
                 "type": "array of objects",
                 "example": [
                     {
-                        "tool_name": "summarize_objects",
+                        "tool_name": "modify_data",
                         "arguments": [
                             {
-                                "argument_name": "objects",
-                                "argument_value": "$$CURRENT_ITEM"
+                                "argument_name": "data_operation",
+                                "argument_value": "increment"
+                            },
+                            {
+                                "argument_name": "target",
+                                "argument_value": "counter"
                             }
                         ]
                     }
                 ]
+            },
+            {
+                "name": "max_iterations",
+                "description": "Optional limit to the number of iterations to prevent infinite loops.",
+                "type": "integer",
+                "example": "1000"
             }
         ]
     }

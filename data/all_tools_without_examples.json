@@ -1,15 +1,4 @@
-[
-    {
-        "tool_name": "tool_searcher",
-        "tool_description": "Searches for relevant tools in library based on the keyword.",
-        "arguments": [
-            {
-                "name": "keywords",
-                "type": "string",
-                "description": "The keyword to search for."
-            }
-        ]
-    },
+[    
     {
         "tool_name": "query_stock",
         "tool_description": "This API queries the stock price of a given stock code and date.",

@@ -12313,7 +12313,7 @@
         "question": "What could be possible diseases related to coughing?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12327,7 +12327,7 @@
         "question": "What could be possible diseases related to fever?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12341,7 +12341,7 @@
         "question": "What could be possible diseases related to headache?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12355,7 +12355,7 @@
         "question": "What could be possible diseases related to stomach pain?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12369,7 +12369,7 @@
         "question": "What could be possible diseases related to shortness of breath?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12383,7 +12383,7 @@
         "question": "What could be possible diseases related to coughing?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12397,7 +12397,7 @@
         "question": "What could be possible diseases related to fever?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12411,7 +12411,7 @@
         "question": "What could be possible diseases related to headache?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12425,7 +12425,7 @@
         "question": "What could be possible diseases related to stomach pain?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12439,7 +12439,7 @@
         "question": "What could be possible diseases related to shortness of breath?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12453,7 +12453,7 @@
         "question": "Search for information on migraine headaches",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12467,7 +12467,7 @@
         "question": "Find information on back pain causes and treatments",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12481,7 +12481,7 @@
         "question": "Retrieve details about the common cold symptoms",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12495,7 +12495,7 @@
         "question": "Search for information on allergies and their symptoms",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -12509,7 +12509,7 @@
         "question": "Find details about the symptoms of diabetes",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -13185,7 +13185,7 @@
                 ]
             },
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -13253,7 +13253,7 @@
                 ]
             },
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -13321,7 +13321,7 @@
                 ]
             },
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -13389,7 +13389,7 @@
                 ]
             },
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -13457,7 +13457,7 @@
                 ]
             },
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -13611,106 +13611,6 @@
                     {
                         "argument_name": "time",
                         "argument_value": "2023-07-10 08:30:00"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Please book a flight ticket from New York to Los Angeles on 2023-06-15. Add the flight details to my agenda. Schedule a business meeting on the same day at 14:00 at the Los Angeles Convention Center. Please set a reminder for the flight at 10:00 on 2023-06-15. My username is traveler123 and password is securepass. My name is Sarah.",
-        "answer": [
-            {
-                "tool_name": "book_flight",
-                "arguments": [
-                    {
-                        "argument_name": "departure",
-                        "argument_value": "New York"
-                    },
-                    {
-                        "argument_name": "destination",
-                        "argument_value": "Los Angeles"
-                    },
-                    {
-                        "argument_name": "departure_date",
-                        "argument_value": "2023-06-15"
-                    }
-                ]
-            },
-            {
-                "tool_name": "get_user_token",
-                "arguments": [
-                    {
-                        "argument_name": "username",
-                        "argument_value": "traveler123"
-                    },
-                    {
-                        "argument_name": "password",
-                        "argument_value": "securepass"
-                    }
-                ]
-            },
-            {
-                "tool_name": "addagenda",
-                "arguments": [
-                    {
-                        "argument_name": "token",
-                        "argument_value": "$$PREV[1]"
-                    },
-                    {
-                        "argument_name": "content",
-                        "argument_value": "Flight to Los Angeles"
-                    },
-                    {
-                        "argument_name": "time",
-                        "argument_value": "2023-06-15 08:00:00"
-                    },
-                    {
-                        "argument_name": "location",
-                        "argument_value": "Airport"
-                    }
-                ]
-            },
-            {
-                "tool_name": "add_meeting",
-                "arguments": [
-                    {
-                        "argument_name": "token",
-                        "argument_value": "$$PREV[1]"
-                    },
-                    {
-                        "argument_name": "meeting_topic",
-                        "argument_value": "Business Meeting"
-                    },
-                    {
-                        "argument_name": "start_time",
-                        "argument_value": "2023-06-15 14:00:00"
-                    },
-                    {
-                        "argument_name": "end_time",
-                        "argument_value": "2023-06-15 15:00:00"
-                    },
-                    {
-                        "argument_name": "location",
-                        "argument_value": "Los Angeles Convention Center"
-                    },
-                    {
-                        "argument_name": "attendees",
-                        "argument_value": [
-                            "Colleagues"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "addalarm",
-                "arguments": [
-                    {
-                        "argument_name": "token",
-                        "argument_value": "$$PREV[1]"
-                    },
-                    {
-                        "argument_name": "time",
-                        "argument_value": "2023-06-15 10:00:00"
                     }
                 ]
             }
@@ -18461,71 +18361,6 @@
         ]
     },
     {
-        "question": "Provide my current user profile information and list the items in my to-do list.",
-        "answer": [
-            {
-                "tool_name": "get_user_profile",
-                "arguments": []
-            },
-            {
-                "tool_name": "list_todo_items",
-                "arguments": []
-            }
-        ]
-    },
-    {
-        "question": "Fetch my user credentials and display the items in my shopping cart.",
-        "answer": [
-            {
-                "tool_name": "get_user_credentials",
-                "arguments": []
-            },
-            {
-                "tool_name": "list_shopping_cart_items",
-                "arguments": []
-            }
-        ]
-    },
-    {
-        "question": "Retrieve my account information and summarize the recent transactions in my bank statement.",
-        "answer": [
-            {
-                "tool_name": "get_account_info",
-                "arguments": []
-            },
-            {
-                "tool_name": "summarize_bank_transactions",
-                "arguments": []
-            }
-        ]
-    },
-    {
-        "question": "Get my user details and list the recent orders from my profile.",
-        "answer": [
-            {
-                "tool_name": "get_user_details",
-                "arguments": []
-            },
-            {
-                "tool_name": "list_recent_orders",
-                "arguments": []
-            }
-        ]
-    },
-    {
-        "question": "Retrieve my personal information and provide a summary of the events in my calendar.",
-        "answer": [
-            {
-                "tool_name": "get_personal_info",
-                "arguments": []
-            },
-            {
-                "tool_name": "summarize_calendar_events",
-                "arguments": []
-            }
-        ]
-    },
-    {
         "question": "Retrieve all user stories assigned to 'USR-123' or 'USR-456'. If there are more than 3 user stories, get the current sprint ID and add them to the sprint. Summarize the user stories in the sprint.",
         "answer": [
             {
@@ -18577,274 +18412,6 @@
                 "arguments": [
                     {
                         "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[2]"
-                    }
-                ]
-            },
-            {
-                "tool_name": "summarize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[4]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Find all bugs owned by 'BUG-789' or 'BUG-456'. If there are more than 2 bugs, get the current release ID and assign them to the release. Summarize the bugs in the release.",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "owned_by",
-                        "argument_value": [
-                            "BUG-789",
-                            "BUG-456"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "bug"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "prioritize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[0].length > 2 ? $$PREV[0] : []"
-                    }
-                ]
-            },
-            {
-                "tool_name": "get_release_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "assign_work_items_to_release",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
-                        "argument_value": "$$PREV[1].map(bug => bug.id)"
-                    },
-                    {
-                        "argument_name": "release_id",
-                        "argument_value": "$$PREV[2]"
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "release_id",
-                        "argument_value": "$$PREV[2]"
-                    }
-                ]
-            },
-            {
-                "tool_name": "summarize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[4]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Retrieve all features owned by 'FEAT-123' or 'FEAT-456'. If there are more than 4 features, get the current epic ID and link them to the epic. Summarize the features in the epic.",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "owned_by",
-                        "argument_value": [
-                            "FEAT-123",
-                            "FEAT-456"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "feature"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "prioritize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[0].length > 4 ? $$PREV[0] : []"
-                    }
-                ]
-            },
-            {
-                "tool_name": "get_epic_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "link_work_items_to_epic",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
-                        "argument_value": "$$PREV[1].map(feature => feature.id)"
-                    },
-                    {
-                        "argument_name": "epic_id",
-                        "argument_value": "$$PREV[2]"
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "epic_id",
-                        "argument_value": "$$PREV[2]"
-                    }
-                ]
-            },
-            {
-                "tool_name": "summarize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[4]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Find all user tasks owned by 'USER-123' or 'USER-456'. If there are more than 3 user tasks, get the current project ID and assign them to the project. Summarize the user tasks in the project.",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "owned_by",
-                        "argument_value": [
-                            "USER-123",
-                            "USER-456"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "user task"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "prioritize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[0].length > 3 ? $$PREV[0] : []"
-                    }
-                ]
-            },
-            {
-                "tool_name": "get_project_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "assign_work_items_to_project",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
-                        "argument_value": "$$PREV[1].map(userTask => userTask.id)"
-                    },
-                    {
-                        "argument_name": "project_id",
-                        "argument_value": "$$PREV[2]"
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "project_id",
-                        "argument_value": "$$PREV[2]"
-                    }
-                ]
-            },
-            {
-                "tool_name": "summarize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[4]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Retrieve all defects owned by 'DEF-123' or 'DEF-456'. If there are more than 2 defects, get the current release ID and link them to the release. Summarize the defects in the release.",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "owned_by",
-                        "argument_value": [
-                            "DEF-123",
-                            "DEF-456"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "defect"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "prioritize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[0].length > 2 ? $$PREV[0] : []"
-                    }
-                ]
-            },
-            {
-                "tool_name": "get_release_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "link_work_items_to_release",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
-                        "argument_value": "$$PREV[1].map(defect => defect.id)"
-                    },
-                    {
-                        "argument_name": "release_id",
-                        "argument_value": "$$PREV[2]"
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "release_id",
                         "argument_value": "$$PREV[2]"
                     }
                 ]
@@ -23470,28 +23037,6 @@
         ]
     },
     {
-        "question": "Where can I find nearby cafes? My current location is at latitude 41.8781 and longitude -87.6298, with a search distance of 500 meters. Can you assist?",
-        "answer": [
-            {
-                "tool_name": "nearby_cafes",
-                "arguments": [
-                    {
-                        "argument_name": "latitude",
-                        "argument_value": 41.8781
-                    },
-                    {
-                        "argument_name": "longitude",
-                        "argument_value": -87.6298
-                    },
-                    {
-                        "argument_name": "distance",
-                        "argument_value": 500
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "question": "How do I schedule an email reminder for a meeting named 'Project Kickoff'? The scheduled time is '2023-03-15 15:00:00', and the meeting room is 'Room 101'. The recipient's email is 'jane.doe@example.com'. Can you guide me through this?",
         "answer": [
             {
@@ -25039,116 +24584,6 @@
                     {
                         "argument_name": "address",
                         "argument_value": "789 Pine Ln, VillageZ"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "What are the nearby coffee shops around my current location at latitude 34.0522 and longitude -118.2437? I'm looking within a radius of 300 meters. Can you help?",
-        "answer": [
-            {
-                "tool_name": "nearby_cafes",
-                "arguments": [
-                    {
-                        "argument_name": "latitude",
-                        "argument_value": 34.0522
-                    },
-                    {
-                        "argument_name": "longitude",
-                        "argument_value": -118.2437
-                    },
-                    {
-                        "argument_name": "distance",
-                        "argument_value": 300
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "I'm in a new area at latitude 40.7128 and longitude -74.0060. Could you guide me to find nearby cafes within a 700-meter range?",
-        "answer": [
-            {
-                "tool_name": "nearby_cafes",
-                "arguments": [
-                    {
-                        "argument_name": "latitude",
-                        "argument_value": 40.7128
-                    },
-                    {
-                        "argument_name": "longitude",
-                        "argument_value": -74.006
-                    },
-                    {
-                        "argument_name": "distance",
-                        "argument_value": 700
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Can you help me discover nearby cafes? I'm currently at latitude 51.5074 and longitude -0.1278, and I'd like options within a 400-meter distance.",
-        "answer": [
-            {
-                "tool_name": "nearby_cafes",
-                "arguments": [
-                    {
-                        "argument_name": "latitude",
-                        "argument_value": 51.5074
-                    },
-                    {
-                        "argument_name": "longitude",
-                        "argument_value": -0.1278
-                    },
-                    {
-                        "argument_name": "distance",
-                        "argument_value": 400
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "I'm exploring a new neighborhood at latitude 45.5122 and longitude -122.6587. Could you tell me about nearby cafes within a 600-meter radius?",
-        "answer": [
-            {
-                "tool_name": "nearby_cafes",
-                "arguments": [
-                    {
-                        "argument_name": "latitude",
-                        "argument_value": 45.5122
-                    },
-                    {
-                        "argument_name": "longitude",
-                        "argument_value": -122.6587
-                    },
-                    {
-                        "argument_name": "distance",
-                        "argument_value": 600
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Where can I find nearby coffee spots? My current location is at latitude 37.7749 and longitude -122.4194, with a search distance of 550 meters. Can you assist?",
-        "answer": [
-            {
-                "tool_name": "nearby_cafes",
-                "arguments": [
-                    {
-                        "argument_name": "latitude",
-                        "argument_value": 37.7749
-                    },
-                    {
-                        "argument_name": "longitude",
-                        "argument_value": -122.4194
-                    },
-                    {
-                        "argument_name": "distance",
-                        "argument_value": 550
                     }
                 ]
             }
@@ -33535,221 +32970,6 @@
         ]
     },
     {
-        "question": "Mark task OPERATION-456 as 'Accomplished', assign it to AGENT-567, and share performance feedback.",
-        "answer": [
-            {
-                "tool_name": "update_work_item_status",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_id",
-                        "argument_value": "OPERATION-456"
-                    },
-                    {
-                        "argument_name": "new_status",
-                        "argument_value": "Accomplished"
-                    },
-                    {
-                        "argument_name": "new_assignee",
-                        "argument_value": "AGENT-567"
-                    }
-                ]
-            },
-            {
-                "tool_name": "performance_feedback",
-                "arguments": [
-                    {
-                        "argument_name": "performance_id",
-                        "argument_value": "PERF-567"
-                    },
-                    {
-                        "argument_name": "feedback",
-                        "argument_value": "Outstanding performance observed."
-                    },
-                    {
-                        "argument_name": "performance_version",
-                        "argument_value": "v2.0"
-                    },
-                    {
-                        "argument_name": "performance_rating",
-                        "argument_value": "Excellent"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Update the status of work item PROJECT-789 to 'Finalized', assign it to MANAGER-123, and provide project completion feedback.",
-        "answer": [
-            {
-                "tool_name": "update_work_item_status",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_id",
-                        "argument_value": "PROJECT-789"
-                    },
-                    {
-                        "argument_name": "new_status",
-                        "argument_value": "Finalized"
-                    },
-                    {
-                        "argument_name": "new_assignee",
-                        "argument_value": "MANAGER-123"
-                    }
-                ]
-            },
-            {
-                "tool_name": "project_completion_feedback",
-                "arguments": [
-                    {
-                        "argument_name": "completion_id",
-                        "argument_value": "COMP-789"
-                    },
-                    {
-                        "argument_name": "feedback",
-                        "argument_value": "Project successfully completed."
-                    },
-                    {
-                        "argument_name": "completion_version",
-                        "argument_value": "v1.5"
-                    },
-                    {
-                        "argument_name": "completion_status",
-                        "argument_value": "Success"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Change the status of work item MISSION-567 to 'Achieved', assign it to COMMANDER-456, and provide mission success feedback.",
-        "answer": [
-            {
-                "tool_name": "update_work_item_status",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_id",
-                        "argument_value": "MISSION-567"
-                    },
-                    {
-                        "argument_name": "new_status",
-                        "argument_value": "Achieved"
-                    },
-                    {
-                        "argument_name": "new_assignee",
-                        "argument_value": "COMMANDER-456"
-                    }
-                ]
-            },
-            {
-                "tool_name": "mission_success_feedback",
-                "arguments": [
-                    {
-                        "argument_name": "success_id",
-                        "argument_value": "SUCCESS-567"
-                    },
-                    {
-                        "argument_name": "feedback",
-                        "argument_value": "Mission accomplished with excellence."
-                    },
-                    {
-                        "argument_name": "success_version",
-                        "argument_value": "v3.0"
-                    },
-                    {
-                        "argument_name": "success_status",
-                        "argument_value": "Triumph"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Modify the status of work item EVENT-789 to 'Concluded', assign it to COORDINATOR-456, and provide event wrap-up feedback.",
-        "answer": [
-            {
-                "tool_name": "update_work_item_status",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_id",
-                        "argument_value": "EVENT-789"
-                    },
-                    {
-                        "argument_name": "new_status",
-                        "argument_value": "Concluded"
-                    },
-                    {
-                        "argument_name": "new_assignee",
-                        "argument_value": "COORDINATOR-456"
-                    }
-                ]
-            },
-            {
-                "tool_name": "event_wrapup_feedback",
-                "arguments": [
-                    {
-                        "argument_name": "wrapup_id",
-                        "argument_value": "WRAP-789"
-                    },
-                    {
-                        "argument_name": "feedback",
-                        "argument_value": "Event concluded successfully."
-                    },
-                    {
-                        "argument_name": "wrapup_version",
-                        "argument_value": "v2.2"
-                    },
-                    {
-                        "argument_name": "wrapup_status",
-                        "argument_value": "Closure"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Update the status of work item QUEST-123 to 'Accomplished', assign it to EXPLORER-789, and provide exploration feedback.",
-        "answer": [
-            {
-                "tool_name": "update_work_item_status",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_id",
-                        "argument_value": "QUEST-123"
-                    },
-                    {
-                        "argument_name": "new_status",
-                        "argument_value": "Accomplished"
-                    },
-                    {
-                        "argument_name": "new_assignee",
-                        "argument_value": "EXPLORER-789"
-                    }
-                ]
-            },
-            {
-                "tool_name": "exploration_feedback",
-                "arguments": [
-                    {
-                        "argument_name": "exploration_id",
-                        "argument_value": "EXPLORE-123"
-                    },
-                    {
-                        "argument_name": "feedback",
-                        "argument_value": "Exploration mission successful."
-                    },
-                    {
-                        "argument_name": "exploration_version",
-                        "argument_value": "v1.8"
-                    },
-                    {
-                        "argument_name": "exploration_status",
-                        "argument_value": "Triumph"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "question": "Can you unveil the ultimate secret to boundless joy?",
         "answer": []
     },
@@ -37532,7 +36752,7 @@
         "question": "What could be possible diseases related tp fatigue?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -37546,7 +36766,7 @@
         "question": "What could be possible diseases related to fatigue?",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -37560,7 +36780,7 @@
         "question": "Find some information on abdominal pain",
         "answer": [
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -37716,7 +36936,7 @@
                 ]
             },
             {
-                "tool_name": "symptom_search",
+                "tool_name": "symptomsearch",
                 "arguments": [
                     {
                         "argument_name": "symptom",
@@ -50708,217 +49928,6 @@
         ]
     },
     {
-        "question": "Create a new feature titled 'Enhancement' with a detailed description, assign it to JohnDoe, and provide feedback on the proposed changes.",
-        "answer": [
-            {
-                "tool_name": "create_work_item",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_type",
-                        "argument_value": "feature"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "Enhancement"
-                    },
-                    {
-                        "argument_name": "description",
-                        "argument_value": "Implementing a new feature to enhance system functionality."
-                    },
-                    {
-                        "argument_name": "assignee",
-                        "argument_value": "JohnDoe"
-                    }
-                ]
-            },
-            {
-                "tool_name": "feedback",
-                "arguments": [
-                    {
-                        "argument_name": "feedback_id",
-                        "argument_value": "FB-123"
-                    },
-                    {
-                        "argument_name": "comment",
-                        "argument_value": "Great initiative, consider refining user interface elements."
-                    },
-                    {
-                        "argument_name": "severity",
-                        "argument_value": "minor"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Create a new task titled 'Documentation Update' with a brief description, assign it to JaneSmith, and provide review comments on it.",
-        "answer": [
-            {
-                "tool_name": "create_work_item",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_type",
-                        "argument_value": "task"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "Documentation Update"
-                    },
-                    {
-                        "argument_name": "description",
-                        "argument_value": "Updating documentation for recent changes."
-                    },
-                    {
-                        "argument_name": "assignee",
-                        "argument_value": "JaneSmith"
-                    }
-                ]
-            },
-            {
-                "tool_name": "review_comments",
-                "arguments": [
-                    {
-                        "argument_name": "review_id",
-                        "argument_value": "RC-456"
-                    },
-                    {
-                        "argument_name": "comments",
-                        "argument_value": "Clear and concise, good job on the documentation update."
-                    },
-                    {
-                        "argument_name": "suggestion",
-                        "argument_value": "Consider adding examples for better understanding."
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Create a new bug titled 'Critical Issue' with a detailed description, assign it to MarkMiller, and provide resolution comments on it.",
-        "answer": [
-            {
-                "tool_name": "create_work_item",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_type",
-                        "argument_value": "bug"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "Critical Issue"
-                    },
-                    {
-                        "argument_name": "description",
-                        "argument_value": "Identified a critical issue that requires immediate attention."
-                    },
-                    {
-                        "argument_name": "assignee",
-                        "argument_value": "MarkMiller"
-                    }
-                ]
-            },
-            {
-                "tool_name": "resolution_comments",
-                "arguments": [
-                    {
-                        "argument_name": "resolution_id",
-                        "argument_value": "RES-789"
-                    },
-                    {
-                        "argument_name": "comments",
-                        "argument_value": "Resolved the issue by applying a hotfix, verified and tested successfully."
-                    },
-                    {
-                        "argument_name": "resolution_version",
-                        "argument_value": "v2.0"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Create a new document titled 'User Guide' with an overview, assign it to EmilyDavis, and provide editing suggestions on it.",
-        "answer": [
-            {
-                "tool_name": "create_work_item",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_type",
-                        "argument_value": "document"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "User Guide"
-                    },
-                    {
-                        "argument_name": "description",
-                        "argument_value": "Comprehensive guide for users to navigate the system."
-                    },
-                    {
-                        "argument_name": "assignee",
-                        "argument_value": "EmilyDavis"
-                    }
-                ]
-            },
-            {
-                "tool_name": "editing_suggestions",
-                "arguments": [
-                    {
-                        "argument_name": "suggestion_id",
-                        "argument_value": "ES-567"
-                    },
-                    {
-                        "argument_name": "suggestions",
-                        "argument_value": "Consider adding a troubleshooting section for common issues."
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Create a new feature titled 'Integration Module' with technical specifications, assign it to MikeTaylor, and provide feedback on the proposed integration approach.",
-        "answer": [
-            {
-                "tool_name": "create_work_item",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_type",
-                        "argument_value": "feature"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "Integration Module"
-                    },
-                    {
-                        "argument_name": "description",
-                        "argument_value": "Implementing a new module for system integration with external services."
-                    },
-                    {
-                        "argument_name": "assignee",
-                        "argument_value": "MikeTaylor"
-                    }
-                ]
-            },
-            {
-                "tool_name": "feedback",
-                "arguments": [
-                    {
-                        "argument_name": "feedback_id",
-                        "argument_value": "FB-234"
-                    },
-                    {
-                        "argument_name": "comment",
-                        "argument_value": "The proposed integration approach aligns well with the system architecture."
-                    },
-                    {
-                        "argument_name": "severity",
-                        "argument_value": "minor"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "question": "Add tasks with IDs 'T001', 'T002', 'T003' to the current sprint",
         "answer": [
             {
@@ -51158,222 +50167,6 @@
                     {
                         "argument_name": "objects",
                         "argument_value": "$$PREV[0]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Create a new initiative named 'Project ABC' led by JohnDoe, add features from the backlog to the initiative, and assign them to JaneSmith.",
-        "answer": [
-            {
-                "tool_name": "create_project",
-                "arguments": [
-                    {
-                        "argument_name": "project_name",
-                        "argument_value": "Project ABC"
-                    },
-                    {
-                        "argument_name": "project_lead",
-                        "argument_value": "JohnDoe"
-                    }
-                ]
-            },
-            {
-                "tool_name": "backlog_items",
-                "arguments": [
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "feature"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "create_work_item",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_type",
-                        "argument_value": "feature"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "$$PREV[1].title"
-                    },
-                    {
-                        "argument_name": "assignee",
-                        "argument_value": "JaneSmith"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Create a new department named 'Team Delta' led by MaryJohnson, add tasks from the current sprint to the department, and assign them to MarkMiller.",
-        "answer": [
-            {
-                "tool_name": "create_project",
-                "arguments": [
-                    {
-                        "argument_name": "project_name",
-                        "argument_value": "Team Delta"
-                    },
-                    {
-                        "argument_name": "project_lead",
-                        "argument_value": "MaryJohnson"
-                    }
-                ]
-            },
-            {
-                "tool_name": "sprint_tasks",
-                "arguments": []
-            },
-            {
-                "tool_name": "create_work_item",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_type",
-                        "argument_value": "task"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "$$PREV[1].title"
-                    },
-                    {
-                        "argument_name": "assignee",
-                        "argument_value": "MarkMiller"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Create a new module named 'Feature Set' led by EmilyDavis, add user stories from the backlog to the module, and assign them to MikeTaylor.",
-        "answer": [
-            {
-                "tool_name": "create_project",
-                "arguments": [
-                    {
-                        "argument_name": "project_name",
-                        "argument_value": "Feature Set"
-                    },
-                    {
-                        "argument_name": "project_lead",
-                        "argument_value": "EmilyDavis"
-                    }
-                ]
-            },
-            {
-                "tool_name": "backlog_items",
-                "arguments": [
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "user_story"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "create_work_item",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_type",
-                        "argument_value": "user_story"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "$$PREV[1].title"
-                    },
-                    {
-                        "argument_name": "assignee",
-                        "argument_value": "MikeTaylor"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Create a new initiative named 'Project Phoenix' led by SarahWilliams, add bugs from the backlog to the initiative, and assign them to ChrisAnderson.",
-        "answer": [
-            {
-                "tool_name": "create_project",
-                "arguments": [
-                    {
-                        "argument_name": "project_name",
-                        "argument_value": "Project Phoenix"
-                    },
-                    {
-                        "argument_name": "project_lead",
-                        "argument_value": "SarahWilliams"
-                    }
-                ]
-            },
-            {
-                "tool_name": "backlog_items",
-                "arguments": [
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "bug"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "create_work_item",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_type",
-                        "argument_value": "bug"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "$$PREV[1].title"
-                    },
-                    {
-                        "argument_name": "assignee",
-                        "argument_value": "ChrisAnderson"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Create a new project named 'Development Hub' led by AlexTurner, add documents from the knowledge base to the project, and assign them to EmmaClark.",
-        "answer": [
-            {
-                "tool_name": "create_project",
-                "arguments": [
-                    {
-                        "argument_name": "project_name",
-                        "argument_value": "Development Hub"
-                    },
-                    {
-                        "argument_name": "project_lead",
-                        "argument_value": "AlexTurner"
-                    }
-                ]
-            },
-            {
-                "tool_name": "knowledge_base_documents",
-                "arguments": []
-            },
-            {
-                "tool_name": "create_work_item",
-                "arguments": [
-                    {
-                        "argument_name": "work_item_type",
-                        "argument_value": "document"
-                    },
-                    {
-                        "argument_name": "title",
-                        "argument_value": "$$PREV[1].title"
-                    },
-                    {
-                        "argument_name": "assignee",
-                        "argument_value": "EmmaClark"
                     }
                 ]
             }
@@ -51689,576 +50482,6 @@
         ]
     },
     {
-        "question": "Considering priority levels, assign tasks TASK-456, BUG-789, and STORY-321 to different iterations. Place high-priority tasks in Iteration Alpha and low-priority tasks in Iteration Beta.",
-        "answer": [
-            {
-                "tool_name": "prioritize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": [
-                            "TASK-456",
-                            "BUG-789",
-                            "STORY-321"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "get_iteration_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "add_tasks_to_iteration",
-                "arguments": [
-                    {
-                        "argument_name": "task_ids",
-                        "argument_value": "$$PREV[0].high"
-                    },
-                    {
-                        "argument_name": "iteration_id",
-                        "argument_value": "Iteration Alpha"
-                    }
-                ]
-            },
-            {
-                "tool_name": "add_tasks_to_iteration",
-                "arguments": [
-                    {
-                        "argument_name": "task_ids",
-                        "argument_value": "$$PREV[0].low"
-                    },
-                    {
-                        "argument_name": "iteration_id",
-                        "argument_value": "Iteration Beta"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Arrange assignments HW-567, EXAM-890, and PROJECT-123 in different study sessions based on priority. High-priority assignments should be in Study Session 1, while low-priority ones should be in Study Session 2.",
-        "answer": [
-            {
-                "tool_name": "prioritize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": [
-                            "HW-567",
-                            "EXAM-890",
-                            "PROJECT-123"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "get_session_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "assign_assignments_to_session",
-                "arguments": [
-                    {
-                        "argument_name": "assignment_ids",
-                        "argument_value": "$$PREV[0].high"
-                    },
-                    {
-                        "argument_name": "session_id",
-                        "argument_value": "Study Session 1"
-                    }
-                ]
-            },
-            {
-                "tool_name": "assign_assignments_to_session",
-                "arguments": [
-                    {
-                        "argument_name": "assignment_ids",
-                        "argument_value": "$$PREV[0].low"
-                    },
-                    {
-                        "argument_name": "session_id",
-                        "argument_value": "Study Session 2"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Prioritize tasks CODE-123, TEST-456, and DEBUG-789 and allocate them to different development sprints. Place high-priority tasks in Sprint X and low-priority tasks in Sprint Y.",
-        "answer": [
-            {
-                "tool_name": "prioritize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": [
-                            "CODE-123",
-                            "TEST-456",
-                            "DEBUG-789"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "get_sprint_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "add_tasks_to_sprint",
-                "arguments": [
-                    {
-                        "argument_name": "task_ids",
-                        "argument_value": "$$PREV[0].high"
-                    },
-                    {
-                        "argument_name": "sprint_id",
-                        "argument_value": "Sprint X"
-                    }
-                ]
-            },
-            {
-                "tool_name": "add_tasks_to_sprint",
-                "arguments": [
-                    {
-                        "argument_name": "task_ids",
-                        "argument_value": "$$PREV[0].low"
-                    },
-                    {
-                        "argument_name": "sprint_id",
-                        "argument_value": "Sprint Y"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Considering urgency, assign tickets TICKET-123, ISSUE-456, and TASK-789 to different support queues. Place high-urgency tickets in Queue Alpha and low-urgency tickets in Queue Beta.",
-        "answer": [
-            {
-                "tool_name": "prioritize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": [
-                            "TICKET-123",
-                            "ISSUE-456",
-                            "TASK-789"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "get_queue_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "assign_tickets_to_queue",
-                "arguments": [
-                    {
-                        "argument_name": "ticket_ids",
-                        "argument_value": "$$PREV[0].high"
-                    },
-                    {
-                        "argument_name": "queue_id",
-                        "argument_value": "Queue Alpha"
-                    }
-                ]
-            },
-            {
-                "tool_name": "assign_tickets_to_queue",
-                "arguments": [
-                    {
-                        "argument_name": "ticket_ids",
-                        "argument_value": "$$PREV[0].low"
-                    },
-                    {
-                        "argument_name": "queue_id",
-                        "argument_value": "Queue Beta"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Organize features FEATURE-111, STORY-222, and TASK-333 based on priority levels and assign them to different development cycles. High-priority features should be in Cycle X, while low-priority ones should be in Cycle Y.",
-        "answer": [
-            {
-                "tool_name": "prioritize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": [
-                            "FEATURE-111",
-                            "STORY-222",
-                            "TASK-333"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "get_cycle_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "assign_features_to_cycle",
-                "arguments": [
-                    {
-                        "argument_name": "feature_ids",
-                        "argument_value": "$$PREV[0].high"
-                    },
-                    {
-                        "argument_name": "cycle_id",
-                        "argument_value": "Cycle X"
-                    }
-                ]
-            },
-            {
-                "tool_name": "assign_features_to_cycle",
-                "arguments": [
-                    {
-                        "argument_name": "feature_ids",
-                        "argument_value": "$$PREV[0].low"
-                    },
-                    {
-                        "argument_name": "cycle_id",
-                        "argument_value": "Cycle Y"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Include tasks TASK-456, PROJECT-789, and BUG-123 in the ongoing sprint.",
-        "answer": [
-            {
-                "tool_name": "get_sprint_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "add_tasks_to_sprint",
-                "arguments": [
-                    {
-                        "argument_name": "task_ids",
-                        "argument_value": [
-                            "TASK-456",
-                            "PROJECT-789",
-                            "BUG-123"
-                        ]
-                    },
-                    {
-                        "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[0]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Assign tickets TICKET-789, ISSUE-456, and TASK-123 to the current sprint.",
-        "answer": [
-            {
-                "tool_name": "get_sprint_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "add_tickets_to_sprint",
-                "arguments": [
-                    {
-                        "argument_name": "ticket_ids",
-                        "argument_value": [
-                            "TICKET-789",
-                            "ISSUE-456",
-                            "TASK-123"
-                        ]
-                    },
-                    {
-                        "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[0]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Include features FEATURE-123, STORY-456, and TASK-789 in the ongoing sprint.",
-        "answer": [
-            {
-                "tool_name": "get_sprint_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "add_features_to_sprint",
-                "arguments": [
-                    {
-                        "argument_name": "feature_ids",
-                        "argument_value": [
-                            "FEATURE-123",
-                            "STORY-456",
-                            "TASK-789"
-                        ]
-                    },
-                    {
-                        "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[0]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Place assignments HW-456, EXAM-789, and PROJECT-123 in the current sprint.",
-        "answer": [
-            {
-                "tool_name": "get_sprint_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "add_assignments_to_sprint",
-                "arguments": [
-                    {
-                        "argument_name": "assignment_ids",
-                        "argument_value": [
-                            "HW-456",
-                            "EXAM-789",
-                            "PROJECT-123"
-                        ]
-                    },
-                    {
-                        "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[0]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Add tasks CODE-789, TEST-456, and DEBUG-123 to the ongoing sprint.",
-        "answer": [
-            {
-                "tool_name": "get_sprint_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "add_tasks_to_sprint",
-                "arguments": [
-                    {
-                        "argument_name": "task_ids",
-                        "argument_value": [
-                            "CODE-789",
-                            "TEST-456",
-                            "DEBUG-123"
-                        ]
-                    },
-                    {
-                        "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[0]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Retrieve all issues associated with section SEC-789 that are either assigned to USER-123 or reported by USER-456. If there are issues in the 'Under Review' stage, move them to Review Board A. Provide a summary of the issues in Review Board A.",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "applies_to_section",
-                        "argument_value": [
-                            "SEC-789"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "issue"
-                        ]
-                    },
-                    {
-                        "argument_name": "assigned_to",
-                        "argument_value": [
-                            "USER-123"
-                        ]
-                    },
-                    {
-                        "argument_name": "reported_by",
-                        "argument_value": [
-                            "USER-456"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "applies_to_section",
-                        "argument_value": [
-                            "SEC-789"
-                        ]
-                    },
-                    {
-                        "argument_name": "assigned_to",
-                        "argument_value": [
-                            "USER-123"
-                        ]
-                    },
-                    {
-                        "argument_name": "reported_by",
-                        "argument_value": [
-                            "USER-456"
-                        ]
-                    },
-                    {
-                        "argument_name": "stage.name",
-                        "argument_value": [
-                            "Under Review"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "issue"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "add_work_items_to_board",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
-                        "argument_value": "$$PREV[1].map(issue => issue.id)"
-                    },
-                    {
-                        "argument_name": "board_id",
-                        "argument_value": "Review Board A"
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "board_id",
-                        "argument_value": "Review Board A"
-                    }
-                ]
-            },
-            {
-                "tool_name": "summarize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[3]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Find all features linked to module MOD-456 that are either managed by MANAGER-123 or created by MANAGER-789. If there are features in the 'To Do' stage, move them to Board X. Summarize the features in Board X.",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "linked_to_module",
-                        "argument_value": [
-                            "MOD-456"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "feature"
-                        ]
-                    },
-                    {
-                        "argument_name": "managed_by",
-                        "argument_value": [
-                            "MANAGER-123"
-                        ]
-                    },
-                    {
-                        "argument_name": "created_by",
-                        "argument_value": [
-                            "MANAGER-789"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "linked_to_module",
-                        "argument_value": [
-                            "MOD-456"
-                        ]
-                    },
-                    {
-                        "argument_name": "managed_by",
-                        "argument_value": [
-                            "MANAGER-123"
-                        ]
-                    },
-                    {
-                        "argument_name": "created_by",
-                        "argument_value": [
-                            "MANAGER-789"
-                        ]
-                    },
-                    {
-                        "argument_name": "stage.name",
-                        "argument_value": [
-                            "To Do"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "feature"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "add_work_items_to_board",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
-                        "argument_value": "$$PREV[1].map(feature => feature.id)"
-                    },
-                    {
-                        "argument_name": "board_id",
-                        "argument_value": "Board X"
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "board_id",
-                        "argument_value": "Board X"
-                    }
-                ]
-            },
-            {
-                "tool_name": "summarize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[3]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "question": "Retrieve all tasks related to component COMP-123 that are either assigned to USER-456 or reported by USER-789. If there are tasks in the 'Completed' stage, move them to Sprint Z. Provide a summary of the tasks in Sprint Z.",
         "answer": [
             {
@@ -52344,106 +50567,6 @@
                     {
                         "argument_name": "sprint_id",
                         "argument_value": "Sprint Z"
-                    }
-                ]
-            },
-            {
-                "tool_name": "summarize_objects",
-                "arguments": [
-                    {
-                        "argument_name": "objects",
-                        "argument_value": "$$PREV[3]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Find all bugs linked to module MOD-789 that are either assigned to QA-123 or reported by QA-456. If there are bugs in the 'Testing' stage, move them to Test Cycle A. Summarize the bugs in Test Cycle A.",
-        "answer": [
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "linked_to_module",
-                        "argument_value": [
-                            "MOD-789"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "bug"
-                        ]
-                    },
-                    {
-                        "argument_name": "assigned_to",
-                        "argument_value": [
-                            "QA-123"
-                        ]
-                    },
-                    {
-                        "argument_name": "reported_by",
-                        "argument_value": [
-                            "QA-456"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "linked_to_module",
-                        "argument_value": [
-                            "MOD-789"
-                        ]
-                    },
-                    {
-                        "argument_name": "assigned_to",
-                        "argument_value": [
-                            "QA-123"
-                        ]
-                    },
-                    {
-                        "argument_name": "reported_by",
-                        "argument_value": [
-                            "QA-456"
-                        ]
-                    },
-                    {
-                        "argument_name": "stage.name",
-                        "argument_value": [
-                            "Testing"
-                        ]
-                    },
-                    {
-                        "argument_name": "type",
-                        "argument_value": [
-                            "bug"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tool_name": "add_work_items_to_cycle",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
-                        "argument_value": "$$PREV[1].map(bug => bug.id)"
-                    },
-                    {
-                        "argument_name": "cycle_id",
-                        "argument_value": "Test Cycle A"
-                    }
-                ]
-            },
-            {
-                "tool_name": "works_list",
-                "arguments": [
-                    {
-                        "argument_name": "cycle_id",
-                        "argument_value": "Test Cycle A"
                     }
                 ]
             },
@@ -53089,31 +51212,6 @@
         ]
     },
     {
-        "question": "Retrieve the current iteration ID and add user stories US-123 and US-456 to it.",
-        "answer": [
-            {
-                "tool_name": "get_iteration_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "add_work_items_to_iteration",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
-                        "argument_value": [
-                            "US-123",
-                            "US-456"
-                        ]
-                    },
-                    {
-                        "argument_name": "iteration_id",
-                        "argument_value": "$$PREV[0]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "question": "Fetch the ID of the current sprint and include bugs BUG-123 and BUG-456 in it.",
         "answer": [
             {
@@ -53132,31 +51230,6 @@
                     },
                     {
                         "argument_name": "sprint_id",
-                        "argument_value": "$$PREV[0]"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Find the current release ID and add tasks TASK-789 and TASK-890 to it.",
-        "answer": [
-            {
-                "tool_name": "get_release_id",
-                "arguments": []
-            },
-            {
-                "tool_name": "add_work_items_to_release",
-                "arguments": [
-                    {
-                        "argument_name": "work_ids",
-                        "argument_value": [
-                            "TASK-789",
-                            "TASK-890"
-                        ]
-                    },
-                    {
-                        "argument_name": "release_id",
                         "argument_value": "$$PREV[0]"
                     }
                 ]

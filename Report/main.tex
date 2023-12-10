@@ -1,0 +1,86 @@
+% CVPR 2022 Paper Template
+% based on the CVPR template provided by Ming-Ming Cheng (https://github.com/MCG-NKU/CVPR_Template)
+% modified and extended by Stefan Roth (stefan.roth@NOSPAMtu-darmstadt.de)
+
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+%%%%%%%%% PAPER TYPE  - PLEASE UPDATE FOR FINAL VERSION
+%\usepackage[review]{cvpr}      % To produce the REVIEW version
+\usepackage{cvpr}              % To produce the CAMERA-READY version
+%\usepackage[pagenumbers]{cvpr} % To force page numbers, e.g. for an arXiv version
+
+
+% Include other packages here, before hyperref.
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{todonotes}
+\usepackage{minted}
+\usepackage{subfiles}
+\usepackage{xcolor} % to access the named colour LightGray
+\definecolor{LightGray}{gray}{0.9}
+
+% It is strongly recommended to use hyperref, especially for the review version.
+% hyperref with option pagebackref eases the reviewers' job.
+% Please disable hyperref *only* if you encounter grave issues, e.g. with the
+% file validation for the camera-ready version.
+%
+% If you comment hyperref and then uncomment it, you should delete
+% ReviewTempalte.aux before re-running LaTeX.
+% (Or just hit 'q' on the first LaTeX run, let it finish, and you
+%  should be clear).
+\usepackage[pagebackref,breaklinks,colorlinks]{hyperref}
+\usepackage{minted}
+
+
+% Support for easy cross-referencing
+\usepackage[capitalize]{cleveref}
+\crefname{section}{Sec.}{Secs.}
+\Crefname{section}{Section}{Sections}
+\Crefname{table}{Table}{Tables}
+\crefname{table}{Tab.}{Tabs.}
+
+\newcommand{\abs}[1]{\lvert{#1}\rvert}
+\newcommand{\brak}[1]{\left(#1\right)}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\cbrak}[1]{\left\{#1\right\}}
+\newcommand{\sbrak}[1]{\left[#1\right]}
+\newcommand{\caligraphic}[1]{\mathcal{#1}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\lstdefinestyle{json}{
+    basicstyle=\small\ttfamily,
+    commentstyle=\color{gray},
+    stringstyle=\color{blue},
+    keywordstyle=\color{red},
+    numberstyle=\color{purple},
+    identifierstyle=\color{olive},
+    breaklines=true,
+    showstringspaces=false,
+    tabsize=2,
+    frame=single,
+    backgroundcolor=\color{white},
+    captionpos=b,
+}
+
+
+\begin{document}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{%Inter IIT Tech Meet 12.0\\
+%AI Agent 007: Tooling up for Success\\
+Mid-Term Report}
+
+\author{Team 35}
+
+% \subfile{ProjectReport1.tex}
+\subfile{FinalReport.tex}
+
+\end{document}

@@ -1,0 +1,1720 @@
+[
+    {
+        "tool_name": "tool_searcher",
+        "tool_description": "Searches for relevant tools in library based on the keyword.",
+        "arguments": [
+            {
+                "name": "keywords",
+                "type": "string",
+                "description": "The keyword to search for."
+            }
+        ]
+    },
+    {
+        "tool_name": "query_stock",
+        "tool_description": "This API queries the stock price of a given stock code and date.",
+        "arguments": [
+            {
+                "name": "stock_code",
+                "type": "string",
+                "description": "The stock code of the given stock."
+            },
+            {
+                "name": "date",
+                "type": "string",
+                "description": "The date of the stock price.Format: %Y-%m-%d."
+            }
+        ]
+    },
+    {
+        "tool_name": "emergency_knowledge",
+        "tool_description": "This API searches for a given symptom for emergency knowledge.",
+        "arguments": [
+            {
+                "name": "symptom",
+                "type": "string",
+                "description": "The symptom to search."
+            }
+        ]
+    },
+    {
+        "tool_name": "delete_alarm",
+        "tool_description": "The API for removing an alarm includes a parameter for the time.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for alarm. Format: %Y-%m-%d %H:%M:%S"
+            }
+        ]
+    },
+    {
+        "tool_name": "register_user",
+        "tool_description": "The API for registering a account, given the username, password and email.",
+        "arguments": [
+            {
+                "name": "username",
+                "type": "string",
+                "description": "The username of the user."
+            },
+            {
+                "name": "password",
+                "type": "string",
+                "description": "The password of the user."
+            },
+            {
+                "name": "email",
+                "type": "string",
+                "description": "The email of the user."
+            }
+        ]
+    },
+    {
+        "tool_name": "play_music",
+        "tool_description": "This API triggers a music player to play music.",
+        "arguments": [
+            {
+                "name": "music_name",
+                "type": "string",
+                "description": "The name of the music to play."
+            }
+        ]
+    },
+    {
+        "tool_name": "check_token",
+        "tool_description": "Check the user token.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "The token of the user."
+            }
+        ]
+    },
+    {
+        "tool_name": "query_meeting",
+        "tool_description": "The API for retrieving the meeting details from the user's calendar.",
+        "arguments": [
+            {
+                "name": "user_name",
+                "type": "string",
+                "description": "Name of the user."
+            }
+        ]
+    },
+    {
+        "tool_name": "query_scene",
+        "tool_description": "This API queries a scene of smart home system, given the scene name",
+        "arguments": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the scene."
+            }
+        ]
+    },
+    {
+        "tool_name": "translate",
+        "tool_description": "Translate the text to the target language.",
+        "arguments": [
+            {
+                "name": "src",
+                "type": "string",
+                "description": "The text to be translated."
+            },
+            {
+                "name": "src_lang",
+                "type": "string",
+                "description": "[Optional] The source language to translate from. Default is auto."
+            },
+            {
+                "name": "tgt_lang",
+                "type": "string",
+                "description": "[Optional] The target language to translate to. Default is english/en."
+            }
+        ]
+    },
+    {
+        "tool_name": "timed_switch",
+        "tool_description": "This API for setting a timed switch for a smart device.",
+        "arguments": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the smart device."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time to switch the device on or off. Format: %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "on",
+                "type": "boolean",
+                "description": "Whether to switch the device on or off."
+            }
+        ]
+    },
+    {
+        "tool_name": "appointment_registration",
+        "tool_description": "This API registers an appointment of hospital.",
+        "arguments": [
+            {
+                "name": "patient_name",
+                "type": "string",
+                "description": "The name of patient."
+            },
+            {
+                "name": "date",
+                "type": "string",
+                "description": "The date of appointment. Format be like %Y-%m-%d"
+            },
+            {
+                "name": "doctor_name",
+                "type": "string",
+                "description": "The name of appointed doctor."
+            }
+        ]
+    },
+    {
+        "tool_name": "addalarm",
+        "tool_description": "The API for setting an alarm includes a parameter for the alarm time.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for alarm. Format: %Y-%m-%d %H:%M:%S"
+            }
+        ]
+    },
+    {
+        "tool_name": "query_alarm",
+        "tool_description": "The API for querying alarm clock, help user to check the alarm clock they have set.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for alarm. Format: %Y-%m-%d %H:%M:%S"
+            }
+        ]
+    },
+    {
+        "tool_name": "add_scene",
+        "tool_description": "This API adds a scene of smart home system, given the scene name and a list of smart devices",
+        "arguments": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the scene."
+            },
+            {
+                "name": "devices",
+                "type": "list",
+                "description": "The list of smart devices"
+            }
+        ]
+    },
+    {
+        "tool_name": "image_caption",
+        "tool_description": "This API generates a caption for a given image.",
+        "arguments": [
+            {
+                "name": "url",
+                "type": "string",
+                "description": "The url to download the image. It should end with .jpg"
+            }
+        ]
+    },
+    {
+        "tool_name": "speech_recognition",
+        "tool_description": "This API recognizes the speech from a given audio url.",
+        "arguments": [
+            {
+                "name": "url",
+                "type": "string",
+                "description": "The url to download the audio. It should end with .wav."
+            }
+        ]
+    },
+    {
+        "tool_name": "delete_agenda",
+        "tool_description": "The API for deleting a schedule item includes parameters for token, content, time, and location.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "The content of the agenda."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for agenda. Format: %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The location of the agenda."
+            }
+        ]
+    },
+    {
+        "tool_name": "symptomsearch",
+        "tool_description": "This API searches for a given symptom.",
+        "arguments": [
+            {
+                "name": "symptom",
+                "type": "string",
+                "description": "The symptom to search."
+            }
+        ]
+    },
+    {
+        "tool_name": "delete_scene",
+        "tool_description": "This API deletes a scene by its name.",
+        "arguments": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the scene."
+            }
+        ]
+    },
+    {
+        "tool_name": "search_engine",
+        "tool_description": "This API searches for a given keyword for search engine.",
+        "arguments": [
+            {
+                "name": "keyword",
+                "type": "string",
+                "description": "The keyword to search."
+            }
+        ]
+    },
+    {
+        "tool_name": "modify_password",
+        "tool_description": "The API for modifying the password of the account.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "The token of the user."
+            },
+            {
+                "name": "old_password",
+                "type": "string",
+                "description": "The old password of the user."
+            },
+            {
+                "name": "new_password",
+                "type": "string",
+                "description": "The new password of the user."
+            }
+        ]
+    },
+    {
+        "tool_name": "document_q_a",
+        "tool_description": "This API answers the question from a given document url.",
+        "arguments": [
+            {
+                "name": "url",
+                "type": "string",
+                "description": "The url to download the document. It should end with .txt."
+            },
+            {
+                "name": "question",
+                "type": "string",
+                "description": "The question to be answered."
+            }
+        ]
+    },
+    {
+        "tool_name": "query_balance",
+        "tool_description": "This API queries the balance of a given user.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "The token of the user."
+            }
+        ]
+    },
+    {
+        "tool_name": "record_health_data",
+        "tool_description": "This API records the health data of a user.",
+        "arguments": [
+            {
+                "name": "user_id",
+                "type": "string",
+                "description": "The ID of user."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time of health data. Format: %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "health_data",
+                "type": "list",
+                "description": "The health data"
+            }
+        ]
+    },
+    {
+        "tool_name": "open_bank_account",
+        "tool_description": "This is an API for opening a bank account for a user, given the account, password and name.",
+        "arguments": [
+            {
+                "name": "account",
+                "type": "string",
+                "description": "The account for the user."
+            },
+            {
+                "name": "password",
+                "type": "string",
+                "description": "The password."
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "description": "account holder name."
+            }
+        ]
+    },
+    {
+        "tool_name": "query_registration",
+        "tool_description": "This API queries the registration of a patient, given patient ID.",
+        "arguments": [
+            {
+                "name": "patient_name",
+                "type": "string",
+                "description": "The name of patient."
+            },
+            {
+                "name": "date",
+                "type": "string",
+                "description": "The date of appointment. Format be like %Y-%m-%d"
+            }
+        ]
+    },
+    {
+        "tool_name": "modify_reminder",
+        "tool_description": "The API for deleting a reminder item includes content and time.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "The content of the conference."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for conference. Format: %Y-%m-%d %H:%M:%S"
+            }
+        ]
+    },
+    {
+        "tool_name": "modify_registration",
+        "tool_description": "This API modifies the registration of a patient given appointment ID.",
+        "arguments": [
+            {
+                "name": "appointment_id",
+                "type": "string",
+                "description": "The ID of appointment."
+            },
+            {
+                "name": "new_appointment_date",
+                "type": "string",
+                "description": "The new appointment date. Format: %Y-%m-%d"
+            },
+            {
+                "name": "new_appointment_doctor",
+                "type": "string",
+                "description": "The new appointment doctor."
+            }
+        ]
+    },
+    {
+        "tool_name": "add_meeting",
+        "tool_description": "This API allows users to make a reservation for a meeting and store the meeting information in the database. \\Function\uff1a \\Allow users to make a reservation for a meeting. \\Exception Handling\uff1a \\1. If the reservation is successful, return a success message. \\2. If the reservation fails, return a corresponding error message.",
+        "arguments": [
+            {
+                "name": "meeting_topic",
+                "type": "string",
+                "description": "The title of the meeting"
+            },
+            {
+                "name": "start_time",
+                "type": "string",
+                "description": "The start time of the meeting, in the pattern of %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "end_time",
+                "type": "string",
+                "description": "The end time of the meeting, in the pattern of %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The location where the meeting to be held, no more than 100 characters."
+            },
+            {
+                "name": "attendees",
+                "type": "list of strings",
+                "description": "The attendees of the meeting, including names, positions and other information."
+            }
+        ]
+    },
+    {
+        "tool_name": "forgot_password",
+        "tool_description": "Sends an email to the user with a link to reset the password. Need call twice, first with \\'Forgot Password\\' status to get the verification code, then call again with \\'Verification Code\\' status to change the password. Must pass the name of the parameters when calling the API, like ForgotPassword(status=\\'Forgot Password\\', username=\\'username\\').",
+        "arguments": [
+            {
+                "name": "status",
+                "type": "string",
+                "description": "'Forgot Password' for first call"
+            },
+            {
+                "name": "username",
+                "type": "string",
+                "description": "The username of the user. Only needed for the first call."
+            },
+            {
+                "name": "email",
+                "type": "string",
+                "description": "The email of the user. Only needed for the first call."
+            },
+            {
+                "name": "verification_code",
+                "type": "integer",
+                "description": "The verification code sent to the user. Only needed for the second call."
+            },
+            {
+                "name": "new_password",
+                "type": "string",
+                "description": "The new password of the user. Only needed for the second call."
+            }
+        ]
+    },
+    {
+        "tool_name": "cancel_registration",
+        "tool_description": "This API cancels the registration of a patient given appointment ID.",
+        "arguments": [
+            {
+                "name": "appointment_id",
+                "type": "string",
+                "description": "The ID of appointment."
+            }
+        ]
+    },
+    {
+        "tool_name": "query_agenda",
+        "tool_description": "The API for getting a schedule item includes parameters for token, content, time, and location.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "The content of the agenda."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for agenda. Format: %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The location of the agenda."
+            }
+        ]
+    },
+    {
+        "tool_name": "cancel_timed_switch",
+        "tool_description": "Cancels a timed switch for a smart device.",
+        "arguments": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the smart device."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time to switch the device on or off. Format: %Y-%m-%d %H:%M:%S"
+            }
+        ]
+    },
+    {
+        "tool_name": "book_hotel",
+        "tool_description": "This API orders a hotel room. Two rooms are ordered if the number of adults is greater than 2. Only one order can be made at same time.",
+        "arguments": [
+            {
+                "name": "hotel_name",
+                "type": "string",
+                "description": "The name of the hotel."
+            },
+            {
+                "name": "check_in_time",
+                "type": "string",
+                "description": "The time to check in. Format: %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "check_out_time",
+                "type": "string",
+                "description": "The time to check out. Format %Y-%m-%d %H:%M:%S:"
+            },
+            {
+                "name": "room_count",
+                "type": "integer",
+                "description": "The number of rooms to order."
+            },
+            {
+                "name": "adult_count",
+                "type": "integer",
+                "description": "The number of adults."
+            },
+            {
+                "name": "child_count",
+                "type": "integer",
+                "description": "The number of children."
+            }
+        ]
+    },
+    {
+        "tool_name": "calculator",
+        "tool_description": "This API provides basic arithmetic operations: addition, subtraction, multiplication, and division.",
+        "arguments": [
+            {
+                "name": "formula",
+                "type": "string",
+                "description": "The formula that needs to be calculated. Only integers are supported. Valid operators are +"
+            }
+        ]
+    },
+    {
+        "tool_name": "query_history_today",
+        "tool_description": "This API queries the history of the given date.",
+        "arguments": [
+            {
+                "name": "date",
+                "type": "string",
+                "description": "The date of the history. Format: %Y-%m-%d"
+            }
+        ]
+    },
+    {
+        "tool_name": "delete_meeting",
+        "tool_description": "This API allows users to delete a reservation for a meeting and remove the meeting information in the database.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "meeting_topic",
+                "type": "string",
+                "description": "The title of the meeting"
+            },
+            {
+                "name": "start_time",
+                "type": "string",
+                "description": "The start time of the meeting, in the pattern of %Y-%m-%d %H"
+            },
+            {
+                "name": "end_time",
+                "type": "string",
+                "description": "The end time of the meeting, in the pattern of %Y-%m-%d %H"
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The location where the meeting to be held, no more than 100 characters."
+            },
+            {
+                "name": "attendees",
+                "type": "list of strings",
+                "description": "The attendees of the meeting, including names, positions and other information."
+            }
+        ]
+    },
+    {
+        "tool_name": "get_today",
+        "tool_description": "This API gets the current date.",
+        "arguments": []
+    },
+    {
+        "tool_name": "modifymeeting",
+        "tool_description": "This API allows users to modify a reservation for a meeting",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "meeting_topic",
+                "type": "string",
+                "description": "The title of the meeting"
+            },
+            {
+                "name": "start_time",
+                "type": "string",
+                "description": "The start time of the meeting, in the pattern of %Y-%m-%d %H"
+            },
+            {
+                "name": "end_time",
+                "type": "string",
+                "description": "The end time of the meeting, in the pattern of %Y-%m-%d %H"
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The location where the meeting to be held, no more than 100 characters."
+            },
+            {
+                "name": "attendees",
+                "type": "list of strings",
+                "description": "The attendees of the meeting, including names, positions and other information."
+            }
+        ]
+    },
+    {
+        "tool_name": "delete_reminder",
+        "tool_description": "The API for deleting a reminder item includes content and time.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "The content of the conference."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for conference. Format: %Y-%m-%d %H:%M:%S"
+            }
+        ]
+    },
+    {
+        "tool_name": "modify_agenda",
+        "tool_description": "The API for modifying a schedule item includes parameters for content, time, and location.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "The content of the agenda."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The new time for agenda. Format: %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The new location of the agenda."
+            }
+        ]
+    },
+    {
+        "tool_name": "query_reminder",
+        "tool_description": "The API for querying a reminder item includes content and time.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "The content of the reminder."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for the reminder. Format: %Y-%m-%d %H:%M:%S"
+            }
+        ]
+    },
+    {
+        "tool_name": "modify_alarm",
+        "tool_description": "The API for modifying an alarm includes a parameter for the from_time to to_time.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "from_time",
+                "type": "string",
+                "description": "The time for alarm which changed from. Format: %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "to_time",
+                "type": "string",
+                "description": "The time for alarm which changed to. Format: %Y-%m-%d %H:%M:%S"
+            }
+        ]
+    },
+    {
+        "tool_name": "add_reminder",
+        "tool_description": "The API for adding a reminder item includes content and time.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "The content of the conference."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for conference. Format: %Y-%m-%d %H:%M:%S"
+            }
+        ]
+    },
+    {
+        "tool_name": "dictionary",
+        "tool_description": "This API searches the dictionary for a given keyword.",
+        "arguments": [
+            {
+                "name": "keyword",
+                "type": "string",
+                "description": "The keyword to search."
+            }
+        ]
+    },
+    {
+        "tool_name": "send_email",
+        "tool_description": "This API for sending email, given the receiver, subject and content.",
+        "arguments": [
+            {
+                "name": "receiver",
+                "type": "string",
+                "description": "The receiver address of the email."
+            },
+            {
+                "name": "subject",
+                "type": "string",
+                "description": "The subject address of the email."
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "The content of the email."
+            }
+        ]
+    },
+    {
+        "tool_name": "query_health_data",
+        "tool_description": "This API queries the recorded health data in database of a given user and time span.",
+        "arguments": [
+            {
+                "name": "user_id",
+                "type": "string",
+                "description": "The user id of the given user. Cases are ignored."
+            },
+            {
+                "name": "start_time",
+                "type": "string",
+                "description": "The start time of the time span. Format: %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "end_time",
+                "type": "string",
+                "description": "The end time of the time span. Format: %Y-%m-%d %H:%M:%S"
+            }
+        ]
+    },
+    {
+        "tool_name": "wiki",
+        "tool_description": "This API for searching a keyword in Wikipedia.",
+        "arguments": [
+            {
+                "name": "keyword",
+                "type": "string",
+                "description": "The keyword to search."
+            }
+        ]
+    },
+    {
+        "tool_name": "get_user_token",
+        "tool_description": "Get the user token by username and password.",
+        "arguments": [
+            {
+                "name": "username",
+                "type": "string",
+                "description": "The username of the user."
+            },
+            {
+                "name": "password",
+                "type": "string",
+                "description": "The password of the user."
+            }
+        ]
+    },
+    {
+        "tool_name": "addagenda",
+        "tool_description": "The API for adding a agenda item includes content, time and location.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "User's token."
+            },
+            {
+                "name": "content",
+                "type": "string",
+                "description": "The content of the agenda."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for agenda. Format: %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The location of the agenda."
+            }
+        ]
+    },
+    {
+        "tool_name": "delete_account",
+        "tool_description": "Delete an account.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "The token of the user."
+            }
+        ]
+    },
+    {
+        "tool_name": "modify_scene",
+        "tool_description": "This API modifies a scene of smart home system, given the scene name and a list of smart devices",
+        "arguments": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the scene."
+            },
+            {
+                "name": "devices",
+                "type": "list",
+                "description": "The list of smart devices"
+            }
+        ]
+    },
+    {
+        "tool_name": "organization_members",
+        "tool_description": "API to retrieve the list of members in the organization.",
+        "arguments": [
+            {
+                "name": "organization",
+                "type": "string",
+                "description": "Name of the organization."
+            }
+        ]
+    },
+    {
+        "tool_name": "travel_status",
+        "tool_description": "API for retrieving the current travel status of each member.",
+        "arguments": [
+            {
+                "name": "member_name",
+                "type": "string",
+                "description": "Name of the member."
+            }
+        ]
+    },
+    {
+        "tool_name": "user_movie_preferences",
+        "tool_description": "API for retrieving user preferences for movie recommendations.",
+        "arguments": [
+            {
+                "name": "user_name",
+                "type": "string",
+                "description": "Name of the user."
+            }
+        ]
+    },
+    {
+        "tool_name": "account_info",
+        "tool_description": "API for retrieving and updating user account information.",
+        "arguments": [
+            {
+                "name": "username",
+                "type": "string",
+                "description": "Name of the user."
+            },
+            {
+                "name": "password",
+                "type": "string",
+                "description": "Password of the user."
+            }
+        ]
+    },
+    {
+        "tool_name": "flight_search",
+        "tool_description": "API to retrieve flight options based on the destination and travel dates.",
+        "arguments": [
+            {
+                "name": "source",
+                "type": "string",
+                "description": "Source for the flight."
+            },
+            {
+                "name": "destination",
+                "type": "string",
+                "description": "Destination for the flight."
+            },
+            {
+                "name": "travel_dates",
+                "type": "string",
+                "description": "Travel dates. Format: %Y-%m-%d"
+            }
+        ]
+    },
+    {
+        "tool_name": "tax_calculator",
+        "tool_description": "API for calculating tax deductions based on the given salary.",
+        "arguments": [
+            {
+                "name": "salary",
+                "type": "float",
+                "description": "The salary to calculate tax deductions for."
+            }
+        ]
+    },
+    {
+        "tool_name": "hotel_availability",
+        "tool_description": "API for checking hotel availability based on the destination and travel dates.",
+        "arguments": [
+            {
+                "name": "destination",
+                "type": "string",
+                "description": "Destination for hotel search."
+            },
+            {
+                "name": "check_in_date",
+                "type": "string",
+                "description": "Check-in date. Format: %Y-%m-%d"
+            },
+            {
+                "name": "check_out_date",
+                "type": "string",
+                "description": "Check-out date. Format: %Y-%m-%d"
+            }
+        ]
+    },
+    {
+        "tool_name": "get_occupation_salary",
+        "tool_description": "API for querying the salary of a given occupation.",
+        "arguments": [
+            {
+                "name": "occupation",
+                "type": "string",
+                "description": "The occupation to query."
+            }
+        ]
+    },
+    {
+        "tool_name": "geocoding",
+        "tool_description": "The API for converting an address or place name to geographical coordinates.",
+        "arguments": [
+            {
+                "name": "address",
+                "type": "string",
+                "description": "The address or place name to be converted."
+            }
+        ]
+    },
+    {
+        "tool_name": "personal_info_update",
+        "tool_description": "The API for updating a user's personal information and address.",
+        "arguments": [
+            {
+                "name": "username",
+                "type": "string",
+                "description": "Name of the user."
+            },
+            {
+                "name": "password",
+                "type": "string",
+                "description": "Password of the user."
+            },
+            {
+                "name": "address",
+                "type": "string",
+                "description": "Updated address information."
+            }
+        ]
+    },
+    {
+        "tool_name": "nearby_restaurants",
+        "tool_description": "Retrieves nearby restaurants based on the provided coordinates and search parameters.",
+        "arguments": [
+            {
+                "name": "latitude",
+                "type": "float",
+                "description": "Latitude of the location."
+            },
+            {
+                "name": "longitude",
+                "type": "float",
+                "description": "Longitude of the location."
+            },
+            {
+                "name": "distance",
+                "type": "integer",
+                "description": "The distance in meters from the location to search for restaurants."
+            }
+        ]
+    },
+    {
+        "tool_name": "email_reminder",
+        "tool_description": "This API sends an email reminder to the user with the meeting details.",
+        "arguments": [
+            {
+                "name": "content",
+                "type": "string",
+                "description": "The content of the email."
+            },
+            {
+                "name": "time",
+                "type": "string",
+                "description": "The time for the meeting. Format: %Y-%m-%d %H:%M:%S"
+            },
+            {
+                "name": "location",
+                "type": "string",
+                "description": "The location of the meeting."
+            },
+            {
+                "name": "recipient",
+                "type": "string",
+                "description": "The email address of the recipient."
+            }
+        ]
+    },
+    {
+        "tool_name": "user_watched_movies",
+        "tool_description": "API for retrieving a user's watched movie list.",
+        "arguments": [
+            {
+                "name": "user_name",
+                "type": "string",
+                "description": "Name of the user."
+            }
+        ]
+    },
+    {
+        "tool_name": "get_weather_for_coordinates",
+        "tool_description": "Retrieves current weather information based on the provided coordinates.",
+        "arguments": [
+            {
+                "name": "latitude",
+                "type": "float",
+                "description": "Latitude of the location."
+            },
+            {
+                "name": "longitude",
+                "type": "float",
+                "description": "Longitude of the location."
+            }
+        ]
+    },
+    {
+        "tool_name": "like_count",
+        "tool_description": "API to retrieve the number of likes for a given post ID.",
+        "arguments": [
+            {
+                "name": "post_id",
+                "type": "integer",
+                "description": "Post ID."
+            }
+        ]
+    },
+    {
+        "tool_name": "user_posts",
+        "tool_description": "API to retrieve the post IDs for a specific user.",
+        "arguments": [
+            {
+                "name": "user_id",
+                "type": "integer",
+                "description": "User's ID."
+            }
+        ]
+    },
+    {
+        "tool_name": "movie_recommendations",
+        "tool_description": "The API for retrieving recommended movies based on user preferences and filtering watched movies.",
+        "arguments": [
+            {
+                "name": "preferences",
+                "type": "list",
+                "description": "User's movie preferences."
+            }
+        ]
+    },
+    {
+        "tool_name": "clothing_recommendation",
+        "tool_description": "API for providing clothing recommendations based on weather conditions.",
+        "arguments": [
+            {
+                "name": "temperature",
+                "type": "float",
+                "description": "Temperature in Celsius."
+            },
+            {
+                "name": "humidity",
+                "type": "float",
+                "description": "Relative humidity in percentage."
+            },
+            {
+                "name": "weather_conditions",
+                "type": "string",
+                "description": "Description of weather conditions."
+            }
+        ]
+    },
+    {
+        "tool_name": "works_list",
+        "tool_description": "Returns a list of work items matching the request",
+        "arguments": [
+            {
+                "name": "applies_to_part",
+                "description": "Filters for work belonging to any of the provided parts",
+                "type": "array of strings",
+                "example": [
+                    "FEAT-123",
+                    "ENH-123",
+                    "PROD-123",
+                    "CAPL-123"
+                ]
+            },
+            {
+                "name": "created_by",
+                "description": "Filters for work created by any of these users",
+                "type": "array of strings",
+                "example": [
+                    "DEVU-123"
+                ]
+            },
+            {
+                "name": "issue.priority",
+                "description": "Filters for issues with any of the provided priorities. Allowed values: p0, p1, p2, p3",
+                "type": "array of strings",
+                "example": ""
+            },
+            {
+                "name": "issue.rev_orgs",
+                "description": "Filters for issues with any of the provided Rev organizations",
+                "type": "array of strings",
+                "example": [
+                    "REV-123"
+                ]
+            },
+            {
+                "name": "imit",
+                "description": "The maximum number of works to return. The default is '50'",
+                "type": "Integer (int32)",
+                "example": ""
+            },
+            {
+                "name": "owned_by",
+                "description": "Filters for work owned by any of these users",
+                "type": "array of strings",
+                "example": [
+                    "DEVU-123"
+                ]
+            },
+            {
+                "name": "stage.name",
+                "description": "Filters for records in the provided stage(s) by name",
+                "type": "array of strings",
+                "example": ""
+            },
+            {
+                "name": "ticket.needs_response",
+                "description": "Filters for tickets that need a response",
+                "type": "boolean",
+                "example": ""
+            },
+            {
+                "name": "ticket.rev_org",
+                "description": "Filters for tickets associated with any of the provided Rev organizations",
+                "type": "array of strings",
+                "example": [
+                    "REV-123"
+                ]
+            },
+            {
+                "name": "ticket.severity",
+                "description": "Filters for tickets with any of the provided severities. Allowed values: blocker, high, low, medium",
+                "type": "array of strings",
+                "example": ""
+            },
+            {
+                "name": "ticket.source_channel",
+                "description": "Filters for tickets with any of the provided source channels",
+                "type": "array of strings",
+                "example": ""
+            },
+            {
+                "name": "type",
+                "description": "Filters for work of the provided types. Allowed values: issue, ticket, task",
+                "type": "array of strings",
+                "example": ""
+            }
+        ]
+    },
+    {
+        "tool_name": "summarize_objects",
+        "tool_description": "Summarizes a list of objects. The logic of how to summarize a particular object type is an internal implementation detail.",
+        "arguments": [
+            {
+                "name": "objects",
+                "description": "List of objects to summarize",
+                "type": "array of objects",
+                "example": ""
+            }
+        ]
+    },
+    {
+        "tool_name": "prioritize_objects",
+        "tool_description": "Returns a list of objects sorted by priority. The logic of what constitutes priority for a given object is an internal implementation detail",
+        "arguments": [
+            {
+                "name": "objects",
+                "description": "A list of objects to be prioritized",
+                "type": "array of objects",
+                "example": ""
+            }
+        ]
+    },
+    {
+        "tool_name": "add_work_items_to_sprint",
+        "tool_description": "Adds the given work items to the sprint",
+        "arguments": [
+            {
+                "name": "work_ids",
+                "description": "A list of work item IDs to be added to the sprint",
+                "type": "array of strings",
+                "example": ""
+            },
+            {
+                "name": "sprint_id",
+                "description": "The ID of the sprint to which the work items should be added",
+                "type": "str",
+                "example": ""
+            }
+        ]
+    },
+    {
+        "tool_name": "get_sprint_id",
+        "tool_description": "Returns the ID of the current sprint",
+        "arguments": []
+    },
+    {
+        "tool_name": "get_similar_work_items",
+        "tool_description": "Returns a list of work items that are similar to the given work item",
+        "arguments": [
+            {
+                "name": "work_id",
+                "description": "The ID of the work item for which you want to find similar items",
+                "type": "string",
+                "example": ""
+            }
+        ]
+    },
+    {
+        "tool_name": "search_object_by_name",
+        "tool_description": "Given a search string, returns the id of a matching object in the system of record. If multiple matches are found, it returns the one where the confidence is highest.",
+        "arguments": [
+            {
+                "name": "query",
+                "description": "The search string, could be for example customer's name, part name, user name.",
+                "type": "string",
+                "example": ""
+            }
+        ]
+    },
+    {
+        "tool_name": "who_am_i",
+        "tool_description": "Returns the ID of the current user",
+        "arguments": []
+    },
+    {
+        "tool_name": "create_work_item",
+        "tool_description": "Creates a new work item, such as a task, issue, or enhancement, and adds it to the project.",
+        "arguments": [
+            {
+                "name": "work_item_type",
+                "description": "The type of work item to create (e.g., task, issue, enhancement)",
+                "type": "string",
+                "example": "task"
+            },
+            {
+                "name": "title",
+                "description": "The title or name of the work item",
+                "type": "string",
+                "example": "Implement Feature X"
+            },
+            {
+                "name": "description",
+                "description": "A detailed description of the work item",
+                "type": "string",
+                "example": "This task involves implementing Feature X with specific requirements."
+            },
+            {
+                "name": "assignee",
+                "description": "The team member to whom the work item is assigned",
+                "type": "string",
+                "example": "DEVU-456"
+            },
+            {
+                "name": "priority",
+                "description": "Specifies the priority level of the work item",
+                "type": "string",
+                "example": "high"
+            },
+            {
+                "name": "due_date",
+                "description": "Sets a due date for the work item",
+                "type": "string",
+                "example": "2023-12-31"
+            },
+            {
+                "name": "tags",
+                "description": "Allows adding tags or labels for categorization",
+                "type": "array of strings",
+                "example": [
+                    "feature",
+                    "bug",
+                    "urgent"
+                ]
+            }
+        ]
+    },
+    {
+        "tool_name": "update_work_item_status",
+        "tool_description": "Updates the status of a work item to reflect its progress in the development lifecycle.",
+        "arguments": [
+            {
+                "name": "work_item_id",
+                "description": "The ID of the work item to update",
+                "type": "string",
+                "example": "TASK-789"
+            },
+            {
+                "name": "new_status",
+                "description": "The new status to assign to the work item (e.g., In Progress, Done)",
+                "type": "string",
+                "example": "In Progress"
+            },
+            {
+                "name": "new_assignee",
+                "description": "Specifies a new assignee for the work item",
+                "type": "string",
+                "example": "DEVU-123"
+            },
+            {
+                "name": "estimated_effort",
+                "description": "Indicates the estimated effort required to complete the work item (Story points)",
+                "type": "integer",
+                "example": 5
+            },
+            {
+                "name": "dependencies",
+                "description": "Lists any dependencies or related work items",
+                "type": "array of strings",
+                "example": [
+                    "TASK-456",
+                    "ENH-789"
+                ]
+            }
+        ]
+    },
+    {
+        "tool_name": "code_review_feedback",
+        "tool_description": "Provides feedback and comments on code reviews, highlighting areas for improvement.",
+        "arguments": [
+            {
+                "name": "review_id",
+                "description": "The ID of the code review to provide feedback on",
+                "type": "string",
+                "example": "CR-123"
+            },
+            {
+                "name": "feedback",
+                "description": "Detailed feedback and comments for the code review",
+                "type": "string",
+                "example": "Consider optimizing this function for better performance."
+            },
+            {
+                "name": "code_version",
+                "description": "Identifies the specific version of the code under review",
+                "type": "string",
+                "example": "v2.1"
+            },
+            {
+                "name": "severity",
+                "description": "Assigns a severity level to the feedback (e.g., critical, major, minor)",
+                "type": "string",
+                "example": "major"
+            }
+        ]
+    },
+    {
+        "tool_name": "test_execution_report",
+        "tool_description": "Generates a report summarizing test case execution results, including pass/fail status and issues found.",
+        "arguments": [
+            {
+                "name": "test_suite_id",
+                "description": "The ID of the test suite for which to generate the execution report",
+                "type": "string",
+                "example": "TS-456"
+            },
+            {
+                "name": "test_environment",
+                "description": "Specifies the testing environment used for the test cases",
+                "type": "string",
+                "example": "Production"
+            },
+            {
+                "name": "pass_fail_status",
+                "description": "Indicates whether each test case passed or failed",
+                "type": "list",
+                "example": [
+                    "pass",
+                    "fail",
+                    "pass",
+                    "fail"
+                ]
+            },
+            {
+                "name": "test_case_types",
+                "description": "Specifies the type of test cases included in the report",
+                "type": "list",
+                "example": [
+                    "unit",
+                    "integration",
+                    "performance"
+                ]
+            }
+        ]
+    },
+    {
+        "tool_name": "create_project",
+        "tool_description": "Creates a new project and sets up the initial project configuration.",
+        "arguments": [
+            {
+                "name": "project_name",
+                "description": "The name or title of the new project",
+                "type": "string",
+                "example": "Project ABC"
+            },
+            {
+                "name": "project_description",
+                "description": "A brief description of the project's objectives and scope",
+                "type": "string",
+                "example": "Development of a new e-commerce platform."
+            },
+            {
+                "name": "project_lead",
+                "description": "The team member who will lead the project",
+                "type": "string",
+                "example": "DEVU-789"
+            },
+            {
+                "name": "start_date",
+                "description": "Sets a start date for the project",
+                "type": "date",
+                "example": "2023-01-15"
+            },
+            {
+                "name": "project_team",
+                "description": "Lists the initial team members involved in the project",
+                "type": "array of strings",
+                "example": [
+                    "DEVU-789",
+                    "DEVU-456",
+                    "DEVU-123"
+                ]
+            },
+            {
+                "name": "target_date",
+                "description": "Sets a target date for project completion",
+                "type": "date",
+                "example": "2023-06-30"
+            }
+        ]
+    },
+    {
+        "tool_name": "create_sprint",
+        "tool_description": "Creates a new sprint within a project and defines its duration and goals.",
+        "arguments": [
+            {
+                "name": "project_id",
+                "description": "The ID of the project in which to create the sprint",
+                "type": "string",
+                "example": "PROJ-123"
+            },
+            {
+                "name": "sprint_name",
+                "description": "The name or title of the new sprint",
+                "type": "string",
+                "example": "Sprint 1"
+            },
+            {
+                "name": "sprint_duration",
+                "description": "The duration of the sprint in weeks",
+                "type": "integer",
+                "example": 2
+            },
+            {
+                "name": "sprint_goals",
+                "description": "Defines specific goals and objectives for the sprint (e.g., deliverables)",
+                "type": "string",
+                "example": "Complete user story implementations"
+            },
+            {
+                "name": "sprint_capacity",
+                "description": "Sets the maximum capacity or workload for the sprint(Story Points)",
+                "type": "integer",
+                "example": 50
+            },
+            {
+                "name": "backlog_items",
+                "description": "Specifies the backlog items to be included in the sprint",
+                "type": "array of strings",
+                "example": [
+                    "STORY-123",
+                    "STORY-456"
+                ]
+            }
+        ]
+    },
+    {
+        "tool_name": "assign_work_item",
+        "tool_description": "Assigns a work item to a specific team member or group.",
+        "arguments": [
+            {
+                "name": "work_item_id",
+                "description": "The ID of the work item to be assigned",
+                "type": "string",
+                "example": "TASK-567"
+            },
+            {
+                "name": "assignee",
+                "description": "The team member or group to whom the work item is assigned",
+                "type": "string",
+                "example": "DEVU-123"
+            },
+            {
+                "name": "due_date",
+                "description": "Sets a due date for the assigned work item",
+                "type": "string",
+                "example": "2023-12-31"
+            },
+            {
+                "name": "work_item_type",
+                "description": "Indicates the type of work item being assigned",
+                "type": "string",
+                "example": "task"
+            }
+        ]
+    },
+    {
+        "tool_name": "create_actionable_tasks_from_text",
+        "tool_description": "Given a text, extracts actionable insights, and creates tasks for them, which are kind of a work item.",
+        "arguments": [
+            {
+                "name": "text",
+                "description": "The text from which the actionable insights need to be created.",
+                "type": "string",
+                "example": ""
+            }
+        ]
+    },
+    {
+        "tool_name": "automate_workflow",
+        "tool_description": "Automates repetitive workflow tasks by defining triggers and actions.",
+        "arguments": [
+            {
+                "name": "trigger_event",
+                "description": "The event or condition that triggers the workflow",
+                "type": "string",
+                "example": "New issue created"
+            },
+            {
+                "name": "workflow_actions",
+                "description": "The actions to be executed when the trigger event occurs",
+                "type": "array of objects",
+                "example": []
+            },
+            {
+                "name": "notifications",
+                "description": "Specifies who should receive notifications when the workflow is triggered",
+                "type": "array of strings",
+                "example": [
+                    "DEVU-123",
+                    "DEVU-456"
+                ]
+            },
+            {
+                "name": "actions_log",
+                "description": "Keeps a log of actions performed by the workflow for auditing",
+                "type": "boolean",
+                "example": true
+            }
+        ]
+    }
+]

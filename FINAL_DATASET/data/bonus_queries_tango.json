@@ -777,5 +777,214 @@
                 ]
             }
         ]
+    },
+
+    {
+        "question": "Get all work items similar to ABC-123 with priority p2 or p1. For each work item, set a reminder for tomorrow 2023-02-03 10:00:00. My username is user4 and password is pass4.",
+        "answer": [
+            {
+                "tool_name": "get_similar_work_items",
+                "arguments": [
+                    {
+                        "argument_name": "work_id",
+                        "argument_value": "ABC-123"
+                    },
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": [
+                            "p2",
+                            "p1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user4"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "pass4"
+                    }
+                ]
+            },
+            {
+                "tool_name": "for_each",
+                "arguments": [
+                    {
+                        "argument_name": "items",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "tools",
+                        "argument_value": [
+                            {
+                                "tool_name": "add_reminder",
+                                "arguments": [
+                                    {
+                                        "argument_name": "token",
+                                        "argument_value": "$$PREV[1]"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "$$CURRENT_ITER"
+                                    },
+                                    {
+                                        "argument_name": "date",
+                                        "argument_value": "2023-02-03 10:00:00"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "question": "Get all work items similar to ABC-123 with priority p2 or p1. For each work item, set a reminder for tomorrow 2023-02-03 10:00:00. My username is user4 and password is pass4.",
+        "answer": [
+            {
+                "tool_name": "get_similar_work_items",
+                "arguments": [
+                    {
+                        "argument_name": "work_id",
+                        "argument_value": "ABC-123"
+                    },
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": [
+                            "p2",
+                            "p1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user4"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "pass4"
+                    }
+                ]
+            },
+            {
+                "tool_name": "for_each",
+                "arguments": [
+                    {
+                        "argument_name": "items",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "tools",
+                        "argument_value": [
+                            {
+                                "tool_name": "add_reminder",
+                                "arguments": [
+                                    {
+                                        "argument_name": "token",
+                                        "argument_value": "$$PREV[1]"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "$$CURRENT_ITER"
+                                    },
+                                    {
+                                        "argument_name": "date",
+                                        "argument_value": "2023-02-03 10:00:00"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "question": "Get all work items similar to PQR-789 with ticket severity high, priority p2, and from Email channel. For each work item, set a reminder for tomorrow 2023-02-03 10:00:00. My username is user4 and password is pass4.",
+        "answer": [
+            {
+                "tool_name": "get_similar_work_items",
+                "arguments": [
+                    {
+                        "argument_name": "work_id",
+                        "argument_value": "PQR-789"
+                    },
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": [
+                            "p2"
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.severity",
+                        "argument_value": [
+                            "high"
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.source_channel",
+                        "argument_value": [
+                            "Email"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user4"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "pass4"
+                    }
+                ]
+            },
+            {
+                "tool_name": "for_each",
+                "arguments": [
+                    {
+                        "argument_name": "items",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "tools",
+                        "argument_value": [
+                            {
+                                "tool_name": "add_reminder",
+                                "arguments": [
+                                    {
+                                        "argument_name": "token",
+                                        "argument_value": "$$PREV[1]"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "$$CURRENT_ITER"
+                                    },
+                                    {
+                                        "argument_name": "date",
+                                        "argument_value": "2023-02-03 10:00:00"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

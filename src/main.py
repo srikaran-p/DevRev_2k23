@@ -30,11 +30,10 @@ def main():
     args = parser.parse_args()
 
     # if input is stdin
-    if (args.input_test_path == sys.stdin):
-        q = input("Enter the query: ")  # Query
-        query = {
-            "question":q
-        }
+
+    query = {
+        "question": input("Enter the query: ")
+    }
     
     # left of query or empty query is given, exit
     if  not query['question']:

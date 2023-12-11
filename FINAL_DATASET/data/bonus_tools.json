@@ -1,0 +1,108 @@
+[
+    {
+        "tool_name": "initialize_variable",
+        "tool_description": "Can be used to initialize a variable",
+        "arguments":[
+            {
+                "name": "name",
+                "type": "string",
+                "description": "Name of the variable"
+            },
+            {
+                "name": "type",
+                "type": "string",
+                "description": "type of the variable"
+            },
+            {
+                "name": "value",
+                "type": "string",
+                "description": "value of the variable"
+            }
+        ]
+    },
+
+    {
+        "tool_name": "initialize_list",
+        "tool_description": "Can be used to initialize a list of any type",
+        "arguments":[
+            {
+                "name": "name",
+                "type": "string",
+                "description": "Name of the list"
+            },
+            {
+                "name": "type",
+                "type": "string",
+                "description": "type of the items in the list"
+            },
+            {
+                "name": "values",
+                "type": "string",
+                "description": "values in the list, comma seperated"
+            }
+        ]
+    },
+    {
+        "tool_name": "if_tool",
+        "tool_description": "Performs conditional logic based on specified criteria. Allows for branching behavior with 'if' conditions.",
+        "arguments": [
+            {
+                "name": "lhs",
+                "type": "string",
+                "description": "The left-hand side of the condition"
+            },
+            {
+                "name": "operator",
+                "type": "string",
+                "description": "The comparison operator. Allowed values: '==', '!=', '>', '<', '>=', '<='"
+            },
+            {
+                "name": "rhs",
+                "type": "string",
+                "description": "The right-hand side of the condition"
+            },
+            {
+                "name": "if_true",
+                "type": "array of objects",
+                "description": "The set of tools to be executed if the condition is true. Use $$PREV[i] to reference the value of the ith tool in the chain."
+            },
+            {
+                "name": "else_if",
+                "type": "array of objects",
+                "description": "Array of 'else if' conditions, each with its own criteria and actions"
+            },
+            {
+                "name": "else",
+                "type": "array of objects",
+                "description": "The set of tools to be executed if the condition is false. Use $$PREV[i] to reference the value of the ith tool in the chain."
+            }
+        ]
+    },
+    {
+        "tool_name": "for_each",
+        "tool_description": "Iterates over a list of items and applies a set of tools to each item",
+        "arguments": [
+            {
+                "name": "items",
+                "type": "array",
+                "description": "List of items to iterate over"
+            },
+            {
+                "name": "tools",
+                "type": "array of objects",
+                "description": "List of tools to apply to each item. Can reference the current item with $$CURRENT_ITER and any other value calculated in the loop using $$CURRENT_VAL"
+            },
+            {
+                "name": "break_conditions",
+                "type": "array of objects",
+                "description": "List of conditions that, if true, will break out of the loop. It will execute the entire if tool before breaking. Can reference any value in the for loop using $$CURRENT_VAL"
+            },
+            {
+                "name": "continue_conditions",
+                "type": "array of objects",
+                "description": "List of conditions that, if true, will skip the current iteration of the loop. Can reference any value in the for loop using $$CURRENT_VAL"
+            }
+        ]
+    }
+
+]

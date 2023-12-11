@@ -1,0 +1,85 @@
+[
+    {
+        "tool_name": "modify_scene",
+        "tool_description": "This API modifies a scene of smart home system, given the scene name and a list of smart devices",
+        "arguments": [
+            {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the scene."
+            },
+            {
+                "name": "devices",
+                "type": "list",
+                "description": "The list of smart devices"
+            }
+        ],
+        "summary": "The \"modify_scene\" API allows users to modify a scene in a smart home system by providing the scene name and a list of smart devices. Users can update the configuration of the scene by specifying the new list of smart devices associated with it. This API provides flexibility in customizing and adjusting smart home scenes to meet users' preferences and needs."
+    },
+    {
+        "tool_name": "flight_search",
+        "tool_description": "API to retrieve flight options based on the destination and travel dates.",
+        "arguments": [
+            {
+                "name": "source",
+                "type": "string",
+                "description": "Source for the flight."
+            },
+            {
+                "name": "destination",
+                "type": "string",
+                "description": "Destination for the flight."
+            },
+            {
+                "name": "travel_dates",
+                "type": "string",
+                "description": "Travel dates. Format: %Y-%m-%d"
+            }
+        ],
+        "summary": "The \"flight_search\" API allows users to retrieve flight options based on the source, destination, and travel dates. It requires three arguments: the source of the flight, the destination for the flight, and the travel dates in the format %Y-%m-%d. This API assists users in finding available flight options for their travel plans."
+    },
+    {
+        "tool_name": "personal_info_update",
+        "tool_description": "The API for updating a user's personal information and address.",
+        "arguments": [
+            {
+                "name": "username",
+                "type": "string",
+                "description": "Name of the user."
+            },
+            {
+                "name": "password",
+                "type": "string",
+                "description": "Password of the user."
+            },
+            {
+                "name": "address",
+                "type": "string",
+                "description": "Updated address information."
+            }
+        ],
+        "summary": "The \"personal_info_update\" API allows users to update their personal information and address. It requires three arguments: the username of the user for identification, the user's password for authentication, and the updated address information that the user wants to set. This API enables users to keep their personal information up-to-date in the system."
+    },
+    {
+        "tool_name": "modify_password",
+        "tool_description": "The API for modifying the password of the account.",
+        "arguments": [
+            {
+                "name": "token",
+                "type": "string",
+                "description": "The token of the user."
+            },
+            {
+                "name": "old_password",
+                "type": "string",
+                "description": "The old password of the user."
+            },
+            {
+                "name": "new_password",
+                "type": "string",
+                "description": "The new password of the user."
+            }
+        ],
+        "summary": "The \"modify_password\" API provides functionality for users to modify the password of their account. It accepts three arguments: the user's token for authentication, the old password (current password) for verification, and the new password that the user wants to set. This API allows users to update their account passwords securely, ensuring that only authorized users can make changes to their account credentials."
+    }
+]

@@ -1,0 +1,781 @@
+[
+    {
+        "question": "Please check the stock price of Amazon for today. If the price is lower than $100, please send an email to mnp@example.com to hold it. Else, we can ask him to sell. The subject of the mail could be information regarding stock.",
+        "answer": [
+            {
+                "tool_name": "get_today",
+                "arguments": []
+            },
+            {
+                "tool_name": "query_stock",
+                "arguments": [
+                    {
+                        "argument_name": "stock_name",
+                        "argument_value": "AMZN"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "if_tool",
+                "arguments": [
+                    {
+                        "argument_name": "lhs",
+                        "argument_value": "$$PREV[1]"
+                    },
+                    {
+                        "argument_name": "operator",
+                        "argument_value": "<"
+                    },
+                    {
+                        "argument_name": "rhs",
+                        "argument_value": "100"
+                    },
+                    {
+                        "argument_name": "if_true",
+                        "argument_value": [
+                            {
+                                "tool_name": "send_email",
+                                "arguments": [
+                                    {
+                                        "argument_name": "receiver",
+                                        "argument_value": "mnp@example.com"
+                                    },
+                                    {
+                                        "argument_name": "subject",
+                                        "argument_value": "Information regarding stock"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "Hold Amazon stock"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "argument_name": "else",
+                        "argument_value": [
+                            {
+                                "tool_name": "send_email",
+                                "arguments": [
+                                    {
+                                        "argument_name": "receiver",
+                                        "argument_value": "mnp@example.com"
+                                    },
+                                    {
+                                        "argument_name": "subject",
+                                        "argument_value": "Information regarding stock"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "Sell the stock."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Get all work items similar to TKT-222. For each work item, set a reminder for tomorrow 2023-02-03 10:00:00. My username is user4 and password is pass4.",
+        "answer": [
+            {
+                "tool_name": "get_similar_work_items",
+                "arguments": [
+                    {
+                        "argument_name": "work_id",
+                        "argument_value": "TKT-222"
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user4"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "pass4"
+                    }
+                ]
+            },
+            {
+                "tool_name": "for_each",
+                "arguments": [
+                    {
+                        "argument_name": "items",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "tools",
+                        "argument_value": [
+                            {
+                                "tool_name": "add_reminder",
+                                "arguments": [
+                                    {
+                                        "argument_name": "token",
+                                        "argument_value": "$$PREV[1]"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "$$CURRENT_ITER"
+                                    },
+                                    {
+                                        "argument_name": "date",
+                                        "argument_value": "2023-02-03 10:00:00"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Find all tickets, from 'HR' department, related to 'PART-606', reported through 'Email', in 'Triage' stage, and with low severity. If you find any issue which has priority p3, please add a reminder for tomorrow 2023-03-04 10:00",
+        "answer": [
+            {
+                "tool_name": "works_list",
+                "arguments": [
+                    {
+                        "argument_name": "issue.priority",
+                        "argument_value": [
+                            "p3"
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.needs_response",
+                        "argument_value": [
+                            true
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.rev_org",
+                        "argument_value": [
+                            "HR"
+                        ]
+                    },
+                    {
+                        "argument_name": "applies_to_part",
+                        "argument_value": [
+                            "PART-606"
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.source_channel",
+                        "argument_value": [
+                            "Email"
+                        ]
+                    },
+                    {
+                        "argument_name": "stage.name",
+                        "argument_value": [
+                            "Triage"
+                        ]
+                    },
+                    {
+                        "argument_name": "ticket.severity",
+                        "argument_value": [
+                            "low"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user4"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "pass4"
+                    }
+                ]
+            },
+            {
+                "tool_name": "for_each",
+                "arguments": [
+                    {
+                        "argument_name": "items",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "tools",
+                        "argument_value": [
+                            {
+                                "tool_name": "add_reminder",
+                                "arguments": [
+                                    {
+                                        "argument_name": "token",
+                                        "argument_value": "$$PREV[1]"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "$$CURRENT_ITER"
+                                    },
+                                    {
+                                        "argument_name": "date",
+                                        "argument_value": "2023-03-04 10:00"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Given my usernames user11, user12, user13, user14, user15, find the first account that I can use to settle my bill for $100. Also add a reminder for the account to pay the bill for 2023-03-31. The passwords for each account is pass1.",
+        "answer": [
+            {
+                "tool_name": "initalize_list",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "usernames"
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": "string"
+                    },
+                    {
+                        "argument_name": "values",
+                        "argument_value": "user11, user12, user13, user14, user15"
+                    }
+                ]
+            },
+            {
+                "tool_name": "for_each",
+                "arguments": [
+                    {
+                        "argument_name": "items",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "tools",
+                        "argument_value": [
+                            {
+                                "tool_name": "get_user_token",
+                                "arguments": [
+                                    {
+                                        "argument_name": "username",
+                                        "argument_value": "$$CURRENT_ITER"
+                                    },
+                                    {
+                                        "argument_name": "password",
+                                        "argument_value": "pass1"
+                                    }
+                                ]
+                            },
+                            {
+                                "tool_name": "query_balance",
+                                "arguments": [
+                                    {
+                                        "argument_name": "token",
+                                        "argument_value": "$$CURRENT_VAL[0]"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "argument_name": "break_conditions",
+                        "argument_value": [
+                            {
+                                "tool_name": "if_tool",
+                                "arguments": [
+                                    {
+                                        "argument_name": "lhs",
+                                        "argument_value": "$$CURRENT_VAL[1]"
+                                    },
+                                    {
+                                        "argument_name": "operator",
+                                        "argument_value": ">="
+                                    },
+                                    {
+                                        "argument_name": "rhs",
+                                        "argument_value": "100"
+                                    },
+                                    {
+                                        "argument_name": "if_tool",
+                                        "argument_value": [
+                                            {
+                                                "tool_name": "add_reminder",
+                                                "arguments": [
+                                                    {
+                                                        "argument_name": "token",
+                                                        "argument_value": "$$CURRENT_VAL[0]"
+                                                    },
+                                                    {
+                                                        "argument_name": "content",
+                                                        "argument_value": "Pay the bill"
+                                                    },
+                                                    {
+                                                        "argument_name": "date",
+                                                        "argument_value": "2023-03-31 10:00"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Please check the stock prices of Amazon, Netflix, and Apple today 2023-08-09. If the price is greater than what it was yesterday, please send an email to abc@example.com to sell them, else ask them to hold. ",
+        "answer": [
+            {
+                "tool_name": "initalize_list",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "stocks"
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": "string"
+                    },
+                    {
+                        "argument_name": "values",
+                        "argument_value": "AMZN,NFLX,AAPL"
+                    }
+                ]
+            },
+            {
+                "tool_name": "for_each",
+                "arguments": [
+                    {
+                        "argument_name": "items",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "tools",
+                        "argument_value": [
+                            {
+                                "tool_name": "query_stock",
+                                "arguments": [
+                                    {
+                                        "argument_name": "stock_name",
+                                        "argument_value": "$$CURRENT_ITER"
+                                    },
+                                    {
+                                        "argument_name": "date",
+                                        "argument_value": "2023-08-09"
+                                    }
+                                ]
+                            },
+                            {
+                                "tool_name": "query_stock",
+                                "arguments": [
+                                    {
+                                        "argument_name": "stock_name",
+                                        "argument_value": "$$CURRENT_ITER"
+                                    },
+                                    {
+                                        "argument_name": "date",
+                                        "argument_value": "2023-08-08"
+                                    }
+                                ]
+                            },
+                            {
+                                "tool_name": "if_tool",
+                                "arguments": [
+                                    {
+                                        "argument_name": "lhs",
+                                        "argument_value": "CURRENT_VAL[0]"
+                                    },
+                                    {
+                                        "argument_name": "operator",
+                                        "argument_value": ">"
+                                    },
+                                    {
+                                        "argument_name": "rhs",
+                                        "argument_value": "CURRENT_VAL[1]"
+                                    },
+                                    {
+                                        "argument_name": "if_true",
+                                        "argument_value": [
+                                            {
+                                                "tool_name": "send_email",
+                                                "arguments": [
+                                                    {
+                                                        "argument_name": "receiver",
+                                                        "argument_value": "abc@example.com"
+                                                    },
+                                                    {
+                                                        "argument_name": "subject",
+                                                        "argument_value": "Sell the stock $$CURRENT_ITER"
+                                                    },
+                                                    {
+                                                        "argument_name": "content",
+                                                        "argument_value": "Sell $$CURRENT_ITER"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "argument_name": "else",
+                                        "argument_value": [
+                                            {
+                                                "tool_name": "send_email",
+                                                "arguments": [
+                                                    {
+                                                        "argument_name": "receiver",
+                                                        "argument_value": "abc@example.com"
+                                                    },
+                                                    {
+                                                        "argument_name": "subject",
+                                                        "argument_value": "Hold the stock $$CURRENT_ITER"
+                                                    },
+                                                    {
+                                                        "argument_name": "content",
+                                                        "argument_value": "Hold $$CURRENT_ITER"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Please check the stock price of Apple for today. If the price is greater than $100, please send an email to mnp@example.com to not buy it. If he wants, he can sell it. Else if the price is between 50 and 100 , ask him to not take any action. Else, he can buy more stocks. The subject of the mail could be information regarding stock.",
+        "answer": [
+            {
+                "tool_name": "get_today",
+                "arguments": []
+            },
+            {
+                "tool_name": "query_stock",
+                "arguments": [
+                    {
+                        "argument_name": "stock_name",
+                        "argument_value": "AAPL"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "if_tool",
+                "arguments": [
+                    {
+                        "argument_name": "lhs",
+                        "argument_value": "$$PREV[1]"
+                    },
+                    {
+                        "argument_name": "operator",
+                        "argument_value": ">"
+                    },
+                    {
+                        "argument_name": "rhs",
+                        "argument_value": "100"
+                    },
+                    {
+                        "argument_name": "if_true",
+                        "argument_value": [
+                            {
+                                "tool_name": "send_email",
+                                "arguments": [
+                                    {
+                                        "argument_name": "receiver",
+                                        "argument_value": "mnp@example.com"
+                                    },
+                                    {
+                                        "argument_name": "subject",
+                                        "argument_value": "Information regarding stock"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "Donot buy stock. You may wish to sell the stock"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "argument_name": "else_if",
+                        "argument_value": [
+                            {
+                                "tool_name": "if_tool",
+                                "arguments": [
+                                    {
+                                        "argument_name": "lhs",
+                                        "argument_value": "$$PREV[1]"
+                                    },
+                                    {
+                                        "argument_name": "operator",
+                                        "argument_value": ">"
+                                    },
+                                    {
+                                        "argument_name": "rhs",
+                                        "argument_value": "50"
+                                    },
+                                    {
+                                        "argument_name": "if_true",
+                                        "argument_value": [
+                                            {
+                                                "tool_name": "send_email",
+                                                "arguments": [
+                                                    {
+                                                        "argument_name": "receiver",
+                                                        "argument_value": "mnp@example.com"
+                                                    },
+                                                    {
+                                                        "argument_name": "subject",
+                                                        "argument_value": "Information regarding stock"
+                                                    },
+                                                    {
+                                                        "argument_name": "content",
+                                                        "argument_value": "Buy more stock."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "argument_name": "else",
+                        "argument_value": [
+                            {
+                                "tool_name": "send_email",
+                                "arguments": [
+                                    {
+                                        "argument_name": "receiver",
+                                        "argument_value": "mnp@example.com"
+                                    },
+                                    {
+                                        "argument_name": "subject",
+                                        "argument_value": "Information regarding stock"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "Sell the stock."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "If the price of Netflix stock is less than 300, send an email to mnp@example.com to hold the stock. Else send an email to sell the stock.",
+        "answer": [
+            {
+                "tool_name": "get_today",
+                "arguments": []
+            },
+            {
+                "tool_name": "query_stock",
+                "arguments": [
+                    {
+                        "argument_name": "stock_name",
+                        "argument_value": "NFLX"
+                    },
+                    {
+                        "argument_name": "date",
+                        "argument_value": "$$PREV[0]"
+                    }
+                ]
+            },
+            {
+                "tool_name": "if_tool",
+                "arguments": [
+                    {
+                        "argument_name": "lhs",
+                        "argument_value": "$$PREV[1]"
+                    },
+                    {
+                        "argument_name": "operator",
+                        "argument_value": "<"
+                    },
+                    {
+                        "argument_name": "rhs",
+                        "argument_value": "300"
+                    },
+                    {
+                        "argument_name": "if_true",
+                        "argument_value": [
+                            {
+                                "tool_name": "send_email",
+                                "arguments": [
+                                    {
+                                        "argument_name": "receiver",
+                                        "argument_value": "mnp@example.com"
+                                    },
+                                    {
+                                        "argument_name": "subject",
+                                        "argument_value": "Information regarding stock"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "Hold Netflix stock"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "argument_name": "else",
+                        "argument_value": [
+                            {
+                                "tool_name": "send_email",
+                                "arguments": [
+                                    {
+                                        "argument_name": "receiver",
+                                        "argument_value": "mnp@example.com"
+                                    },
+                                    {
+                                        "argument_name": "subject",
+                                        "argument_value": "Information regarding stock"
+                                    },
+                                    {
+                                        "argument_name": "content",
+                                        "argument_value": "Sell the stock."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "question": "Given my usernames u1, u2, u3, u4, u5, u6, u7, u8, u9, which account can I use to settle my bill for $1000. Add a reminder to replenish the account on 2023-03-31 12:00:00. All the usernames have passwords pass1.",
+        "answer": [
+            {
+                "tool_name": "initalize_list",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "usernames"
+                    },
+                    {
+                        "argument_name": "type",
+                        "argument_value": "string"
+                    },
+                    {
+                        "argument_name": "values",
+                        "argument_value": "u1, u2, u3, u4, u5, u6, u7, u8, u9"
+                    }
+                ]
+            },
+            {
+                "tool_name": "for_each",
+                "arguments": [
+                    {
+                        "argument_name": "items",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "tools",
+                        "argument_value": [
+                            {
+                                "tool_name": "get_user_token",
+                                "arguments": [
+                                    {
+                                        "argument_name": "username",
+                                        "argument_value": "$$CURRENT_ITER"
+                                    },
+                                    {
+                                        "argument_name": "password",
+                                        "argument_value": "pass1"
+                                    }
+                                ]
+                            },
+                            {
+                                "tool_name": "query_balance",
+                                "arguments": [
+                                    {
+                                        "argument_name": "token",
+                                        "argument_value": "$$CURRENT_VAL[0]"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "argument_name": "break_conditions",
+                        "argument_value": [
+                            {
+                                "tool_name": "if_tool",
+                                "arguments": [
+                                    {
+                                        "argument_name": "lhs",
+                                        "argument_value": "$$CURRENT_VAL[1]"
+                                    },
+                                    {
+                                        "argument_name": "operator",
+                                        "argument_value": ">="
+                                    },
+                                    {
+                                        "argument_name": "rhs",
+                                        "argument_value": "1000"
+                                    },
+                                    {
+                                        "argument_name": "if_tool",
+                                        "argument_value": [
+                                            {
+                                                "tool_name": "addagenda",
+                                                "arguments": [
+                                                    {
+                                                        "argument_name": "token",
+                                                        "argument_value": "$$CURRENT_VAL[0]"
+                                                    },
+                                                    {
+                                                        "argument_name": "content",
+                                                        "argument_value": "Replenish account $$CURRENT_ITER"
+                                                    },
+                                                    {
+                                                        "argument_name": "time",
+                                                        "argument_value": "2023-03-31 12:00:00"
+                                                    },
+                                                    {
+                                                        "argument_name": "location",
+                                                        "argument_value": "online"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

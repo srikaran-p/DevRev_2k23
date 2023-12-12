@@ -1,9 +1,15 @@
 import argparse
-import os
 import gpt
 import sys
-import dotenv
 import IR_model
+import utils
+import prompt
+import mistral
+import time
+
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import LLMChain
+from langchain.prompts.prompt import PromptTemplate
 
 def main():
     parser = argparse.ArgumentParser()
@@ -12,13 +18,20 @@ def main():
     parser.add_argument(
         '-m',
         "--model",
-        choices=["gpt-4","gpt-3.5-turbo"],
+        choices=["gpt-4","gpt-3.5-turbo","mistral","mistral-8x"],
         help="Choose the model (Default gpt-3.5-turbo)",
         nargs="?",
         default="gpt-3.5-turbo"
     )
-
-    # Output Path of Test Cases
+    # Input path
+    parser.add_argument(
+        '-i',
+        "--input_file",
+        nargs="?",
+        help="Location of input file to read the query (Default terminal)",
+        default=sys.stdin,
+    )
+    # Output Path 
     parser.add_argument(
         '-o',
         "--output_file",
@@ -29,58 +42,59 @@ def main():
     
     args = parser.parse_args()
 
-    # if input is stdin
-
-    query = {
-        "question": input("Enter the query: ")
-    }
-    
-    # left of query or empty query is given, exit
-    if  not query['question']:
-        print("No query Provided")
+    status,queries = utils.get_input(args.input_file)
+    if not status:
         return False
     
-    # Load the key 
-    dotenv.load_dotenv()
-    
-    # if key in not loaded, ask for key
-    if not (os.getenv('OPENAI_API_KEY')):
-        key = input("Enter key:")
-        # if key not given, exits
-        if not key:
-            print("Error: No Key Provided")
+    # Load the IR Model [?]
+
+    # Output
+    response = []
+
+    # GPT
+    if args.model == "gpt-4" or args.model == "gpt-3.5-turbo":
+
+        if not utils.get_key():
+            print("Error: OPENAI Key is not correct")
             return False
-        else:
-            os.environ['OPENAI_API_KEY'] = key
-    
-    # Generate Relevant tools based on query
-    relevant_tools = IR_model.get_relevant_tools(query['question'])
 
-    # Get the responses 
-    response = gpt.get_response(query,relevant_tools,args.model)
+        p = PromptTemplate(prompt.gpt_inference_template)
+        chain = LLMChain(llm=ChatOpenAI(model= args.model), prompt=p)
 
-    # if output is stdout
-    if (args.output_file == sys.stdout):
-        output = args.output_file
-        
-    # if output is not a directory, file name given
-    elif not (os.path.isdir(args.output_file)):
-        output = open(args.output_file + ".json","w")
-        
-    # if output path does not exists
-    elif not (os.path.exists(args.output_file)):
-        
-        os.mkdir(args.output_file)
-        output = open(os.path.join(args.output_file,args.model + ".json"),"w")
-        print("Created ",args.output_file)
-        
-    # if output is directory, generate model_name.json
-    else:
-        output = open(os.path.join(args.output_file,args.model + ".json"),"w")
+        for query in queries:
+
+            start_time = time.time()
+            relevant_tools = IR_model.get_relevant_tools(query)
+            status,res = gpt.get_response(query,relevant_tools,chain)
+            end_time = time.time()
+            if not status:
+                print("Error [GPT]: Unable to generate answer")
+                break
+            
+            res['Inference Time'] = end_time-start_time
+            response.append(res)
     
-    output.write(response)
-    
-    output.close()
+    elif args.model == "mistral" or args.model == "mistral-8x":
+
+        # Load Mistral [?]
+
+        for query in queries:
+
+            start_time = time.time()
+            relevant_tools = IR_model.get_relevant_tools(query)
+            res = mistral.get_response(query,relevant_tools)
+            end_time = time.time()
+
+            res['Inference Time'] = end_time-start_time
+            response.append(res)
+
+
+    status = utils.write_output(args.output_file,response)
+    if not status:
+        print("Error: Unable to Write in Output File")
+        print(response)
+        return False
+
     return True
 
 if __name__ == "__main__":

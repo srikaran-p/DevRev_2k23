@@ -1,41 +1,25 @@
-from langchain.chat_models import ChatOpenAI
-from langchain.chains import LLMChain
-from langchain.prompts.prompt import PromptTemplate
-
-import time
-from prompt import gpt_inference_template
+import json
 
 # if key is wrong report error
-def get_response(query,tools,model_name):
-    
-    #Prompt generation
-    prompt = prompt = PromptTemplate(gpt_inference_template)
-
-    # Intialization
-    chain = LLMChain(llm = ChatOpenAI(model=model_name), prompt=prompt)
-    
-    # Updation
-    responses = []
+def get_response(query,tools,chain):
     
     input = {
-        'question':query["question"],
+        'question':query,
         'tools':tools
     }
-    
-    try:
-        output = chain.invoke(input)
-
-    except Exception as e:
-        print("GPT response: ",e)
-        return []
-    
-    # Generate Response
     res = {
         'question':query['question'],
-        'answer': output['text']
+        'answer': ""
     }
+
+    try:
+        output = chain.invoke(input)
+        try:
+            res['answer'] = json.loads(output['text'])
+        except:
+            res['answer'] = output['text']
+
+    except Exception as e:
+        return False,res
     
-    # Update 
-    responses.append(res)
-    
-    return responses
+    return True, res

@@ -9,6 +9,7 @@ def generate_summary(tool_json):
     prompt = PromptTemplate(tool_summarize_template)
 
     chain = LLMChain(llm = ChatOpenAI(model='gpt-3.5-turbo'), prompt=prompt)
+    
     try:
         output = chain.invoke({'tool_json':tool_json})
         tool_json['summary'] = output['text']

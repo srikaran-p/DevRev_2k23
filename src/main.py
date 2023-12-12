@@ -5,8 +5,10 @@ import IR_model
 import utils
 import prompt
 import time
-# from mistral import inference
+
 sys.path.insert(1,'mistral')
+import inference
+
 import config
 
 from langchain.chat_models import ChatOpenAI

@@ -19,13 +19,13 @@ def get_relevant_tools(query,retriever,ranker,ranker_documents_embeddings,docume
     )
     candidates = retriever(
         queries_embeddings=retriever_queries_embeddings,
-        k=1000,
+        k=20,
     )
     results = ranker(
         documents=candidates,
         queries_embeddings=ranker_queries_embeddings,
         documents_embeddings=ranker_documents_embeddings,
-        k=100,
+        k=10,
         batch_size=32,
     )
 

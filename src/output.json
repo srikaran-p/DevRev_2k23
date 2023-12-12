@@ -32,24 +32,11 @@
                 ]
             }
         ],
-        "Inference Time": 8.942448377609253
+        "Inference Time": 8.840319633483887
     },
     {
         "question": "I'd like to cancel my appointment with id 34567890 for September 18th with Dr. G under the name Ethan Smith",
         "answer": [
-            {
-                "tool_name": "get_user_token",
-                "arguments": [
-                    {
-                        "argument_name": "username",
-                        "argument_value": "Ethan Smith"
-                    },
-                    {
-                        "argument_name": "password",
-                        "argument_value": "password"
-                    }
-                ]
-            },
             {
                 "tool_name": "cancel_registration",
                 "arguments": [
@@ -60,7 +47,7 @@
                 ]
             }
         ],
-        "Inference Time": 5.736470460891724
+        "Inference Time": 3.3213131427764893
     },
     {
         "question": "Set up a lunch meeting for me on October 22nd, 2023 at 12:30pm. Title it 'Lunch with Sarah at The Bistro'. My username is david77, password is 77david$$, and my email is david77@example.org. Please remind me 20 minutes before.",
@@ -100,64 +87,34 @@
                     {
                         "argument_name": "attendees",
                         "argument_value": [
-                            "david77@example.org"
+                            "Sarah"
                         ]
                     }
                 ]
             },
             {
-                "tool_name": "addalarm",
+                "tool_name": "add_reminder",
                 "arguments": [
                     {
                         "argument_name": "token",
                         "argument_value": "$$PREV[0]"
                     },
                     {
+                        "argument_name": "content",
+                        "argument_value": "Lunch with Sarah at The Bistro"
+                    },
+                    {
                         "argument_name": "time",
                         "argument_value": "2023-10-22 12:10:00"
                     }
                 ]
-            },
-            {
-                "tool_name": "email_reminder",
-                "arguments": [
-                    {
-                        "argument_name": "content",
-                        "argument_value": "Reminder: Lunch with Sarah at The Bistro"
-                    },
-                    {
-                        "argument_name": "time",
-                        "argument_value": "2023-10-22 12:30:00"
-                    },
-                    {
-                        "argument_name": "location",
-                        "argument_value": "The Bistro"
-                    },
-                    {
-                        "argument_name": "recipient",
-                        "argument_value": "david77@example.org"
-                    }
-                ]
             }
         ],
-        "Inference Time": 19.07240867614746
+        "Inference Time": 16.381703853607178
     },
     {
         "question": "Guide me on updating my personal details and address. My username is 'jane_smith99', and the new password is 'password1234'. How can I proceed?",
         "answer": [
-            {
-                "tool_name": "get_user_token",
-                "arguments": [
-                    {
-                        "argument_name": "username",
-                        "argument_value": "jane_smith99"
-                    },
-                    {
-                        "argument_name": "password",
-                        "argument_value": "password1234"
-                    }
-                ]
-            },
             {
                 "tool_name": "personal_info_update",
                 "arguments": [
@@ -171,11 +128,11 @@
                     },
                     {
                         "argument_name": "address",
-                        "argument_value": "New address information"
+                        "argument_value": "[new address]"
                     }
                 ]
             }
         ],
-        "Inference Time": 5.418763160705566
+        "Inference Time": 5.0203728675842285
     }
 ]

@@ -1,0 +1,181 @@
+[
+    {
+        "question": "I need to reserve a room at the Grand Hyatt for Ethan from Monday, 2023-08-28 to Friday. Make the reservation for one room with one adult.",
+        "answer": [
+            {
+                "tool_name": "book_hotel",
+                "arguments": [
+                    {
+                        "argument_name": "hotel_name",
+                        "argument_value": "Grand Hyatt"
+                    },
+                    {
+                        "argument_name": "check_in_time",
+                        "argument_value": "2023-08-28 00:00:00"
+                    },
+                    {
+                        "argument_name": "check_out_time",
+                        "argument_value": "2023-09-01 00:00:00"
+                    },
+                    {
+                        "argument_name": "room_count",
+                        "argument_value": "1"
+                    },
+                    {
+                        "argument_name": "adult_count",
+                        "argument_value": "1"
+                    },
+                    {
+                        "argument_name": "child_count",
+                        "argument_value": "0"
+                    }
+                ]
+            }
+        ],
+        "Inference Time": 8.942448377609253
+    },
+    {
+        "question": "I'd like to cancel my appointment with id 34567890 for September 18th with Dr. G under the name Ethan Smith",
+        "answer": [
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "Ethan Smith"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "password"
+                    }
+                ]
+            },
+            {
+                "tool_name": "cancel_registration",
+                "arguments": [
+                    {
+                        "argument_name": "appointment_id",
+                        "argument_value": "34567890"
+                    }
+                ]
+            }
+        ],
+        "Inference Time": 5.736470460891724
+    },
+    {
+        "question": "Set up a lunch meeting for me on October 22nd, 2023 at 12:30pm. Title it 'Lunch with Sarah at The Bistro'. My username is david77, password is 77david$$, and my email is david77@example.org. Please remind me 20 minutes before.",
+        "answer": [
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "david77"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "77david$$"
+                    }
+                ]
+            },
+            {
+                "tool_name": "add_meeting",
+                "arguments": [
+                    {
+                        "argument_name": "meeting_topic",
+                        "argument_value": "Lunch with Sarah at The Bistro"
+                    },
+                    {
+                        "argument_name": "start_time",
+                        "argument_value": "2023-10-22 12:30:00"
+                    },
+                    {
+                        "argument_name": "end_time",
+                        "argument_value": "2023-10-22 13:30:00"
+                    },
+                    {
+                        "argument_name": "location",
+                        "argument_value": "The Bistro"
+                    },
+                    {
+                        "argument_name": "attendees",
+                        "argument_value": [
+                            "david77@example.org"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tool_name": "addalarm",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-10-22 12:10:00"
+                    }
+                ]
+            },
+            {
+                "tool_name": "email_reminder",
+                "arguments": [
+                    {
+                        "argument_name": "content",
+                        "argument_value": "Reminder: Lunch with Sarah at The Bistro"
+                    },
+                    {
+                        "argument_name": "time",
+                        "argument_value": "2023-10-22 12:30:00"
+                    },
+                    {
+                        "argument_name": "location",
+                        "argument_value": "The Bistro"
+                    },
+                    {
+                        "argument_name": "recipient",
+                        "argument_value": "david77@example.org"
+                    }
+                ]
+            }
+        ],
+        "Inference Time": 19.07240867614746
+    },
+    {
+        "question": "Guide me on updating my personal details and address. My username is 'jane_smith99', and the new password is 'password1234'. How can I proceed?",
+        "answer": [
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "jane_smith99"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "password1234"
+                    }
+                ]
+            },
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "jane_smith99"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "password1234"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "New address information"
+                    }
+                ]
+            }
+        ],
+        "Inference Time": 5.418763160705566
+    }
+]

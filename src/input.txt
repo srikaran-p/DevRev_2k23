@@ -1,0 +1,4 @@
+I need to reserve a room at the Grand Hyatt for Ethan from Monday, 2023-08-28 to Friday. Make the reservation for one room with one adult.
+I'd like to cancel my appointment with id 34567890 for September 18th with Dr. G under the name Ethan Smith
+Set up a lunch meeting for me on October 22nd, 2023 at 12:30pm. Title it 'Lunch with Sarah at The Bistro'. My username is david77, password is 77david$$, and my email is david77@example.org. Please remind me 20 minutes before.
+Guide me on updating my personal details and address. My username is 'jane_smith99', and the new password is 'password1234'. How can I proceed?

@@ -11,7 +11,9 @@ def get_response(query,tools,chain):
         'question':query,
         'answer': ""
     }
-
+    if not query:
+        return True,res
+    
     try:
         output = chain.invoke(input)
         try:

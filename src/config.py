@@ -1,3 +1,5 @@
 TRAIN_PATH = "../data/train_data.json"
 TOOLS_PATH = "../tool/tools.json"
-RETRIEVER_CHECKPOINT="../checkpoints/retriever_checkpoint_1"
+RETRIEVER_CHECKPOINT="../checkpoints/checkpoint_summarizer"
+MISTRAL_CHECKPOINT = "../checkpoints/"
+MISTRAL_8X_CHECKPOINT = "../checkpoints/"

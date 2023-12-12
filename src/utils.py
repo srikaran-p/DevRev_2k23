@@ -4,6 +4,9 @@ import dotenv
 import openai
 import json
 
+from langchain.embeddings.openai import OpenAIEmbeddings
+
+
 def get_query(input_path):
 
     file = open(input_path,"r")
@@ -37,11 +40,14 @@ def get_input(input_file):
 
 def is_api_key_valid():
     try:
-        response = openai.Completion.create(
-            engine="davinci",
-            prompt="This is a test.",
-            max_tokens=5
+
+        model = "text-embedding-ada-002"
+
+        embeddings = OpenAIEmbeddings(
+            model=model
         )
+        embeddings.embed_query("Hello world")
+
     except Exception as e:
         print(e)
         return False
@@ -83,7 +89,7 @@ def write_output(output_file,response):
         output = open(os.path.join(output_file,"output.json"),"w")
     
     try:
-        output.write(json.dumps(response))
+        output.write(json.dumps(response,indent=4))
     except:
         return False
     else:
@@ -93,24 +99,24 @@ def write_output(output_file,response):
 def load_and_preprocess_tools_data(tools_data_path):
     tools_data = json.load(open(tools_data_path,'r'))
 
-    tool_names = []
-    collection = []
+    # collection = []
 
-    for tool in tools_data:
-        tool_names.append(tool['tool_name'])
-        tool_desc = f"{tool['tool_description']}. "
-        argument_desc = ""
-        for argument in tool['arguments']:
-            argument_desc += f"{argument['name']} - {argument['description']} "
-        tool_desc += argument_desc.strip()
-        collection.append(tool_desc)
+    # for tool in tools_data:
+    #     tool_names.append(tool['tool_name'])
+    #     tool_desc = f"{tool['tool_description']}. "
+    #     argument_desc = ""
+    #     for argument in tool['arguments']:
+    #         argument_desc += f"{argument['name']} - {argument['description']} "
+    #     tool_desc += argument_desc.strip()
+    #     collection.append(tool_desc)
 
-    for i in range(len(collection)):
-        collection[i] = tool_names[i] + ':' + collection[i]
+    # for i in range(len(collection)):
+    #     collection[i] = tool_names[i] + ':' + collection[i]
 
-    collection = [
-    {"id": i, "text": text}
-    for i, text in enumerate(collection)
-]
+#     collection = [
+#     {"id": i, "text": text}
+#     for i, text in enumerate(collection)
+# ]
+    collection = [ {"id": i,"tool_name":tool['tool_name'], "text": tool['summary']} for i, tool in enumerate(tools_data) ]
 
-    return tool_names, collection
+    return collection

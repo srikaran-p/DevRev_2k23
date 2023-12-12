@@ -31,23 +31,24 @@ def get_relevant_tools(query,retriever,ranker,ranker_documents_embeddings,docume
 
     relevant_tools = []
 
+    
     # Iterate through each inner list
-    for i, inner_list in enumerate(results, start=1):
-        print(i)
+    for inner_list in results:
+
         # Sort the inner list by similarity in descending order
         sorted_inner_list = sorted(inner_list, key=lambda x: x['similarity'], reverse=True)
         
         # Extract the top 10 eretriever_documents_embeddings,lements
         top_k_elements = sorted_inner_list[:k]
-
+        # print(top_k_elements)
         # List to store results for the current inner list
         current_results = []
 
         # Print the corresponding elements from the tool_info using the 'id'
-        for j, element in enumerate(top_k_elements, start=1):
+        for element in top_k_elements:
             element_id = element['id']
             # Corrected line to extract element_name
-            element_name = next(x['text'].split(":")[0] for x in documents if x['id'] == element_id)
+            element_name = next(x['tool_name'] for x in documents if x['id'] == element_id)
             tool_details = next((tool for tool in tool_info if tool['tool_name'] == element_name), None)
             if tool_details:
                 current_results.append(tool_details)
@@ -80,7 +81,7 @@ def load_model():
 
     batch_size = 32
 
-    _,documents = utils.load_and_preprocess_tools_data(config.TOOLS_PATH)
+    documents = utils.load_and_preprocess_tools_data(config.TOOLS_PATH)
 
     retriever_documents_embeddings = retriever.encode_documents(
         documents=documents,

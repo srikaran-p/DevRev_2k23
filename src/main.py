@@ -4,8 +4,10 @@ import sys
 import IR_model
 import utils
 import prompt
-import mistral
 import time
+# from mistral import inference
+sys.path.insert(1,'mistral')
+import config
 
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
@@ -18,7 +20,7 @@ def main():
     parser.add_argument(
         '-m',
         "--model",
-        choices=["gpt-4","gpt-3.5-turbo","mistral","mistral-8x"],
+        choices=["gpt-4","gpt-3.5-turbo","mistral","mistral_8x"],
         help="Choose the model (Default gpt-3.5-turbo)",
         nargs="?",
         default="gpt-3.5-turbo"
@@ -44,7 +46,7 @@ def main():
 
     # Load the IR Model
     retreiver,ranker,ranker_documents_embed,documents = IR_model.load_model()
-    print("IR Checkpoint Loaded")
+    print("IR Checkpoint Loaded\n")
 
     status,queries = utils.get_input(args.input_file)
     if not status:
@@ -60,9 +62,9 @@ def main():
             print("Error: OPENAI Key is not correct")
             return False
 
+
         p = PromptTemplate.from_template(prompt.gpt_inference_template)
         chain = LLMChain(llm=ChatOpenAI(model= args.model), prompt=p)
-
         for query in queries:
 
             start_time = time.time()
@@ -77,14 +79,35 @@ def main():
             response.append(res)
     
     elif args.model == "mistral" or args.model == "mistral-8x":
+        try:
+            gpu_id = int(input("Enter the GPU Id to run the model(For eg: '0'): "))
+        except:
+            print("Incorrect GPU id")
+            return False
+        
+        if (gpu_id < 0):
+            return False
+        
+        # Load Mistral
+        try:
+            if (args.model == "mistral"):
+                model = inference.init_model(config.MISTRAL_CHECKPOINT,gpu_id)
+                tokenizer = inference.init_tokenizer(config.MISTRAL_CHECKPOINT,gpu_id)
 
-        # Load Mistral [?]
+            else:
+                model = inference.init_model(config.MISTRAL_8X_CHECKPOINT,gpu_id)
+                tokenizer = inference.init_tokenizer(config.MISTRAL_8X_CHECKPOINT,gpu_id)
+
+        except Exception as e:
+            print(e)
+            print("Error in loading the model")
+            return False
 
         for query in queries:
 
             start_time = time.time()
             relevant_tools = IR_model.get_relevant_tools(query)
-            res = mistral.get_response(query,relevant_tools)
+            res = inference.get_response(model,tokenizer,query,relevant_tools,gpu_id)
             end_time = time.time()
 
             res['Inference Time'] = end_time-start_time

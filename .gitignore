@@ -2,3 +2,4 @@
 gpt_pipeline/*
 devrevenv/*
 checkpoints/*
+src/__pycache__

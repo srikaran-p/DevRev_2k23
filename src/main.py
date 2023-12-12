@@ -49,7 +49,11 @@ def main():
     # Load the IR Model
     retreiver,ranker,ranker_documents_embed,documents = IR_model.load_model()
     print("IR Checkpoint Loaded\n")
-
+    try:
+        gpu_id = int(input("Enter the GPU Id to run the model(For eg: '0') Enter 0 for 0th GPU or using GPT model: "))
+    except:
+        print("Incorrect GPU id")
+        return False
     status,queries = utils.get_input(args.input_file)
     if not status:
         return False
@@ -81,11 +85,7 @@ def main():
             response.append(res)
     
     elif args.model == "mistral" or args.model == "mistral-8x":
-        try:
-            gpu_id = int(input("Enter the GPU Id to run the model(For eg: '0'): "))
-        except:
-            print("Incorrect GPU id")
-            return False
+        
         
         if (gpu_id < 0):
             return False
@@ -94,11 +94,11 @@ def main():
         try:
             if (args.model == "mistral"):
                 model = inference.init_model(config.MISTRAL_CHECKPOINT,gpu_id)
-                tokenizer = inference.init_tokenizer(config.MISTRAL_CHECKPOINT,gpu_id)
+                tokenizer = inference.init_tokenizer(config.MISTRAL_CHECKPOINT)
 
             else:
                 model = inference.init_model(config.MISTRAL_8X_CHECKPOINT,gpu_id)
-                tokenizer = inference.init_tokenizer(config.MISTRAL_8X_CHECKPOINT,gpu_id)
+                tokenizer = inference.init_tokenizer(config.MISTRAL_8X_CHECKPOINT)
 
         except Exception as e:
             print(e)
@@ -108,8 +108,8 @@ def main():
         for query in queries:
 
             start_time = time.time()
-            relevant_tools = IR_model.get_relevant_tools(query)
-            res = inference.get_response(model,tokenizer,query,relevant_tools,gpu_id)
+            relevant_tools = IR_model.get_relevant_tools(query,retreiver,ranker,ranker_documents_embed,documents)
+            res = inference.get_response(model,tokenizer,query,relevant_tools,model_name=args.model,gpu_id=gpu_id)
             end_time = time.time()
 
             res['Inference Time'] = end_time-start_time

@@ -42,11 +42,13 @@ def main():
     
     args = parser.parse_args()
 
+    # Load the IR Model
+    retreiver,ranker,ranker_documents_embed,documents = IR_model.load_model()
+    print("IR Checkpoint Loaded")
+
     status,queries = utils.get_input(args.input_file)
     if not status:
         return False
-    
-    # Load the IR Model [?]
     
     # Output
     response = []
@@ -58,13 +60,13 @@ def main():
             print("Error: OPENAI Key is not correct")
             return False
 
-        p = PromptTemplate(prompt.gpt_inference_template)
+        p = PromptTemplate.from_template(prompt.gpt_inference_template)
         chain = LLMChain(llm=ChatOpenAI(model= args.model), prompt=p)
 
         for query in queries:
 
             start_time = time.time()
-            relevant_tools = IR_model.get_relevant_tools(query)
+            relevant_tools = IR_model.get_relevant_tools(query,retreiver,ranker,ranker_documents_embed,documents)
             status,res = gpt.get_response(query,relevant_tools,chain)
             end_time = time.time()
             if not status:

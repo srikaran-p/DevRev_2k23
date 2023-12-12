@@ -42,7 +42,8 @@ def is_api_key_valid():
             prompt="This is a test.",
             max_tokens=5
         )
-    except:
+    except Exception as e:
+        print(e)
         return False
     else:
         return True
@@ -57,10 +58,8 @@ def get_key():
         key = input("Enter key:")
         os.environ['OPENAI_API_KEY'] = key
     
-    if is_api_key_valid():
-        return True
-    else:
-        return False
+    return True
+
 
 def write_output(output_file,response):
 
@@ -90,4 +89,28 @@ def write_output(output_file,response):
     else:
         output.close()
         return True
-    
+
+def load_and_preprocess_tools_data(tools_data_path):
+    tools_data = json.load(open(tools_data_path,'r'))
+
+    tool_names = []
+    collection = []
+
+    for tool in tools_data:
+        tool_names.append(tool['tool_name'])
+        tool_desc = f"{tool['tool_description']}. "
+        argument_desc = ""
+        for argument in tool['arguments']:
+            argument_desc += f"{argument['name']} - {argument['description']} "
+        tool_desc += argument_desc.strip()
+        collection.append(tool_desc)
+
+    for i in range(len(collection)):
+        collection[i] = tool_names[i] + ':' + collection[i]
+
+    collection = [
+    {"id": i, "text": text}
+    for i, text in enumerate(collection)
+]
+
+    return tool_names, collection

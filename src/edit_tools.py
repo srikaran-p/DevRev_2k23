@@ -18,3 +18,4 @@ def generate_summary(tool_json):
         tool_json['summary'] = ""
 
     return tool_json
+

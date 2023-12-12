@@ -1,1 +1,1168 @@
-[{"question": "I need to change my password. My username is john_doe, email is john@example.com, old password is john123, and the new password is newpass456.", "answer": [{"tool_name": "get_user_token", "arguments": [{"argument_name": "username", "argument_value": "john_doe"}, {"argument_name": "password", "argument_value": "john123"}]}, {"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "$$PREV[0]"}, {"argument_name": "old_password", "argument_value": "john123"}, {"argument_name": "new_password", "argument_value": "newpass456"}]}]}, {"question": "I want to update my password. My username is sarahsmith, email is sarah@example.com, old password is sarahpass, and the new password is mynewpass123.", "answer": [{"tool_name": "get_user_token", "arguments": [{"argument_name": "username", "argument_value": "sarahsmith"}, {"argument_name": "password", "argument_value": "sarahpass"}]}, {"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "$$PREV[0]"}, {"argument_name": "old_password", "argument_value": "sarahpass"}, {"argument_name": "new_password", "argument_value": "mynewpass123"}]}]}, {"question": "I need to change my password. My username is mikejones, email is mike@example.com, old password is oldpass123, and the new password is new123pass.", "answer": [{"tool_name": "get_user_token", "arguments": [{"argument_name": "username", "argument_value": "mikejones"}, {"argument_name": "password", "argument_value": "oldpass123"}]}, {"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "$$PREV[0]"}, {"argument_name": "old_password", "argument_value": "oldpass123"}, {"argument_name": "new_password", "argument_value": "new123pass"}]}]}, {"question": "I want to update my password. My username is linda01, email is linda@example.com, old password is passlinda, and the new password is newlinda2023.", "answer": [{"tool_name": "get_user_token", "arguments": [{"argument_name": "username", "argument_value": "linda01"}, {"argument_name": "password", "argument_value": "passlinda"}]}, {"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "$$PREV[0]"}, {"argument_name": "old_password", "argument_value": "passlinda"}, {"argument_name": "new_password", "argument_value": "newlinda2023"}]}]}, {"question": "I need to change my password. My username is robert_123, email is robert@example.com, old password is pass123, and the new password is mynewpass567.", "answer": [{"tool_name": "get_user_token", "arguments": [{"argument_name": "username", "argument_value": "robert_123"}, {"argument_name": "password", "argument_value": "pass123"}]}, {"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "$$PREV[0]"}, {"argument_name": "old_password", "argument_value": "pass123"}, {"argument_name": "new_password", "argument_value": "mynewpass567"}]}]}, {"question": "Modify the password for the user with token 'abc789'. The old password is 'oldpass' and the new password is 'newpass'.", "answer": [{"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "abc789"}, {"argument_name": "old_password", "argument_value": "oldpass"}, {"argument_name": "new_password", "argument_value": "newpass"}]}]}, {"question": "I want to modify a scene for the smart home system. The scene name is 'Evening Scene', and the list of smart devices includes 'Light1' and 'Thermostat'. Can you guide me through this?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Evening Scene"}, {"argument_name": "devices", "argument_value": ["Light1", "Thermostat"]}]}]}, {"question": "I need to search for flight options. The source is 'CityA', the destination is 'CityB', and the travel dates are '2023-03-15'. Can you guide me through this?", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "CityA"}, {"argument_name": "destination", "argument_value": "CityB"}, {"argument_name": "travel_dates", "argument_value": "2023-03-15"}]}]}, {"question": "I need to update personal information and address. The username is 'user123', the password is 'new_password', and the updated address is '456 Oak St, TownY'. Can you guide me through this?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "user123"}, {"argument_name": "password", "argument_value": "new_password"}, {"argument_name": "address", "argument_value": "456 Oak St, TownY"}]}]}, {"question": "Change the password for the user with token 'xyz789'. The previous password is 'oldpassword' and the new password is 'newpassword'.", "answer": [{"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "xyz789"}, {"argument_name": "old_password", "argument_value": "oldpassword"}, {"argument_name": "new_password", "argument_value": "newpassword"}]}]}, {"question": "I'm interested in adjusting a scene for the smart home system. The scene is currently named 'Evening Scene', and the smart devices in the list include 'Light1' and 'Thermostat'. Can you guide me through the modification?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Evening Scene"}, {"argument_name": "devices", "argument_value": ["Light1", "Thermostat"]}]}]}, {"question": "I'm looking to explore flight options. The departure is from 'CityA' to 'CityB', and the travel dates are '2023-03-15'. Can you guide me through this process?", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "CityA"}, {"argument_name": "destination", "argument_value": "CityB"}, {"argument_name": "travel_dates", "argument_value": "2023-03-15"}]}]}, {"question": "How can I update my personal details and address? My username is 'new_user789', and the new password is 'updated_password'. Can you guide me through this?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "new_user789"}, {"argument_name": "password", "argument_value": "updated_password"}, {"argument_name": "address", "argument_value": "789 Elm St, CityZ"}]}]}, {"question": "I need to modify my personal information and address. My username is 'john_doe123', and the updated password is 'new_pass123'. Can you walk me through the process?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "john_doe123"}, {"argument_name": "password", "argument_value": "new_pass123"}, {"argument_name": "address", "argument_value": "456 Oak Ave, TownY"}]}]}, {"question": "Can you assist me in changing my personal details and address? My username is 'user42', and the updated password is 'secure_pw567'. What steps should I follow?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "user42"}, {"argument_name": "password", "argument_value": "secure_pw567"}, {"argument_name": "address", "argument_value": "101 Elm St, BoroughA"}]}]}, {"question": "Guide me on updating my personal details and address. My username is 'jane_smith99', and the new password is 'password1234'. How can I proceed?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "jane_smith99"}, {"argument_name": "password", "argument_value": "password1234"}, {"argument_name": "address", "argument_value": "222 Maple Dr, CityB"}]}]}, {"question": "I want to update my personal information and address. My username is 'sam_jones555', and the updated password is 'new_password987'. How do I go about this?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "sam_jones555"}, {"argument_name": "password", "argument_value": "new_password987"}, {"argument_name": "address", "argument_value": "333 Birch Rd, TownC"}]}]}, {"question": "Can you guide me through updating my personal details and address? My username is 'alex_miller88', and the new password is 'secure_pass789'. What are the steps involved?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "alex_miller88"}, {"argument_name": "password", "argument_value": "secure_pass789"}, {"argument_name": "address", "argument_value": "789 Pine Ln, VillageZ"}]}]}, {"question": "I'm planning a trip and need to explore flight options. The departure is from 'Metropolis' to 'Townsville', and the travel dates are '2023-05-20'. Can you guide me through this process?", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "Metropolis"}, {"argument_name": "destination", "argument_value": "Townsville"}, {"argument_name": "travel_dates", "argument_value": "2023-05-20"}]}]}, {"question": "Can you assist me in exploring flight options? I'm flying from 'CityX' to 'CityY', and the travel dates are '2023-07-10'. What steps should I follow?", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "CityX"}, {"argument_name": "destination", "argument_value": "CityY"}, {"argument_name": "travel_dates", "argument_value": "2023-07-10"}]}]}, {"question": "I'm exploring flight options. The departure is from 'SkylineCity' to 'HarborVille', and the travel dates are '2023-09-05'. How can I proceed?", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "SkylineCity"}, {"argument_name": "destination", "argument_value": "HarborVille"}, {"argument_name": "travel_dates", "argument_value": "2023-09-05"}]}]}, {"question": "Guide me in exploring flight options. I'm flying from 'HighlandCity' to 'LakesideTown', and the travel dates are '2023-11-15'. What's the process?", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "HighlandCity"}, {"argument_name": "destination", "argument_value": "LakesideTown"}, {"argument_name": "travel_dates", "argument_value": "2023-11-15"}]}]}, {"question": "I'd like to explore flight options. The departure is from 'SunnyVista' to 'MountainView', and the travel dates are '2024-01-10'. Can you provide guidance?", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "SunnyVista"}, {"argument_name": "destination", "argument_value": "MountainView"}, {"argument_name": "travel_dates", "argument_value": "2024-01-10"}]}]}, {"question": "I need guidance on adjusting a scene for the smart home system. The scene is named 'Morning Scene', and the smart devices in the list include 'Fan' and 'CoffeeMaker'. Can you guide me through the modification?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Morning Scene"}, {"argument_name": "devices", "argument_value": ["Fan", "CoffeeMaker"]}]}]}, {"question": "Can you assist me in adjusting a scene for the smart home system? The scene is currently named 'Weekend Chill', and the smart devices in the list include 'TV' and 'Speaker'. What steps should I follow?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Weekend Chill"}, {"argument_name": "devices", "argument_value": ["TV", "Speaker"]}]}]}, {"question": "I'm interested in modifying a scene for the smart home system. The scene is currently named 'Home Office', and the smart devices in the list include 'DeskLamp' and 'Heater'. How can I proceed?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Home Office"}, {"argument_name": "devices", "argument_value": ["DeskLamp", "Heater"]}]}]}, {"question": "Can you guide me through adjusting a scene for the smart home system? The scene is named 'Relaxation', and the smart devices in the list include 'CouchLights' and 'AromatherapyDiffuser'. What's the process?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Relaxation"}, {"argument_name": "devices", "argument_value": ["CouchLights", "AromatherapyDiffuser"]}]}]}, {"question": "I'd like to adjust a scene for the smart home system. The scene is currently named 'Bedtime', and the smart devices in the list include 'BedsideLamp' and 'SmartLock'. Can you provide guidance?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Bedtime"}, {"argument_name": "devices", "argument_value": ["BedsideLamp", "SmartLock"]}]}]}, {"question": "Update the password for the user with token 'abc123'. The previous password is 'pass123' and the new password is 'securepass'.", "answer": [{"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "abc123"}, {"argument_name": "old_password", "argument_value": "pass123"}, {"argument_name": "new_password", "argument_value": "securepass"}]}]}, {"question": "I want to modify my contact details. The username is 'contactMe21', the password is 'updatePass123', and the new address is '789 Maple Ave, CityZ'. Can you assist me with the update?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "contactMe21"}, {"argument_name": "password", "argument_value": "updatePass123"}, {"argument_name": "address", "argument_value": "789 Maple Ave, CityZ"}]}]}, {"question": "I need to change my personal details. The username is 'profileUser456', the password is 'securedPass789', and the revised address is '123 Pine Ln, VillageX'. Can you guide me through the process?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "profileUser456"}, {"argument_name": "password", "argument_value": "securedPass789"}, {"argument_name": "address", "argument_value": "123 Pine Ln, VillageX"}]}]}, {"question": "I want to update my information. The username is 'infoUpdate789', the password is 'newPass567', and the changed address is '987 Cedar Rd, HamletY'. Can you help me with this?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "infoUpdate789"}, {"argument_name": "password", "argument_value": "newPass567"}, {"argument_name": "address", "argument_value": "987 Cedar Rd, HamletY"}]}]}, {"question": "I need to modify my personal data. The username is 'modifyMe34', the password is 'update123Pass', and the updated address is '234 Birch Blvd, SuburbZ'. Can you guide me through the update process?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "modifyMe34"}, {"argument_name": "password", "argument_value": "update123Pass"}, {"argument_name": "address", "argument_value": "234 Birch Blvd, SuburbZ"}]}]}, {"question": "I want to make changes to my profile. The username is 'changeMe567', the password is 'newProfilePass', and the updated address is '345 Elm Street, TownX'. Can you assist me with this update?", "answer": [{"tool_name": "personal_info_update", "arguments": [{"argument_name": "username", "argument_value": "changeMe567"}, {"argument_name": "password", "argument_value": "newProfilePass"}, {"argument_name": "address", "argument_value": "345 Elm Street, TownX"}]}]}, {"question": "I want to search for flight options from 'AirportX' to 'AirportY'. The travel date is '2023-04-20'. Can you assist me with this?", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "AirportX"}, {"argument_name": "destination", "argument_value": "AirportY"}, {"argument_name": "travel_dates", "argument_value": "2023-04-20"}]}]}, {"question": "Can you guide me through searching for flight options from 'AirhubZ' to 'SkyportW'? The travel date is '2023-05-10'.", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "AirhubZ"}, {"argument_name": "destination", "argument_value": "SkyportW"}, {"argument_name": "travel_dates", "argument_value": "2023-05-10"}]}]}, {"question": "I need to search for flight options from 'FlightCity1' to 'FlightCity2'. The travel date is '2023-06-25'. Can you assist me?", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "FlightCity1"}, {"argument_name": "destination", "argument_value": "FlightCity2"}, {"argument_name": "travel_dates", "argument_value": "2023-06-25"}]}]}, {"question": "Can you help me search for flight options from 'AirStationA' to 'FlyportB'? The travel date is '2023-07-15'.", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "AirStationA"}, {"argument_name": "destination", "argument_value": "FlyportB"}, {"argument_name": "travel_dates", "argument_value": "2023-07-15"}]}]}, {"question": "I want to search for flight options from 'JetCity3' to 'SkyCity4'. The travel date is '2023-08-05'. Can you guide me through this?", "answer": [{"tool_name": "flight_search", "arguments": [{"argument_name": "source", "argument_value": "JetCity3"}, {"argument_name": "destination", "argument_value": "SkyCity4"}, {"argument_name": "travel_dates", "argument_value": "2023-08-05"}]}]}, {"question": "Guide me through the process of modifying a scene named 'Morning Routine' in the smart home system. The devices involved are 'Coffee Maker' and 'Blinds'. Can you assist?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Morning Routine"}, {"argument_name": "devices", "argument_value": ["Coffee Maker", "Blinds"]}]}]}, {"question": "I need to make changes to a scene called 'Work Mode' in the smart home system. The devices in this scene are 'Desk Lamp' and 'Fan'. Can you provide guidance on this?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Work Mode"}, {"argument_name": "devices", "argument_value": ["Desk Lamp", "Fan"]}]}]}, {"question": "Help me in modifying the smart home scene 'Relaxation Time'. The devices involved are 'Couch Lights' and 'Speaker'. Can you provide step-by-step instructions?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Relaxation Time"}, {"argument_name": "devices", "argument_value": ["Couch Lights", "Speaker"]}]}]}, {"question": "Can you guide me on modifying the scene 'Dinner Setting' in the smart home? The devices to be adjusted are 'Dining Room Lights' and 'Temperature Controller'.", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Dinner Setting"}, {"argument_name": "devices", "argument_value": ["Dining Room Lights", "Temperature Controller"]}]}]}, {"question": "I want to make changes to the smart home scene 'Entertainment Mode'. The devices to be modified are 'TV Lights' and 'Sound System'. Could you provide assistance with this?", "answer": [{"tool_name": "modify_scene", "arguments": [{"argument_name": "name", "argument_value": "Entertainment Mode"}, {"argument_name": "devices", "argument_value": ["TV Lights", "Sound System"]}]}]}, {"question": "Please help me in changing my password. My username is user, email is user@example.com , old password is oldpass and new password is newpass.", "answer": [{"tool_name": "get_user_token", "arguments": [{"argument_name": "username", "argument_value": "user"}, {"argument_name": "password", "argument_value": "oldpass"}]}, {"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "$$PREV[0]"}, {"argument_name": "old_password", "argument_value": "oldpass"}, {"argument_name": "new_password", "argument_value": "newpass"}]}]}, {"question": "Change the password for the user with token 'xyz456'. The current password is 'current123' and the new password is 'newpassword456'.", "answer": [{"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "xyz456"}, {"argument_name": "old_password", "argument_value": "current123"}, {"argument_name": "new_password", "argument_value": "newpassword456"}]}]}, {"question": "Update the password for the user with token 'def321'. The existing password is 'pass123' and the new password is 'newpass567'.", "answer": [{"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "def321"}, {"argument_name": "old_password", "argument_value": "pass123"}, {"argument_name": "new_password", "argument_value": "newpass567"}]}]}, {"question": "Modify the password for the user with token 'user456'. The current password is 'currentpass' and the new password is 'newpass123'.", "answer": [{"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "user456"}, {"argument_name": "old_password", "argument_value": "currentpass"}, {"argument_name": "new_password", "argument_value": "newpass123"}]}]}, {"question": "Change the password for the user with token 'user789'. The old password is 'oldpassword' and the new password is 'newpassword789'.", "answer": [{"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "user789"}, {"argument_name": "old_password", "argument_value": "oldpassword"}, {"argument_name": "new_password", "argument_value": "newpassword789"}]}]}, {"question": "Update the password for the user with token 'token123'. The existing password is 'currentpass' and the new password is 'newpass456'.", "answer": [{"tool_name": "modify_password", "arguments": [{"argument_name": "token", "argument_value": "token123"}, {"argument_name": "old_password", "argument_value": "currentpass"}, {"argument_name": "new_password", "argument_value": "newpass456"}]}]}]
+[
+    {
+        "question": "I need to change my password. My username is john_doe, email is john@example.com, old password is john123, and the new password is newpass456.",
+        "answer": [
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "john_doe"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "john123"
+                    }
+                ]
+            },
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "john123"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newpass456"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to update my password. My username is sarahsmith, email is sarah@example.com, old password is sarahpass, and the new password is mynewpass123.",
+        "answer": [
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "sarahsmith"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "sarahpass"
+                    }
+                ]
+            },
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "sarahpass"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "mynewpass123"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need to change my password. My username is mikejones, email is mike@example.com, old password is oldpass123, and the new password is new123pass.",
+        "answer": [
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "mikejones"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "oldpass123"
+                    }
+                ]
+            },
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "oldpass123"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "new123pass"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to update my password. My username is linda01, email is linda@example.com, old password is passlinda, and the new password is newlinda2023.",
+        "answer": [
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "linda01"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "passlinda"
+                    }
+                ]
+            },
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "passlinda"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newlinda2023"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need to change my password. My username is robert_123, email is robert@example.com, old password is pass123, and the new password is mynewpass567.",
+        "answer": [
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "robert_123"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "pass123"
+                    }
+                ]
+            },
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "pass123"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "mynewpass567"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Modify the password for the user with token 'abc789'. The old password is 'oldpass' and the new password is 'newpass'.",
+        "answer": [
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "abc789"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "oldpass"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newpass"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to modify a scene for the smart home system. The scene name is 'Evening Scene', and the list of smart devices includes 'Light1' and 'Thermostat'. Can you guide me through this?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Evening Scene"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "Light1",
+                            "Thermostat"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need to search for flight options. The source is 'CityA', the destination is 'CityB', and the travel dates are '2023-03-15'. Can you guide me through this?",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "CityA"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "CityB"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-03-15"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need to update personal information and address. The username is 'user123', the password is 'new_password', and the updated address is '456 Oak St, TownY'. Can you guide me through this?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user123"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "new_password"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "456 Oak St, TownY"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Change the password for the user with token 'xyz789'. The previous password is 'oldpassword' and the new password is 'newpassword'.",
+        "answer": [
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "xyz789"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "oldpassword"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newpassword"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm interested in adjusting a scene for the smart home system. The scene is currently named 'Evening Scene', and the smart devices in the list include 'Light1' and 'Thermostat'. Can you guide me through the modification?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Evening Scene"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "Light1",
+                            "Thermostat"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm looking to explore flight options. The departure is from 'CityA' to 'CityB', and the travel dates are '2023-03-15'. Can you guide me through this process?",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "CityA"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "CityB"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-03-15"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "How can I update my personal details and address? My username is 'new_user789', and the new password is 'updated_password'. Can you guide me through this?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "new_user789"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "updated_password"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "789 Elm St, CityZ"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need to modify my personal information and address. My username is 'john_doe123', and the updated password is 'new_pass123'. Can you walk me through the process?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "john_doe123"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "new_pass123"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "456 Oak Ave, TownY"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you assist me in changing my personal details and address? My username is 'user42', and the updated password is 'secure_pw567'. What steps should I follow?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user42"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "secure_pw567"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "101 Elm St, BoroughA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Guide me on updating my personal details and address. My username is 'jane_smith99', and the new password is 'password1234'. How can I proceed?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "jane_smith99"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "password1234"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "222 Maple Dr, CityB"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to update my personal information and address. My username is 'sam_jones555', and the updated password is 'new_password987'. How do I go about this?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "sam_jones555"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "new_password987"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "333 Birch Rd, TownC"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you guide me through updating my personal details and address? My username is 'alex_miller88', and the new password is 'secure_pass789'. What are the steps involved?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "alex_miller88"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "secure_pass789"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "789 Pine Ln, VillageZ"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm planning a trip and need to explore flight options. The departure is from 'Metropolis' to 'Townsville', and the travel dates are '2023-05-20'. Can you guide me through this process?",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "Metropolis"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "Townsville"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-05-20"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you assist me in exploring flight options? I'm flying from 'CityX' to 'CityY', and the travel dates are '2023-07-10'. What steps should I follow?",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "CityX"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "CityY"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-07-10"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm exploring flight options. The departure is from 'SkylineCity' to 'HarborVille', and the travel dates are '2023-09-05'. How can I proceed?",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "SkylineCity"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "HarborVille"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-09-05"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Guide me in exploring flight options. I'm flying from 'HighlandCity' to 'LakesideTown', and the travel dates are '2023-11-15'. What's the process?",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "HighlandCity"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "LakesideTown"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-11-15"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'd like to explore flight options. The departure is from 'SunnyVista' to 'MountainView', and the travel dates are '2024-01-10'. Can you provide guidance?",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "SunnyVista"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "MountainView"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2024-01-10"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need guidance on adjusting a scene for the smart home system. The scene is named 'Morning Scene', and the smart devices in the list include 'Fan' and 'CoffeeMaker'. Can you guide me through the modification?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Morning Scene"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "Fan",
+                            "CoffeeMaker"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you assist me in adjusting a scene for the smart home system? The scene is currently named 'Weekend Chill', and the smart devices in the list include 'TV' and 'Speaker'. What steps should I follow?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Weekend Chill"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "TV",
+                            "Speaker"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'm interested in modifying a scene for the smart home system. The scene is currently named 'Home Office', and the smart devices in the list include 'DeskLamp' and 'Heater'. How can I proceed?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Home Office"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "DeskLamp",
+                            "Heater"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you guide me through adjusting a scene for the smart home system? The scene is named 'Relaxation', and the smart devices in the list include 'CouchLights' and 'AromatherapyDiffuser'. What's the process?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Relaxation"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "CouchLights",
+                            "AromatherapyDiffuser"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I'd like to adjust a scene for the smart home system. The scene is currently named 'Bedtime', and the smart devices in the list include 'BedsideLamp' and 'SmartLock'. Can you provide guidance?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Bedtime"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "BedsideLamp",
+                            "SmartLock"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Update the password for the user with token 'abc123'. The previous password is 'pass123' and the new password is 'securepass'.",
+        "answer": [
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "abc123"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "pass123"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "securepass"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to modify my contact details. The username is 'contactMe21', the password is 'updatePass123', and the new address is '789 Maple Ave, CityZ'. Can you assist me with the update?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "contactMe21"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "updatePass123"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "789 Maple Ave, CityZ"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need to change my personal details. The username is 'profileUser456', the password is 'securedPass789', and the revised address is '123 Pine Ln, VillageX'. Can you guide me through the process?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "profileUser456"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "securedPass789"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "123 Pine Ln, VillageX"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to update my information. The username is 'infoUpdate789', the password is 'newPass567', and the changed address is '987 Cedar Rd, HamletY'. Can you help me with this?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "infoUpdate789"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "newPass567"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "987 Cedar Rd, HamletY"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need to modify my personal data. The username is 'modifyMe34', the password is 'update123Pass', and the updated address is '234 Birch Blvd, SuburbZ'. Can you guide me through the update process?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "modifyMe34"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "update123Pass"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "234 Birch Blvd, SuburbZ"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to make changes to my profile. The username is 'changeMe567', the password is 'newProfilePass', and the updated address is '345 Elm Street, TownX'. Can you assist me with this update?",
+        "answer": [
+            {
+                "tool_name": "personal_info_update",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "changeMe567"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "newProfilePass"
+                    },
+                    {
+                        "argument_name": "address",
+                        "argument_value": "345 Elm Street, TownX"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to search for flight options from 'AirportX' to 'AirportY'. The travel date is '2023-04-20'. Can you assist me with this?",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "AirportX"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "AirportY"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-04-20"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you guide me through searching for flight options from 'AirhubZ' to 'SkyportW'? The travel date is '2023-05-10'.",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "AirhubZ"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "SkyportW"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-05-10"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need to search for flight options from 'FlightCity1' to 'FlightCity2'. The travel date is '2023-06-25'. Can you assist me?",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "FlightCity1"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "FlightCity2"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-06-25"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you help me search for flight options from 'AirStationA' to 'FlyportB'? The travel date is '2023-07-15'.",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "AirStationA"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "FlyportB"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-07-15"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to search for flight options from 'JetCity3' to 'SkyCity4'. The travel date is '2023-08-05'. Can you guide me through this?",
+        "answer": [
+            {
+                "tool_name": "flight_search",
+                "arguments": [
+                    {
+                        "argument_name": "source",
+                        "argument_value": "JetCity3"
+                    },
+                    {
+                        "argument_name": "destination",
+                        "argument_value": "SkyCity4"
+                    },
+                    {
+                        "argument_name": "travel_dates",
+                        "argument_value": "2023-08-05"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Guide me through the process of modifying a scene named 'Morning Routine' in the smart home system. The devices involved are 'Coffee Maker' and 'Blinds'. Can you assist?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Morning Routine"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "Coffee Maker",
+                            "Blinds"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I need to make changes to a scene called 'Work Mode' in the smart home system. The devices in this scene are 'Desk Lamp' and 'Fan'. Can you provide guidance on this?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Work Mode"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "Desk Lamp",
+                            "Fan"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Help me in modifying the smart home scene 'Relaxation Time'. The devices involved are 'Couch Lights' and 'Speaker'. Can you provide step-by-step instructions?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Relaxation Time"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "Couch Lights",
+                            "Speaker"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Can you guide me on modifying the scene 'Dinner Setting' in the smart home? The devices to be adjusted are 'Dining Room Lights' and 'Temperature Controller'.",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Dinner Setting"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "Dining Room Lights",
+                            "Temperature Controller"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "I want to make changes to the smart home scene 'Entertainment Mode'. The devices to be modified are 'TV Lights' and 'Sound System'. Could you provide assistance with this?",
+        "answer": [
+            {
+                "tool_name": "modify_scene",
+                "arguments": [
+                    {
+                        "argument_name": "name",
+                        "argument_value": "Entertainment Mode"
+                    },
+                    {
+                        "argument_name": "devices",
+                        "argument_value": [
+                            "TV Lights",
+                            "Sound System"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Please help me in changing my password. My username is user, email is user@example.com , old password is oldpass and new password is newpass.",
+        "answer": [
+            {
+                "tool_name": "get_user_token",
+                "arguments": [
+                    {
+                        "argument_name": "username",
+                        "argument_value": "user"
+                    },
+                    {
+                        "argument_name": "password",
+                        "argument_value": "oldpass"
+                    }
+                ]
+            },
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "$$PREV[0]"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "oldpass"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newpass"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Change the password for the user with token 'xyz456'. The current password is 'current123' and the new password is 'newpassword456'.",
+        "answer": [
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "xyz456"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "current123"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newpassword456"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Update the password for the user with token 'def321'. The existing password is 'pass123' and the new password is 'newpass567'.",
+        "answer": [
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "def321"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "pass123"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newpass567"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Modify the password for the user with token 'user456'. The current password is 'currentpass' and the new password is 'newpass123'.",
+        "answer": [
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "user456"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "currentpass"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newpass123"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Change the password for the user with token 'user789'. The old password is 'oldpassword' and the new password is 'newpassword789'.",
+        "answer": [
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "user789"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "oldpassword"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newpassword789"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question": "Update the password for the user with token 'token123'. The existing password is 'currentpass' and the new password is 'newpass456'.",
+        "answer": [
+            {
+                "tool_name": "modify_password",
+                "arguments": [
+                    {
+                        "argument_name": "token",
+                        "argument_value": "token123"
+                    },
+                    {
+                        "argument_name": "old_password",
+                        "argument_value": "currentpass"
+                    },
+                    {
+                        "argument_name": "new_password",
+                        "argument_value": "newpass456"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,14 +1,14 @@
 import json
 
-# if key is wrong report error
+
 def get_response(query,tools,chain):
     
     input = {
         'question':query,
-        'tools':tools
+        'tools':json.dumps(tools)
     }
     res = {
-        'question':query['question'],
+        'question':query,
         'answer': ""
     }
 
@@ -20,6 +20,7 @@ def get_response(query,tools,chain):
             res['answer'] = output['text']
 
     except Exception as e:
+        print(e)
         return False,res
     
     return True, res

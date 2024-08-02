@@ -163,3 +163,14 @@ When adding a tool, you'll be prompted to provide the tool's name, description, 
 
 - Make sure to handle the OpenAI API key correctly; otherwise, the script won't function properly.
 - The tools are stored in a JSON file specified in the config.py file.
+
+## Contributors
+- [Shrey Satapara](https://shreysatapara.github.io)
+- [Anirudh Srinivasan](https://www.linkedin.com/in/anirudh-srini/)
+- [Harsh Goyal](https://www.linkedin.com/in/harsh-goyal-441a06243/)
+- [Srikaran P](https://www.linkedin.com/in/srikaran-p-b82221214/)
+- [Arsh Arora](https://www.linkedin.com/in/arsh-arora/)
+- [Ayush Kumar Singh](https://www.linkedin.com/in/ayush-kumar-singh-272a471b9/)
+- R Raghuveer
+- [Tanmay Goyal](https://www.linkedin.com/in/tanmay-goyal-57253a213/)
+- Vaishnai
